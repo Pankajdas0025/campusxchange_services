@@ -82,7 +82,7 @@ header
   font-size: 3rem;
   font-style: italic;
   background-color:#6366f1;
-  border-radius:var(--radius);
+  /* border-radius:var(--radius); */
 }.Logo
 {
   height: 100px;
