@@ -4,14 +4,12 @@
 
   --primary-color: #6366f1; /* Indigo */
   --secondary-color: #f43f5e; /* Rose */
-  /* --primary-color: #7DA56C; 
-  --secondary-color: #e9b003;  */
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 12px;
+  --radius: 0;
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#555;
   --pSize:0.9rem;
@@ -23,46 +21,17 @@
   box-sizing: border-box;
   padding: 0;
 }
-/* .marquee {
-  overflow: hidden;
-  background: #f5f5f5;
-  border-top: 2px solid #0073e6;
-  border-bottom: 2px solid #0073e6;
-  padding: 0.5rem 0;
-}
-.marquee__inner {
-  display: flex;
-  width: max-content;
-  animation: scroll-left 30s linear infinite;
-}
-.marquee__inner p {
-  margin: 0 2rem;
-  font-size: 1rem;
-  white-space: nowrap;
-  color:;
-  font-weight: 500;
-}
-
-.marquee__inner:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll-left {
-  0%   { transform: translate(0); }
-  100% { transform: translate(-100%); }
-} */
-
 
 body {
   font-family: var(--font-main);
   background-color: var(--bg-light);
   color: var();
-  padding:10px 80px;
+  padding:15px 30px;
   line-height: 1.6;
   scroll-behavior: smooth;
   scroll-snap-stop: always;
-  
-  
+
+
 }
 /* body scroll animation learn from youtube-------------------------------------------------- */
 @keyframes ScrollAnn
@@ -70,7 +39,7 @@ body {
   from{
     opacity: 0;
     scale: 0.5;
-    
+
   }
   to
   {
@@ -83,7 +52,7 @@ body {
 {
   animation: ScrollAnn  linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 30%;
 
 }
 /* body scroll animation end-------------------------------------------------- */
@@ -113,11 +82,11 @@ header
   font-size: 3rem;
   font-style: italic;
   background-color:#6366f1;
-  border-radius: 12px 12px 0 0;
+  border-radius:var(--radius);
 }.Logo
 {
   height: 100px;
-  width: 30%;
+  width:32vw;
   background-color:transparent;
   padding: 0;
   font-size:20px;
@@ -162,12 +131,12 @@ header
   overflow: hidden;
   padding-top:4px;
   padding-top:0px;
- 
-  
+
+
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   color: white;
@@ -224,9 +193,7 @@ header
   align-items: center;
   align-content: center;
   padding: 3rem 2rem;
- 
-  
-
+  border: var(--border);
 }.HeroImg
 {
   background-color:transparent;
@@ -237,9 +204,8 @@ header
    margin: auto;
    box-shadow: 1px 2px 50px white;
    border-right: 6px solid black;
- 
-  
-  
+}.HeroImg a{
+  color: var(--bg-light);
 }
 #Main
 {
@@ -258,7 +224,6 @@ border-radius:20px 20px 0 20px;
 position: absolute;
 align-items: center;
 align-content: center;
-box-shadow: 1px 2px 50px black;
 border:var(--border);
 
 }
@@ -297,33 +262,33 @@ animation: HerosubImgRotate4 linear 10s infinite;
   25%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
   50%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
   100%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
-  
+
 }@keyframes HerosubImgRotate2 {
-  
+
   0%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
   25%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
   50%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
   100%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
-  
+
 }@keyframes HerosubImgRotate3 {
   0%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
   25%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
   50%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
   100%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
-  
+
 }@keyframes HerosubImgRotate4 {
   0%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
   25%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
   50%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
   100%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
-  
+
 }
 
 .hero h1 {
   font-size: 1.8rem;
   text-align: left;
-  text-shadow: 4px 4px 20px black;
-  
+
+
 
 }
 
@@ -349,38 +314,43 @@ animation: HerosubImgRotate4 linear 10s infinite;
   align-content: center;
   transition-delay: 10s;
   height: auto;
- 
+  border: var(--border);
+
+
 }#Assignment h2,p
 {
   text-align: left;
 }
 /* Assignment box buttons  */
-    
-#Assignment a
-{
-  outline: none;
-  border: none;
-  padding: 12px 24px;
-  background-color: var(--primary-color);
+
+/* Assignment Button Container */
+.assignment-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Individual Button Styling */
+.assignment-buttons a {
+  padding: 12px 20px;
+  background-color: #6366f1;
   border:var(--border);
+  border-radius:var(--radius);
+  color: white;
+  font-size: 1rem;
   text-decoration: none;
-  border-radius: var(--radius);
-  color: rgb(255, 255, 255);
-  height:40px;
-  width:100px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color s ease, transform 0.8s ease;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  text-align: center;
 }
-#Assignment a:hover {
-  background-color:var(--hoverbg);
-  transform:scale(1.2);
-  text-decoration: overline;
-  box-shadow: var(--shadow);
- 
-  
+
+.assignment-buttons a:hover {
+  background-color: var(--hoverbg);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
-/* Service-demo section or slider -------------------------------------------------------------------------------------------------------- */
+/* webService-demo section or slider -------------------------------------------------------------------------------------------------------- */
 #Service-demo{
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
   color: white;
@@ -390,15 +360,18 @@ animation: HerosubImgRotate4 linear 10s infinite;
   text-align: center;
   box-shadow: var(--shadow);
   height:700px;
- 
+  border: var(--border);
+
+
+
 
 } #Service-demo h2
 {
   text-align:left;
-  
+
 }
 /* Get your website button */
-#Explorbtn
+#Explorbtn , #Explorbtn2
 {
   outline: none;
   border: none;
@@ -416,10 +389,13 @@ animation: HerosubImgRotate4 linear 10s infinite;
 }#Explorbtn:hover
 {
   background-color: var(--hoverbg);
+} #Explorbtn2:hover
+{
+  background-color: var(--hoverbg);
 }
 /* ------------------------------Service-demo slider  -------------------------------------------------------------------------*/
 .slider-box {
-      width: 400px;
+      width: 500px;
       height: 250px;
       overflow: hidden;
       margin: 1% auto;
@@ -427,12 +403,15 @@ animation: HerosubImgRotate4 linear 10s infinite;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       position: relative;
       touch-action: pan-y;
+      border: var(--border);
+
     }
 
     .slider-images {
       display: flex;
       transition: transform 0.8s ease-in-out;
       height: 100%;
+
     }
 
     .slider-images img {
@@ -469,36 +448,41 @@ animation: HerosubImgRotate4 linear 10s infinite;
 .seoSection h2
 {
   text-align:left;
-  
+
 }
 .seoSection{
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: white;
+  background:white;
+  color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
   margin-bottom:20px;
   text-align: center;
   box-shadow: var(--shadow);
-  height:700px;
- 
+  height:650px;
+
+
 
 }
 .typeSeo
 {
-  height: 50px;
-  width:20vw;
-  transform:rotate(270deg);
-  margin:150px 0;
+
+  height: 100px;
+  width:100px;
+  /* transform:rotate(270deg); */
+  margin:120px 10px;
   display:inline-block;
    align-items: center;
   align-content: center;
-   clip-path: polygon(0% 0%, 50% 0% , 100% 50% , 50% 100% , 0% 100%);
+  border-radius: 50%;
+  /* clip-path: polygon(0% 0%, 50% 0% , 100% 50% , 50% 100% , 0% 100%); */
    border: var(--border);
    text-align: left;
    padding-left:20px;
    transition: 2s;
-  
-  
+   color: white;
+   border-right: 4px solid black;
+
+
 }#seo1
 {
   background-color: #f43f5e;
@@ -514,6 +498,11 @@ animation: HerosubImgRotate4 linear 10s infinite;
     background-color: #f43f5e;
     animation: SeoAnn3  2s infinite;
 }
+#seo4
+{
+    background-color: #6366f1;
+    animation: SeoAnn4  2s infinite;
+}
 
 @keyframes SeoAnn1
 {
@@ -524,7 +513,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
 }
 @keyframes SeoAnn2
 {
-  
+
   0%{translate: 0 -40px;}
   25%{translate: 0 -60px;}
   50%{translate: 0 0;}
@@ -537,6 +526,12 @@ animation: HerosubImgRotate4 linear 10s infinite;
   25%{translate: 0 0;}
    50%{translate: 0 -20px;}
   100%{translate: 0 -40px;}
+}@keyframes SeoAnn4
+{
+  0%{translate: 0 -60px;}
+   25%{translate: 0 -20px;}
+  50%{translate: 0 -40px;}
+    100%{translate: 0 0;}
 }
 
 
@@ -548,22 +543,23 @@ animation: HerosubImgRotate4 linear 10s infinite;
     border-radius: var(--radius);
     padding: 3rem 2rem;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-   
+    border: var(--border);
+
 }
 .about-content {
     max-width: 600px;
     margin-bottom: 3rem;
     color: #ffffff;
 
-   
-   
+
+
 }
 
 .Performance-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-   
+
 }
 
 .Performance-card {
@@ -575,6 +571,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
     text-align: center;
     box-shadow: var(--shadow-md);
     transition: var(--transition-base);
+    border:2px dotted #6366f1;
 }
 
 .Performance-card:hover {
@@ -598,12 +595,14 @@ animation: HerosubImgRotate4 linear 10s infinite;
     background-position: center;
     height:auto;
     border-radius: var(--radius);
-   background-color:transparent;
-   
+    background-color:transparent;
+    /* border:2px dotted #f43f5e; */
+
+
 }#Internship:hover button
 {
 
-  animation:buttonMove 1s ease-in-out 0s 1 forwards; 
+  animation:buttonMove 1s ease-in-out 0s 1 forwards;
 
 }
 @keyframes buttonMove
@@ -617,7 +616,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
   opacity: 0.2;
    }
   70%{background-color:var(--hoverbg);
- 
+
   opacity: 0.6;
    }
   100%{background-color:var(--primary-color);
@@ -633,28 +632,83 @@ animation: HerosubImgRotate4 linear 10s infinite;
   background-color:white;
   height:100%;
   border-radius: var(--radius);
- 
-}.IHero button
+
+}.IHero img
+{
+  height: 90%;
+  width: 100%;
+}
+
+.IHero button
 {
   outline: none;
-  border: none;
   background-color: var(--primary-color);
   border:var(--border);
   border-radius: var(--radius);
   color: rgb(255, 255, 255);
-  height:40px;
+  height:45px;
   width:20%;
   font-size: 1.0rem;
   align-items: center;
   align-content: center;
-  transition: background-color s ease, transform 0.8s ease;
+  transition:10s ease;
   opacity: 0;
   box-shadow:2px 2px 12px rgb(255, 255, 255);
-  z-index: 100;
-}main{
+  z-index:100;
+}
+
+main{
   opacity:1;
 
 }
+/* FAQ style start here -------------------------------*/
+.faq-section {
+  padding:2rem 3rem;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius);
+  color: var(--bg-light);
+  box-shadow:var(--shadow);
+  border: var(--border);
+}
+
+.faq-section h2 {
+  text-align:left;
+  margin-bottom: 30px;
+}
+
+.faq {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding-right: 25px;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq.active .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  color: #060000;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+}
+/* FAQ style end here -------------------------------*/
  #btn1
 {
   padding: 12px 12px;
@@ -681,8 +735,17 @@ animation: HerosubImgRotate4 linear 10s infinite;
   display: none;
   border-radius: 50%;
   border:var(--border);
-  
-}.Footer
+
+} #btn1:hover
+{
+  background-color: var(--hoverbg);
+}#btn2:hover
+{
+  background-color: var(--hoverbg);
+}
+
+
+.Footer
 {
   height:auto;
   background-color:rgb(54, 51, 51);
@@ -693,7 +756,12 @@ animation: HerosubImgRotate4 linear 10s infinite;
   height:50px;
   margin-top:12px;
   padding: 1rem 0;
-  
+
+}.contact a
+
+{
+  color: white;
+  padding: 2px 5px;
 }
 
 #quicklinks a
@@ -702,8 +770,8 @@ animation: HerosubImgRotate4 linear 10s infinite;
   text-decoration: none;
   display:inline;
   padding: 2rem 1rem 1rem 0;
-  
-}#quicklinks a:hover
+
+}#quicklinks , #Sociallinks a:hover
 {
   color: rgb(170, 167, 163);
 }
@@ -714,7 +782,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
   margin-top: 12px;
 }#Sociallinks a
 {
-  
+
   padding: 0.5rem 1rem 0.5rem 0;
   font-size: 30px;
   color: var(--bg-light);
@@ -729,7 +797,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
 @media screen and (max-width:700px)
 {
   body{
-    padding: 10px;
+      padding:10px 10px;
   }
   /* For all Mobile  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -745,7 +813,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
   width:100%;
 }
   .topnav {
- 
+
   height:auto;
 }
 
@@ -793,9 +861,6 @@ animation: HerosubImgRotate4 linear 10s infinite;
    margin: auto;
    box-shadow: 1px 2px 50px white;
    border-right: 6px solid black;
- 
-  
-  
 }
 #Main
 {
@@ -804,76 +869,16 @@ animation: HerosubImgRotate4 linear 10s infinite;
   margin:25px;
   border-radius: 50%;
   box-shadow: 1px 1px 50px rgb(20, 17, 17);
-
 }
-
-.HerosubImg1
+.HerosubImg1 ,.HerosubImg2 ,.HerosubImg3 ,.HerosubImg4
 {
-position: absolute;
-background-color:#f43f5e;
-margin:0 0 0 -20%;
 height:40px;
 font-size:10px;
 padding:0;
 width: 75px;
-border-radius:20px 20px 0 20px;
-animation: HerosubImgRotate1 linear 10s infinite;
-align-items: center;
-align-content: center;
-box-shadow: 1px 2px 50px black;
-border:var(--border);
-
-}
-.HerosubImg2
-{
-position: absolute;
-background-color:#6366f1;
-margin:0 0 0 80%;
-height:40px;
-font-size:10px;
-padding:0;
-width: 75px;
-border-radius:20px 20px 20px 0;
-animation: HerosubImgRotate2 linear 10s infinite;
-align-items: center;
-align-content: center;
-box-shadow: 1px 2px 50px black;
-border:var(--border);
-}
-.HerosubImg3
-{
-position: absolute;
-background-color:#f43f5e;
-margin:90% 0 80% 80%;
-height:40px;
-font-size:10px;
-padding:0;
-width: 75px;
-border-radius:0 20px 20px 20px;
-animation: HerosubImgRotate3 linear 10s infinite;
-align-items: center;
-align-content: center;
-box-shadow: 1px 2px 50px black;
-border:var(--border);
-}
-.HerosubImg4
-{
-position: absolute;
-background-color:#6366f1;
-margin:90% 0 0 -20%;
-height:40px;
-font-size:10px;
-padding:0;
-width: 75px;
-border-radius:20px 0 20px 20px;
-animation: HerosubImgRotate4 linear 10s infinite;
-align-items: center;
-align-content: center;
-box-shadow: 1px 2px 50px black;
-border:var(--border);
 }
 .hero h1 {
-  font-size:1.9rem;
+  font-size:1.75rem;
   margin-bottom: 0;
   width: 90%;
   margin: 0px 5%;
@@ -883,9 +888,7 @@ border:var(--border);
   font-size:var(--pSize);
   margin-bottom: 0;
   margin: 0px 5%;
- 
 }
-
 .hero h4 {
   font-size:0.8rem;
   margin-top:35px;
@@ -898,29 +901,27 @@ border:var(--border);
 /* Assignment section--------------------------------------------------------------------------------------------------------------------  */
 #Assignment
 {
- 
- padding: 30px;
-  padding-bottom: 0;
+
+  padding:3rem 2rem;
   justify-content: center;
   border-radius: var(--radius);
   margin-bottom: 40px;
   word-wrap: inherit;
   text-align: center;
   box-shadow: var(--shadow);
-  height:720px;
   align-items: center;
   align-content: center;
-  transition-delay: 10s;
+  height: auto;
 }
 /* Assignment box buttons  */
-    
+
 #Assignment a
 {
 
   height:40px;
   width:80%;
   font-size: 1.1rem;
-  margin-left:10%;
+  margin-left:8%;
   margin-top:4vh;
   cursor: pointer;
   text-align: center;
@@ -930,27 +931,36 @@ border:var(--border);
   background-color: #ffffff;
   transform:scale(1.0);
   text-decoration: overline;
- 
-  
+
+
 }
  /* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
+ .seoSection{
+  height: auto;
+ }
 .typeSeo
 {
-  height: 30px;
+  height:50px;
   width:200px;
+  border-radius: 0 20% 20% 0;
   margin-left:-10px;
   background-color: red;
   transform:none;
   display:block;
   margin-bottom:0;
   margin-top: 50px;
+  box-shadow:none;
 
+}#Explorbtn2
+
+{
+  display: none;
 }
 
 /* -- SEO service CTA section end here ------------------------------------------------------------------------------------------------ */
 #Service-demo p {
   font-size:var(--pSize);
- 
+
 }
 
 /* ------------------------------portfolio slider  -------------------------------------------------------------------------*/
@@ -965,28 +975,29 @@ border:var(--border);
       position: relative;
       touch-action: pan-y;
     }
-   
+
 .numbers {
       margin-top: 12px;
     }
 
     .num-btn {
-  
+
       padding: 1px 6px;
     border-radius: var(--radius);
-    
+
     }
-    
+
+
     #Internship
     {
       height:auto;
-    } 
+    }
     .IHero button
 {
   width:80%;
   font-size: 0.8rem;
- 
- 
+
+
 }@keyframes buttonMove
 {
   0%{background-color:#f43f5e;;
@@ -998,7 +1009,7 @@ border:var(--border);
   opacity: 0.2;
    }
   70%{background-color:var(--hoverbg);
- 
+
   opacity: 0.6;
    }
   100%{background-color:var(--primary-color);
@@ -1030,7 +1041,7 @@ border:var(--border);
   font-size: 1.5rem;
   font-weight: bolder;
   display: none;
-  
+
 }#quicklinks
 {
   height: auto;
@@ -1052,10 +1063,40 @@ border:var(--border);
 }
 }
 
+@media screen and (min-width: 450px) and (max-width:1000px)
+{
+.Logo
+{
+  height: 100px;
+  width:48vw;
+}.Logo img
+{
+  height:100px;
+  width:100%;
+}#quicklinks a
+{
+  color: var(--bg-light);
+  text-decoration: none;
+  display:inline;
+  padding: 2rem 1rem 1rem 1rem;
 
-
-<<<<<<< HEAD:style.css
-=======
 
 }
->>>>>>> ced6a15bdc38ba3954a6ab78ed1d1a2a5856602e:Style.css
+}
+@media screen and (min-width: 701px) and (max-width:780px)
+{
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  outline: none;
+  border: none;
+}
+
+}
+
+

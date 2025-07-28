@@ -1,21 +1,36 @@
 
-  // Mobile navbar toggler 
-function myFunction() {
+
+ // animated cursor -----------------------------------------------
+
+var cursor=document.querySelector(".cursor");
+
+document.addEventListener("mousemove",(e)=>
+{
+  let x=e.pageX;
+  let y=e.pageY;
+  cursor.style.top = y+"px";
+  cursor.style.left = x+"px";
+})
+// animated cursor end ----------------------------------------------------
+
+
+function myFunction()
+{
   var x = document.getElementById("myTopnav");
   // var y = document.getElementsByClassName("icon").InnerText="&times";
   if (x.className === "topnav") {
     x.className += " responsive";
-  
+
 
   } else {
     x.className = "topnav";
   }
 }
 
-  
-    
+
+
   function copyLink(relativePath) {
-    // window.location.origin + "/MYPHP/CRUD/" + 
+    // window.location.origin + "/MYPHP/CRUD/" +
     const baseURL = relativePath;
     navigator.clipboard.writeText(baseURL).then(() => {
       alert("Copied blog link to clipboard!");
@@ -106,9 +121,9 @@ function Checkmobfun()
   return false;
 }
 }
-    
 
-// incresase count of numbers 
+
+// incresase count of numbers
 function changCount() {
   let count1 = 0;
   let count2 = 0;
@@ -143,17 +158,14 @@ function changCount() {
 
 
 // to display popup box ................................................................................................
-// setTimeout(function()
-// {
-// document.querySelector("#btn1").style.display = "block";
-// document.querySelector("#btn2").style.display = "block";
-// document.querySelector("main").style.opacity = "0.3";
-// document.querySelector("main").style.pointerEvents ="none";
+setTimeout(function()
+{
+document.querySelector("#btn1").style.display = "block";
+document.querySelector("#btn2").style.display = "block";
+document.querySelector("main").style.opacity = "0.3";
+document.querySelector("main").style.pointerEvents ="none";
 
-
-
-
-// },10000)
+},4000)
 
 // to remove cancel popup box ................................................................................................
 function RemoveIpop()
@@ -164,14 +176,29 @@ function RemoveIpop()
   document.querySelector("main").style.pointerEvents ="fill";
 }
 
-// animated cursor -----------------------------------------------
 
-  const cursor=document.querySelector(".cursor");
-  document.addEventListener("mousemove",(e)=>
-{
-  let x=e.pageX;
-  let y=e.pageY;
-  cursor.style.top = y+"px";
-  cursor.style.left = x+"px";
+
+/* FAQ script start here -------------------------------*/
+ document.addEventListener("DOMContentLoaded", () => {
+  const faqs = document.querySelectorAll(".faq");
+
+  faqs.forEach(faq => {
+    faq.querySelector(".faq-question").addEventListener("click", () => {
+      faq.classList.toggle("active");
+
+      const answer = faq.querySelector(".faq-answer");
+      const isVisible = faq.classList.contains("active");
+      answer.style.display = isVisible ? "block" : "none";
+
+      // Close other FAQs
+      faqs.forEach(otherFaq => {
+        if (otherFaq !== faq) {
+          otherFaq.classList.remove("active");
+          otherFaq.querySelector(".faq-answer").style.display = "none";
+        }
+      });
+    });
+  });
 });
-// animated cursor end ----------------------------------------------------
+/* FAQ script end here -------------------------------*/
+

@@ -2,15 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../Style.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
   <!-- cdns -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
- 
-<<<<<<< HEAD
-=======
- <link rel="stylesheet" href="Style.css" type="text/css">
->>>>>>> ced6a15bdc38ba3954a6ab78ed1d1a2a5856602e
+
+
   <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
@@ -18,27 +14,26 @@
 <link rel="manifest" href="../favicon_io/site.webmanifest">
 </head>
 <body>
-    <!-- animated cursor ------------------->
- <div class="cursor">
-  
- </div>
- <script>
-  const cursor=document.querySelector(".cursor");
-  document.addEventListener("mousemove",(e)=>
-{
-  let x=e.pageX;
-  let y=e.pageY;
-  cursor.style.top = y+"px";
-  cursor.style.left = x+"px";
-});
- </script>
+
+  <!-- animated cursor ------------------->
+ <div class="cursor"></div>
 <!-- animated cursor end ---------------->
+
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
-      <div class="Logo"><img src="Images/L.svg" title="CampusXchange Logo"></div>
+      <div class="Logo"><img src="Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
    </header>
 <div class="topnav" id="myTopnav">
   <a href="Index.html" class="active">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Services/Webdevelopment.html">Website Development</a>
+      <a href="Services/SEO.html">SEO</a>
+    </div>
+  </div>
    <div class="dropdown">
     <button class="dropbtn">Handouts
       <i class="fa fa-caret-down"></i>
@@ -48,47 +43,56 @@
       <a href="Handouts/Blog.html">Blogs</a>
       <a href="Handouts/Assignment.html">Programming Assignment</a>
     </div>
-  </div> 
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Services/Webdevelopment.html">Website Development</a>
-      <a href="Services/SEO.html">SEO</a>
-    </div>
-  </div> 
+  </div>
   <a href="Internship.html" style="background-color: #555;"> Mentorship & Internship</a>
   <a href="About.html">About</a>
   <a href="Lettalk.html">Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+ <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <br>
  <!-- fotter section  --------------------------------------------------------------------------------->
         <section class="Footer">
- <div class="fbox" id="lastfooter"><br><h2>CampusXchange
- </h2>
-<h3>Our Mission:</h3>
-<p>Our mission is to empower students with the knowledge and skills necessary to succeed in their academic and professional endeavors. At Paramount Coaching, we believe in fostering a strong learning environment that promotes holistic development</p>
+ <div class="fbox" id="lastfooter"><br>
+  <h3>CampusXchange</h3>
+<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to realtime tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
    <br>
     <hr>
 </div>
-<br>
-     <div  id="quicklinks"><h2>Quick links</h2>
-        <a href="Index.html">Home</a>      
-        <a href="Handouts/">Notes</a>
-        <a href="Handouts/Blog.html">Blogs</a>
-        <a href="Handouts/Assignment.html">Programming Assignment</a>
-        <a href="Services/Webdevelopment.html">Website Development</a>
-        <a href="Services/SEO.html">SEO</a>
-        <a href="Internship.html">Mentorship & Internship</a>
-        <a href="About.html">About</a>
-        <a href="Lettalk.html">Let's Talk</a>
-        
+     <h3>Quick Links-</h3>
+     <div  id="quicklinks">
+        <a href="#">Home</a>
+        <a href="#about-section">Notes</a>
+        <a href="#Courses-section">Blogs</a>
+        <a href="#Results-section">Assignment</a>
+        <a href="#Contact-section">Website Development</a>
+        <a href="#Contact-section">SEO</a>
+        <a href="#Contact-section">Internship</a>
+        <a href="#Contact-section">About us</a>
+        <a href="#Contact-section">Let's Talk</a>
+
       </div>
- 
-        </section>  
-        <!-- fotter section end  --------------------------------------------------------------------------------->  
+      <h3>Let's Connect!</h3>
+      <div class="contact">
+        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
+        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
+        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-location-dot"></i></a> &nbsp;Kishanganj ,Bihar(855115)
+      </div>
+
+      <div  id="Sociallinks">
+        <a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
+
+      </div>
+         <div  id="CopyRight">
+       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team
+      </div>
+
+
+        </section>
+        <!-- fotter section end  --------------------------------------------------------------------------------->
+         <script src="script.js"></script>
 </body>
 </html>
