@@ -26,7 +26,7 @@ body {
   font-family: var(--font-main);
   background-color: var(--bg-light);
   color: var();
-  padding:15px 30px;
+  padding:15px 40px;
   line-height: 1.6;
   scroll-behavior: smooth;
   scroll-snap-stop: always;
@@ -82,7 +82,7 @@ header
   font-size: 3rem;
   font-style: italic;
   background-color:#6366f1;
-  /* border-radius:var(--radius); */
+  border-radius:var(--radius);
 }.Logo
 {
   height: 100px;
@@ -400,10 +400,10 @@ animation: HerosubImgRotate4 linear 10s infinite;
       overflow: hidden;
       margin: 1% auto;
       border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
       position: relative;
       touch-action: pan-y;
-      border: var(--border);
+      /* border: var(--border); */
 
     }
 
@@ -419,6 +419,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
       height: 250px;
       /* object-fit: cover; */
       flex-shrink: 0;
+
     }
 
     .numbers {
@@ -709,6 +710,7 @@ main{
   transition: all 0.3s ease-in-out;
 }
 /* FAQ style end here -------------------------------*/
+/* whatsapp , inter , remove btns for all pages ----- */
  #btn1
 {
   padding: 12px 12px;
@@ -740,6 +742,45 @@ main{
 {
   background-color: var(--hoverbg);
 }#btn2:hover
+{
+  background-color: var(--hoverbg);
+}#whatsappbtn
+{
+  background-color:rgb(255, 255, 255);
+  position:fixed;
+  top: 85%;
+  left:4%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+ font-weight: bolder;
+  display:block;
+  border-radius: 50%;
+  border:var(--border);
+}#whatsappbtn img{
+  height: 57px;
+  width: 57px;
+}#whatsappbtn:hover
+{
+  background-color: var(--hoverbg);
+}#movebtn
+{
+  background-color:rgb(255, 255, 255);
+  position:fixed;
+  top: 85%;
+  left:90%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  display:none;
+  border:var(--border);
+  border-radius: 50%;
+  padding:3px;
+}#movebtn img{
+  height:50px;
+  width:50px;
+}#whatsappbtn:hover
 {
   background-color: var(--hoverbg);
 }
@@ -969,11 +1010,24 @@ width: 75px;
       height: 200px;
       overflow: hidden;
       margin: 1% -50px;
-     display: inline-block;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: inline-block;
       position: relative;
       touch-action: pan-y;
+    }
+     .slider-images {
+      display: flex;
+      transition: transform 0.8s ease-in;
+      height: 100%;
+      width: 250px;
+      height:200px;
+
+    }
+
+    .slider-images img {
+      width: 250px;
+      height:200px;
+      /* object-fit: cover; */
+      flex-shrink: 0;
     }
 
 .numbers {
@@ -1020,29 +1074,40 @@ width: 75px;
  #btn1
 {
   padding: 12px 12px;
-  background-color: var(--primary-color);
-  color: var(--card-bg);
   font-size: 1rem;
-  position:fixed;
   top: 90%;
   right:10.5%;
-  border-radius: var(--radius);
-  border: 1px solid var(--secondary-color);
-  display: none;
 }
  #btn2
 {
   padding: 8px 15px;
-  background-color:transparent;
-  color:rgb(244, 72, 72);
-  position:fixed;
   top: 80%;
   left: 70%;
   font-size: 1.5rem;
-  font-weight: bolder;
-  display: none;
 
-}#quicklinks
+
+}#whatsappbtn
+{
+  top: 85%;
+  left:10%;
+  height:55px;
+  width:55px;
+}#whatsappbtn img{
+  height:50px;
+  width:50px;
+
+}
+#movebtn
+{
+  top:85%;
+  left:77%;
+  height:55px;
+  width:55px;
+}#movebtn img{
+  height:45px;
+  width:45px;
+}
+#quicklinks
 {
   height: auto;
 }

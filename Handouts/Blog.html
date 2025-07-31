@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../Style.css" type="text/css">
+<link rel="stylesheet" href="../style.css" type="text/css">
 <!-- cdn-->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -23,7 +23,7 @@
   --darktext-color:white;
   --card-bg: #f3eded;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 12px;
+  --radius: 0px;
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#555;
   --pSize:0.9rem;
@@ -77,9 +77,10 @@
       padding: 1rem 1.2rem;
       font-size: 1.1rem;
       text-align: left;
-      border: none;
+      border:var(--border);
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition:0.3s ease;
+      border-radius: var(--radius);
     }
 
     .blog-toggle:hover {
@@ -153,17 +154,17 @@
 <!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-    <div class="Logo"><img src="../Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+    <div class="Logo"><img src="../images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
   </header>
 <div class="topnav" id="myTopnav">
-  <a href="../Index.html" class="active">Home</a>
+  <a href="../index.html" class="active">Home</a>
    <div class="dropdown">
     <button class="dropbtn">Services
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="../Services/Webdevelopment.html">Website Development</a>
-      <a href="../Services/SEO.html">SEO</a>
+      <a href="../services/webdevelopment.html">Website Development</a>
+      <a href="../services/seo.html">SEO</a>
     </div>
   </div>
   <div class="dropdown">
@@ -171,14 +172,14 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="Notes.html">Notes</a>
-      <a href="Blog.html"  style="background-color: #555;">Blogs</a>
-      <a href="Assignment.html">Programming Assignment</a>
+      <a href="notes.html">Notes</a>
+      <a href="blog.html"  style="background-color: #555;">Blogs</a>
+      <a href="assignment.html">Programming Assignment</a>
     </div>
   </div>
-  <a href="../Internship.html">Mentorship & Internship</a>
-  <a href="../About.html">About</a>
-  <a href="../Lettalk.html">Let's Talk</a>
+  <a href="../internship.html">Mentorship & Internship</a>
+  <a href="../about.html">About</a>
+  <a href="../aettalk.html">Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
@@ -228,6 +229,7 @@ But how exactly is AI impacting student learning, and what does it mean for you?
     });
   </script>
 </main>
+<button id="movebtn" onclick="topFunction()"> <img src="../Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
 <br>
 <br>
  <!-- fotter section  --------------------------------------------------------------------------------->
@@ -240,16 +242,15 @@ But how exactly is AI impacting student learning, and what does it mean for you?
 </div>
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
-        <a href="#">Home</a>
-        <a href="#about-section">Notes</a>
-        <a href="#Courses-section">Blogs</a>
-        <a href="#Results-section">Assignment</a>
-        <a href="#Contact-section">Website Development</a>
-        <a href="#Contact-section">SEO</a>
-        <a href="#Contact-section">Internship</a>
-        <a href="#Contact-section">About us</a>
-        <a href="#Contact-section">Let's Talk</a>
-
+      <a href="../index.html" class="active">Home</a>
+      <a href="../services/webdevelopment.html">Website Development</a>
+      <a href="../services/seo.html">SEO</a>
+      <a href="notes.html">Notes</a>
+      <a href="blog.html"  style="background-color: #555;">Blogs</a>
+      <a href="assignment.html">Programming Assignment</a>
+      <a href="../internship.html">Mentorship & Internship</a>
+      <a href="../about.html">About</a>
+      <a href="../aettalk.html">Let's Talk</a>
       </div>
       <h3>Let's Connect!</h3>
       <div class="contact">
@@ -274,5 +275,6 @@ But how exactly is AI impacting student learning, and what does it mean for you?
         <!-- fotter section end  --------------------------------------------------------------------------------->
 
 <script src="../script.js"></script>
+
 </body>
 </html>

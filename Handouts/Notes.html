@@ -1,7 +1,7 @@
 
-<?php include '../Conn.php';?>
+<?php include '../conn.php';?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange</title>
@@ -10,8 +10,8 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../Style.css" type="text/css">
-<link rel="stylesheet" href="../Styles/Note.css" type="text/css">
+<link rel="stylesheet" href="../style.css" type="text/css">
+<link rel="stylesheet" href="../styles/note.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
@@ -26,7 +26,7 @@
 <!-- animated cursor end ---------------->
    <!--Note page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
   </header>
 <div class="topnav" id="myTopnav">
   <a href="../index.html" class="active">Home</a>
@@ -35,8 +35,8 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="../Services/Webdevelopment.html">Website Development</a>
-      <a href="../Services/SEO.html">SEO</a>
+      <a href="../services/webdevelopment.html">Website Development</a>
+      <a href="../services/sEO.html">SEO</a>
     </div>
   </div>
   <div class="dropdown">
@@ -44,14 +44,14 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="Notes.html" style="background-color: #555;">Notes</a>
-      <a href="Blog.html">Blogs</a>
-      <a href="Assignment.html">Programming Assignment</a>
+      <a href="notes.html" style="background-color: #555;">Notes</a>
+      <a href="blog.html">Blogs</a>
+      <a href="assignment.html">Programming Assignment</a>
     </div>
   </div>
-  <a href="../Internship.html">Mentorship & Internship</a>
-  <a href="../About.html">About</a>
-  <a href="../Lettalk.html">Let's Talk</a>
+  <a href="../internship.html">Mentorship & Internship</a>
+  <a href="../about.html">About</a>
+  <a href="../lettalk.html">Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
@@ -59,6 +59,7 @@
 
 <!------Notes section start -------------------------------------------------------------->
 <!--Search box --------------------------------------------------------------------------->
+<main>
  <section  id="NotesContent">
       <br>
     <h1>Notes</h1>
@@ -178,8 +179,35 @@ else
     Ideal for students, beginners, and self-learners prepping for interviews or projects.
   </p>
 
-  <a href="Assignment.html" class="explore-notes-btn">Explore Coding Assignments →</a>
+  <a href="assignment.html" class="explore-notes-btn">Explore Coding Assignments →</a>
 </section>
+</main>
+<a href="Internship.html" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
+<button id="btn2" onclick="RemoveIpop()">&times;</button>
+<button id="whatsappbtn"><img src="../Images/whatsapp-logo.png" alt="whatsapp-logo Image"></button>
+
+<script>
+
+// to display popup box ................................................................................................
+setTimeout(function()
+{
+document.querySelector("#btn1").style.display = "block";
+document.querySelector("#btn2").style.display = "block";
+document.querySelector("main").style.opacity = "0.3";
+document.querySelector("main").style.pointerEvents ="none";
+
+},10000)
+
+// to remove cancel popup box ................................................................................................
+function RemoveIpop()
+{
+  document.querySelector("#btn1").style.display = "none";
+  document.querySelector("#btn2").style.display = "none";
+  document.querySelector("main").style.opacity = "1";
+  document.querySelector("main").style.pointerEvents ="fill";
+}
+
+</script>
       <!-- fotter section  --------------------------------------------------------------------------------->
         <section class="Footer">
  <div class="fbox" id="lastfooter"><br>
@@ -191,14 +219,14 @@ else
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
   <a href="../index.html" >Home</a>
-  <a href="Notes.html" style="background-color: #757c76; padding: 4px;">Notes</a>
-  <a href="Blog.html">Blogs</a>
-  <a href="Assignment.html">Programming Assignment</a>
-  <a href="../Services/Webdevelopment.html">Website Development</a>
-  <a href="../Services/SEO.html">SEO</a>
-  <a href="../Internship.html">Mentorship & Internship</a>
-  <a href="../About.html">About</a>
-  <a href="../Lettalk.html">Let's Talk</a>
+  <a href="notes.html" style="background-color: #757c76; padding: 4px;">Notes</a>
+  <a href="blog.html">Blogs</a>
+  <a href="assignment.html">Programming Assignment</a>
+  <a href="../services/webdevelopment.html">Website Development</a>
+  <a href="../services/seo.html">SEO</a>
+  <a href="../internship.html">Mentorship & Internship</a>
+  <a href="../about.html">About</a>
+  <a href="../lettalk.html">Let's Talk</a>
       </div>
       <h3>Let's Connect!</h3>
       <div class="contact">
