@@ -1,16 +1,14 @@
 :root {
   --primary-color: #6366f1; /* Indigo */
   --secondary-color: #f43f5e; /* Rose */
-  /* --primary-color: #7DA56C;
-  --secondary-color: #e9b003;  */
   --bg-light: #f9fafb;
   --text-color: #1f2937;
   --card-bg: #f3eded;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   --radius: 0px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#555;
-   --border:2px dotted white;
+  --hoverbg :#f43f5e; /* Rose */
+  --border:none;
 }
 
 /*  Notes  section ------------------------------------------------------------------------------------------------------------- */
@@ -20,6 +18,11 @@
   background-color: #ffffff;
   padding:2rem 3rem;
 
+}#NotesContent h1
+{
+
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -37,7 +40,7 @@ input[type="text"]:focus {
 }button[type="submit"]
 {
   height:52px;
-  width: 100px;
+  width: 110px;
   font-size: 20px;
   border-radius:14px;
   outline: none;
@@ -45,8 +48,9 @@ input[type="text"]:focus {
 }
 
 button[type="submit"]:hover {
-  background-color:var(--hoverbg);
+  background-color:var(--secondary-color);
   transform: translateY(-2px);
+  color: white;
 
 }
 
@@ -57,7 +61,8 @@ button[type="submit"]:hover {
   margin-bottom: 30px;
   box-shadow: var(--shadow);
   transition: transform 0.2s;
-   border: var(--border);
+  border: 0;
+
 }
 
 .Note_box:hover {
@@ -94,7 +99,6 @@ button[type="submit"]:hover {
   font-size:17px;
   font-family: var(--font-main);
   background-color:transparent;
-  border: none;
   border-radius: var(--radius);
   margin-top:5px;
   resize: none;
@@ -106,14 +110,14 @@ button[type="submit"]:hover {
   margin: 60px auto;
   background-color: #fefefe;
   padding:2rem 3rem;
-  border-radius: 12px;
+  border-radius:var(--radius);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   font-family: 'Segoe UI', sans-serif;
 }
 
 .notes-section h2 {
   font-size: 30px;
-  color: #000000;
+  color: var(--primary-color);
   margin-bottom: 20px;
   text-align: left;
 }
@@ -142,14 +146,12 @@ button[type="submit"]:hover {
   color: #fff;
   padding: 12px 24px;
   text-decoration: none;
-  border-radius: 8px;
-  border: var();
   font-size: 15px;
   margin-top: 15px;
-   border: var(--border);
+
 }
 .explore-notes-btn:hover {
-  background:var(--hoverbg);
+  background:var(--secondary-color);
 }
 /* ........................................................................... */
 

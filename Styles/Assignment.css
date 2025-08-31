@@ -12,9 +12,10 @@
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   --radius: 0px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#555;
+  --hoverbg :#f43f5e; /* Rose */
+  --transition-base: 0.3s;
   --pSize:0.9rem;
-  --border:2px dotted white;
+  --border:none;
 }
 #Assignment a
 {
@@ -91,7 +92,7 @@ padding-left:50px;
 }#basic-project h2{
     text-align: left;
     padding-left: 2rem;
-   color: #100e0e;
+   color: var(--primary-color);
    height: 40px;
 }.demoview
 {
@@ -112,17 +113,20 @@ padding-left:50px;
       border-bottom: 5px solid #6366f1;
     color: #000000;
     box-shadow:2px 2px 5px black;
+    overflow: hidden;
 }.project-photo
 {
     background-color:transparent;
     height:60%;
     width: 100%;
+    overflow: hidden;
 }.project-photo img
 {
     height: 100%;
     width: 100%;
     border-radius:14px 14px 0 0;
     border: 4px solid rgb(255, 255, 255);
+    filter: grayscale();
 }.basic-project-box h3{
     text-align: left;
     padding: 10px;
@@ -178,6 +182,15 @@ background-color: #6366f1;
 .basic-project-box:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+}.basic-project-box:hover img
+{
+    transform: scale(1.2);
+    transition: 0.3s;
+      filter: grayscale(0);
+}.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 
@@ -187,6 +200,9 @@ background-color: #6366f1;
 #Assignment a
 {
     display: block;
+}#Assignment a:hover
+{
+  background-color: #f43f5e;
 }
 .marquee img
   {

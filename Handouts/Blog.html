@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Primary Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blogs | CampusXchange</title>
+  <meta name="title" content="Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange">
+  <meta name="description" content="CampusXchange Notes — Programming, AI, Data Science, Web Dev, ML notes curated for students and developers. Free, easy to read, and exam‑ready.">
+  <meta name="keywords" content="programming notes for students, python data science notes free, machine learning cheat sheet pdf, AI notes for beginners, web development notes 2025, ML interview prep notes, DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
+  <meta name="author" content="CampusXchange"/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
+  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
+  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
+  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
+  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+
+<!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <!-- cdn-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
  <style>
 
 :root {
@@ -25,9 +46,9 @@
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   --radius: 0px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#555;
+  --hoverbg :#f43f5e; /* Rose */
   --pSize:0.9rem;
-  --border:2px dotted white;
+  --border:none;
 }
   * {
       box-sizing: border-box;
@@ -154,17 +175,17 @@
 <!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-    <div class="Logo"><img src="../images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+    <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
   </header>
 <div class="topnav" id="myTopnav">
-  <a href="../index.html" class="active">Home</a>
+  <a href="../home" class="active">Home</a>
    <div class="dropdown">
     <button class="dropbtn">Services
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="../services/webdevelopment.html">Website Development</a>
-      <a href="../services/seo.html">SEO</a>
+      <a href="../services/web-development">Website Development</a>
+      <a href="../services/seo">SEO</a>
     </div>
   </div>
   <div class="dropdown">
@@ -172,14 +193,14 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="notes.html">Notes</a>
-      <a href="blog.html"  style="background-color: #555;">Blogs</a>
-      <a href="assignment.html">Programming Assignment</a>
+      <a href="notes">Notes</a>
+      <a href="blog"  style="background-color: #555;">Blogs</a>
+      <a href="assignment">Programming Assignment</a>
     </div>
   </div>
-  <a href="../internship.html">Mentorship & Internship</a>
-  <a href="../about.html">About</a>
-  <a href="../aettalk.html">Let's Talk</a>
+  <a href="../internship-program">Mentorship & Internship</a>
+  <a href="../about">About</a>
+  <a href="../lettalk">Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
@@ -194,7 +215,7 @@
       <button class="blog-toggle">How AI is Transforming Student Learning ⯆</button>
       <div class="blog-content">
         <div class="blogmainImg">
-          <img src="../Images/S1.jpg">
+          <img src="../assets/Images/development-services.jpg">
         </div>
         <h3>
           Artificial Intelligence (AI) is no longer a futuristic concept confined to sci-fi movies; it's rapidly reshaping various aspects of our lives, and education is at the forefront of this revolution. For students today, AI isn't just a fancy buzzword – it's becoming an indispensable tool that promises to revolutionize how they learn, study, and prepare for the future.
@@ -229,30 +250,22 @@ But how exactly is AI impacting student learning, and what does it mean for you?
     });
   </script>
 </main>
-<button id="movebtn" onclick="topFunction()"> <img src="../Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
+<button id="movebtn" onclick="movetopFun()"> <img src="../assets/Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
 <br>
 <br>
  <!-- fotter section  --------------------------------------------------------------------------------->
         <section class="Footer">
  <div class="fbox" id="lastfooter"><br>
   <h3>CampusXchange</h3>
-<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to realtime tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
+<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to real-time tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
    <br>
     <hr>
 </div>
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
-      <a href="../index.html" class="active">Home</a>
-      <a href="../services/webdevelopment.html">Website Development</a>
-      <a href="../services/seo.html">SEO</a>
-      <a href="notes.html">Notes</a>
-      <a href="blog.html"  style="background-color: #555;">Blogs</a>
-      <a href="assignment.html">Programming Assignment</a>
-      <a href="../internship.html">Mentorship & Internship</a>
-      <a href="../about.html">About</a>
-      <a href="../aettalk.html">Let's Talk</a>
+    <a href="../home" class="active">Home</a><a href="../services/web-development">Website Development</a><a href="../services/seo">SEO</a> <a href="notes">Notes</a> <a href="blog"  style="background-color: #555;">Blogs</a><a href="assignment">Programming Assignment</a>  <a href="../internship-program">Mentorship & Internship</a>  <a href="../about">About</a>  <a href="../lettalk">Let's Talk</a>
       </div>
-      <h3>Let's Connect!</h3>
+      <br>
       <div class="contact">
         <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
         <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
@@ -267,7 +280,7 @@ But how exactly is AI impacting student learning, and what does it mean for you?
 
       </div>
          <div  id="CopyRight">
-       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team
+       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
       </div>
 
 

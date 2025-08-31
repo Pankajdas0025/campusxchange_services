@@ -1,7 +1,4 @@
-
-
- // animated cursor -----------------------------------------------
-
+// animated cursor --------------------------------------------------------
 var cursor=document.querySelector(".cursor");
 
 document.addEventListener("mousemove",(e)=>
@@ -10,8 +7,7 @@ document.addEventListener("mousemove",(e)=>
   let y=e.pageY;
   cursor.style.top = y+"px";
   cursor.style.left = x+"px";
-})
-// animated cursor end ----------------------------------------------------
+});// animated cursor end ----------------------------------------------------
 
 
 function myFunction()
@@ -26,9 +22,6 @@ function myFunction()
     x.className = "topnav";
   }
 }
-
-
-
   function copyLink(relativePath) {
     // window.location.origin + "/MYPHP/CRUD/" +
     const baseURL = relativePath;
@@ -94,35 +87,6 @@ function myFunction()
     updateSlider();
   });
 
-
-      //POrtfolio  Response form validation .......................................................................................
-
-//valid username ............................................
-function Checknamefun()
-{
-	var Name=document.getElementById("Name").value;
-	if(Name.match(/[0-1]/))
-{
-	alert("Numbers are not allowed");
-  var Name=document.getElementById("Name").value="";
-}
-
-}
-
-
-//valid user mobile number .........................................................................
-function Checkmobfun()
-{
-	var Mobile=document.getElementById("Mobile").value;
-	if(Mobile.length<10 ||Mobile.match(/[a-z]/))
-{
-	alert("Enter a valid Mobile number");
-  var Mobile=document.getElementById("Mobile").value=" ";
-  return false;
-}
-}
-
-
 // incresase count of numbers
 function changCount() {
   let count1 = 0;
@@ -165,7 +129,7 @@ document.querySelector("#btn2").style.display = "block";
 document.querySelector("main").style.opacity = "0.3";
 document.querySelector("main").style.pointerEvents ="none";
 
-},4000)
+},100000)
 
 // to remove cancel popup box ................................................................................................
 function RemoveIpop()
@@ -178,7 +142,7 @@ function RemoveIpop()
 
 
 
-/* FAQ script start here -------------------------------*/
+/*Home page  FAQ script start here -------------------------------*/
  document.addEventListener("DOMContentLoaded", () => {
   const faqs = document.querySelectorAll(".faq");
 
@@ -200,28 +164,63 @@ function RemoveIpop()
     });
   });
 });
-/* FAQ script end here -------------------------------*/
+/* Home Page FAQ script end here -------------------------------*/
 
 
 
-// scroll to top button for all pages..........................
-// Get the button
-let mybutton = document.getElementById("movebtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// webpage client feedback----------------------------------------------
+function Clientfeedback(imgsrc, clientpos, rating , sms)
+{
+  const a = document.querySelector("#clientimg");
+  const b = document.querySelector("#clientpossition");
+  const c = document.querySelector("#clientrating");
+  const d = document.querySelector("#clientfeedback");
+  a.src =imgsrc;
+  b.innerText=clientpos;
+  c.innerText=rating;
+  d.innerText=sms;
 
-function scrollFunction() {
-  if (document.body.scrollTop >1000 || document.documentElement.scrollTop >1000) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+}
+
+function Client1()
+{
+Clientfeedback("../Images/blogscriptown.jpeg","Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");
+
+}
+function Client2()
+{
+  Clientfeedback("../Images/P2.png","CEO/XYZ" ,"⭐⭐⭐⭐" ,  "This is onlyy testu");;
+}
+function Client3()
+{
+Clientfeedback("../Images/P3.png","CEO" ,"⭐⭐" ,  "This is onlyy testu");
+}
+function Client4()
+{
+ Clientfeedback("../Images/P4.png","CEO/XYZ" ,"⭐⭐⭐⭐" ,  "This is onlyy testu");
+}
+
+
+// scroll to top web..........................
+document.addEventListener("DOMContentLoaded", function() {
+  let mybutton = document.getElementById("movebtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (!mybutton) return;
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
+  window.movetopFun = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+});
 
-// When the user clicks on the button, scroll to the top of the document
-function movetopFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+
 
