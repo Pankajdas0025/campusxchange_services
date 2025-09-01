@@ -274,7 +274,7 @@
   <!-- Founder & CEO Section -->
   <section class="founder-section">
     <div class="founder-img">
-      <img src="assets/Images/pankaj-kumar-das.avif" alt="Pankaj Kumar Das, Founder & CEO">
+      <img src="assets/Images/pankaj-kumar-das.jpg" alt="Pankaj Kumar Das, Founder & CEO">
     </div>
     <div class="founder-bio">
       <h2>Pankaj Kumar Das</h2>

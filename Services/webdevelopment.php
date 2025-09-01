@@ -422,10 +422,10 @@ else {
   </div>
 
 <div class="clientslist">
-  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/abhiraj.avif"></button>
-  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/avinash.avif"></button>
-  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/rajneesh.avif"></button>
-  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/banty.avif"></button>
+  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/abhiraj.jpg"></button>
+  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/avinash.jpg"></button>
+  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/rajneesh.jpg"></button>
+  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/banty.jpg"></button>
 </div>
 </div>
 

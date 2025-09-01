@@ -353,7 +353,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conn->prepare("INSERT INTO applied_intern (Name , Email , Whatsapp_No , Domain , Duration , College , Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
 
-    if ($stmt->execute()) {
+        if ($stmt->execute()) {
 
 
     $subject = "CLENT_FORM_TESTING";

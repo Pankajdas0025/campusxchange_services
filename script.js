@@ -185,20 +185,20 @@ function Clientfeedback(imgsrc, clientpos, rating , sms)
 
 function Client1()
 {
-Clientfeedback("../Images/blogscriptown.jpeg","Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");
+Clientfeedback("../assets/imaages/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");
 
 }
 function Client2()
 {
-  Clientfeedback("../Images/P2.png","CEO/XYZ" ,"⭐⭐⭐⭐" ,  "This is onlyy testu");;
+  Clientfeedback("../assets/Images/avinash.jpg", "CEO/GetNotes" ,"⭐⭐⭐⭐" ,  "The Services provide  by Campusxchange is meaning ful");;
 }
 function Client3()
 {
-Clientfeedback("../Images/P3.png","CEO" ,"⭐⭐" ,  "This is onlyy testu");
+Clientfeedback("../assets/Images/rajneesh.jpg", "Own/Memory Pzzle Game" ,"⭐⭐⭐" ,  "Post Development support is very Good");
 }
 function Client4()
 {
- Clientfeedback("../Images/P4.png","CEO/XYZ" ,"⭐⭐⭐⭐" ,  "This is onlyy testu");
+ Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Add" ,"⭐⭐⭐⭐" ,  "The Website desighn id user friendly and it is browser compatability ");
 }
 
 

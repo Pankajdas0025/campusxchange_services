@@ -161,11 +161,59 @@ header
 }
 
 /* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
+  /* home intro first section */
+.homeIntro {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 5px solid #fff;
+  }
+
+  .introContent h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .highlight {
+    background-color: white;
+    color: #6633f1;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  .introContent p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+  }
+
+  .ctaBtn {
+    display: inline-block;
+    background-color: white;
+    color: #6633f1;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .ctaBtn:hover {
+    background-color:var(--secondary-color);
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
 
 /* Homepage Hero section ------------------------------------------------------------------------------------------------------------- */
 .hero {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: white;
+  background:transparent;
+  color: rgb(0, 0, 0);
   border-radius: var(--radius);
   margin-bottom: 40px;
   text-align: center;
@@ -301,14 +349,16 @@ animation: HerosubImgRotate4 linear 10s infinite;
 
 /* Individual Button Styling */
 .assignment-buttons a {
-  padding: 12px 20px;
+  padding: 10px 20px;
   background-color: #6366f1;
+  align-items: center;
+  align-content: center;
   border:var(--border);
-  border-radius:var(--radius);
+  border-radius:10px;
   color: white;
   font-size: 1rem;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   min-width: 160px;
   text-align: center;
 }
@@ -316,7 +366,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
 .assignment-buttons a:hover {
   background-color: var(--hoverbg);
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
 }
 /* section to display my core services in a single frame  */
 .All-services
@@ -372,6 +422,7 @@ opacity: 0;
 background-color: #ffffff;
 color: var(--primary-color);
 transition: height 1.2s ease-in-out;
+border-radius:0 0 15px 15px;
 padding: 10px 30px;
 }.service-type:hover .service-type-content
 
@@ -411,8 +462,8 @@ padding: 10px 30px;
   outline: none;
   border: none;
   background-color: var(--primary-color);
- border:var(--border);
-  border-radius: var(--radius);
+  border:var(--border);
+  border-radius:10px;
   color: rgb(255, 255, 255);
   height:40px;
   width:180px;
@@ -420,13 +471,16 @@ padding: 10px 30px;
   align-items: center;
   align-content: center;
   cursor: pointer;
-  transition: background-color s ease, transform 0.8s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }#Explorbtn:hover
 {
   background-color: var(--hoverbg);
+  transform: scale(1.05);
 } #Explorbtn2:hover
 {
   background-color: var(--hoverbg);
+  transform: scale(1.05);
 }
 /* ------------------------------Service-demo slider  -------------------------------------------------------------------------*/
 .slider-box {
@@ -697,11 +751,11 @@ padding: 10px 30px;
   outline: none;
   background-color: var(--primary-color);
   border:var(--border);
-  border-radius: var(--radius);
+  border-radius:10px;
   color: rgb(255, 255, 255);
   height:45px;
   width:20%;
-  font-size: 1.0rem;
+  font-size: 1.1rem;
   align-items: center;
   align-content: center;
   transition:10s ease;
@@ -933,7 +987,16 @@ main{
     display: block;
     width: 100%;
     text-align: left;
-  }.HeroImg img
+  }   .introContent h1 {
+      font-size: 2em;
+    }
+
+    .introContent p {
+      font-size: 1em;
+    }
+
+
+  .HeroImg img
 {
   height:200px;
   width:200px;
