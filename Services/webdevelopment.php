@@ -485,7 +485,7 @@ else {
 <!-- Quick links  -->
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
- <a href="../home" class="active">Home</a><a href="web-development" style="background-color: #555;">Website Development</a><a href="seo" >SEO</a><a href="../handouts/notes">Notes</a><a href="../handouts/blog">Blogs</a> <a href="../handouts/assignment">Programming Assignment</a><a href="../internship-program">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
+ <a href="../home" class="active">Home</a><a href="web-development" style="color: #000000ff;">Website Development</a><a href="seo" >SEO</a><a href="../handouts/notes">Notes</a><a href="../handouts/blog">Blogs</a> <a href="../handouts/assignment">Programming Assignment</a><a href="../internship-program">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
       </div>
 <br>
 <!-- contact links  -->

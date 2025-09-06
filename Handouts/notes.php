@@ -245,7 +245,7 @@ function RemoveIpop()
 </div>
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
-<a href="../home" class="active">Home</a><a href="../services/web-development">Website Development</a><a href="../services/seo">SEO</a><a href="notes" style="background-color: #555;">Notes</a> <a href="blog">Blogs</a> <a href="assignment">Programming Assignment</a><a href="../internship">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
+<a href="../home" class="active">Home</a><a href="../services/web-development">Website Development</a><a href="../services/seo">SEO</a><a href="notes" style="color: #0f0b0bff;">Notes</a> <a href="blog">Blogs</a> <a href="assignment">Programming Assignment</a><a href="../internship">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
       </div>
      <br>
       <div class="contact">

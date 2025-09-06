@@ -182,6 +182,7 @@
 }.youtube-section div {
   display: flex;
   justify-content: center;
+  border:2px solid white;
   align-items: center;
   height:80%;
   width: 80%;
@@ -190,7 +191,6 @@
 }.youtube-section div iframe {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   box-shadow: 0 2px 12px rgba(99,102,241,0.08);
 }
 /* Demo Certificate & Projects Section ------------------------------------------------------------*/

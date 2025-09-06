@@ -143,23 +143,26 @@
 
     if(Ifield.value.length > 15 || Ifield.value.length < 10)
     {
-        Error.innerHTML = "Enter  a valied internship ID";
+        Error.innerHTML = "Enter  a valid internship ID";
 
         setTimeout(() => {
          Error.innerHTML = "";
          Ifield.value = "";
          Ifield.style.color = "black";
+           return false;
         }, 2000);
-        return false;
+
     }
     else
     {
-        Error.innerHTML = "Fetching data ....";
+        Error.innerHTML = "<i>Fetching data ....</i>";
         setTimeout(() =>{
         Error.innerHTML = "";
-        }, 2000);
-       return true;
+        document.getElementById("verifyForm").submit(); // form ko 4 sec baad submit karo
+        }, 4000);
+
     }
+    return false;
    }
   </script>
 </section>

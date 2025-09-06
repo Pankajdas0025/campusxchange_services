@@ -2,7 +2,6 @@
 include "src/conn.php";
 include "src/config.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -227,13 +226,15 @@ color: #f43f5e;
     margin: 0.5rem 0;
   }
 
-  .contact-form-box input,textarea,button {
+  .contact-form-box input,textarea{
     width: 80%;
     padding: 0.8rem;
     border: 1px solid #6366f1;
     font-size: 1rem;
     margin:1.5% 10% 1.5% 0%;
-  }.contact-form-box button {
+  }
+
+  .contact-form-box button {
  background-color: #f3eded;
   }
   .contact-form-box button:hover {
@@ -279,7 +280,7 @@ display: block;
     align-items: center;
      gap: 0.5rem;
 
-  };
+  }
     .contact-map, .contact-info {
       min-width: 0;
       width: 100%;
@@ -490,7 +491,7 @@ include("feedback.php");
 <!-- Quick Links  -->
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
- <a href="home" class="active">Home</a> <a href="services/web-development">Website Development</a> <a href="services/seo">SEO</a><a href="handouts/notes">Notes</a><a href="handouts/blog">Blogs</a><a href="handouts/assignment">Programming Assignment</a>  <a href="internship-program">Mentorship & Internship</a>  <a href="about">About</a> <a href="lettalk"  style="background-color: #555;">Let's Talk</a>
+ <a href="home" class="active">Home</a> <a href="services/web-development">Website Development</a> <a href="services/seo">SEO</a><a href="handouts/notes">Notes</a><a href="handouts/blog">Blogs</a><a href="handouts/assignment">Programming Assignment</a>  <a href="internship-program">Mentorship & Internship</a>  <a href="about">About</a> <a href="lettalk"  style="color: #100c0cff;">Let's Talk</a>
      </div>
 <br>
 <!-- Contact Links  -->

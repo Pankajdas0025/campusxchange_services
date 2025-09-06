@@ -377,7 +377,7 @@
 <!-- Quick Links -->
      <h3>Quick Links-</h3>
      <div  id="quicklinks">
-     <a href="home" class="active">Home</a> <a href="services/web-development">Website Development</a>  <a href="services/seo">SEO</a>  <a href="handouts/notes">Notes</a>  <a href="handouts/blog">Blogs</a> <a href="handouts/assignment">Programming Assignment</a>  <a href="internship-program">Mentorship & Internship</a><a href="about" style="background-color: #555;">About</a><a href="lettalk">Let's Talk</a>
+     <a href="home" class="active">Home</a> <a href="services/web-development">Website Development</a>  <a href="services/seo">SEO</a>  <a href="handouts/notes">Notes</a>  <a href="handouts/blog">Blogs</a> <a href="handouts/assignment">Programming Assignment</a>  <a href="internship-program">Mentorship & Internship</a><a href="about" style="color: #1e0b0bff;">About</a><a href="lettalk">Let's Talk</a>
      </div>
     <br>
     <!-- Contact Links -->

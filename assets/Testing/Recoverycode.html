@@ -1,48 +1,151 @@
-<title>Learning, Services & Student Resources - CampusXchange</title>
-<meta name="description" content="Explore CampusXchange for web development, SEO services, notes, assignments, and mentorship to boost your academic and career journey.">
-<meta name="keywords" content="CampusXchange, student resources, web development, SEO services, study notes, mentorship, assignments">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusXchange Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color:#6366f1;--secondary-color:#f43f5e;--bg-light:#f9fafb;
+      --text-dark:#111827;--text-light:#ffffff;--card-bg:#ffffff;
+      --shadow:0 8px 20px rgba(0,0,0,0.1);--radius:12px;
+      --font-main:'Poppins',sans-serif;--hover-bg:#f43f5e;
+    }
+    body {
+      margin:0;padding:0;font-family:var(--font-main);background:var(--bg-light);
+    }
+    .container {
+      max-width:800px;margin:30px auto;padding:20px;background:var(--card-bg);
+      box-shadow:var(--shadow);border-radius:var(--radius);
+    }
+    h2 {
+      color:var(--primary-color);text-align:center;
+    }
+    .question {
+      display:none;
+      margin:20px 0;
+    }
+    .question.active {
+      display:block;
+    }
+    button {
+      background-color:var(--primary-color);color:var(--text-light);
+      border:none;padding:10px 20px;border-radius:var(--radius);
+      cursor:pointer;transition:0.3s;margin:5px;
+    }
+    button:hover {
+      background-color:var(--hover-bg);
+    }
+    #certificate {
+      display:none;margin-top:30px;padding:20px;background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+      color:white;text-align:center;border-radius:var(--radius);
+    }
+    #timer {
+      text-align:center;font-weight:bold;color:var(--secondary-color);margin-bottom:10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Programming & Development Quiz</h2>
+  <div id="timer">Time Left: <span id="time">05:00</span></div>
+  <div id="quiz"></div>
+  <div style="text-align:center;">
+    <button onclick="prevQuestion()">Previous</button>
+    <button onclick="nextQuestion()">Next</button>
+    <button onclick="submitQuiz()">Submit Quiz</button>
+  </div>
 
+  <div id="certificate">
+    <h3>🎉 Congratulations!</h3>
+    <p>You’ve successfully completed the quiz.</p>
+    <p><strong>Certificate of Completion</strong></p>
+    <p>Presented to: <span id="studentName">Student Name</span></p>
+    <button onclick="downloadCertificate()">Download Certificate</button>
+  </div>
+</div>
 
-<title>Professional Web Development Services - CampusXchange</title>
-<meta name="description" content="Get responsive, secure, and SEO-friendly websites tailored to your needs. CampusXchange offers web-development that helps your business grow online.">
-<meta name="keywords" content="web-development, responsive websites, SEO friendly websites, custom web design, CampusXchange development services">
+<script>
+const questions = [
+  { q: "What does HTML stand for?", options: ["Hyper Text Markup Language", "High Tech Machine Logic", "Hyperlinks and Text Markup Language", "Home Tool Markup Language"], correct: 0 },
+  { q: "Which language is used for styling web pages?", options: ["HTML", "JQuery", "CSS", "XML"], correct: 2 },
+  { q: "Which is not a programming language?", options: ["Python", "Java", "HTML", "C++"], correct: 2 },
+  { q: "What does PHP stand for?", options: ["Personal Home Page", "Private Hosting Protocol", "Preprocessed Hypertext Page", "Programmed Hosting Platform"], correct: 0 },
+  { q: "Which tag is used to create a hyperlink in HTML?", options: ["<link>", "<a>", "<href>", "<hyper>"], correct: 1 },
+  { q: "Which company developed Java?", options: ["Microsoft", "Sun Microsystems", "Apple", "Google"], correct: 1 },
+  { q: "What does SQL stand for?", options: ["Structured Query Language", "Simple Query Language", "Sequential Query Logic", "Server Query Language"], correct: 0 },
+  { q: "Which symbol is used for comments in C?", options: ["//", "#", "/* */", "--"], correct: 0 },
+  { q: "Which protocol is used to send email?", options: ["HTTP", "SMTP", "FTP", "POP"], correct: 1 },
+  { q: "Which of these is a frontend framework?", options: ["Laravel", "React", "Node.js", "Django"], correct: 1 },
+  { q: "Which function is used to print in C?", options: ["echo()", "print()", "printf()", "cout<<"], correct: 2 },
+  { q: "Which tag is used for line break in HTML?", options: ["<br>", "<lb>", "<break>", "<newline>"], correct: 0 },
+  { q: "Which method is used to connect MySQL in PHP?", options: ["mysqli_connect()", "mysql_connect()", "connect_db()", "db_connect()"], correct: 0 },
+  { q: "Which language runs in a browser?", options: ["Java", "C", "Python", "JavaScript"], correct: 3 },
+  { q: "Which one is a version control system?", options: ["Git", "Node", "Composer", "Apache"], correct: 0 }
+];
 
+let current = 0;
+let answers = new Array(questions.length).fill(null);
+let timer = 300; // 5 minutes
 
-<title>Expert SEO Services to Rank Higher - CampusXchange</title>
-<meta name="description" content="Drive traffic and improve visibility with our ethical SEO strategies. CampusXchange helps businesses achieve better Google rankings and more leads.">
-<meta name="keywords" content="SEO services, search engine optimization, increase website traffic, Google ranking, digital marketing, CampusXchange SEO">
+function renderQuestion(index) {
+  const quiz = document.getElementById("quiz");
+  quiz.innerHTML = "";
+  const q = questions[index];
+  const div = document.createElement("div");
+  div.className = "question active";
+  div.innerHTML = `<p>${index + 1}. ${q.q}</p>`;
+  q.options.forEach((opt, i) => {
+    div.innerHTML += `<label><input type="radio" name="q${index}" value="${i}" ${answers[index] === i ? "checked" : ""} onchange="answers[${index}] = ${i}"> ${opt}</label><br>`;
+  });
+  quiz.appendChild(div);
+}
 
-<title>Free Study Notes for Students - CampusXchange</title>
-<meta name="description" content="Access well-structured study notes across subjects. CampusXchange provides simplified learning resources to help you prepare smarter.">
-<meta name="keywords" content="study notes, free notes, college notes, exam preparation notes, learning resources, CampusXchange notes">
+function nextQuestion() {
+  if (current < questions.length - 1) current++;
+  renderQuestion(current);
+}
 
+function prevQuestion() {
+  if (current > 0) current--;
+  renderQuestion(current);
+}
 
-<title>Academic Assignments Help & Solutions - CampusXchange</title>
-<meta name="description" content="Find reliable assignment help and ready solutions crafted for students. CampusXchange supports your academic success with quality resources.">
-<meta name="keywords" content="assignments help, academic solutions, student assignments, project help, CampusXchange assignments">
+function submitQuiz() {
+  let score = answers.reduce((acc, val, i) => val === questions[i].correct ? acc + 1 : acc, 0);
+  if(score >= 12){
+    document.getElementById('quiz').style.display = "none";
+    document.getElementById('certificate').style.display = "block";
+    document.getElementById('studentName').innerText = prompt("Enter your name for the certificate:");
+  } else {
+    alert(`You scored ${score}. You need at least 12 correct answers to earn a certificate.`);
+  }
+}
 
+function downloadCertificate() {
+  alert("Certificate download triggered. You can implement PDF/image export here.");
+}
 
+function startTimer() {
+  const timeDisplay = document.getElementById("time");
+  const interval = setInterval(() => {
+    if (timer <= 0) {
+      clearInterval(interval);
+      submitQuiz();
+    } else {
+      let min = Math.floor(timer / 60);
+      let sec = timer % 60;
+      timeDisplay.textContent = `${min}:${sec < 10 ? "0" + sec : sec}`;
+      timer--;
+    }
+  }, 1000);
+}
 
-<title>Student Mentorship & Career Guidance - CampusXchange</title>
-<meta name="description" content="Connect with mentors for career, academics, and skill development. CampusXchange provides personalized guidance to help you achieve your goals.">
-<meta name="keywords" content="student mentorship, career guidance, personal mentor, academic support, skill development, CampusXchange mentorship">
-
-
-<title>Apply for Internships – CampusXchange Opportunities</title>
-<meta name="description" content="Start your career journey with CampusXchange internships. Apply now for skill-based internship opportunities that help you gain experience and grow professionally.">
-<meta name="keywords" content="internship apply, student internships, CampusXchange internships, apply internship online, career opportunities, skill development">
-
-
-<title>Verify Your Account – CampusXchange Secure Access</title>
-<meta name="description" content="Secure your CampusXchange experience with account verification. Verify your identity quickly to access notes, assignments, mentorship, and services.">
-<meta name="keywords" content="account verification, secure login, CampusXchange verification, student account security, verify identity, safe access">
-
-
-<title>About - CampusXchange</title>
-<meta name="description" content="Learn about CampusXchange, a platform dedicated to education, mentorship, web solutions, and SEO services to support students and businesses.">
-<meta name="keywords" content="about CampusXchange, education platform, student services, learning support, mentorship, CampusXchange story">
-
-
-<title>Let's Talk - CampusXchange</title>
-<meta name="description" content="Have questions or ideas? Let's talk! Reach out to CampusXchange for collaboration, support, or services in web development, SEO, and education.">
-<meta name="keywords" content="contact CampusXchange, let's talk, connect with team, support CampusXchange, collaboration, CampusXchange contact">
+window.onload = () => {
+  renderQuestion(current);
+  startTimer();
+};
+</script>
+</body>
+</html>

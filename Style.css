@@ -242,6 +242,7 @@ header
   width:300px;
   margin:50px;
   border-radius: 50%;
+  border: 1px solid var(--secondary-color);
   box-shadow: 1px 1px 50px rgb(20, 17, 17);
 
 }
@@ -913,7 +914,7 @@ main{
   color: var(--bg-light);
   text-decoration: none;
   display:inline;
-  padding: 2rem 1rem 1rem 0;
+  padding: 0.5rem 1rem 0.5rem 0;
 
 }#Sociallinks a:hover
 {
