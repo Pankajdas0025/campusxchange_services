@@ -185,7 +185,7 @@ function Clientfeedback(imgsrc, clientpos, rating , sms)
 
 function Client1()
 {
-Clientfeedback("../assets/imaages/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");
+Clientfeedback("../assets/images/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");
 
 }
 function Client2()
@@ -198,7 +198,7 @@ Clientfeedback("../assets/Images/rajneesh.jpg", "Own/Memory Pzzle Game" ,"⭐⭐
 }
 function Client4()
 {
- Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Add" ,"⭐⭐⭐⭐" ,  "The Website desighn id user friendly and it is browser compatability ");
+ Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Coach" ,"⭐⭐⭐⭐" ,  "The Website desighn id user friendly and it is browser compatability ");
 }
 
 

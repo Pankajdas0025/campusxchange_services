@@ -78,10 +78,10 @@
     background: #f43f5e;
   }
   .verify-error {
-    color: #f43f5e;
+    color: #ffffffff;
     font-size: 0.98rem;
     margin-bottom: 0.5rem;
-    display: none;
+    display:block;
     text-align: center;
 
   }
@@ -129,13 +129,39 @@
 <section class="verify-section">
   <h2> <i class="fa-solid fa-file"></i> Internship Verification </h2>
   <form class="verify-form" id="verifyForm" action="verifiedintern.php" method="GET">
-    <input type="text" id="internId" name="internid" placeholder="Enter Internship ID" required>
-    <input type="email" id="emailId" name="emailid" placeholder="Enter Registered Email" required>
-    <span class="verify-error" id="verifyError">Invalid details or not a verified intern.</span>
-    <button type="submit">Verify</button>
+    <input type="text" id="internId" name="internid" placeholder="Enter Internship ID" maxlength="l5" required>
+    <button type="submit"  onclick="return ChekID()">Verify</button>
+    <span class="verify-error" id="verifyError"></span>
   </form>
-  <div id="verifiedDetails"></div>
+  <script>
 
+    const Ifield = document.querySelector("#internId");
+    const Error = document.querySelector("#verifyError");
+
+    function ChekID()
+    {
+
+    if(Ifield.value.length > 15 || Ifield.value.length < 10)
+    {
+        Error.innerHTML = "Enter  a valied internship ID";
+
+        setTimeout(() => {
+         Error.innerHTML = "";
+         Ifield.value = "";
+         Ifield.style.color = "black";
+        }, 2000);
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "Fetching data ....";
+        setTimeout(() =>{
+        Error.innerHTML = "";
+        }, 2000);
+       return true;
+    }
+   }
+  </script>
 </section>
 <br>
 <section class="Footer">

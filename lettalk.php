@@ -51,7 +51,7 @@ include "src/config.php";
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#555;
   --pSize:0.9rem;
-  --border:2px dotted white;
+
 }
   .contact-main {
     background: #f9fafb;
@@ -124,13 +124,11 @@ include "src/config.php";
     width: 100%;
     margin: 0 auto 2rem auto;
     background: linear-gradient(120deg, #e0e7ff 60%, #f9fafb 100%);
-    border-radius: 18px;
     box-shadow: 0 4px 24px rgba(99,102,241,0.08);
     padding: 2.5rem 1rem;
   }
   .newsletter-card {
     background: #fff;
-    border-radius: 16px;
     box-shadow: 0 2px 12px rgba(99,102,241,0.07);
     flex: 1 1 340px;
     min-width: 260px;
@@ -163,7 +161,7 @@ include "src/config.php";
     box-shadow: 0 2px 8px rgba(99,102,241,0.10);
   }
   .newsletter-card h3 {
-    color: #f43f5e;
+    color: #a19b9bff;
     margin: 0.5rem 0 1rem 0;
     text-align: center;
     font-size: 1.3rem;
@@ -195,6 +193,7 @@ include "src/config.php";
     box-shadow: 0 2px 8px rgba(99,102,241,0.13);
     transition: background 0.2s, color 0.2s;
     margin-top: 0.5rem;
+    margin-left: 40px;
   }
   .newsletter-card button:hover {
     background: #f43f5e;
@@ -252,7 +251,7 @@ display: block;
   #newsletterForm
   {
     background-color: #6366f1;
-    padding: 10%;
+    padding: 10% ;
   }
 
   @media (max-width: 700px) {
@@ -321,7 +320,7 @@ display: block;
   #newsletterForm
   {
     background-color: #6366f1;
-    padding: 10%;
+    padding: 10% 0;
     height: 300px;
   }
   #newsletterForm span {
@@ -329,12 +328,15 @@ display: block;
     font-size:0.67rem;
 
 
+  } .newsletter-card button
+  {
+     margin-left: 0px;
   }
   }  @media (max-width: 900px) {
     .newsletter-unique {
       flex-direction: column;
       gap: 1.2rem;
-      padding: 1.2rem 0.5rem;
+      padding: 1.2rem 0rem;
     }
     .newsletter-card {
       min-width: 0;
@@ -350,7 +352,7 @@ display: block;
  <div class="cursor"></div>
 <!-- animated cursor end ---------------->
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
-   <header>
+   <header style="border-radius: 0;">
       <div class="Logo"><img src="assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
    </header>
 <div class="topnav" id="myTopnav">
@@ -406,7 +408,7 @@ display: block;
   <br>
 <!-- contact us newsletter section ----------------------------------------->
 <section class="newsletter-unique">
-  <div class="newsletter-card">
+  <div class="animationtype3 newsletter-card">
     <span class="card-icon"><i class="fa-solid fa-paper-plane"></i></span>
     <form class="contact-form" id="contactForm" autocomplete="off">
       <h3>Send Us a Message</h3>
@@ -437,7 +439,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 </script>
 
-  <div class="newsletter-card">
+  <div class="animationtype3 newsletter-card">
     <span class="card-icon"><i class="fa-solid fa-bell" method="POST" ></i></span>
     <form class="contact-form" id="newsletterForm" method="POST" action="">
       <h3>Ready For New Updates</h3>
@@ -470,6 +472,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 
 </section>
+
+<?php
+
+include("feedback.php");
+?>
 </main>
 <br>
 <!-- footer section  --------------------------------------------------------------------------------->

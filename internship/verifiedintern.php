@@ -14,6 +14,7 @@ include "../src/config.php";
 <head>
 <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
+    <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Verified Intern | CampusXchange</title>
   <meta name="title" content="Mentorship & Remote Internship | CampusXchange">
@@ -120,9 +121,9 @@ include "../src/config.php";
 
     // Collect and sanitize input
     $Intern_ID = trim($_GET['internid'] ?? '');
-    $Email = trim($_GET['emailid'] ?? '');
 
-    $sql_select = "SELECT *FROM applied_intern WHERE Email='$Email' ";
+
+    $sql_select = "SELECT *FROM verified_intern WHERE Intern_ID='$Intern_ID' ";
     $response = $conn->query($sql_select);
 
     if($response)
@@ -135,7 +136,9 @@ $row = $response->fetch_assoc();
 $Name    = htmlspecialchars($row['Name'] ?? '', ENT_QUOTES, 'UTF-8');
 $Domain  = htmlspecialchars($row['Domain'] ?? '', ENT_QUOTES, 'UTF-8');
 $Time    = htmlspecialchars($row['Duration'] ?? '', ENT_QUOTES, 'UTF-8');
+$Intern_ID   = htmlspecialchars($row['Intern_ID'] ?? '', ENT_QUOTES, 'UTF-8');
 $College = htmlspecialchars($row['College'] ?? '', ENT_QUOTES, 'UTF-8');
+$Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8');
 
 
         echo "<section class='verifed-section' id='verified'>
@@ -144,9 +147,11 @@ $College = htmlspecialchars($row['College'] ?? '', ENT_QUOTES, 'UTF-8');
       <p><strong>Name:</strong>  $Name
       <p><strong>Domain:</strong> $Domain
       <p><strong>Duration:</strong>  $Time
-      <p><strong>Internship ID:</strong> <span class='intern-id'>$Email</span></p>
+      <p><strong>Internship ID:</strong> <span class='intern-id'>$Intern_ID</span></p>
+      <p><strong>College:</strong>  $College
+      <br><strong><a href='$Project_link'>View Projects <i class='fa-solid fa-eye'></i></a></strong>
       <p><strong>Status:</strong> <span style='color:#22c55e;font-weight:bold;'>Active & Verified</span></p>
-      <p><strong>About:</strong> <b>$Name</b> has successfully completed all requirements for the CampusXchange internship program in Web Development, demonstrating strong technical and teamwork skills. All credentials have been verified by the CampusXchange team.</p>
+      <p><strong>About:</strong> <b>$Name</b> has successfully completed all requirements for the CampusXchange internship program in  $Domain, demonstrating strong technical and teamwork skills. All credentials have been verified by the CampusXchange team.</p>
       <img src='../assets/Images/campusxchange-logo.svg' alt='campusxchange-logo'> <img src='../assets/Images/founder-sign.jpg' alt='campusxchange-logo'>   <img src='../assets/Images/verified-stamp.jpg' alt='campusxchange-logo'>
       <a href='../internship-program' aria-label='know more about internship program offer by campusxchange'><p>Know More About CampusXchange</p></a>
 
@@ -159,7 +164,7 @@ $College = htmlspecialchars($row['College'] ?? '', ENT_QUOTES, 'UTF-8');
         echo " <section class='verifed-section' id='nverified'>
     <div class='intern-info'>
      <p><strong>The Intern is Not registred !</strong></p>
-      <a href='../internship-progra' aria-label='know more about internship program offer by campusxchange'><p>Know More About CampusXchange</p></a>
+      <a href='../internship-program' aria-label='know more about internship program offer by campusxchange'><p>Know More About CampusXchange</p></a>
 
     </div>
 </section>";
@@ -170,6 +175,7 @@ $College = htmlspecialchars($row['College'] ?? '', ENT_QUOTES, 'UTF-8');
 
 
   }
+  include("../feedback.php");
  ?>
 
 <script src="../script.js"></script>
