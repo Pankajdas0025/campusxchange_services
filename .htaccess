@@ -38,14 +38,9 @@ RewriteRule ^sitemap$ sitemap.html [L]
 # Catch-all: redirect all non-existent URLs to 404.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /CX/404.html [L]
-ErrorDocument 404 /CX/404.html
+RewriteRule . /Campusxchange/404.html [L]
+ErrorDocument 404 /Campusxchange/404.html
 
-
-
-
-
-#Testing Line For future update------------------
 
 
 

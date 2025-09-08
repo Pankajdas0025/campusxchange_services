@@ -313,12 +313,12 @@ height: 50%;
     2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
     5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
     10px 10px 20px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-    height: 500px;
+    height: 550px;
     width: 30%;
     display:flex;
     flex-wrap: wrap;
     float: left;
-    margin: 40px 1.65%;
+    margin: 30px 1.65%;
     overflow: hidden;
     justify-content: space-between;
 

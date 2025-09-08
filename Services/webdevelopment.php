@@ -274,6 +274,12 @@ include("../feedback.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
+    $name     = htmlspecialchars(trim($_POST['client_name'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $mobile = htmlspecialchars(trim($_POST['client_mobile'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $email    = filter_var(trim($_POST['client_email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $address  = htmlspecialchars(trim($_POST['client_address'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $plantype= htmlspecialchars(trim($_POST['client_plantype'] ?? ''), ENT_QUOTES, 'UTF-8');
+    $websitetype  = htmlspecialchars(trim($_POST['client_websitetype'] ?? ''), ENT_QUOTES, 'UTF-8');
 
     $errors = [];
 
@@ -297,7 +303,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = "Please select a plan type.";
     }
 
-    if (empty($errors)) {
+    if (empty($errors))
+    {
         // Prepare and execute insert query
         $stmt = $conn->prepare("INSERT INTO web_client (Name, Mobile, Email, Address, Choice, Plan) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $name, $mobile, $email, $address, $websitetype, $plantype);
@@ -305,24 +312,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
 
-
     $subject = "Testing From Campusxchange";
-
     $message = " <body style='margin: 0; padding:2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
     <div style='max-width: 1000px; margin: auto; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
-
         <img src='https://pankajdas0025.github.io/PORTFOLIO/Images/client_email_banner.png' height='auto' width='100%' style='margin-top: 25px;font-size:2rem;'>
         <h1 style='color: #ffffff;padding:10px;height:150px; background: linear-gradient(to right, #6366f1,#f43f5e); text-align: center; font-size:1.5rem;'>🎉 Hello
             <br>You are looking for a website 🌐
             <br><p style='font-size: 1rem;'>$name</p>
         </h1>
-
         <div style='background-color: #ecf0f1; padding: 10px; border-radius: 5px; margin-top: 20px;'>
 Thanks for reaching out to CampusXchange—where ideas become digital realities. Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.
             <p>🌟 <strong>Our Support Team will contact you within 24 Hr.</strong></p>
             <p>Be Happy with CampusXchange</p>
         </div>
-
         <div style='margin-top: 30px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
             <p>Explore oue social Handle</p>
             <ul style='padding-left: 20px;'>
@@ -340,8 +342,6 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
-
-
 mail($email,$subject,$message,$headers);
 
     // // Send email using PHPMailer
@@ -374,16 +374,9 @@ mail($email,$subject,$message,$headers);
     // }
 
 
-        echo "<script>
-             setTimeout(() => {
-            alert('✅ Thank you! Your details have been submitted.');
+ echo "<script> setTimeout(() => {   alert('✅ Thank you! Your details have been submitted.');  window.location.href='web-development'}, 4000);</script>";
 
-
-      }, 4000);
-
-
-        </script>";
-                $stmt->close();
+ $stmt->close();
     }  else
     {
 
@@ -394,7 +387,8 @@ mail($email,$subject,$message,$headers);
 
         </script>";
     }
-    }
+
+  }
 
 
 
