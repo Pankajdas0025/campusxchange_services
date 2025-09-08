@@ -121,8 +121,6 @@ include "../src/config.php";
 
     // Collect and sanitize input
     $Intern_ID = trim($_GET['internid'] ?? '');
-
-
     $sql_select = "SELECT *FROM verified_intern WHERE Intern_ID='$Intern_ID' ";
     $response = $conn->query($sql_select);
 

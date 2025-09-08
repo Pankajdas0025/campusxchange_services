@@ -314,6 +314,7 @@ padding: 0rem ;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    // Collect and sanitize input
+
     $Name     = htmlspecialchars(trim($_POST['intern_name'] ?? ''), ENT_QUOTES, 'UTF-8');
     $Email    = filter_var(trim($_POST['intern_email'] ?? ''), FILTER_SANITIZE_EMAIL);
     $Whatsapp = htmlspecialchars(trim($_POST['intern_phone'] ?? ''), ENT_QUOTES, 'UTF-8');
