@@ -8,64 +8,75 @@
     :root {
       --primary-color: #6366f1;
       --secondary-color: #f43f5e;
+      --hover-bg: #f43f5e;
       --bg-light: #f9fafb;
-      --text-dark: #111827;
       --text-light: #ffffff;
-      --card-bg: #ffffff;
       --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       --radius: 12px;
       --font-main: 'Poppins', sans-serif;
-      --hover-bg: #f43f5e;
     }
-   #feedbackBox {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      width: 100%;
-      margin:20px 0% ;
-      padding: 25px 0;
-      box-shadow: var(--shadow);
+
+    #feedbackBox {
+       width: 100%;
+
+      margin: 20px 0;
+      padding: 30px 20px;
       text-align: center;
-      font-family:  'Poppins', sans-serif;
+      color:black;
+      animation: fadeIn 0.9s ease;
     }
 
     #feedbackBox p {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 600;
-      color: white;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       text-align: center;
     }
 
-       #feedbackBox button {
-
-      margin: 0 10px;
-      font-size: 1.5rem;
+    #feedbackBox button {
+      margin: 0 12px;
+      font-size: 2rem;
       border: none;
-      height: 50px;
-      width: 50px;
+      height: 65px;
+      width: 65px;
       border-radius: 50%;
-      background-color: var(--primary-color);
+      background: #ffffff;
+      color: #333;
       cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.3s ease;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      padding: 10px 11px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-       #feedbackBox button:hover {
-      background-color: var(--hover-bg);
-      transform: scale(1.1);
-      border:2px solid white;
+    #feedbackBox button:hover {
+      background: var(--hover-bg);
+      color: #fff;
+      transform: scale(1.15);
+      box-shadow: 0 10px 25px rgba(244, 63, 94, 0.4);
+      border: 2px solid white;
     }
 
     #responseMsg {
       margin-top: 20px;
       font-size: 1rem;
-      color: rgb(41, 206, 41);
-      background-color: rgb(219, 219, 193);
       font-weight: 500;
-      padding: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px 15px;
+      border-radius: var(--radius);
+      display: inline-block;
       opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease;
+    }
+
+    #responseMsg.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -75,20 +86,23 @@
     <button onclick="handleFeedback('😊')">😊</button>
     <button onclick="handleFeedback('😐')">😐</button>
     <button onclick="handleFeedback('😞')">😞</button>
-    <br>
-    <bR>
+
+    <br><br>
     <small id="responseMsg"></small>
   </div>
 
   <script>
     function handleFeedback(emoji) {
       let sms = document.getElementById('responseMsg');
-      sms.style.opacity = "1";
-      sms.innerText = "Thanks for your input, we're on it!";
+      sms.innerText = "Thanks for your input " + emoji + "! Redirecting...";
+      sms.classList.add("show");
 
       setTimeout(() => {
-        window.location.href =
-          "https://www.google.com/maps/place/CampusXchange"; // Replace with your actual review link
+        window.location.href = "https://www.google.com/maps/place/CampusXchange";
+       sms.innerText = " ";
+
+
+
       }, 2000);
     }
   </script>

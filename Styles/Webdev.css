@@ -147,46 +147,91 @@ backdrop-filter: blur(15px);
     color: #444;
     margin-bottom: 0;
   }
-.techlang
-{
-    height:400px;
-    width: 100%;
-    padding:3rem 2rem;
-    background: linear-gradient(to right, var(--secondary-color) , var(--primary-color));
 
-}.techlang h2{
-    text-align: left;
-    color: white;
-}.techlangbox
-{
-    height: 50%;
-    width: 20%;
-    margin: 2.5%;
-    float: left;
-    border-radius: var(--radius);
-    border: var(--border);
-}.techlangbox:hover
-{
+  /* tech stack we work eith section  */
 
-    transform: translateY(5px);
-    transition: 1s;
-}
-.techlangbox span {
-    background-color:var(--primary-color);
-    width: 100px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 14px 0px 0px 0px;
-    color: rgb(234, 230, 230);
-    position: absolute;
-    clip-path: polygon(0% 0% , 90% 0% ,100% 50% , 90% 100% , 0% 100%);
+    /* Main Container */
+    .tech-stack-box {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      width: 100%;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+      animation: fadeInUp 1s ease forwards;
+    }
 
-}.techlangbox img{
-    height: 50px;
-    width: 50px;
-    position: relative;
-    margin:30px 5px;
-}.webdevprocess
+    /* Title */
+    .tech-stack-box  h2 {
+      grid-column: 1 / -1;
+      font-size: 2.6rem;
+      color:var(--primary-color);
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .tech-stack-box  p {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: #272525;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    /* Category Card */
+    .tech-category {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 6px 18px rgba(0, 86, 210, 0.12);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .tech-category:hover {
+      transform: translateY(-6px) scale(1.03);
+
+    }
+
+    .tech-category h3 {
+      font-size: 1.5rem;
+      color:var(--secondary-color);
+      border-left: 6px solid var(--primary-color);
+      padding-left: 12px;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    /* Icons */
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .icons img {
+      width: 60px;
+      height: 60px;
+      background: #f9fbff;
+      padding: 12px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 86, 210, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      object-fit: contain;
+    }
+
+    .icons img:hover {
+      transform: scale(1.2) rotate(3deg);
+      box-shadow: 0 1px 5px var(--secondary-color);
+    }
+
+/*
+our development process  section  */
+.webdevprocess
 {
 
     height:500px;
@@ -246,23 +291,19 @@ color: var(--primary-color);
 {
     height: 600px;
     width: 100%;
-    /* background-image: url(../Images/Hero.jpg); */
     background-position: center;
     background-size: cover;
-    border-radius: var(--radius);
-    border: var(--border);
     padding: 0;
 }.ourstatus .ourstatushero
 {
-/* background: linear-gradient(to right,var(--primary-color),transparent); */
+background: linear-gradient(145deg ,var(--primary-color),var(--secondary-color));
 margin: 0;
 height:600px;
 width:100%;
-border-radius: var(--radius);
+
 }.ourstatus h2{
 padding: 3rem 1rem ;
-color:var(--primary-color);
-border-radius: var(--radius);
+color:white;
 width: 20%;
 font-size: 35px;
 padding:5% 8%;
@@ -311,7 +352,7 @@ height: 50%;
 {
     box-shadow: 2px 2px 5px rgb(60, 56, 56);box-shadow:
     2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
-    5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
+    5px 5px 5px rgba(0, 0, 10, .15), /* Medium shadow */
     10px 10px 20px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
     height: 550px;
     width: 30%;
@@ -700,33 +741,21 @@ backdrop-filter: blur(15px);
     .Weoffersection h2 {
       font-size: 1.4rem;
     }
-/* tech lang */
-.techlang
-{
-    height:800px;
-    width: 100%;
-    padding:3rem 1.5rem;
-    background-color: var(--primary-color);
-    border-radius:none;
-    border: var(--border);
-}.techlang h1{
-    text-align: left;
-    color: white;
-    font-size: 20px;
-}
-.techlangbox
-{
+  /* tech stack we work eith section  */
 
-    height:20%;
-    width:100%;
-    margin:2% 0;
-   display:inline-block;
-}.techlangbox img{
-    height: 50px;
-    width: 50px;
-    position: relative;
-    margin:30px 5px;
-}
+      .tech-stack-box {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+      }
+      .tech-category h3 {
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid #FFD500;
+        padding-bottom: 8px;
+      }
+      .icons {
+        justify-content: center;
+      }
 /* process section start  */
 
 .webdevprocess

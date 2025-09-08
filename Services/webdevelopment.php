@@ -143,14 +143,46 @@
   <div class="block processbox" id="tabstyle">Post-Launch Support</div>
 </section>
 <br>
-<section class="block techlang">
-   <h2> Tech Stack We Work With -</h2>
-   <div class="techlangbox"><span>Front-End</span><br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS-log"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript-logo"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React-logo"/></div>
-   <div class="techlangbox"><span>Back -End</span><br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python-logo" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js-logo" /></div>
-   <div class="techlangbox"><span>Database</span><br><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySql-loogo" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="Mongodb-logo" /></div>
+<!-- Tech stack we work with section  -->
+ <section class="tech-stack-box" aria-label="Tech Stack We Work With">
+    <h2>Our Tech Stack</h2>
+    <p>CampusXchange builds with the latest technologies to deliver fast, secure, and scalable solutions.</p>
 
-   <div class="techlangbox"><span>Server</span><br><img src="../assets/Images/bluehostLogo.webp"><img src="../assets/Images/HostingerLogo.webp"></div>
-</section>
+    <div class="tech-category">
+      <h3>Front-End</h3>
+      <div class="icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Logo" />
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h3>Back-End</h3>
+      <div class="icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Logo" />
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h3>Database</h3>
+      <div class="icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL Logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" />
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h3>Server</h3>
+      <div class="icons">
+        <img src="../assets/Images/bluehostLogo.webp" alt="Bluehost Logo" />
+        <img src="../assets/Images/HostingerLogo.webp" alt="Hostinger Logo" />
+      </div>
+    </div>
+  </section>
 <br>
 <!-- for showing our clients  -->
 <section class="block ourstatus">

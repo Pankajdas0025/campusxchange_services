@@ -2,135 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Stack We Work With</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    /* Reset and base */
-    * {
-      box-sizing: border-box;
+    :root {
+      --primary-color: #6366f1;
+      --secondary-color: #f43f5e;
+      --hover-bg: #f43f5e;
+      --bg-light: #f9fafb;
+      --text-light: #ffffff;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+      --font-main: 'Poppins', sans-serif;
     }
 
-
-    /* Container box */
-    .tech-stack-box {
-      background: #fff;
-      max-width: 100%;
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-      padding: 40px 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px 20px;
-    }
-
-    /* Section title spanning full width */
-    .tech-stack-box > h2 {
-      grid-column: 1 / -1;
-      font-size: 2.6rem;
-      color: #005f99;
-      text-align: center;
-      margin: 0 0 40px;
-      letter-spacing: 1.1px;
-      font-weight: 700;
-    }
-
-    /* Each category */
-    .tech-category {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .tech-category h3 {
-      font-size: 1.5rem;
-      color: #007acc;
-      border-bottom: 3px solid #007acc;
-      padding-bottom: 6px;
+    body {
       margin: 0;
-      font-weight: 600;
-    }
-
-    /* Icons container */
-    .icons {
+      font-family: var(--font-main);
+      background: var(--bg-light);
       display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    /* Icon style */
-    .icons img {
-      width: 56px;
-      height: 56px;
-      background: #f9faff;
-      padding: 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 122, 204, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: default;
-      object-fit: contain;
+    #feedbackBox {
+     width: 100%;
+
+      margin: 20px 0;
+      padding: 30px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      color:black;
+      animation: fadeIn 0.9s ease;
     }
 
-    .icons img:hover,
-    .icons img:focus {
-      transform: scale(1.2);
-      box-shadow: 0 8px 20px rgba(0, 122, 204, 0.5);
-      outline: none;
+    #feedbackBox p {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 25px;
     }
 
-    /* Responsive tweaks */
-    @media (max-width: 480px) {
-      .tech-stack-box {
-        padding: 30px 20px;
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
+    #feedbackBox button {
+      margin: 0 12px;
+      font-size: 2rem;
+      border: none;
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-      .icons {
-        justify-content: center;
-      }
+    #feedbackBox button:hover {
+      background: var(--hover-bg);
+      color: #fff;
+      transform: scale(1.15);
+      box-shadow: 0 10px 25px rgba(244, 63, 94, 0.4);
+      border: 2px solid white;
+    }
+
+    #responseMsg {
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px 15px;
+      border-radius: var(--radius);
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease;
+    }
+
+    #responseMsg.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <section class="tech-stack-box" aria-label="Tech Stack We Work With">
-    <h2>Tech Stack We Work With</h2>
+  <div id="feedbackBox">
+    <p>How was your experience with us?</p>
+    <button onclick="handleFeedback('😊')">😊</button>
+    <button onclick="handleFeedback('😐')">😐</button>
+    <button onclick="handleFeedback('😞')">😞</button>
 
-    <div class="tech-category">
-      <h3>Front-End</h3>
-      <div class="icons">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Logo" />
-      </div>
-    </div>
+    <br><br>
+    <small id="responseMsg"></small>
+  </div>
 
-    <div class="tech-category">
-      <h3>Back-End</h3>
-      <div class="icons">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Logo" />
-      </div>
-    </div>
+  <script>
+    function handleFeedback(emoji) {
+      let sms = document.getElementById('responseMsg');
+      sms.innerText = "Thanks for your input " + emoji + "! Redirecting...";
+      sms.classList.add("show");
 
-    <div class="tech-category">
-      <h3>Database</h3>
-      <div class="icons">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL Logo" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" />
-      </div>
-    </div>
-
-    <div class="tech-category">
-      <h3>Server</h3>
-      <div class="icons">
-        <img src="../assets/Images/bluehostLogo.webp" alt="Bluehost Logo" />
-        <img src="../assets/Images/HostingerLogo.webp" alt="Hostinger Logo" />
-      </div>
-    </div>
-  </section>
+      setTimeout(() => {
+        window.location.href = "https://www.google.com/maps/place/CampusXchange";
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
