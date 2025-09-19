@@ -1,5 +1,5 @@
 <?php include "../src/conn.php";
-      include "../src/config.php";
+      // include "../src/config.php";
 ?>
 
 <!DOCTYPE html>

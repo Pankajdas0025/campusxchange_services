@@ -10,8 +10,6 @@ RewriteRule ^internship-program$ internship.html [L]
 RewriteRule ^web-development$ webdevelopment.php [L]
 RewriteRule ^seo$ seo.html [L]
 RewriteRule ^notes$ notes.php [L]
-
-
 RewriteRule ^blog$ blog.html [L]
 RewriteRule ^assignment$ assignment.html [L]
 RewriteRule ^apply$ apply.php [L]

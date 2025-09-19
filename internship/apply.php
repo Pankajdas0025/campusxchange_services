@@ -1,6 +1,9 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+
 include "../src/conn.php";
-include "../src/config.php";
+// include "../src/config.php";
 
 
 ?>
@@ -303,13 +306,12 @@ padding: 0rem ;
   <!-- Apply intern form data into databae table  ----------------------------------------->
   <?php
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
 
-// // Include PHPMailer library files
-// require '../PHPMailer/src/PHPMailer.php';
-// require '../PHPMailer/src/SMTP.php';
-// require '../PHPMailer/src/Exception.php';
+
+// Include PHPMailer library files
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
+require '../PHPMailer/src/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -353,10 +355,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Prepare and execute insert query
         $stmt = $conn->prepare("INSERT INTO applied_intern (Name , Email , Whatsapp_No , Domain , Duration , College , Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
-
         if ($stmt->execute()) {
-
-
     $subject = "CLENT_FORM_TESTING";
 
     $message = " <body style='margin: 0; padding:2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
@@ -386,43 +385,41 @@ Thanks for reaching out to CampusXchange—where ideas become digital realities.
     </div>
     </body>";
 
-// Send email using mail()
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// More headers
-$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
+// // Send email using mail()
+// $headers = "MIME-Version: 1.0" . "\r\n";
+// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// // More headers
+// $headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
+// mail($Email,$subject,$message,$headers);
+
+    // Send email using PHPMailer
+    $mail = new PHPMailer(true);
+
+    try {
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'pd5569121@gmail.com'; // Gmail ID
+        $mail->Password   = 'carp uidg qexa uvyr';          // App password, not real password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 465;
 
 
-mail($Email,$subject,$message,$headers);
+        // Email settings
+        $mail->setFrom('pd5569121@gmail.com');
+        $mail->addAddress($Email);
 
-    // // Send email using PHPMailer
-    // $mail = new PHPMailer(true);
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $message;
 
-    // try {
-    //     // SMTP configuration
-    //     $mail->isSMTP();
-    //     $mail->Host       = 'smtp.gmail.com';
-    //     $mail->SMTPAuth   = true;
-    //     $mail->Username   = 'pd5569121@gmail.com'; // Gmail ID
-    //     $mail->Password   = 'carp uidg qexa uvyr';          // App password, not real password
-    //     $mail->SMTPSecure = 'tls';
-    //     $mail->Port       = 465;
-    //     PHPMaler :: ENCRYPTION_|STARTTLS;
+        $mail->send();
 
-    //     // Email settings
-    //     $mail->setFrom('pd5569121@gmail.com');
-    //     $mail->addAddress($email);
-
-    //     $mail->isHTML(true);
-    //     $mail->Subject = $subject;
-    //     $mail->Body    = $message;
-
-    //     $mail->send();
-
-    // }
-    // catch (Exception $e) {
-    //     echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
-    // }
+    }
+    catch (Exception $e) {
+        echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
+    }
 
 
         echo "<script>

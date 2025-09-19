@@ -1,7 +1,8 @@
 
-
 <?php
-$conn = new mysqli ("localhost", "root","Pankaj#12345","campuxchange" , 3307);
+
+
+$conn = new mysqli("localhost", "root", "Pankaj#12345", "campusxchange");  //  for localhost
 if ($conn->connect_error)
 {
 
