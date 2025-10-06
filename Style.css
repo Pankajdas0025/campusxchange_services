@@ -1,15 +1,15 @@
 :root {
 
-  --primary-color: #6366f1; /* Indigo */
-  --secondary-color: #f43f5e; /* Rose */
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 0;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#f43f5e;
+  --hoverbg :#da6b7e;
   --pSize:0.9rem;
   --border:none;
 }
@@ -23,26 +23,26 @@
 body {
   font-family: var(--font-main);
   color: var();
-  padding:10px 25px;
   line-height: 1.6;
   scroll-behavior: smooth;
   scroll-snap-stop: always;
-  background: linear-gradient(to right, #f9fafb, #ffffff 70%);
-  /* Dot grid pattern using radial-gradient */
-  background-image:
-    radial-gradient(circle, #f5f9ff 1px, transparent 30px),
-    radial-gradient(circle, #e6e9ec 1px, transparent 30px);
-  background-position: 0 0, 20px 20px; /* offset second grid */
-  background-size: 30px 30px; /* spacing of dots */
+  background-color: #f6f7fb;
+  padding: 0 10px;
 
 
+}h1 , h2 , h3
+
+{
+  color: var(--primary-color);
 }
+
+p{font-size: 20px;}
 /* Animated cursor for all pages ---------------------------------*/
 .cursor
 {
   z-index: 999;
   background-color:transparent;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(20px);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -56,145 +56,94 @@ body {
 /* Animated cursor end  ---------------------------------*/
 
 
+/* header for all pages  */
+
 header
 {
+  background-color:var(--primary-color);
+  backdrop-filter: blur(25px);
   overflow: hidden;
   height:100px;
   font-size: 3rem;
   font-style: italic;
-  background-color:#6366f1;
-  border-radius:var(--radius);
+  /* background-color: var(--primary-color); */
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }.Logo
 {
   height: 100px;
-  width:32vw;
+  width:25vw;
   background-color:transparent;
   padding: 0;
   font-size:20px;
   font-style: normal;
+
   color: white;
 }.Logo img
 {
   height:100px;
   width:100%;
 }
-/* For all pages's  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
-
-.topnav {
-  overflow: hidden;
-  background-color:var(--primary-color);
-  height:100px;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  outline: none;
-  border: none;
-}
-
-.active {
-  background-color:transparent;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  padding-top:4px;
-  padding-top:0px;
-
-
-}
-
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 18px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  border: none;
-  outline: none;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color:var(--hoverbg);
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
-  /* home intro first section */
+/* header for all pages end here  */
+ /* home intro first section */
 .homeIntro {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/Hero-image.jpg') center/cover no-repeat;
     color: white;
     padding: 60px 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
     border-bottom: 5px solid #fff;
-  }
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+  }.introContent
 
+  {
+width: 45%;
+text-align: left;
+padding-left:25px;
+margin:5% 5%;
+  }#core-ser
+  {
+    background-color: white;
+    color: black;
+    height: 80%;
+    width:30%;
+    margin: 5%;
+    padding: 10px 50px;
+    align-items: center;
+    align-content: center;
+    justify-self:center;
+     border-radius:var(--radius);
+     background-origin: var(--shadow);
+  }
   .introContent h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     font-weight: 700;
+
   }
 
   .highlight {
-    background-color: white;
-    color: #6633f1;
+
+    color:var(--secondary-color);
     padding: 4px 8px;
     border-radius: 6px;
   }
 
   .introContent p {
-    font-size: 1.2em;
+
     max-width: 700px;
     margin: 0 auto 20px;
     line-height: 1.6;
+    color: white;
   }
 
   .ctaBtn {
     display: inline-block;
-    background-color: white;
-    color: #6633f1;
+    background-color:white;
+    color:black;
     padding: 12px 24px;
     font-weight: bold;
     border-radius: 10px;
@@ -204,7 +153,8 @@ header
   }
 
   .ctaBtn:hover {
-    background-color:var(--secondary-color);
+    background-color:transparent;
+    backdrop-filter: blur(25px);
     color: #ffffff;
     transform: scale(1.05);
   }
@@ -212,105 +162,19 @@ header
 
 /* Homepage Hero section ------------------------------------------------------------------------------------------------------------- */
 .hero {
-  background:transparent;
+
   color: rgb(0, 0, 0);
   border-radius: var(--radius);
   margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
   height:auto;
+  width: 90%;
+  margin: 5% 5%;
   align-items: center;
   align-content: center;
   padding: 3rem 2rem;
   border: var(--border);
-}.HeroImg
-{
-  background-color:transparent;
-  backdrop-filter: blur(10px);
-   border-radius: 50%;
-   height: 400px;
-   width: 400px;
-   margin: auto;
-   box-shadow: 1px 2px 50px white;
-   border-right: 6px solid black;
-}.HeroImg a{
-  color: var(--bg-light);
-}
-#Main
-{
-  height:300px;
-  width:300px;
-  margin:50px;
-  border-radius: 50%;
-  border: 1px solid var(--secondary-color);
-  box-shadow: 1px 1px 50px rgb(20, 17, 17);
-
-}
-.HerosubImg1 , .HerosubImg2, .HerosubImg3 ,.HerosubImg4
-{
-height:50px;
-width: 150px;
-border-radius:20px 20px 0 20px;
-position: absolute;
-align-items: center;
-align-content: center;
-border:var(--border);
-
-}
-.HerosubImg1
-{
-
-background-color:#f43f5e;
-margin:0 0 0 -20%;
-animation: HerosubImgRotate1 linear 10s infinite;
-
-}
-.HerosubImg2
-{
-
-background-color:#6366f1;
-margin:0 0 0 80%;
-animation: HerosubImgRotate2 linear 10s infinite;
-}
-.HerosubImg3
-{
-
-background-color:#f43f5e;
-margin:90% 0 80% 80%;
-animation: HerosubImgRotate3 linear 10s infinite;
-}
-.HerosubImg4
-{
-
-background-color:#6366f1;
-margin:90% 0 0 -20%;
-animation: HerosubImgRotate4 linear 10s infinite;
-}
-
-@keyframes HerosubImgRotate1 {
-  0%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
-  25%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
-  50%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
-  100%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
-
-}@keyframes HerosubImgRotate2 {
-
-  0%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
-  25%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
-  50%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
-  100%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
-
-}@keyframes HerosubImgRotate3 {
-  0%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
-  25%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
-  50%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
-  100%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
-
-}@keyframes HerosubImgRotate4 {
-  0%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
-  25%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
-  50%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
-  100%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
 }
 .hero h1 {
   font-size: 1.8rem;
@@ -318,14 +182,14 @@ animation: HerosubImgRotate4 linear 10s infinite;
 }
 .hero p{
   font-size:var(--pSize);
-  opacity: 0.9;
+  opacity: 1;
 }
 /* Homepage Hero section end ------------------------------------------------------------------------------------------------------------- */
 /* Assignment section--------------------------------------------------------------------------------------------------------------------  */
 #Assignment
 {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: white;
+
+  color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
   margin-bottom: 40px;
@@ -351,7 +215,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
 /* Individual Button Styling */
 .assignment-buttons a {
   padding: 10px 20px;
-  background-color: #6366f1;
+  background-color: var(--primary-color);
   align-items: center;
   align-content: center;
   border:var(--border);
@@ -369,13 +233,12 @@ animation: HerosubImgRotate4 linear 10s infinite;
   transform: scale(1.05);
 
 }
-/* section to display my core services in a single frame  */
+/* section to display our core services in a single frame  */
 .All-services
 {
   height:auto;
   width: 100%;
   display: flex;
-
 
 }
 .service-type
@@ -383,7 +246,7 @@ animation: HerosubImgRotate4 linear 10s infinite;
   height: 400px;
   width: 20%;
   margin: 100px 2.5%;
-  background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+
   display: flex;
   flex-wrap: wrap;
   border: 2px solid rgb(255, 255, 255);
@@ -430,10 +293,6 @@ padding: 10px 30px;
 {
   height: 60%;
   opacity: 1;
-}.service-type:hover
-
-{transform: rotate(10deg);
-
 }.service-type-content li{
  color:var(--secondary-color);
  list-style-type: '→';
@@ -442,14 +301,16 @@ padding: 10px 30px;
 /* section to display my core services in a single frame end here  */
 /* webService-demo section or slider -------------------------------------------------------------------------------------------------------- */
 #Service-demo{
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  color: white;
+
+  color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
   margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
   height:700px;
+  width: 90%;
+  margin: 1% 5%;
   border: var(--border);
 
 } #Service-demo h2
@@ -544,15 +405,6 @@ padding: 10px 30px;
 
 }
 .seoSection{
-
-  /* Background color */
-  background: linear-gradient(to right, #f9fafb, #ffffff 70%);
-  /* Dot grid pattern using radial-gradient */
-  background-image:
-    radial-gradient(circle, #f5f9ff 1px, transparent 30px),
-    radial-gradient(circle, #e6e9ec 1px, transparent 30px);
-  background-position: 0 0, 20px 20px; /* offset second grid */
-  background-size: 30px 30px; /* spacing of dots */
   color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
@@ -593,7 +445,7 @@ padding: 10px 30px;
 }
 #seo2
 {
-    background-color: #6366f1;
+    background-color:var(--primary-color);
     animation: SeoAnn2  2s infinite;
 }
 #seo3
@@ -603,7 +455,7 @@ padding: 10px 30px;
 }
 #seo4
 {
-    background-color: #6366f1;
+    background-color:var(--primary-color);
     animation: SeoAnn4  2s infinite;
 }
 
@@ -647,26 +499,23 @@ padding: 10px 30px;
 .Home-page-about{
     border-radius: var(--radius);
     padding: 3rem 2rem;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
     border: var(--border);
+    width: 90%;
+    margin: auto 5%;
 
-}
+}.Home-page-about h2{color: white;}
 .about-content {
     max-width: 600px;
     margin-bottom: 3rem;
     color: #ffffff;
-
-
-
 }
-
 .Performance-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 
 }
-
 .Performance-card {
     background: white;
     padding: 2rem;
@@ -683,12 +532,10 @@ padding: 10px 30px;
     5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
     10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
 }
-
 .Performance-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
-
 .Performance-card h3 {
     font-size: 2.5rem;
     color: var(--color-primary);
@@ -703,8 +550,6 @@ padding: 10px 30px;
     height:auto;
     border-radius: var(--radius);
     background: #f9fafb;
-
-
 
 
 }#Internship:hover button
@@ -772,16 +617,19 @@ main{
 /* FAQ style start here -------------------------------*/
 .faq-section {
   padding:2rem 3rem;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(200deg, var(--primary-color), var(--secondary-color));
   border-radius: var(--radius);
   color: var(--bg-light);
   box-shadow:var(--shadow);
   border: var(--border);
+  width: 90%;
+  margin: auto 5%;
 }
 
 .faq-section h2 {
   text-align:left;
   margin-bottom: 30px;
+  color: white;
 }
 
 .faq {
@@ -855,7 +703,7 @@ main{
 
 }#whatsappbtn
 {
-  background-color:rgb(255, 255, 255);
+  background-color:var(--secondary-color);
   position:fixed;
   top: 85%;
   left:4%;
@@ -883,6 +731,7 @@ main{
   font-weight: bolder;
   display:none;
   border:var(--border);
+  background-color: var(--primary-color);
   border-radius: 50%;
   padding:3px;
 }#movebtn img{
@@ -893,7 +742,7 @@ main{
 .Footer
 {
   height:auto;
-  background-color:rgb(55, 95, 215);
+  background-color:var(--primary-color);
   padding: 1.5rem 2rem;
   color: var(--bg-light);
 }#quicklinks
@@ -941,9 +790,11 @@ main{
 
 @media screen and (max-width:700px)
 {
-  body{
-      padding:10px 10px;
+  body
+  {
+    padding: 0;
   }
+
   /* For all Mobile  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
 
 .Logo
@@ -957,38 +808,33 @@ main{
   height:80px;
   width:100%;
 }
-  .topnav {
+    .homeIntro {
 
-  height:auto;
-}
+    display:block;
 
+  }.introContent
 
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }  .topnav.responsive {
-    position: relative;
-    height:auto;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
+  {
+width:100%;
+text-align: left;
+padding-left:0px;
+margin:0%;
+  }#core-ser
+
+  {
     width: 100%;
-    text-align: left;
-  }   .introContent h1 {
+    padding: 10px 50px;
+    align-items: center;
+    align-content: center;
+    justify-self:center;
+     border-radius:var(--radius);
+  }  .ctaBtn {
+  display: block;
+  margin-top: 10px;
+  }
+
+
+  .introContent h1 {
       font-size: 2em;
     }
 
@@ -1114,7 +960,7 @@ width: 75px;
   width:200px;
   border-radius: 0 20% 20% 0;
   margin-left:-10px;
-  background-color: red;
+  background-color:var(--secondary-color);
   transform:none;
   display:block;
   margin-bottom:0;
@@ -1184,11 +1030,11 @@ width: 75px;
 
 }@keyframes buttonMove
 {
-  0%{background-color:#f43f5e;;
+  0%{background-color:var(--secondary-color);;
   margin-left:2.5%;
   opacity: 0.1;
    }
-  40%{background-color:#f43f5e;;
+  40%{background-color:var(--secondary-color);;
 
   opacity: 0.2;
    }

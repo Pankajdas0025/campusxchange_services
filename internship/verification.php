@@ -38,13 +38,31 @@
 
 
 <style>
+
+  :root {
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
+  --bg-light: #f9fafb;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
+  --card-bg: #f3eded;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
+  --font-main: 'Poppins', sans-serif;
+  --hoverbg :#da6b7e;
+  --pSize:0.9rem;
+  --border:none;
+
+}
   .verify-section {
-  background: linear-gradient(to right, #6366f1, #f43f5e );
+    background: linear-gradient(to right,var(--primary-color) , var(--secondary-color) );
     padding: 2.5rem 1rem 2rem 1rem;
-    max-width: 600px;
-      height: 400px;
-    margin: 2rem auto 2rem auto;
+    max-width:50%;
+    height: 400px;
+    margin: 2% 25%;
     box-shadow: 0 2px 16px rgba(99,102,241,0.08);
+    border-radius: 10px;
+
   }
   .verify-section h2 {
     text-align: center;
@@ -63,7 +81,7 @@
     font-size: 1rem;
   }
   .verify-form button {
-    background: #6366f1;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -85,6 +103,16 @@
     text-align: center;
 
   }
+@media screen and (max-width:700px) {
+    .verify-section
+
+    {
+    max-width:80%;
+    height: 400px;
+    margin: 5% 10%;
+    }
+
+  }
 </style>
 
 </head>
@@ -94,37 +122,8 @@
 <!-- animated cursor end ---------------->
  <!-- header section  -------------------------------------l̥------------------->
 <header>
-    <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div></header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="../services/web-development">Website Development</a>
-      <a href="../services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Handouts<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="../handouts/notes">Notes</a>
-      <a href="../handouts/blog">Blogs</a>
-      <a href="../handouts/assignment">Programming Assignment</a>
-    </div>
-  </div>
-    <div class="dropdown">
-    <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="apply">Apply </a>
-      <a href="verification">Verification</a>
-      <!-- <a href="internportal.html">Intern Portal</a> -->
-      <a href="../internship-program">Mentorship & Internship</a>
-    </div>
-  </div>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+    <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+<?php include "../components/header.php"?>
  <!-- header section end here-------------------------------------------------------->
 <section class="verify-section">
   <h2> <i class="fa-solid fa-file"></i> Internship Verification </h2>

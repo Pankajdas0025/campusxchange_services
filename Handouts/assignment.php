@@ -1,4 +1,4 @@
-.jpg<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Primary Meta Tags -->
@@ -38,35 +38,9 @@
 <!-- animated cursor end ---------------->
    <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
   </header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../services/web-development">Website Development</a>
-      <a href="../services/seo">SEO</a>
-    </div>
-  </div>
-   <div class="dropdown">
-    <button class="dropbtn">Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="notes" >Notes</a>
-      <a href="blog">Blogs</a>
-      <a href="assignment" style="background-color: #555;">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="../internship-program">Mentorship & Internship</a>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="#" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<?php include "../components/header.php" ?>
 <br>
 <main>
   <div class="marqueebox">
@@ -85,7 +59,7 @@
 
   </div>
   </div>
-  <br>
+
 
  <!-- Assignment section  ------------------------------------------------------------------------------------------------>
 

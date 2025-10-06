@@ -2,28 +2,20 @@
 RewriteEngine On
 
 # Clean URLs for root pages
-RewriteRule ^$ index.html [L]
-RewriteRule ^home$ index.html [L]
+RewriteRule ^$ index.php [L]
+RewriteRule ^home$ index.php [L]
 RewriteRule ^about$ about.php [L]
 RewriteRule ^lettalk$ lettalk.php [L]
-RewriteRule ^internship-program$ internship.html [L]
-RewriteRule ^web-development$ webdevelopment.php [L]
-RewriteRule ^seo$ seo.html [L]
-RewriteRule ^notes$ notes.php [L]
-RewriteRule ^blog$ blog.html [L]
-RewriteRule ^assignment$ assignment.html [L]
-RewriteRule ^apply$ apply.php [L]
-RewriteRule ^verification$ verification.php [L]
-RewriteRule ^verifiedintern$ verifiedintern.php [L]
+RewriteRule ^internship-program$ internship.php [L]
 
 # Clean URLs for handouts subfolder
 RewriteRule ^handouts/notes$ handouts/notes.php [L]
-RewriteRule ^handouts/blog$ handouts/blog.html [L]
-RewriteRule ^handouts/assignment$ handouts/assignment.html [L]
+RewriteRule ^handouts/blog$ handouts/blog.php [L]
+RewriteRule ^handouts/assignment$ handouts/assignment.php [L]
 
 # Clean URLs for services subfolder
 RewriteRule ^services/web-development$ services/webdevelopment.php [L]
-RewriteRule ^services/seo$ services/seo.html [L]
+RewriteRule ^services/seo$ services/seo.php [L]
 
 # Clean URLs for internship subfolder
 RewriteRule ^internship/apply$ internship/apply.php [L]

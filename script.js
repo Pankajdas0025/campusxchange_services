@@ -7,7 +7,9 @@ document.addEventListener("mousemove",(e)=>
   let y=e.pageY;
   cursor.style.top = y+"px";
   cursor.style.left = x+"px";
-});// animated cursor end ----------------------------------------------------
+});
+
+// animated cursor end ----------------------------------------------------
 
 
 function myFunction()

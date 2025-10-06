@@ -1,14 +1,8 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
-
 include "../src/conn.php";
-// include "../src/config.php";
-
-
+include "../src/config.php";
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,13 +39,10 @@ include "../src/conn.php";
 <title>Apply Internship | CampusXchange</title>
 <style>
 .apply-form-section {
-background: #f9fafb;
 
 width: 100%;
 height: 800px;
-background: linear-gradient(to right, #6366f1, #f43f5e );
 margin: 2rem auto;
-box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 display: flex;
 
 
@@ -62,36 +53,11 @@ display: flex;
   width: 40%;
   margin:0 5%;
   padding: 2rem 1rem;
-
   overflow: hidden;
-}.box #sharebox {
-overflow: hidden;
-position:absolute;
-font:  sans-serif;
-height: 40%;
-width:15%;
-padding: 1rem ;
-  left: 2rem;
-  top: 450px;
-
-}.box #sharebox a {
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.box #sharebox span
-{
-  width: 100%;
-  margin-top:20px;
-  display: block;
-  transform: translateX(-85px);
-  transition: 2s;
-
-}.box #sharebox span:hover
-{
-  transform: translateX(0);
+  border: 1px solid black;
+  box-shadow:  0 8px 30px rgba(2,6,23,0.08);
 
 }
-
 .box iframe {
   width: 100%;
   height: 100%;
@@ -151,34 +117,6 @@ height: auto;
 
 width: 100%;
 margin: 0;
-}.box #sharebox {
-overflow: hidden;
-position: relative;
-font:  sans-serif;
-height:auto;
-width:100%;
-left: 0;
-padding: 0rem ;
-top: 0px;
-
-
-}.box #sharebox a {
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-
-}
-.box #sharebox span
-{
-  width: 100%;
-  margin-top:20px;
-  display: block;
-  transform: translateX(-230px);
-  transition: 2s;
-
-}.box #sharebox span:hover
-{
-  transform: translateX(0);
-
 }
 .apply-form  input{
   margin: 0;
@@ -193,76 +131,25 @@ top: 0px;
 height: auto;
 
 }
-.box #sharebox {
-height:50%;
-width:50%;
-padding: 0rem ;
-  left: 2rem;
-  top: 450px;
 
-
-}
-.box #sharebox span
-{
-  width: 80%;
-  margin-top:20px;
-  transform: translateX(-200px);
-
-}
 }
 </style>
 </head>
 <body>
 <div class="cursor"></div>
 <header>
-<div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div></header>
-<div class="topnav" id="myTopnav">
-<a href="../home" class="active">Home</a>
-<div class="dropdown">
-<button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-<div class="dropdown-content">
-<a href="../services/web-development">Website Development</a>
-<a href="../services/seo">SEO</a>
-</div>
-</div>
-<div class="dropdown">
-<button class="dropbtn">Handouts<i class="fa fa-caret-down"></i></button>
-<div class="dropdown-content">
-<a href="../handouts/notes">Notes</a>
-<a href="../handouts/blog">Blogs</a>
-<a href="../handouts/assignment">Programming Assignment</a>
-</div>
-</div>
-<div class="dropdown">
-<button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
-<div class="dropdown-content">
-<a href="apply">Apply </a>
-<a href="verification">Verification</a>
-<!-- <a href="internportal.html">Intern Portal</a> -->
-<a href="../internship-program">Mentorship & Internship</a>
-</div>
-</div>
-<a href="../about">About</a>
-<a href="../lettalk">Let's Talk</a>
-<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+</header>
+<?php include "../components/header.php" ?>
 <br>
 <!-- Upcoming Batch section  ----------------------->
-<section style="background:linear-gradient(90deg,#6366f1,#f43f5e);color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem;">
+<section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90; margin: auto 5%;">
   <h2 style="margin:0;font-size:2rem;letter-spacing:1px;"><i class="fa-solid fa-calendar-days"></i> Upcoming Batch</h2>
   <p style="font-size:1.0rem;margin:0.7rem 0 0 0;">Next internship batch starts <b>September 10, 2025</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
 </section>
 <!-- Upcoming Batch section  end here ----------------------->
 <section class="apply-form-section">
   <div class="box">
-    <div id="sharebox">
-
-    <a href="https://www.facebook.com/sharing/share-offsite/?url=https://www.campusxchange.com/"> <span style="background-color:#1877F2; padding: 5px; color: #fff;">Share on  Facebook <i class="fa-brands fa-facebook"></i><a href=""> </span></a>
-    <a href="https://www.instagran.com/sharing/share-offsite/?url=https://www.campusxchange.com/"> <span style="background:linear-gradient(to right, #6228d7,#ee2a7b,#f9ce34); padding:  5px; color: #fff;">Share on  Instagram <i class="fa-brands fa-square-instagram"></i></span></a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.campusxchange.com"> <span style="background-color:#0077B5; padding: 5px; color: #fff;">Share on  Linkedin <i class="fa-brands fa-linkedin"></i></span></a>
-    <a href="#"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;">Share on  Whatsapp <i class="fa-brands fa-whatsapp"></i></span></a>
-
-    </div>
 
     <iframe src="https://lottie.host/embed/61f2b338-e89e-462f-b6a5-1f8bde8bd31e/ESPJKDEeRZ.lottie"></iframe>
   </div>
@@ -304,7 +191,7 @@ padding: 0rem ;
   </div>
 
   <!-- Apply intern form data into databae table  ----------------------------------------->
-  <?php
+<?php
 
 
 
@@ -404,18 +291,13 @@ Thanks for reaching out to CampusXchange—where ideas become digital realities.
         $mail->Password   = 'carp uidg qexa uvyr';          // App password, not real password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 465;
-
-
-        // Email settings
+       // Email settings
         $mail->setFrom('pd5569121@gmail.com');
         $mail->addAddress($Email);
-
         $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body    = $message;
-
         $mail->send();
-
     }
     catch (Exception $e) {
         echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
@@ -426,31 +308,17 @@ Thanks for reaching out to CampusXchange—where ideas become digital realities.
              setTimeout(() => {
             alert('✅Your Apllication has been Submitted !');
             window.location.href='apply';
-
-
-
       }, 4000);
-
-
         </script>";
                 $stmt->close();
     }  else
     {
-
         echo "<script>
-
             document.getElementById('Error_sms').innerHTML='Something Error';
-
-
         </script>";
     }
     }
-
-
-
-
 else {
-
         // Show validation errors
         foreach ($Errors as $error) {
             echo "<script> document.getElementById('Error_sms').innerHTML='$error';</script>";
@@ -460,7 +328,6 @@ else {
 
   ?>
 </section>
-<br>
 <!-- footer section start from here  ------------------------------------------------->
 <section class="Footer">
 <div class="fbox" id="lastfooter"><br>

@@ -1,13 +1,15 @@
 :root {
-  --primary-color: #6366f1; /* Indigo */
-  --secondary-color: #f43f5e; /* Rose */
+ --primary-color: #004080;
+  --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
-  --text-color: #1f2937;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 0px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#f43f5e; /* Rose */
+  --hoverbg :#da6b7e;
+  --pSize:0.9rem;
   --border:none;
 }
 
@@ -104,57 +106,6 @@ button[type="submit"]:hover {
   resize: none;
   color: #ffffff;
 }
-/*................................................ */
- .notes-section {
-
-  margin: 60px auto;
-  background-color: #fefefe;
-  padding:2rem 3rem;
-  border-radius:var(--radius);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.notes-section h2 {
-  font-size: 30px;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.notes-section p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.7;
-}
-
-.notes-highlights {
-  list-style: none;
-  padding: 0;
-  margin: 25px 0;
-}
-
-.notes-highlights li {
-  margin-bottom: 14px;
-  position: relative;
-  font-size: 15px;
-}
-
-.explore-notes-btn {
-  display: inline-block;
-  background:#6366f1;
-  color: #fff;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-size: 15px;
-  margin-top: 15px;
-
-}
-.explore-notes-btn:hover {
-  background:var(--secondary-color);
-}
-/* ........................................................................... */
-
 .Note_footer {
   display: flex;
   justify-content:space-between;
@@ -179,25 +130,70 @@ button[type="submit"]:hover {
 }.Note_footer a:hover{
     background-color: var(--hoverbg);
 }
+/*.............................................All types of notes details... */
+ .notes-section {
+  background: #f9f9ff;
+  width: 90%;
+  margin:0 5%;
+  padding: 60px 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+.notes-section h2 {
+  font-size: 1.8rem;
+  color: #004080;
+  margin-bottom: 15px;
+}
+.notes-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+.notes-highlights li {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.notes-highlights i {
+  color: #004080;
+  font-size: 1.2rem;
+}
+.explore-notes-btn {
+  display: inline-block;
+  background: #004080;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.explore-notes-btn:hover {
+  background: #02285f;
+  transform: translateY(-2px);
+}
+
+
+.paid-notes-section {width: 80%; margin: 40px 10%; ; padding: 24px; border-radius: 8px; }
+.paid-notes-list { display: flex; gap: 24px; flex-wrap: wrap; }
+.paid-note-box { background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 18px; width:30%; margin:0.5%; box-shadow: var(--shadow); }
+.paid-note-footer { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; }
+.note-price { font-weight: bold; color: #2e7d32; }
+.buy-btn { background: #007bff; color: #fff; padding: 6px 16px; border-radius: 4px; text-decoration: none; }
+.buy-btn:hover { background: #0056b3; }
+/* ........................................................................... */
+
 /*Notes  section  end------------------------------------------------------------------------------------------------------------- */
 /* Mobile Responsive */
 @media screen and (max-width:600px)
 {
-    #Note_tittle {
-  font-size:1.5rem;
-}
-
-#span {
-
-  margin-right: 20px;
-
-}#NotesContent
-{
-
-  padding:2rem 1rem;
-}
-
-
+  #Note_tittle {font-size:1.5rem;}
+#span {  margin-right: 20px;}
+#NotesContent{padding:2rem 1rem;}
 #Note_content {
   width: 100%;
   height: 120px;
@@ -209,7 +205,6 @@ button[type="submit"]:hover {
   margin-top:5px;
   resize: none;
   color: #000103;
-
 }
 button[type="submit"]
 {
@@ -241,11 +236,7 @@ button[type="submit"]
   position: relative;
   font-size: 15px;
 }
-
-
-
 .Note_footer {
-
   margin-top: 15px;
   justify-content:space-between;
 }.Note_footer a
@@ -257,7 +248,9 @@ button[type="submit"]
   text-align: center;
   border-radius: var(--radius);
   text-decoration: none;
-
 }
+
+.paid-notes-section { padding:0px; }
+.paid-note-box {width:100%; margin:0; }
 
 }

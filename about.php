@@ -35,16 +35,37 @@
 
 
   <style>
+    :root {
+
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
+  --bg-light: #f9fafb;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
+  --card-bg: #f3eded;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
+  --font-main: 'Poppins', sans-serif;
+  --hoverbg :#da6b7e;
+  --pSize:0.9rem;
+  --border:none;
+}
+
     /* Hero Section */
     .about-hero {
-       background:linear-gradient(to right, #f43f5e, #6366f1);
+      background:linear-gradient(350deg,  var(--primary-color) ,#f43f5e);
       color: #fff;
       padding: 3rem 2rem;
       text-align: center;
+      width: 90%;
+      margin: 0 5%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
     .about-hero h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      color: rgb(218, 209, 209);
     }
     .about-hero p {
       font-size: 1.2rem;
@@ -59,8 +80,9 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
+
+      width: 90%;
+      margin: 2.5% 5%;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       border: 2px solid white;
@@ -69,7 +91,7 @@
       flex: 0 0 160px;
       border-radius: 50%;
       overflow: hidden;
-      border: 4px solid #6366f1;
+      border: 4px solid var(--primary-color);
       width: 160px;
       height: 160px;
     }
@@ -102,7 +124,7 @@
     }
     .feature-grid h2 {
       text-align: center;
-      color: #6366f1;
+      color:var(--primary-color);
     }
     .feature-items {
       display: flex;
@@ -128,11 +150,10 @@
 
     /* Carousel -------------------------------------------------*/
     .carousel-section {
-      background: linear-gradient(to right, #6366f1, #f43f5e );
       padding: 2rem 1rem;
       text-align: center;
     }    .carousel-section  h2{
-      color: white;
+      color:var(--primary-color);
     }
     .carousel-container {
       max-width: 600px;
@@ -143,16 +164,15 @@
       display: none;
       font-size: 1.2rem;
       color: #222;
-      background: #f9fafb;
       border-radius: 10px;
       padding: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+     box-shadow: var(--shadow);
     }
     .carousel-slide.active {
       display: block;
     }
     .carousel-btn {
-      background: #6366f1;
+      background:var(--primary-color);
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -187,7 +207,7 @@
     }
     .core-values h2 {
       text-align: center;
-      color: #6366f1;
+      color:var(--primary-color);
     }
     .core-values-items {
       display: flex;
@@ -234,35 +254,9 @@
 <!-- animated cursor end ---------------->
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
-      <div class="Logo"><img src="assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+      <div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
    </header>
-<div class="topnav" id="myTopnav">
-  <a href="home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="services/web-development">Website Development</a>
-      <a href="services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="handouts/notes">Notes</a>
-      <a href="handouts/blog">Blogs</a>
-      <a href="handouts/assignment">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="internship-program">Mentorship & Internship</a>
-  <a href="about" style="background-color: #555;">About</a>
-  <a href="lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<?php include "components/header.php" ?>
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
 <br>
   <!-- Unique About Us Hero Section -->

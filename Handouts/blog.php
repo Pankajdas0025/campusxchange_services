@@ -35,18 +35,16 @@
 
 :root {
 
-  --primary-color: #6366f1; /* Indigo */
-  --secondary-color: #f43f5e; /* Rose */
-  /* --primary-color: #7DA56C;
-  --secondary-color: #e9b003;  */
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 0px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#f43f5e; /* Rose */
+  --hoverbg :#da6b7e;
   --pSize:0.9rem;
   --border:none;
 }
@@ -175,35 +173,9 @@
 <!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-    <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+    <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
   </header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../services/web-development">Website Development</a>
-      <a href="../services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="notes">Notes</a>
-      <a href="blog"  style="background-color: #555;">Blogs</a>
-      <a href="assignment">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="../internship-program">Mentorship & Internship</a>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<?php include "../components/header.php" ?>
 
 <br>
 <main>

@@ -48,35 +48,9 @@
 <!-- animated cursor end ---------------->
    <!--Note page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
   </header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../services/web-development">Website Development</a>
-      <a href="../services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="notes" style="background-color: #555;">Notes</a>
-      <a href="blog">Blogs</a>
-      <a href="assignment">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="../internship-program">Mentorship & Internship</a>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<?php include "../components/header.php" ?>
  <!--Note page Header and navbar  end ----------------------------------------------------------------------------------------->
 
 <!------Notes section start -------------------------------------------------------------->
@@ -180,33 +154,66 @@ else
       </script>
     <!------Notes section start from backend  end here  -------------------------------------------------------------->
     </section>
-    <!------Notes section end here  -------------------------------------------------------------->
-    <br>
-    <br>
+    <!-----all -Notes section ------------------------------------------------------------->
 
-<section class="block notes-section">
-  <h2>Tech Notes That Actually Make Sense</h2>
+
+<section class="block notes-section" data-aos="fade-up" data-aos-duration="1000">
+  <h2><i class="fa-solid fa-book-open-reader"></i> Tech Notes That Actually Make Sense</h2>
   <p>
-    Learning tech doesn't have to be overwhelming. At <strong>CampusXchange</strong>, we’ve curated clear, concise, and beginner-to-pro notes for the most in-demand technologies —
-    from Python to Machine Learning, from Web Dev to Artificial Intelligence.
+    Learning technology doesn’t have to feel confusing. At <strong>CampusXchange</strong>, we’ve carefully created
+    <strong>clear, concise, and practical notes</strong> for trending technologies — from <strong>Python</strong> to <strong>Machine Learning</strong>,
+    and <strong>Web Development</strong> to <strong>Artificial Intelligence</strong>.
   </p>
 
   <ul class="notes-highlights">
-    <li>Programming Languages - PHP, Python, JavaScript, C/C++, Java</li>
-    <li>Artificial Intelligence & Machine Learning - Core concepts, Algorithms, Models</li>
-    <li>Data Science - Numpy, Pandas, Data Cleaning, Visualization</li>
-    <li>Web Development - HTML, CSS, JS, PHP, React , Bootstrap , etc.</li>
-    <li>Databases - MySQL, MongoDB, Firebase</li>
-    <li>Dev Tools - Git, GitHub, APIs, JSON, Postman</li>
-    <li>DSA - Sorting, Trees, Graphs, Interview Prep Notes</li>
+    <li><i class="fa-solid fa-code"></i> <strong>Programming Languages</strong> – PHP, Python, JavaScript, C/C++, Java</li>
+    <li><i class="fa-solid fa-brain"></i> <strong>Artificial Intelligence & Machine Learning</strong> – Core Concepts, Algorithms, and Models</li>
+    <li><i class="fa-solid fa-chart-line"></i> <strong>Data Science</strong> – Numpy, Pandas, Data Cleaning, Visualization</li>
+    <li><i class="fa-solid fa-laptop-code"></i> <strong>Web Development</strong> – HTML, CSS, JavaScript, PHP, React, Bootstrap, and more</li>
+    <li><i class="fa-solid fa-database"></i> <strong>Databases</strong> – MySQL, MongoDB, Firebase</li>
+    <li><i class="fa-solid fa-toolbox"></i> <strong>Developer Tools</strong> – Git, GitHub, APIs, JSON, Postman</li>
+    <li><i class="fa-solid fa-diagram-project"></i> <strong>DSA</strong> – Sorting, Trees, Graphs, Interview Prep Notes</li>
   </ul>
 
   <p>
-    All notes are crafted for clarity and practical understanding — with real-world examples, diagrams, cheat sheets, and simplified explanations.
-    Ideal for students, beginners, and self-learners prepping for interviews or projects.
+    Each note is built for <strong>clarity and practical understanding</strong> — featuring examples, diagrams, and simplified explanations.
+    Perfect for <strong>students, self-learners, and interview preparation</strong>.
   </p>
 
-  <a href="assignment" class="explore-notes-btn">Explore Coding Assignments →</a>
+  <a href="assignment" class="explore-notes-btn">
+    <i class="fa-solid fa-arrow-right"></i> Explore Coding Assignments
+  </a>
+</section>
+
+<!-- paid Notes section -->
+<section class="paid-notes-section">
+  <h2>Premium Notes</h2>
+  <div class="paid-notes-list">
+    <div class="paid-note-box">
+      <h3>Advanced Python for Data Science</h3>
+      <p>Unlock advanced Python concepts, libraries, and real-world data science workflows. Includes code samples and project ideas.</p>
+      <div class="paid-note-footer">
+        <span class="note-price">₹199</span>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="paid-note-box">
+      <h3>Machine Learning Interview Kit</h3>
+      <p>Comprehensive ML notes, cheat sheets, and solved interview questions. Perfect for job prep and revision.</p>
+      <div class="paid-note-footer">
+        <span class="note-price">₹249</span>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="paid-note-box">
+      <h3>Full Stack Web Dev Guide</h3>
+      <p>Step-by-step guide covering HTML, CSS, JS, React, and backend essentials. Includes diagrams and mini-projects.</p>
+      <div class="paid-note-footer">
+        <span class="note-price">₹299</span>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 <a href="Internship-program" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
@@ -264,7 +271,6 @@ function RemoveIpop()
          <div  id="CopyRight">
        Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
       </div>
-
 
         </section>
         <!-- fotter section end  --------------------------------------------------------------------------------->

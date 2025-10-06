@@ -35,18 +35,19 @@
 <style>
   :root
 {
-  --primary-color: #6366f1; /* Indigo */
-  --secondary-color: #f43f5e; /* Rose */
+
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius:0px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#555;
+  --hoverbg :#da6b7e;
   --pSize:0.9rem;
-  --border:0px dotted white;
+  --border:none;
 }
 
 
@@ -59,83 +60,144 @@
   align-content: center;
   font-size: 20px;
 }
-  #seo-homepage
-  {
-    height: 600px;
-    width: 100%;
-     background: linear-gradient(to right, var(--secondary-color),transparent, transparent);
-    display: flex;
-    padding: 0;
-  }.seo-box
-  {
-    width: 40%;
-    height: 80%;
-    margin:4% 5%;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 0;
-  }
+ #home-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10%;
+  background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/Hero-image.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  width: 80%;
+  margin: 5% 10%;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .seo-box iframe
-  {
+.hero-content {
+  flex: 1 1 45%;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: var(--primary-color);
+
+}
+
+.hero-content p {
+  color: #f7ebeb;
+  margin: 20px 0 30px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(99,102,241,0.4);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.hero-stats div:hover {
+  transform: translateY(-4px);
+  color: var(--primary-color);
+}
+
+.hero-stats i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.hero-media {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 250px;
+}
+
+.seo-video {
   width: 100%;
-  height: 100%;
-  border: none;
+  min-height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
 
-  }
-.overlay
-  {
-
-    height:65%;
-    position: absolute;
-   margin: 0;
-   width: 600px;
-  }
-
-  .type
-  {
-    width: 40%;
-    height: 40%;
-    margin: 4% 5%;
-    background-color:#6366f1;
-    border:2px solid rgb(255, 255, 255);
-    border-radius:5%;
-    transition: 1s;
-    overflow: hidden;
-    box-shadow: 2px 2px 24px black;box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
-    5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
-    10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    color: rgb(255, 255, 255);
-
-  }.type img{
-    border-radius: 5%;
-    transition: transform 0.3s ease;
-  filter:grayscale(1);
-  }
-  .type:hover img
-  {
-    transform:scale(1.5);
-      filter:grayscale(0);
-      filter: contrast(1.2);
-  }
-/* whatsapp cta form  */
+/* whatsapp contact form -------------------------------------------------------------------------------- */
 .whtsapp-cta-form
 {
-  background-color:var(--primary-color);
-  width: 100%;
-  height: 400px;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  width: 80%;
+  height: 200px;
   align-items: center;
   align-content: center;
   padding: 0 25px;
+  margin: auto 10%;
 
 }.whtsapp-cta-form input
 {
@@ -150,15 +212,15 @@
 }.whtsapp-cta-form input:focus
 {
   outline: none;
- border: 2px solid var(--secondary-color);
-  box-shadow: 0 0 5px rgba(99,102,241,0.5);
+  border: 1px solid var(--secondary-color);
+  box-shadow:var(--shadow);
 
 }.whtsapp-cta-form button
 {
   box-shadow: 0 2px 8px rgba(99,102,241,0.12);
   height: 55px;
   font-size: 20px;
-background-color:#25D366;
+background-color:#60e08f;
  color:white;
   padding:12px 20px;
    border:none;
@@ -170,40 +232,70 @@ background-color:#25D366;
  background-color: red;
 }
   /* second section--------------------------------------------  */
-  #seo-topics
-  {
-    height: 500px;
-    width: 100%;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    padding: 20px;
-    display: flex;
-    flex-wrap:wrap;
+ #seo-topics {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 
-  }#seo-topics .topics
-  {
-    background-color:white;
-    border: 1px solid black;
-    padding:0;
-    margin:0 4.1%;
-    height: 50px;
-    width:25%;
-    display: inline;
-    text-align: center;
-    text-align: center;
-    align-content: center;
-    border-radius: 15px;
-    font-size: 20px;
-    transition: 1s;
+.seo-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
 
+.seo-title i {
+  color: var(--primary-color);
+  margin-right: 10px;
+}
 
-  }#seo-topics .topics:hover{
-    transform:rotate(60deg);
-    background-color: var(--primary-color);
-    color: white;
-  }
+.topics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.topic-card {
+  background: #fff;
+  padding: 18px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 280px;
+  font-size: 1.05rem;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.topic-card i {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.topic-card:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.3);
+}
+
+.topic-card:hover i {
+  color: #fff;
+  transform: rotate(10deg);
+}
+
   .industryweserve
   {
-    width: 100%;
+    width: 80%;
+    margin: auto 10%;
     height: 400px;
     background-color: #f3eded;
     display: flex;
@@ -223,7 +315,7 @@ background-color:#25D366;
     width: 20%;
     height: 50px;
     margin: 10px;
-    background-color: #6366f1;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     line-height: 50px;
@@ -231,51 +323,51 @@ background-color:#25D366;
     transition: background-color 0.3s ease;
   }
 .industrytype:hover{
-    background-color: #f43f5e;
+    background-color: var(--secondary-color);
     transform: scale(1.1);
   }
 
 
   @media screen and (max-width:700px) {
 
-      #seo-homepage
-  { height: 800px;
-    width: 100%;
-    background-color:transparent;
-    display: block;
-    padding: 0;
-  }.seo-box
-  {
-    width: 100%;
-    height: 40%;
-    margin:5% 0%;
-  }.type
-  {
-    width: 45%;
-    height: 40%;
-    margin: 4% 2.5%;
-  }#seo-topics .topics
-  {
-    margin:0 1.65%;
-    height: 50px;
-    width:30%;
-    font-size: 11px;
-  }
-.overlay
-  {
 
-    height:65%;
-    position: absolute;
-   margin: 0;
-   width:100%;
-  }  .whtsapp-cta-form
-{
-  background-color:var(--primary-color);
+ #home-hero {
+
+  width: 95%;
+  margin:2.5%;
+
+}
+
+
+
+.hero-content h1 {
+  font-size: 2rem;
+
+}
+
+
+.hero-media {
+
+  min-height: 200px;
+  margin-top: 10px;
+}
+
+.seo-video {
   width: 100%;
-  height: 500px;
-  align-items: center;
-  align-content: center;
-  padding: 0 25px;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+
+  .whtsapp-cta-form
+{
+
+  width:90%;
+  height:auto;
+  margin: auto 5%;
+
 
 }.whtsapp-cta-form input
 {
@@ -296,9 +388,10 @@ background-color:#25D366;
 
   .industryweserve
   {
-    width: 100%;
+    width: 80%;
+    margin: auto 10%;
     height: 700px;
-    background-color: #f3eded;
+
   }.industry
   {
     width: 90%;
@@ -396,30 +489,7 @@ background-color:#25D366;
   margin: 7%;
 }
   /* second section--------------------------------------------  */
-  #seo-topics
-  {
-    height: 500px;
-    width: 100%;
-background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    padding: 20px;
-    display: flex;
-    flex-wrap:wrap;
-
-  }#seo-topics .topics
-  {
-    background-color:white;
-    padding:0;
-    margin:0 4.1%;
-    height: 50px;
-    width:25%;
-    display: inline;
-    text-align: center;
-    text-align: center;
-    align-content: center;
-    border-radius: 15px;
-    font-size: 15px;
-    transition: 2s;
-  }.industrytype
+ .industrytype
   {
     width: 20%;
     height: 50px;
@@ -437,30 +507,8 @@ background: linear-gradient(to right, var(--primary-color), var(--secondary-colo
 <body>
 
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-     <header><div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div></header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="web-development">Website Development</a>
-      <a href="seo" style="background-color: #555;">SEO</a>
-    </div>
-  </div>
-   <div class="dropdown">
-    <button class="dropbtn">Handouts<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="../handouts/notes">Notes</a>
-      <a href="../handouts/blog">Blogs</a>
-      <a href="../handouts/assignment">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="../internship-program">Mentorship & Internship</a>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+     <header><div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+<?php include "../components/header.php" ?>
 <br>
   <!-- animated cursor ------------------->
  <div class="cursor"></div>
@@ -470,22 +518,33 @@ background: linear-gradient(to right, var(--primary-color), var(--secondary-colo
  <div class="marquee "><span><img src="../assets/Images/newannimation.jpg" height="50" width="50"></span><p> Professional Services to Grow Your business  | No any charges if your website is design with our team </p></div>
  </marquee>
 
- <section id="seo-homepage">
-<div class="seo-box">
-  <iframe src="https://lottie.host/embed/b3988163-f638-4fa7-afda-fb2f52a4900b/0SBibgYcTF.lottie">  </iframe>
-  <div class="overlay"><iframe src="https://lottie.host/embed/8de2c7d5-521b-4345-8ae3-a7bbc57e3610/fKXXQ1hhuB.lottie"></iframe></div>
-</div>
+ <section id="home-hero">
+  <div class="hero-content" data-aos="fade-right">
+    <h1>Boost Your Brand with <span>CampusXchange SEO</span></h1>
+    <p>Drive traffic, climb search rankings, and dominate your digital presence with our result-driven SEO strategies designed for businesses and students alike.</p>
+    <div class="hero-buttons">
+      <a href="services/seo" class="btn-primary"><i class="fa-solid fa-chart-line"></i> Explore SEO Services</a>
+      <a href="lettalk" class="btn-secondary"><i class="fa-solid fa-comments"></i> Let's Talk</a>
+    </div>
+    <div class="hero-stats">
+      <div><i class="fa-solid fa-rocket"></i><span>+500 Projects</span></div>
+      <div><i class="fa-solid fa-globe"></i><span>20+ SEO Niches</span></div>
+      <div><i class="fa-solid fa-user-graduate"></i><span>1000+ Learners</span></div>
+    </div>
+  </div>
 
+  <!-- Dynamic Media Section -->
+  <div class="hero-media" data-aos="fade-left">
+    <!-- Option 1: Background Video -->
+    <video autoplay muted loop playsinline class="seo-video">
+      <source src="../assets/Images/H.mp4" type="video/mp4">
+    </video>
 
+    <!-- Option 2: Lottie Animation (fallback if video not used) -->
+    <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_pprxh53t.json" background="transparent" speed="1" loop autoplay></lottie-player> -->
+  </div>
+</section>
 
-<div class="seo-box">
-  <div class=" type"><img src="../assets/Images/seo-service-img1.jpg" alt="campusxchange-seo-service-image1" height="200" width="100%"></div>
-  <div class=" type"><img src="../assets/Images/seo-service-img2.jpg" alt="campusxchange-seo-service-image2" height="200" width="100%"></div>
-  <div class=" type"><img src="../assets/Images/seo-service-img3.jpg" alt="campusxchange-seo-service-image3" height="200" width="100%"></div>
-  <div class=" type"><img src="../assets/Images/seo-service-img3.jpg" alt="campusxchange-seo-service-image4" height="200" width="100%"></div>
-</div>
- </section>
- <br>
  <div class=" block whtsapp-cta-form">
 <form id="seoForm">
 
@@ -512,25 +571,29 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
 });
 </script>
  </div>
- <br>
-
  <section id="seo-topics">
-<div class=" topics">→ Keywords Research</div>
-<div class=" topics">→ Content Duplicity Check</div>
-<div class=" topics">→ Competitor Analysis</div>
-<div class=" topics">→ Meta Tags Creation</div>
-<div class=" topics">→ URL Optimization</div>
-<div class=" topics">→ Content Optimization</div>
-<div class=" topics">→ Image Optimization</div>
-<div class=" topics">→ Speed Optimization</div>
-<div class=" topics">→ Robots.txt</div>
-<div class=" topics">→ Sitemap Creation</div>
-<div class=" topics">→ Google Map Integration</div>
-<div class=" topics">→ Google Business Page Setup</div>
-<div class=" topics">→ Article Writing</div>
-<div class=" topics">→ Backlink Building</div>
-<div class=" topics">→ Slide Submissions</div>
- </section>
+  <h2 class="seo-title"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO Topics We Cover</h2>
+
+  <div class="topics-container">
+
+    <div class="topic-card"><i class="fa-solid fa-key"></i> Keywords Research</div>
+    <div class="topic-card"><i class="fa-solid fa-copy"></i> Content Duplicity Check</div>
+    <div class="topic-card"><i class="fa-solid fa-user-secret"></i> Competitor Analysis</div>
+    <div class="topic-card"><i class="fa-solid fa-tags"></i> Meta Tags Creation</div>
+    <div class="topic-card"><i class="fa-solid fa-link"></i> URL Optimization</div>
+    <div class="topic-card"><i class="fa-solid fa-pen-nib"></i> Content Optimization</div>
+    <div class="topic-card"><i class="fa-solid fa-image"></i> Image Optimization</div>
+    <div class="topic-card"><i class="fa-solid fa-gauge-high"></i> Speed Optimization</div>
+    <div class="topic-card"><i class="fa-solid fa-robot"></i> Robots.txt</div>
+    <div class="topic-card"><i class="fa-solid fa-sitemap"></i> Sitemap Creation</div>
+    <div class="topic-card"><i class="fa-solid fa-map-location-dot"></i> Google Map Integration</div>
+    <div class="topic-card"><i class="fa-solid fa-briefcase"></i> Google Business Page Setup</div>
+    <div class="topic-card"><i class="fa-solid fa-pen"></i> Article Writing</div>
+    <div class="topic-card"><i class="fa-solid fa-link"></i> Backlink Building</div>
+    <div class="topic-card"><i class="fa-solid fa-sliders"></i> Slide Submissions</div>
+
+  </div>
+</section>
  <br>
  <section class="block industryweserve">
   <h2>Industries We Serve</h2>

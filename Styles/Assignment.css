@@ -1,19 +1,16 @@
 
 :root {
 
-  --primary-color: #6366f1; /* Indigo */
-  --secondary-color: #f43f5e; /* Rose */
-  /* --primary-color: #7DA56C;
-  --secondary-color: #e9b003;  */
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  --radius: 0px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
   --font-main: 'Poppins', sans-serif;
-  --hoverbg :#f43f5e; /* Rose */
-  --transition-base: 0.3s;
+  --hoverbg :#da6b7e;
   --pSize:0.9rem;
   --border:none;
 }
@@ -74,14 +71,13 @@ padding-left:50px;
   margin-bottom: 10px;
   list-style-type: '✅';
 }
-/* -------------------------------------- */
+/*basic-project section -------------------------------------- */
 #basic-project
 {
   background:transparent;
   color: white;
   padding: 3rem 0.5rem;
   border-radius: var(--radius);
-  margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
   align-items: center;
@@ -89,6 +85,8 @@ padding-left:50px;
   transition-delay: 10s;
   height: auto;
   border: var(--border);
+  width: 80%;
+  margin: auto 10%;
 }#basic-project h2{
     text-align: left;
     padding-left: 2rem;
@@ -109,8 +107,8 @@ padding-left:50px;
     box-shadow: var(--shadow-md);
     transition: var(--transition-base);
     border-radius: var(--radius);
-    border:2px dotted #6366f1;
-      border-bottom: 5px solid #6366f1;
+    border:2px dotted var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
     color: #000000;
     box-shadow:2px 2px 5px black;
     overflow: hidden;
@@ -144,7 +142,7 @@ padding-left:50px;
 color:white;
 padding: 2px;
 width:40px;
-background-color: #6366f1;
+background-color: var(--primary-color);
 
 }
 #Download
@@ -152,7 +150,7 @@ background-color: #6366f1;
  color:white;
  padding:2px;
  width:50px;
- background-color: #f43f5e;
+ background-color: var(--secondary-color);
 }#Download:hover{
     background-color: var(--hoverbg);
 }#View:hover{
@@ -169,7 +167,7 @@ background-color: #6366f1;
 {
     height: 30px;
     width: 100px;
-    background-color: #6366f1;
+    background-color: var(--primary-color);
     font-size: 1.2rem;
     color: white;
     border: var(--border);
@@ -177,7 +175,7 @@ background-color: #6366f1;
 }h2 #Cbtn
 {
     display: none;
-      background-color:#f43f5e;
+      background-color:var(--primary-color);
 }
 .basic-project-box:hover {
     transform: translateY(-5px);
@@ -202,7 +200,7 @@ background-color: #6366f1;
     display: block;
 }#Assignment a:hover
 {
-  background-color: #f43f5e;
+  background-color: var(--secondary-color);
 }
 .marquee img
   {

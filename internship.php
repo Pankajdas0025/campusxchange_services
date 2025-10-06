@@ -40,36 +40,8 @@
    <!-- animated cursor ------------------->
  <div class="cursor"></div>
 <!-- animated cursor end ---------------->
-<header><div class="Logo"><img src="assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div></header>
-<div class="topnav" id="myTopnav">
-  <a href="home" class="active">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Services <i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="services/web-development">Website Development</a>
-      <a href="services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn">Handouts<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="handouts/notes">Notes</a>
-      <a href="handouts/blog">Blogs</a>
-      <a href="handouts/assignment">Programming Assignment</a>
-    </div>
-  </div>
-    <div class="dropdown">
-    <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="internship/apply">Apply </a>
-      <a href="internship/verification">Verification</a>
-      <!-- <a href="internship/internportal.html">Intern Portal</a> -->
-    </div>
-  </div>
-  <a href="about">About</a>
-  <a href="lettalk">Let's Talk</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+<header><div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+<?php include "components/header.php" ?>
 <br>
 <main>
 <span class="Notice">
@@ -91,7 +63,7 @@
       <li>Project ideas</li>
       <li>Personalized study plans</li>
     </ul>
-    <a href="lettalk" style="display:block;margin-top:16px;background:#6366f1;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Book a Mentor</a>
+    <a href="lettalk" style="display:block;margin-top:16px;background:#004080;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Book a Mentor</a>
   </div>
   <div class="block mentor-card">
     <h2><i class="fa-solid fa-briefcase"></i> Internship Program</h2>
@@ -114,7 +86,7 @@
       <li>Networking opportunities</li>
       <li>Resume design</li>
     </ul>
-    <a href="lettalk" style="display:block;margin-top:16px;background:#6366f1;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Book Now</a>
+    <a href="lettalk" style="display:block;margin-top:16px;background:#004080;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Book Now</a>
   </div>
  </section>
  <br>'

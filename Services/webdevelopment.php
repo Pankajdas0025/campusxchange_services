@@ -47,36 +47,9 @@
 <!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo.svg" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
   </header>
-<div class="topnav" id="myTopnav">
-  <a href="../home" class="active">Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="web-development" style="background-color: #555;">Website Development</a>
-      <a href="seo" >SEO</a>
-    </div>
-  </div>
-   <div class="dropdown">
-    <button class="dropbtn">Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../handouts/notes">Notes</a>
-      <a href="../handouts/blog">Blogs</a>
-      <a href="../handouts/assignment">Programming Assignment</a>
-    </div>
-  </div>
-  <a href="../internship-program">Mentorship & Internship</a>
-  <a href="../about">About</a>
-  <a href="../lettalk">Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-<br>
+<?php include "../components/header.php" ?>
 <main>
   <!-- first section for better UI or Hero Section start ------------------------------>
   <section class="block first-webdev-section">
@@ -131,18 +104,38 @@
   </div>
 </section>
      <!-- section for what we offer in web development end here  ------------------------------->
-      <br>
-      <section class="block webdevprocess">
-  <h2>Our Process: From Idea to Impact -</h2>
-  <div class="block processbox">Discovery & Requirement Analysis</div>
-  <div class="block processbox">Planning & Wireframing</div>
-  <div class="block processbox">UI/UX & Front-End Development</div>
-  <div class="block processbox">Back-End Development</div>
-  <div class="block processbox">Testing & Quality Assurance.</div>
-  <div class="block processbox">Launch & Deployment</div>
-  <div class="block processbox" id="tabstyle">Post-Launch Support</div>
+
+<!-- our development process  section   -->
+ <section class="process-section">
+  <h2>Our Process: From Idea to Impact 🚀</h2>
+  <div class="process-steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Discovery & Requirement</h3>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Planning & Wireframing</h3>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>UI/UX & Front-End Dev</h3>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <h3>Back-End Development</h3>
+    </div>
+    <div class="step">
+      <div class="num">5</div>
+      <h3>Launch & Deployment</h3>
+    </div>
+    <div class="step">
+      <div class="num">6</div>
+      <h3>Post-Launch Support</h3>
+    </div>
+  </div>
 </section>
-<br>
+
 <!-- Tech stack we work with section  -->
  <section class="tech-stack-box" aria-label="Tech Stack We Work With">
     <h2>Our Tech Stack</h2>
@@ -183,31 +176,31 @@
       </div>
     </div>
   </section>
-<br>
+
+  <!--for PORTFOLIO section  Auto Scrolling Gallery -->
+  <section class="scroll-gallery"  id="gallery">
+    <h2>Our Portfolio</h2>
+    <div class="scroll-track">
+<!-- Educational Image Gallery -->
+<!-- Same images twice for infinite loop effect -->
+<img src="../assets/Images/paramount-website-mockup.png"alt="Books and Study Materials">
+<img src="../assets/Images/memmory-puzzle-game-website.png"alt="Students Studying Together">
+<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="Classroom Learning">
+<img src="../assets/Images/notes-website-mockup.png"alt="Books and Study Materials">
+
+
+<!-- Duplicate for smooth infinite effect -->
+<img src="../assets/Images/paramount-website-mockup.png"alt="Books and Study Materials">
+<img src="../assets/Images/memmory-puzzle-game-website.png"alt="Students Studying Together">
+<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="Classroom Learning">
+<img src="../assets/Images/notes-website-mockup.png"alt="Books and Study Materials">
+
+
+    </div>
+  </section>
 <!-- for showing our clients  -->
-<section class="block ourstatus">
-<div class="ourstatushero">  <h2>Our Portfolio</h2>
 
-<div class="client-slider" id="sliderBox">
-  <div class="clients-images" id="slider">
-    <img src="../assets/Images/P1.png" alt="Image 1">
-    <img src="../assets/Images/P2.png" alt="Image 2">
-    <img src="../assets/Images/P3.png" alt="Image 3">
-    <img src="../assets/Images/P4.png" alt="Image 3">
-    <img src="../assets/Images/P5.png" alt="Image 3">
-  </div>
-</div>
-
-<div class="numbers" id= "numberContainerBox" > </div>
-<br>
-</div>
-</section>
-
-
-<?php
-
-include("../feedback.php");
-?>
+<?php  include("../feedback.php"); ?>
 <!-- for showing our clients section end here  -->
  <br>
  <!-- Website development price plan ----------------------------------------------------------------------->
@@ -293,7 +286,7 @@ include("../feedback.php");
   <input type="submit"  value="SUBMIT" id="client_form_sbtn"  >
   </form>
 
-  <!-- store form data into databae table  --------------------------------------------------->
+<!-- store form data into databae table  --------------------------------------------------->
   <?php
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
@@ -436,7 +429,6 @@ else {
 ?>
 </div>
 </section>
-<br>
 <section class="ourhappystatus">
   <!-- left side -->
 <div class="happyabout">
@@ -458,11 +450,31 @@ else {
 </div>
 
 <!-- right side -->
-<div class="happyabout" id="happy">
-  <div class="animationtype2 happyabouttype"><strong style="font-size: 20px; color: #210606;">Experience</strong><h3>2Year</h3></div>
-  <div class="animationtype2 happyabouttype"><strong style="font-size: 20px; color: #210606;">Satisfaction</strong><h3>100%</h3></div>
-  <div class="animationtype2 happyabouttype"><strong style="font-size: 20px; color: #210606;">Clients</strong><h3>20+</h3></div>
-  <div class="animationtype2 happyabouttype"><strong style="font-size: 20px; color: #210606;">Projects</strong><h3>40+</h3></div>
+<div class="happyabout" id="happy" style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; padding:20px 0;">
+
+  <div class="animationtype2 happyabouttype" style="text-align:center;">
+    <i class="fa-solid fa-briefcase" style="font-size:36px; color:#4f46e5;"></i>
+    <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Experience</strong>
+    <h3 style="font-size:22px; color:#000;">2 Years</h3>
+  </div>
+
+  <div class="animationtype2 happyabouttype" style="text-align:center;">
+    <i class="fa-solid fa-face-smile" style="font-size:36px; color:#16a34a;"></i>
+    <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Satisfaction</strong>
+    <h3 style="font-size:22px; color:#000;">100%</h3>
+  </div>
+
+  <div class="animationtype2 happyabouttype" style="text-align:center;">
+    <i class="fa-solid fa-users" style="font-size:36px; color:#f59e0b;"></i>
+    <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Clients</strong>
+    <h3 style="font-size:22px; color:#000;">20+</h3>
+  </div>
+
+  <div class="animationtype2 happyabouttype" style="text-align:center;">
+    <i class="fa-solid fa-diagram-project" style="font-size:36px; color:#dc2626;"></i>
+    <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Projects</strong>
+    <h3 style="font-size:22px; color:#000;">40+</h3>
+  </div>
 
 </div>
 </section>
@@ -491,9 +503,9 @@ else {
     </div>
   </div>
 </section>
-<br>
     <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
 </main>
+<!-- whtsapp and scroll top btn  -->
 <!-- whtsapp and scroll top btn  -->
 <button id="whatsappbtn"><img src="../assets/Images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button>
 

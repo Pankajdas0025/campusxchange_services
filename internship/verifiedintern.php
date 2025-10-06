@@ -53,13 +53,14 @@ include "../src/config.php";
     max-width: 600px;
     height:auto;
     margin: 2rem auto 2rem auto;
-    box-shadow: 0 2px 16px rgba(99,102,241,0.08);
+    box-shadow:0 8px 30px rgba(2,6,23,0.08);
+    border-radius: 10px;
   }
 
 
   .intern-info {
     background: #fff;
-
+border-radius: 20px;
     box-shadow: 0 2px 8px rgba(99,102,241,0.07);
     padding: 1.5rem 1rem;
     color: #222;
