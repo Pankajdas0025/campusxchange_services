@@ -622,8 +622,8 @@ main{
   color: var(--bg-light);
   box-shadow:var(--shadow);
   border: var(--border);
-  width: 90%;
-  margin: auto 5%;
+  width: 100%;
+
 }
 
 .faq-section h2 {

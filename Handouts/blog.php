@@ -226,38 +226,8 @@ But how exactly is AI impacting student learning, and what does it mean for you?
 <br>
 <br>
  <!-- fotter section  --------------------------------------------------------------------------------->
-        <section class="Footer">
- <div class="fbox" id="lastfooter"><br>
-  <h3>CampusXchange</h3>
-<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to real-time tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
-   <br>
-    <hr>
-</div>
-     <h3>Quick Links-</h3>
-     <div  id="quicklinks">
-    <a href="../home" class="active">Home</a><a href="../services/web-development">Website Development</a><a href="../services/seo">SEO</a> <a href="notes">Notes</a> <a href="blog"  style="color: #181313;">Blogs</a><a href="assignment">Programming Assignment</a>  <a href="../internship-program">Mentorship & Internship</a>  <a href="../about">About</a>  <a href="../lettalk">Let's Talk</a>
-      </div>
-      <br>
-      <div class="contact">
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-location-dot"></i></a> &nbsp;Kishanganj ,Bihar(855115)
-      </div>
-
-      <div  id="Sociallinks">
-        <a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
-
-      </div>
-         <div  id="CopyRight">
-       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
-      </div>
-
-
-        </section>
-        <!-- fotter section end  --------------------------------------------------------------------------------->
+ <?php include "../components/footer.php" ?>
+ <!-- fotter section end  --------------------------------------------------------------------------------->
 
 <script src="../script.js"></script>
 

@@ -34,18 +34,18 @@ body
 
   display: flex;
   flex-direction:row;
-  height: 400px;
+  min-height: 50vh;
   margin:0;
   background-color:#004080;
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .footer-div
 {
-  width: 20%;
-  margin: 0 2.5%;
+  width: 25%;
+  margin: 0%;
   text-align: left;
-  border: 1px solid black;
+
 }.footer-div h2
 {
 
@@ -59,7 +59,7 @@ body
 {
   text-decoration: none;
   display: block;
-  padding: 10px 20px;
+  padding: 5px 20px;
   color:white;
   font-weight: 600;
 }.footer-div a:hover
@@ -116,20 +116,58 @@ body
 <body>
     <footer class="footer" id="include-footer">
   <div class="footer-div">
-  <h2>Quick Links</h2>
-<a href="#"> CampusXchange, we're building a space where you learn, create, and grow — with expert notes, hands-on projects, internships, and mentorship. Whether you're a student, freelancer, or startup, this is where your journey to smarter, real-world success begins.</div>
-</a>
-<div class="footer-div">
-  <h2>Quick Links</h2>
-  <a href="#home"><i class="fas fa-house"></i> Home</a>
-  <a href="#about"><i class="fas fa-user-graduate"></i> About</a>
-  <a href="#results"><i class="fas fa-chart-line"></i> Results</a>
-  <a href="#materials"><i class="fas fa-book-open"></i> Materials</a>
-  <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
-  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  <h2>Grow Smarter with CampusXchange</h2>
+<a href="#" style="text-decoration: none; cursor:alias; color: rgb(155, 164, 178);"> CampusXchange, we're building a space where you learn, create, and grow — with expert notes, hands-on projects, internships, and mentorship. Whether you're a student, freelancer, or startup, this is where your journey to smarter, real-world success begins.</a>
+<a href="#"><i class="fa-solid fa-phone"></i>+91 9155726625</a>
+<a href="#"><i class="fa-solid fa-evalope"></i>support@campusxchange.com</a>
 </div>
+
 <div class="footer-div">
-  <h2>Social Links</h2>
+  <h2><i class="fa-solid fa-link"></i> Quick Links</h2>
+
+  <a href="http://localhost/Campusxchange/home" title="CampusXchange Home">
+    <i class="fa-solid fa-house"></i> Home
+  </a>
+
+  <a href="http://localhost/Campusxchange/services/web-development" title="Professional Web Development Services by CampusXchange">
+    <i class="fa-solid fa-code"></i> Website Development
+  </a>
+
+  <a href="http://localhost/Campusxchange/services/seo" title="SEO Optimization & Digital Marketing Services by CampusXchange">
+    <i class="fa-solid fa-chart-line"></i> SEO Services
+  </a>
+
+  <a href="http://localhost/Campusxchange/handouts/notes" title="Download Free Technical Notes from CampusXchange">
+    <i class="fa-solid fa-book-open"></i> Notes
+  </a>
+
+  <a href="http://localhost/Campusxchange/handouts/blog" title="Read Latest Tech Blogs on CampusXchange">
+    <i class="fa-solid fa-pen-nib"></i> Blogs
+  </a>
+
+  <a href="http://localhost/Campusxchange/handouts/assignment" title="Programming Assignments & Practice Questions">
+    <i class="fa-solid fa-laptop-code"></i> Programming Assignment
+  </a>
+
+  <a href="http://localhost/Campusxchange/internship/apply" title="Apply for Internship Opportunities at CampusXchange">
+    <i class="fa-solid fa-user-graduate"></i> Apply for Internship
+  </a>
+
+  <a href="http://localhost/Campusxchange/internship/verification" title="Verify Internship or Certificate at CampusXchange">
+       <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verification
+  </a>
+
+  <a href="http://localhost/Campusxchange/about" title="Learn More About CampusXchange">
+    <i class="fa-solid fa-circle-info"></i> About Us
+  </a>
+
+  <a href="http://localhost/Campusxchange/lettalk" title="Contact CampusXchange Team">
+    <i class="fa-solid fa-comments"></i> Let's Talk
+  </a>
+</div>
+
+<div class="footer-div">
+  <h2><i class="fa-solid fa-handshake"></i> Social Links</h2>
   <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>

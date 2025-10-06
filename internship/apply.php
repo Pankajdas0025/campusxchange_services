@@ -45,10 +45,8 @@ height: 800px;
 margin: 2rem auto;
 display: flex;
 
-
 }.box
 {
-
   height:80%;
   width: 40%;
   margin:0 5%;
@@ -56,7 +54,6 @@ display: flex;
   overflow: hidden;
   border: 1px solid black;
   box-shadow:  0 8px 30px rgba(2,6,23,0.08);
-
 }
 .box iframe {
   width: 100%;
@@ -145,7 +142,7 @@ height: auto;
 <!-- Upcoming Batch section  ----------------------->
 <section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90; margin: auto 5%;">
   <h2 style="margin:0;font-size:2rem;letter-spacing:1px;"><i class="fa-solid fa-calendar-days"></i> Upcoming Batch</h2>
-  <p style="font-size:1.0rem;margin:0.7rem 0 0 0;">Next internship batch starts <b>September 10, 2025</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
+  <p style="font-size:1.0rem;margin:0.7rem 0 0 0; color:black;">Next internship batch starts <b>September 10, 2025</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
 </section>
 <!-- Upcoming Batch section  end here ----------------------->
 <section class="apply-form-section">
@@ -329,35 +326,7 @@ else {
   ?>
 </section>
 <!-- footer section start from here  ------------------------------------------------->
-<section class="Footer">
-<div class="fbox" id="lastfooter"><br>
-<h3>CampusXchange</h3>
-<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to real-time tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
-<br>
-<hr>
-</div>
-<!-- Quick links -->
-<h3>Quick Links-</h3>
-<div id="quicklinks">
-<a href="../home" class="active">Home</a><a href="../services/web-development">Website Development</a><a href="../services/seo">SEO</a><a href="../handouts/notes">Notes</a><a href="../handouts/blog">Blogs</a><a href="../handouts/assignment">Programming Assignment</a><a href="apply">Apply </a><a href="verification">Verification</a><a href="../internship-program">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
-</div>
-<br>
-<!-- contact links -->
-<div class="contact">
-<br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
-<br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
-<br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-location-dot"></i></a> &nbsp;Kishanganj ,Bihar(855115)
-</div>
-<div id="Sociallinks">
-<a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>
-<a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>
-<a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
-<a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
-</div>
-<div id="CopyRight">
-Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
-</div>
-</section>
+<?php include "../components/footer.php" ?>
 <script src="../script.js"></script>
 <script>
 // internship apply form validation start.................................................

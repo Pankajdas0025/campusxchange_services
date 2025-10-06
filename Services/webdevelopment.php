@@ -502,57 +502,18 @@ else {
     Yes. Every site is built with SEO in mind. We also offer add-on SEO services for deeper keyword research and ranking growth.
     </div>
   </div>
+
 </section>
+ <br>
     <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
 </main>
 <!-- whtsapp and scroll top btn  -->
-<!-- whtsapp and scroll top btn  -->
 <button id="whatsappbtn"><img src="../assets/Images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button>
-
 <button id="movebtn" onclick=" movetopFun() "> <img src="../assets/Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
-
-  <!-- fotter section  --------------------------------------------------------------------------------->
-
-        <footer class="Footer">
- <div class="fbox" id="lastfooter"><br>
-  <h3>CampusXchange</h3>
-<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to real-time tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
-   <br>
-    <hr>
-</div>
-<!-- Quick links  -->
-     <h3>Quick Links-</h3>
-     <div  id="quicklinks">
- <a href="../home" class="active">Home</a><a href="web-development" style="color: #000000ff;">Website Development</a><a href="seo" >SEO</a><a href="../handouts/notes">Notes</a><a href="../handouts/blog">Blogs</a> <a href="../handouts/assignment">Programming Assignment</a><a href="../internship-program">Mentorship & Internship</a><a href="../about">About</a><a href="../lettalk">Let's Talk</a>
-      </div>
-<br>
-<!-- contact links  -->
-      <div class="contact">
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-location-dot"></i></a> &nbsp;Kishanganj ,Bihar(855115)
-      </div>
-
-      <div  id="Sociallinks">
-        <a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
-
-      </div>
-         <div  id="CopyRight">
-       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
-      </div>
-
-
-        </footer>
+<!-- fotter section  --------------------------------------------------------------------------------->
+<?php include "../components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
-
-
 <script>
-
-
-
 /*web development page  FAQ script start here -------------------------------*/
  document.addEventListener("DOMContentLoaded", () => {
   const faqs = document.querySelectorAll(".webdevlopmentfaq");

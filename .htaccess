@@ -1,5 +1,6 @@
 # Enable mod_rewrite
 RewriteEngine On
+RewriteBase /Campusxchange/
 
 # Clean URLs for root pages
 RewriteRule ^$ index.php [L]
@@ -25,12 +26,17 @@ RewriteRule ^internship/verifiedintern$ internship/verifiedintern.php [L]
 #sitemap
 RewriteRule ^sitemap$ sitemap.html [L]
 
-# Catch-all: redirect all non-existent URLs to 404.html
+
+# Prevent redirect loop for 404.php itself
+RewriteCond %{REQUEST_URI} !^/Campusxchange/404\.php$
+
+# If requested file or directory does NOT exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Campusxchange/404.html [L]
-ErrorDocument 404 /Campusxchange/404.html
 
+# Redirect all non-existent URLs to 404.php
+RewriteRule . /Campusxchange/404.php [L]
 
-
+# Set proper 404 status for Apache
+ErrorDocument 404 /Campusxchange/404.php
 

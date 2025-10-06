@@ -609,50 +609,9 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
   </div>
  </section>
  <br>
- <section>
-
-</section>
-<!-- fotter section  --------------------------------------------------------------------------------->
-
-<!-- <a href="https://wa.me/919155726625?text=Hello%20I%20am%20interested%20in%20your%20SEO%20Services.%20Can%20you%20please%20share%20more%20details%3F" target="_blank">
-  <button id="whatsappbtn">
-    <img src="../assets/Images/whatsapp-logo.png" alt="WhatsApp logo in a green speech bubble with a white phone icon, representing a way to contact CampusXchange for SEO services. The tone is friendly and inviting.">
-  </button>
-</a> -->
-       <section class="Footer">
- <div class="fbox" id="lastfooter"><br>
-  <h3>CampusXchange</h3>
-<p>We are committed to building a dynamic learning ecosystem where learners read and create, build and grow. From expert-curated notes, to insider tips, to real-time tech assignments, and guided internship & mentorship programs, we help you go from theory to doing your life's best work. Whether you're a student who wants to conquer full-stack development, a freelancer who wants to refine SEO skills, or a startup who's looking for web help — CampusXchange is where you can begin and strategize to become smarter.</p>
-   <br>
-    <hr>
-</div>
-<!-- Quick Links -->
-     <h3>Quick Links-</h3>
-     <div  id="quicklinks">
-<a href="../home" class="active">Home</a> <a href="web-development">Website Development</a> <a href="seo" style="color: #030101;">SEO</a><a href="../handouts/notes">Notes</a> <a href="../handouts/blog">Blogs</a> <a href="../handouts/assignment">Programming Assignment</a>  <a href="../internship-program">Mentorship & Internship</a>  <a href="../about">About</a><a href="../lettalk">Let's Talk</a>
-      </div>
-      <br>
-  <!-- contact links  -->
-      <div class="contact">
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-phone"></i></a> &nbsp;+91 9155726625
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-envelope"></i></a> &nbsp;info@campusxchange.com
-        <br><a href="#Contact-section" title="Social Platform"><i class="fa-solid fa-location-dot"></i></a> &nbsp;Kishanganj ,Bihar(855115)
-      </div>
-
-      <div  id="Sociallinks">
-        <a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
-
-      </div>
-         <div  id="CopyRight">
-       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team❤️
-      </div>
-
-
-        </section>
-        <!-- fotter section end  --------------------------------------------------------------------------------->
+<!-- fotter section  ------------------------------------------------------------------------------------->
+<?php include "../components/footer.php" ?>
+<!-- fotter section end  --------------------------------------------------------------------------------->
 <script src="../script.js"></script>
 </body>
 </html>
