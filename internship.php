@@ -37,9 +37,6 @@
 
 </head>
 <body>
-   <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
 <header><div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
 <?php include "components/header.php" ?>
 <br>
@@ -145,7 +142,7 @@
 <br>
   <!-- YouTube Video Section -->
   <section class="youtube-section">
-    <h2>Watch Our Internship Program Overview</h2>
+    <h2><i class="fa-solid fa-video"></i>Internship Program Process</h2>
     <br>
     <div>
       <iframe  src="https://www.youtube.com/embed/Xze4efOAWao?si=MaF8pu9vXBx9RwWL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -217,35 +214,10 @@
 <div class="mentor-cta">
   <a href="lettalk"><i class="fa-solid fa-phone"></i> Connect with a Mentor</a>
 </div>
-<!-- whtsapp and scroll top btn  -->
-<button id="whatsappbtn"><img src="assets/Images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button>
-
-<button  id="movebtn" onclick=" topFun() "> <img src="assets/Images/Scrolltotop.png" alt="whatsapp-logo Image" ></button>
 </main>
 <br>
 <!-- Footer  -->
 <?php include "components/footer.php" ?>
-<script>
-
-// scroll to top web..........................
-let mybtn_intern = document.getElementById("movebtn");
-//When the user scrolls down 1000px from the top of the document, show the button........................
-window.onscroll = function() {crollFunction()};
-function crollFunction() {
-  if (document.body.scrollTop >1000 || document.documentElement.scrollTop >1000) {
-    mybtn_intern.style.display = "block";
-  } else {
-    mybtn_intern.style.display = "none";
-  }
-}
- function topFun() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
-</script>
 <script src="script.js"></script>
 </body>
 </html>

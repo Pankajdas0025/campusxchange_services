@@ -349,9 +349,6 @@ include "src/config.php";
 
 </style>
 <body>
-   <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
    <header style="border-radius: 0;">
       <div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>

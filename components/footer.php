@@ -35,7 +35,7 @@ body
   display: flex;
   flex-direction:row;
   min-height: 50vh;
-  margin:0;
+  margin:125px 0;
   background-color:#004080;
   width: 100%;
   height: auto;
@@ -68,6 +68,58 @@ body
   transform: translateX(1px);
 }
 
+/* Animated cursor for all pages ---------------------------------*/
+.cursor
+{
+  z-index: 999;
+  background-color:transparent;
+  backdrop-filter: blur(20px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  outline: 2px double white;
+  border:1px double white;
+  box-shadow: var(--shadow);
+  position: absolute;
+  transition:0.1s;
+}
+/* Animated cursor end  ---------------------------------*/
+
+#whatsappbtn
+{
+  z-index: 100;
+  background-color:var(--secondary-color);
+  position:fixed;
+  top: 85%;
+  left:4%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  box-shadow: var(--shadow);
+  display:block;
+  border-radius: 50%;
+  border:var(--border);
+
+}#movebtn
+{
+  z-index: 100;
+  position:fixed;
+  top: 85%;
+  left:90%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+  display: none;
+  font-weight: bolder;
+  box-shadow: var(--shadow);
+  border:var(--border);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding:3px;
+
+}
   @media(max-width:600px)
 
 {
@@ -107,6 +159,21 @@ body
   color: white;
 
 }
+#whatsappbtn
+{
+  top: 85%;
+  left:10%;
+  height:55px;
+  width:55px;
+  z-index:999;
+}
+#movebtn
+{
+  top:85%;
+  left:77%;
+  height:55px;
+  width:55px;
+}
 
 }
 
@@ -114,6 +181,18 @@ body
 
 </head>
 <body>
+  <!-- animated cursor ------------------->
+ <div class="cursor"></div>
+<!-- animated cursor end ---------------->
+<!-- WhatsApp Button -->
+<button id="whatsappbtn" aria-label="WhatsApp Button" style="font-size:28px; color:#00fd5d;  border:none; cursor:pointer;">
+<i class="fa-brands fa-whatsapp"></i>
+</button>
+<!-- Scroll to Top Button -->
+<button id="movebtn" onclick="movetopFun()" aria-label="Scroll to Top" style="font-size:28px; color:#ffffff; border:none; cursor:pointer;">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
     <footer class="footer" id="include-footer">
   <div class="footer-div">
   <h2>Grow Smarter with CampusXchange</h2>
@@ -183,10 +262,66 @@ body
   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-youtube"></i> YouTube
   </a>
+   <h2><i class="fa-solid fa-file-shield"></i> Policy</h2>
+
+<div class="policy-links">
+  <a href="http://localhost/Campusxchange/privacy-policyandterms" title="Learn More About CampusXchange Privacy">
+    <i class="fa-solid fa-circle-info"></i> Privacy Policy
+  </a>
+  <a href="http://localhost/Campusxchange/terms-and-condition" title="Learn More About CampusXchange Terms">
+    <i class="fa-solid fa-comments"></i> Terms & Conditions
+  </a>
+
+  <a href="http://localhost/Campusxchange/sitemap" title="Learn More About CampusXchange Terms">
+    <i class="fa-solid fa-route"></i>sitemap
+  </a>
+</div>
 <!-- <p>All rights reserved By: Pankaj&copy; 2025</p> -->
     </div>
       <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28665.22969122228!2d87.92639821019456!3d26.093900587226088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e516befd097303%3A0xb171e5facfa2a2d8!2sKishanganj%2C%20Bihar%20855107!5e0!3m2!1sen!2sin!4v1758648469245!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
  </footer>
+
+ <script>
+
+  // animated cursor --------------------------------------------------------
+var cursor=document.querySelector(".cursor");
+
+document.addEventListener("mousemove",(e)=>
+{
+  let x=e.pageX;
+  let y=e.pageY;
+  cursor.style.top = y+"px";
+  cursor.style.left = x+"px";
+});
+
+// animated cursor end ----------------------------------------------------
+// Wait for the DOM to load before running script
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Get the button if it exists
+  const mybutton = document.getElementById("movebtn");
+  if (!mybutton) return; // Exit if button not present
+
+  // Show button on scroll
+  window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  });
+
+  // Scroll to top on click
+  mybutton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+});
+
+ </script>
 </body>
 </html>

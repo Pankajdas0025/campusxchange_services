@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,23 +36,33 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
 <title>Certificate Verification</title>
 
-<style>
-  :root {
 
+<style>
+
+  :root {
   --primary-color: #004080;
   --secondary-color: #f43f5e;
+  --bg-light: #f9fafb;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
+  --card-bg: #f3eded;
   --shadow: 0 8px 30px rgba(2,6,23,0.08);
   --radius: 10px;
+  --font-main: 'Poppins', sans-serif;
+  --hoverbg :#da6b7e;
+  --pSize:0.9rem;
+  --border:none;
 
 }
-
   .verify-section {
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color) );
+    background: linear-gradient(to right,var(--primary-color) , var(--secondary-color) );
     padding: 2.5rem 1rem 2rem 1rem;
-    max-width: 600px;
-      height: 400px;
-    margin: 2rem auto 2rem auto;
+    max-width:50%;
+    height: 400px;
+    margin: 2% 25%;
     box-shadow: 0 2px 16px rgba(99,102,241,0.08);
+    border-radius: 10px;
+
   }
   .verify-section h2 {
     text-align: center;
@@ -81,7 +93,7 @@
     transition: background 0.2s;
   }
   .verify-form button:hover {
-    background: var(--secondary-color);
+    background: #f43f5e;
   }
   .verify-error {
     color: #ffffffff;
@@ -91,17 +103,24 @@
     text-align: center;
 
   }
+@media screen and (max-width:700px) {
+    .verify-section
+
+    {
+    max-width:80%;
+    height: 400px;
+    margin: 5% 10%;
+    }
+
+  }
 </style>
 
 </head>
 <body>
-   <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
  <!-- header section  -------------------------------------l̥------------------->
 <header>
     <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
-<?php include "../components/header.php" ?>
+<?php include "../components/header.php"?>
  <!-- header section end here-------------------------------------------------------->
 <section class="verify-section">
   <h2> <i class="fa-solid fa-file"></i> Internship Verification </h2>
@@ -144,7 +163,9 @@
   </script>
 </section>
 <br>
+<!-- Footer section -->
 <?php include "../components/footer.php" ?>
+
 <script src="../script.js"></script>
 </body>
 </html>

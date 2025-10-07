@@ -33,9 +33,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
 </head>
 <body>
-  <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
    <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
   <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
@@ -150,7 +147,7 @@
 </section>
 <br>
 </main>
-<button id="whatsappbtn"><img src="../assets/Images/whatsapp-logo.png" alt="whatsapp-logo Image"></button>
+
 <!-- footer section  --------------------------------------------------------------------------------->
 <?php include "../components/footer.php" ?>
     <script>

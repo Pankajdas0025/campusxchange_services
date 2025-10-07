@@ -43,9 +43,6 @@
 
 </head>
 <body>
-  <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
    <!--Note page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
   <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
@@ -218,7 +215,7 @@ else
 </main>
 <a href="Internship-program" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
 <button id="btn2" onclick="RemoveIpop()">&times;</button>
-<button id="whatsappbtn"><img src="../assets/Images/whatsapp-logo.png" alt="whatsapp-logo Image"></button>
+
 
 <script>
 

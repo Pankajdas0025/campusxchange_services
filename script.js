@@ -1,16 +1,3 @@
-// animated cursor --------------------------------------------------------
-var cursor=document.querySelector(".cursor");
-
-document.addEventListener("mousemove",(e)=>
-{
-  let x=e.pageX;
-  let y=e.pageY;
-  cursor.style.top = y+"px";
-  cursor.style.left = x+"px";
-});
-
-// animated cursor end ----------------------------------------------------
-
 
 function myFunction()
 {
@@ -131,7 +118,7 @@ document.querySelector("#btn2").style.display = "block";
 document.querySelector("main").style.opacity = "0.3";
 document.querySelector("main").style.pointerEvents ="none";
 
-},100000)
+},5000)
 
 // to remove cancel popup box ................................................................................................
 function RemoveIpop()
@@ -204,25 +191,6 @@ function Client4()
 }
 
 
-// scroll to top web..........................
-document.addEventListener("DOMContentLoaded", function() {
-  let mybutton = document.getElementById("movebtn");
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if (!mybutton) return;
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  window.movetopFun = function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-});
 
 
 

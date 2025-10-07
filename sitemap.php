@@ -1,49 +1,3 @@
-<!--
-
-
-<a href="https://storyset.com/online">Online illustrations by Storyset</a>
-
-
-<script>
-
-  document.querySelectorAll('#demo-certificate-img').forEach(img => {
-    img.addEventListener('click', () => {
-      const certificateUrl = img.src;
-      const newWindow = window.open(certificateUrl, '_blank');
-      if (newWindow) {
-        newWindow.focus();
-      } else {
-        alert('Please allow popups for this website to view the certificate.');
-      }
-    });
-  });
-</script>
-
-
-
-<head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta name="description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta name="keywords" content="Technical Notes,Programming Assignment, SEO services,Web Development,Internship,Real Project">
-  <meta name="author" content="CampusXchange"/>
-  -- Open Graph / Facebook
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
-  -- Twitter -
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-</head> -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,14 +28,28 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
   <!-- styles -->
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="styles/animation.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Sitemap | CampusXchange</title>
    <style>
-    body {font-family: 'Poppins', Arial, sans-serif; margin:0;}
-    .dashboard-header {background: linear-gradient(90deg,#6366f1,#f43f5e); color:#fff; padding:1.5rem 1rem; text-align:center;}
-    .dashboard-header h1 {margin:0; font-size:2.2rem; letter-spacing:1px;}
+:root
+{
+
+  --primary-color: #004080;
+  --secondary-color: #f43f5e;
+  --bg-light: #f9fafb;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
+  --card-bg: #f3eded;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --radius: 10px;
+  --font-main: 'Poppins', sans-serif;
+  --hoverbg :#da6b7e;
+  --pSize:0.9rem;
+  --border:none;
+}
+     body {font-family: 'Poppins', Arial, sans-serif; margin:0;}
+    .dashboard-header {background: linear-gradient(300deg,var(--primary-color),#f43f5e); color:#fff; padding:1.5rem 1rem; text-align:center;}
+    .dashboard-header h1 {margin:0; font-size:2rem; letter-spacing:1px;}
     .dashboard-header p {text-align: center;}
     .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
     .dashboard-link {display:flex; flex-direction:column; align-items:center; background:#f3f4f6; border-radius:12px; padding:1.2rem 1.5rem; min-width:160px; text-decoration:none; color:#222; box-shadow:0 2px 8px rgba(99,102,241,0.07); transition:box-shadow 0.2s,transform 0.2s;}
@@ -123,6 +91,6 @@
     <a class="dashboard-link" href="handouts/blog"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
     <a class="dashboard-link" href="handouts/blog"><i class="fa-solid fa-location-dot"></i><span>Maps</span></a>
   </nav>
-
+<?php  include "components/footer.php"?>
 </body>
 </html>

@@ -167,10 +167,6 @@
  </style>
 </head>
 <body>
-  <!-- animated cursor ------------------->
- <div class="cursor"></div>
-
-<!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
     <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>

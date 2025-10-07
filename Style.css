@@ -21,13 +21,14 @@
 }
 
 body {
+
+
   font-family: var(--font-main);
   color: var();
   line-height: 1.6;
-  scroll-behavior: smooth;
-  scroll-snap-stop: always;
   background-color: #f6f7fb;
   padding: 0 10px;
+  overflow-x  : hidden;
 
 
 }h1 , h2 , h3
@@ -37,23 +38,7 @@ body {
 }
 
 p{font-size: 20px;}
-/* Animated cursor for all pages ---------------------------------*/
-.cursor
-{
-  z-index: 999;
-  background-color:transparent;
-  backdrop-filter: blur(20px);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  outline: 2px double white;
-  border:1px double white;
-  box-shadow: 0 0 4px #80ff00, 0 0 4px #f71599;
-  position: absolute;
-  transition:0.1s;
-}
-/* Animated cursor end  ---------------------------------*/
+
 
 
 /* header for all pages  */
@@ -63,6 +48,8 @@ header
   background-color:var(--primary-color);
   backdrop-filter: blur(25px);
   overflow: hidden;
+  position: absolute;
+
   height:100px;
   font-size: 3rem;
   font-style: italic;
@@ -701,42 +688,6 @@ main{
   background-color: var(--hoverbg);
 
 
-}#whatsappbtn
-{
-  background-color:var(--secondary-color);
-  position:fixed;
-  top: 85%;
-  left:4%;
-  height:60px;
-  width:60px;
-  font-size: 1.5rem;
- font-weight: bolder;
-  display:block;
-  border-radius: 50%;
-  border:var(--border);
-}#whatsappbtn img{
-  height: 57px;
-  width: 57px;
-}#whatsappbtn:hover
-{
-  background-color: var(--hoverbg);
-}#movebtn
-{
-  position:fixed;
-  top: 85%;
-  left:90%;
-  height:60px;
-  width:60px;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  display:none;
-  border:var(--border);
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  padding:3px;
-}#movebtn img{
-  height:50px;
-  width:50px;
 }
 
 .Footer
@@ -1062,26 +1013,6 @@ width: 75px;
   font-size: 1.5rem;
 
 
-}#whatsappbtn
-{
-  top: 85%;
-  left:10%;
-  height:55px;
-  width:55px;
-}#whatsappbtn img{
-  height:50px;
-  width:50px;
-
-}
-#movebtn
-{
-  top:85%;
-  left:77%;
-  height:55px;
-  width:55px;
-}#movebtn img{
-  height:45px;
-  width:45px;
 }
 #quicklinks
 {

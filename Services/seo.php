@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="../styles/animation.css" type="text/css">
 <link rel="stylesheet" href="../style.css" type="text/css">
   <!-- cdns -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
@@ -510,10 +511,6 @@ background-color:#60e08f;
      <header><div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
 <br>
-  <!-- animated cursor ------------------->
- <div class="cursor"></div>
-
-<!-- animated cursor end ---------------->
  <marquee scrollamount="12" direction="left" behavior="scroll">
  <div class="marquee "><span><img src="../assets/Images/newannimation.jpg" height="50" width="50"></span><p> Professional Services to Grow Your business  | No any charges if your website is design with our team </p></div>
  </marquee>
@@ -523,8 +520,8 @@ background-color:#60e08f;
     <h1>Boost Your Brand with <span>CampusXchange SEO</span></h1>
     <p>Drive traffic, climb search rankings, and dominate your digital presence with our result-driven SEO strategies designed for businesses and students alike.</p>
     <div class="hero-buttons">
-      <a href="services/seo" class="btn-primary"><i class="fa-solid fa-chart-line"></i> Explore SEO Services</a>
-      <a href="lettalk" class="btn-secondary"><i class="fa-solid fa-comments"></i> Let's Talk</a>
+      <a href="" class="btn-primary"><i class="fa-solid fa-chart-line"></i> Explore SEO Services</a>
+      <a href="http://localhost/Campusxchange/lettalk" class="btn-secondary"><i class="fa-solid fa-comments"></i> Let's Talk</a>
     </div>
     <div class="hero-stats">
       <div><i class="fa-solid fa-rocket"></i><span>+500 Projects</span></div>

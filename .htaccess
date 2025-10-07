@@ -8,6 +8,7 @@ RewriteRule ^home$ index.php [L]
 RewriteRule ^about$ about.php [L]
 RewriteRule ^lettalk$ lettalk.php [L]
 RewriteRule ^internship-program$ internship.php [L]
+RewriteRule ^privacy-policyandterms$ privacy.php [L]
 
 # Clean URLs for handouts subfolder
 RewriteRule ^handouts/notes$ handouts/notes.php [L]
@@ -24,7 +25,7 @@ RewriteRule ^internship/verification$ internship/verification.php [L]
 RewriteRule ^internship/verifiedintern$ internship/verifiedintern.php [L]
 
 #sitemap
-RewriteRule ^sitemap$ sitemap.html [L]
+RewriteRule ^sitemap$ sitemap.php [L]
 
 
 # Prevent redirect loop for 404.php itself

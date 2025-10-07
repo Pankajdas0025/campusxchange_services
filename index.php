@@ -42,9 +42,6 @@
   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
   <header><div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" alt="CampusXchange Logo"></div></header>
   <?php include "components/header.php" ?>
-<!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
 <!-- Home Intro Section -->
 <section class="homeIntro">
   <div class="introContent">
@@ -243,29 +240,8 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
   <!-- CTA buttons  -->
       <a href="internship-program" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
       <button id="btn2" onclick="RemoveIpop()">&times;</button>
-      <button id="movebtn" onclick="movetopFunction()"> <img src="assets/Images/Scrolltotop.png" alt="mototop-icon-Image"></button>
 
 
- <script>
-
-// scroll to top web..........................
-let mybutton = document.getElementById("movebtn");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop >1000 || document.documentElement.scrollTop >1000) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
- function movetopFunction() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
- </script>
 <script src="script.js"></script>
 </body>
 </html>

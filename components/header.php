@@ -176,6 +176,7 @@ body
     <div class="dropdown-content">
       <a href="http://localhost/Campusxchange/internship/apply">Apply </a>
       <a href="http://localhost/Campusxchange/internship/verification">Verification</a>
+      <a href="http://localhost/Campusxchange/internship-program">Internship-program</a>
     </div>
   </div>
       <a href="http://localhost/Campusxchange/about"><i class="fa-solid fa-bullseye"></i>About</a>

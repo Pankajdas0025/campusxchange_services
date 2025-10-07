@@ -40,11 +40,6 @@
 
 </head>
 <body>
-
-  <!-- animated cursor ------------------->
- <div class="cursor"> </div>
-
-<!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
   <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
@@ -400,23 +395,15 @@ mail($email,$subject,$message,$headers);
 
 
  echo "<script> setTimeout(() => {   alert('✅ Thank you! Your details have been submitted.');  window.location.href='web-development'}, 4000);</script>";
-
  $stmt->close();
     }  else
     {
-
         echo "<script>
             const Sbtn = document.getElementById('img_form_sbtn');
             document.getElementById('Error').innerHTML='Something Error';
-
-
         </script>";
     }
-
   }
-
-
-
 
 else {
 
@@ -508,8 +495,7 @@ else {
     <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
 </main>
 <!-- whtsapp and scroll top btn  -->
-<button id="whatsappbtn"><img src="../assets/Images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button>
-<button id="movebtn" onclick=" movetopFun() "> <img src="../assets/Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
+
 <!-- fotter section  --------------------------------------------------------------------------------->
 <?php include "../components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->

@@ -1,7 +1,7 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+
 include "../src/conn.php";
-include "../src/config.php";
+// include "../src/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -189,18 +189,18 @@ height: auto;
 
   <!-- Apply intern form data into databae table  ----------------------------------------->
 <?php
-
-
-
 // Include PHPMailer library files
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 require '../PHPMailer/src/Exception.php';
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-   // Collect and sanitize input
-
+    // Sanitize input
     $Name     = htmlspecialchars(trim($_POST['intern_name'] ?? ''), ENT_QUOTES, 'UTF-8');
     $Email    = filter_var(trim($_POST['intern_email'] ?? ''), FILTER_SANITIZE_EMAIL);
     $Whatsapp = htmlspecialchars(trim($_POST['intern_phone'] ?? ''), ENT_QUOTES, 'UTF-8');
@@ -221,109 +221,99 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($Email) || !filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         $Errors[] = "Please enter a valid email address.";
     }
-    if (empty($Address)) {
-        $Errors[] = "Address is required.";
+    if (empty($Address)) $Errors[] = "Address is required.";
+    if (empty($Domain)) $Errors[] = "Please select a domain type.";
+    if (empty($Duration)) $Errors[] = "Please select a duration type.";
+    if (empty($College)) $Errors[] = "Please enter your college name.";
+
+    // Show validation errors if any
+    if (!empty($Errors)) {
+        $errorMsg = implode("<br>", $Errors);
+        echo "<script>
+            document.getElementById('Error_sms').innerHTML='$errorMsg';
+        </script>";
+        exit;
     }
-    if (empty($Domain)) {
-        $Errors[] = "Please select website type.";
+
+    // Insert data into database
+    $stmt = $conn->prepare("INSERT INTO applied_intern (Name, Email, Whatsapp_No, Domain, Duration, College, Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
+
+    if (!$stmt->execute()) {
+        echo "<script>
+            document.getElementById('Error_sms').innerHTML='❌ Something went wrong while saving your data.';
+        </script>";
+        exit;
     }
-    if (empty($Duration)) {
-        $Errors[] = "Please select a plan type.";
-    }
-    if (empty($College)) {
-        $Errors[] = "Please select a plan type.";
-    }
 
+    $stmt->close();
 
-    if (empty($Errors)) {
-        // Prepare and execute insert query
-        $stmt = $conn->prepare("INSERT INTO applied_intern (Name , Email , Whatsapp_No , Domain , Duration , College , Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
-        if ($stmt->execute()) {
-    $subject = "CLENT_FORM_TESTING";
-
-    $message = " <body style='margin: 0; padding:2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
-    <div style='max-width: 1000px; margin: auto; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
-
-        <img src='https://pankajdas0025.github.io/PORTFOLIO/Images/client_email_banner.png' height='auto' width='100%' style='margin-top: 25px;font-size:2rem;'>
-        <h1 style='color: #ffffff;padding:10px;height:150px; background: linear-gradient(to right, #6366f1,#f43f5e); text-align: center; font-size:1.5rem;'>🎉 Hello
-            <br>You are looking for a website 🌐
-            <br><p style='font-size: 1rem;'>$Name</p>
-        </h1>
-
-        <div style='background-color: #ecf0f1; padding: 10px; border-radius: 5px; margin-top: 20px;'>
-Thanks for reaching out to CampusXchange—where ideas become digital realities. Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.
-            <p>🌟 <strong>Our Support Team will contact you within 24 Hr.</strong></p>
-            <p>Be Happy with CampusXchange</p>
-        </div>
-
-        <div style='margin-top: 30px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
-            <p>Explore oue social Handle</p>
-            <ul style='padding-left: 20px;'>
-                <li>LinkedIn: <a href='#' style='color: #2980b9;'>CampusXchange</a></li><br>
-                <li>Telegram: <a href='https://t.me/CampusXchange' target='_blank' style='color: #2980b9;'>https://t.me/CampusXchange</a></li><br>
-                <li>Email: <a href='#' style='color: #2980b9;'>support@CampusXchange</a></li><br>
-                <li>Website: <a href='https://pankajdas0025.github.io/CampusXchange/' target='_blank' style='color: #2980b9;'>www.CampusXchange.org</a></li><br>
+    // Prepare email content
+    $subject = "✅ CampusXchange Internship Application Received!";
+    $message = "
+    <body style='margin:0; padding:10px; font-family: Arial,sans-serif; background:#f4f4f4; color:#333;'>
+        <div style='max-width:600px; margin:auto; padding:15px; background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);'>
+            <h2 style='color:#6366f1;'>Hello $Name 🎉</h2>
+            <p>Thank you for applying for an internship in the <strong>$Domain</strong> domain. Our support team will contact you within 24 hours.</p>
+            <p><strong>Details you submitted:</strong></p>
+            <ul>
+                <li>Name: $Name</li>
+                <li>Email: $Email</li>
+                <li>Phone: $Whatsapp</li>
+                <li>Domain: $Domain</li>
+                <li>Duration: $Duration</li>
+                <li>College: $College</li>
+                <li>Address: $Address</li>
             </ul>
+            <p>Be Happy with CampusXchange!</p>
+            <hr>
+            <p style='font-size:0.9em; color:#555;'>Visit our website: <a href='https://pankajdas0025.github.io/CampusXchange/' target='_blank'>CampusXchange</a></p>
         </div>
-    </div>
     </body>";
 
-// // Send email using mail()
-// $headers = "MIME-Version: 1.0" . "\r\n";
-// $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// // More headers
-// $headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
-// mail($Email,$subject,$message,$headers);
 
-    // Send email using PHPMailer
-    $mail = new PHPMailer(true);
-
-    try {
-        // SMTP configuration
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'pd5569121@gmail.com'; // Gmail ID
-        $mail->Password   = 'carp uidg qexa uvyr';          // App password, not real password
-        $mail->SMTPSecure = 'tls';
-        $mail->Port       = 465;
-       // Email settings
-        $mail->setFrom('pd5569121@gmail.com');
-        $mail->addAddress($Email);
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body    = $message;
-        $mail->send();
-    }
-    catch (Exception $e) {
-        echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
-    }
+// Send email using mail()------------------------------------------------------------------------------------------
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// More headers
+$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
+mail($Email,$subject,$message,$headers);
 
 
-        echo "<script>
-             setTimeout(() => {
-            alert('✅Your Apllication has been Submitted !');
-            window.location.href='apply';
-      }, 4000);
-        </script>";
-                $stmt->close();
-    }  else
-    {
-        echo "<script>
-            document.getElementById('Error_sms').innerHTML='Something Error';
-        </script>";
-    }
-    }
-else {
-        // Show validation errors
-        foreach ($Errors as $error) {
-            echo "<script> document.getElementById('Error_sms').innerHTML='$error';</script>";
-        }
-    }
+    // Send email using PHPMailer-----------------------------------------------------------------------------------
+    // $mail = new PHPMailer(true);
+    // try {
+    //     $mail->isSMTP();
+    //     $mail->Host       = 'smtp.gmail.com';
+    //     $mail->SMTPAuth   = true;
+    //     $mail->Username   = 'pd5569121@gmail.com';          // Your Gmail
+    //     $mail->Password   = 'your-app-password';            // Gmail App Password
+    //     $mail->SMTPSecure = 'ssl';                          // Use 'tls' with port 587
+    //     $mail->Port       = 587;                            // 587 if TLS
+    //    $mail->Debugoutput = 'html';
+    //     $mail->setFrom('pd5569121@gmail.com', 'CampusXchange');
+    //     $mail->addAddress($Email);                          // Send to applicant
+    //     $mail->isHTML(true);
+    //     $mail->Subject = $subject;
+    //     $mail->Body    = $message;
+    //     $mail->send();
+
+    //     echo "<script>
+    //         alert('✅ Your application has been submitted successfully!');
+    //         window.location.href='apply';
+    //     </script>";
+    // } catch (Exception $e) {
+    //     echo "<script>
+    //         alert('❌ Email could not be sent. Error: ".$mail->ErrorInfo."');
+    //         window.location.href='apply';
+    //     </script>";
+    // }
+
+     echo "<script> setTimeout(() => {   alert('✅ Thank you! Your INTERNSHIP details have been submitted.');  window.location.href='apply'}, 4000);</script>";
+
 }
+?>
 
-  ?>
 </section>
 <!-- footer section start from here  ------------------------------------------------->
 <?php include "../components/footer.php" ?>
