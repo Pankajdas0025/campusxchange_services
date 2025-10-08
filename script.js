@@ -1,3 +1,11 @@
+// CDN animation
+  AOS.init({
+    duration: 1000, // Animation duration (ms)
+    offset: 120,    // Scroll offset
+    once: true,     // Animate only once
+  });
+
+
 
 function myFunction()
 {

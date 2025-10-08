@@ -102,6 +102,20 @@ body
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* Progress bar styling */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  margin: 0 10px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary-color),var(--secondary-color));
+  box-shadow: var(--shadow);
+  transition: width 0.2s ease;
+  z-index: 9999;
+  border-radius: 5px;
+}
 
 /* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
 
@@ -184,6 +198,7 @@ body
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
+<div id="scroll-progress"></div>
 
 <script>
 
@@ -198,6 +213,19 @@ body
   } else {
     x.className = "topnav";
   }
+}
+
+
+window.onscroll = function() {scrollIndicator()};
+
+function scrollIndicator() {
+  // Scroll distance calculation
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+
+  // Set the width of progress bar
+  document.getElementById("scroll-progress").style.width = scrolled + "%";
 }
 </script>
 </body>

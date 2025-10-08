@@ -51,27 +51,16 @@
   --border:none;
 }
 
-
-.marquee
-{
-  display: inline-block;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  font-size: 20px;
-}
  #home-hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 70px 10%;
-  background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/Hero-image.jpg') center/cover no-repeat;
+  background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/seo-services-hero.jpg') center/cover no-repeat;
   min-height: 100vh;
-  width: 80%;
-  margin: 5% 10%;
-  border-radius: 10px;
+  width: 100%;
+  margin:0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -82,7 +71,7 @@
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
   line-height: 1.3;
   font-weight: 700;
@@ -168,23 +157,6 @@
 .hero-stats i {
   color: var(--primary-color);
   font-size: 1.2rem;
-}
-
-.hero-media {
-  flex: 1 1 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 250px;
-}
-
-.seo-video {
-  width: 100%;
-  min-height: 250px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  object-fit: cover;
 }
 
 /* whatsapp contact form -------------------------------------------------------------------------------- */
@@ -331,18 +303,8 @@ background-color:#60e08f;
 
   @media screen and (max-width:700px) {
 
-
- #home-hero {
-
-  width: 95%;
-  margin:2.5%;
-
-}
-
-
-
 .hero-content h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 
 }
 
@@ -510,11 +472,6 @@ background-color:#60e08f;
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header><div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
-<br>
- <marquee scrollamount="12" direction="left" behavior="scroll">
- <div class="marquee "><span><img src="../assets/Images/newannimation.jpg" height="50" width="50"></span><p> Professional Services to Grow Your business  | No any charges if your website is design with our team </p></div>
- </marquee>
-
  <section id="home-hero">
   <div class="hero-content" data-aos="fade-right">
     <h1>Boost Your Brand with <span>CampusXchange SEO</span></h1>
@@ -530,16 +487,6 @@ background-color:#60e08f;
     </div>
   </div>
 
-  <!-- Dynamic Media Section -->
-  <div class="hero-media" data-aos="fade-left">
-    <!-- Option 1: Background Video -->
-    <video autoplay muted loop playsinline class="seo-video">
-      <source src="../assets/Images/H.mp4" type="video/mp4">
-    </video>
-
-    <!-- Option 2: Lottie Animation (fallback if video not used) -->
-    <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_pprxh53t.json" background="transparent" speed="1" loop autoplay></lottie-player> -->
-  </div>
 </section>
 
  <div class=" block whtsapp-cta-form">

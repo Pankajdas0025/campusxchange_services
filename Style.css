@@ -13,6 +13,30 @@
   --pSize:0.9rem;
   --border:none;
 }
+/* ==== Custom Scrollbar Style ==== */
+::-webkit-scrollbar {
+  width: 10px;             /* Scrollbar width */
+}
+
+/* Scrollbar background */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;      /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Scroll thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  border-radius: 10px;
+}
+
+
+
+/* ==== Firefox (cross-browser support) ==== */
+html {
+  scrollbar-width: thin;            /* ‘auto’ | ‘thin’ | ‘none’ */
+  scrollbar-color: #007bff #f1f1f1; /* thumb color | track color */
+}
 
 * {
   margin: 0;
@@ -45,7 +69,7 @@ p{font-size: 20px;}
 
 header
 {
-  background-color:var(--primary-color);
+  background-color:whitesmoke;
   backdrop-filter: blur(25px);
   overflow: hidden;
   position: absolute;
@@ -75,7 +99,7 @@ header
 /* header for all pages end here  */
  /* home intro first section */
 .homeIntro {
-    background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/Hero-image.jpg') center/cover no-repeat;
+    background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat;
     color: white;
     padding: 60px 20px;
     text-align: center;

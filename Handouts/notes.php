@@ -88,7 +88,7 @@ if (isset($_GET['search']) && !empty(trim($_GET['search']))) {
            echo "<div class='block Note_box'>
         <h2 id='Note_tittle'>{$row['title']}<button id='span'  onclick=\"copyLink('{$row['noteLink']}')\"><i class='fa-solid fa-share'></i></button> </h2><br>
         <textarea id='Note_content' readonly>{$row['content']}</textarea>
-<div class='Note_footer'><a  href='{$row['noteLink']}'>Read <a  href=' $downloadLink ' download >Download</a></div>
+<div class='Note_footer'><a  href='{$row['noteLink']}'>Read <i class='fa-solid fa-eye'></i><a  href=' $downloadLink ' download >Download <i class='fa-solid fa-download'></i></a></div>
       </div>";
 
 
@@ -127,7 +127,7 @@ else
      echo "<div class='block Note_box'>
         <h2 id='Note_tittle'>{$row['title']}<button id='span'  onclick=\"copyLink('{$row['noteLink']}')\"><i class='fa-solid fa-share'></i></button> </h2><br>
         <textarea id='Note_content' readonly>{$row['content']}</textarea>
-<div class='Note_footer'><a  href='{$row['noteLink']}'>Read</a> <a  href=' $downloadLink ' download >Download</a></div>
+<div class='Note_footer'><a  href='{$row['noteLink']}'>Read<i class='fa-solid fa-eye'></i></a> <a  href=' $downloadLink ' download >Download <i class='fa-solid fa-download'></i></a></div>
       </div>";
 
        $count++;

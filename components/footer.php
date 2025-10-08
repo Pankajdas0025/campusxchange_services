@@ -250,13 +250,13 @@ body
   <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
-  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/campusxchange_services/" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-instagram"></i> Instagram
   </a>
   <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-twitter"></i> Twitter
   </a>
-  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.facebook.com/campusxchangeservices" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-facebook"></i> Facebook
   </a>
   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">

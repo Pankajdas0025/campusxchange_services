@@ -1,3 +1,4 @@
+
 :root
 {
   --primary-color: #004080;
@@ -14,50 +15,39 @@
   --border:none;
 }
 html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
-header{ border-radius: 0;}
-
 .first-webdev-section
 {
 
 min-height: 90vh;
 width: 100%;
 border: var(--border);
-box-shadow: var(--shadow);
 position: relative;
 overflow: hidden;
-max-height: 500px;
 
 }
-.first-webdev-section video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 
-
-}
 .overlay-content {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   display: flex;
-  background-color: transparent;
+ background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/webdevelopment-services-hero.jpg') center/cover no-repeat;
   backdrop-filter: blur(5px);
 
-
 }.maintext{
+    height:100%;
+    width:40%;
+    margin: 0% 30% 1% 0%;
+    padding:1% 5%;
+    background-color: transparent;
 
-    margin-left: 50%;
-    height: 100%;
-    width: 50%;
-    margin:0.01%;
-    padding:5%;
-   background: linear-gradient(to right, var(--secondary-color), var(--secondary-color), transparent );
-backdrop-filter: blur(15px);
+
 }
 .maintext h1{
-    font-size: 65px;
+    font-size:2rem;
     font-weight: bold;
-    color: white;
+    color: var(--primary-color);
+
 }.maintext h1 div
 {
     background-color:var(--secondary-color);
@@ -71,7 +61,7 @@ backdrop-filter: blur(15px);
 .maintext p
 {
     color: white;
-    font-size:1.5rem;
+    font-size:1.25rem;
 
 }.maintext button
 {
@@ -90,6 +80,8 @@ backdrop-filter: blur(15px);
    transform: scale(1.01);
 
 }
+
+
 
 /* what we offer section ------------------------------------------*/
  .Weoffersection {
@@ -648,7 +640,6 @@ border: 2px solid rgb(9, 4, 4);
 /* mobile responsive ----------------------------------------------*/
 @media screen and (max-width:700px) {
 
-
 .first-webdev-section
 {
 height:500px;
@@ -672,8 +663,8 @@ height: 100%;
 width: 100%;
 margin:0.01%;
 padding: 10%;
-background: linear-gradient(to right, var(--secondary-color), transparent ,transparent);
-backdrop-filter: blur(15px);
+
+
 }
 .maintext h1{
     font-size:3rem;
@@ -923,16 +914,15 @@ margin: auto 0%;
     width: 100%;
     margin:0.01%;
     padding: 10%;
-   background: linear-gradient(to right, var(--secondary-color), transparent ,transparent);
-backdrop-filter: blur(15px);
+
 }
 .maintext h1{
-    font-size:3rem;
+    font-size:2rem;
     font-weight: bold;
     color: white;
 }.maintext h1 div
 {
-    background-color:var(--secondary-color);
+
     height:100px;
     width:100px;
     border-radius:50%;
@@ -942,7 +932,6 @@ backdrop-filter: blur(15px);
 }
 .maintext p
 {
-    color: white;
     font-size:1.2rem;
 
 }.techlangbox
@@ -952,8 +941,7 @@ backdrop-filter: blur(15px);
     width: 20%;
     margin: 2.5%;
     float: left;
-    border-radius: var(--radius);
-    border: var(--border);
+
     /* padding: 10px; */
 }.techlangbox img{
     height: 40px;
@@ -970,7 +958,6 @@ backdrop-filter: blur(15px);
     display: flex;
     float: left;
     font-size: 13px;
-    border-radius:var(--radius);
 
 }
 .client-slider
@@ -1045,6 +1032,5 @@ border: 2px solid rgb(9, 4, 4);
     margin:25px 2.5%;
 
 }
-
 /* right side end here --------------------------------------------------*/
 }

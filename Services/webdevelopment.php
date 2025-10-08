@@ -37,7 +37,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<style>
 
+
+</style>
 </head>
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
@@ -47,20 +50,15 @@
 <?php include "../components/header.php" ?>
 <main>
   <!-- first section for better UI or Hero Section start ------------------------------>
-  <section class="block first-webdev-section">
-
-  <video autoplay muted loop playsinline>
-    <source src="../assets/Images/H.mp4" type="video/mp4">
-  </video>
+<section class="block first-webdev-section">
 <div class="overlay-content">
 <div class="maintext">
  <h1> <div></div>Let's Start Now </h1>
 <P>We don't just build websites — we build digital experiences that perform, impress, and grow with your business.”</P>
 <p>From responsive web design to custom development, our solutions are built to impress, perform, and evolve with your business goals.
-
 </p>
 <br>
-    <a href="#pricingplan" title="Click here.."><button>Launch with Confidence →</button></a>
+<a href="#pricingplan" title="Click here.."><button>Launch with Confidence →</button></a>
 </div>
 </div>
   </section>
@@ -178,18 +176,17 @@
     <div class="scroll-track">
 <!-- Educational Image Gallery -->
 <!-- Same images twice for infinite loop effect -->
-<img src="../assets/Images/paramount-website-mockup.png"alt="Books and Study Materials">
-<img src="../assets/Images/memmory-puzzle-game-website.png"alt="Students Studying Together">
-<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="Classroom Learning">
-<img src="../assets/Images/notes-website-mockup.png"alt="Books and Study Materials">
+<img src="../assets/Images/paramount-website-mockup.png"alt="Paramount-coaching-website">
+<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="BlogScript web application-website">
+<img src="../assets/Images/notes-website-mockup.png"alt="tmu-notes-website">
+<img src="../assets/Images/memmory-puzzle-game-website.png"alt="memmory-puzzle-college-project-website">
 
 
 <!-- Duplicate for smooth infinite effect -->
-<img src="../assets/Images/paramount-website-mockup.png"alt="Books and Study Materials">
-<img src="../assets/Images/memmory-puzzle-game-website.png"alt="Students Studying Together">
-<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="Classroom Learning">
-<img src="../assets/Images/notes-website-mockup.png"alt="Books and Study Materials">
-
+ <img src="../assets/Images/paramount-website-mockup.png"alt="Paramount-coaching-website">
+<img src="../assets/Images/blogscriptapp-website-mockup.png"alt="BlogScript web application-website">
+<img src="../assets/Images/memmory-puzzle-game-website.png"alt="memmory-puzzle-college-project-website">
+<img src="../assets/Images/notes-website-mockup.png"alt="tmu-notes-website">
 
     </div>
   </section>
@@ -200,44 +197,43 @@
  <br>
  <!-- Website development price plan ----------------------------------------------------------------------->
  <section class="pricingplan" id="pricingplan">
- <div class="block plancategory"><div class="planheader">Basic (₹499 to ₹999)</div><div class="plancontent">
+ <div class="block plancategory"><div class="planheader">Basic (₹999 to ₹1599)</div><div class="plancontent">
   <ul>
-  <li>❌No custom Domain</li>
-  <li>✅Free Domain & SSL</li>
+  <li>✅Free Domain(.free.nf , .page.gd, .host)</li>
+  <li>✅Free Hosting & SSL</li>
   <li>✅1-5 static pages</li>
   <li>✅Responsive design </li>
   <li>✅Basic contact form</li>
   <li>✅WhatsApp/Email integration</li>
   <li>✅Speed optimization</li>
-  <li>❌SEO optimization</li>
   <li>✅1 Week delivery</li>
-  <li>✅7 days free support</li>
+  <li>✅30 days free support</li>
 </ul>
-<span>Ideal for: Students, freelancers, consultants, and small startups.</span></div></div>
+<span>Ideal for: Students, freelancers, consultants</span></div></div>
  <div class="block plancategory"><div class="planheader">Standard (₹5000 to ₹9,999)</div><div class="plancontent">
   <ul>
-  <li>✅Free custom Domain</li>
+  <li>✅Paid custom Domain(.com , .in , .org)</li>
+  <li>✅Paid Hosting & SSL</li>
   <li>✅Up to 10 pages (dynamic/static mix)</li>
   <li>✅Custom design + animations</li>
   <li>✅Admin panel or CMS (optional)</li>
   <li>✅Blog or Gallery module</li>
   <li>✅Social media & Google Maps integration</li>
-  <li>❌API integration (payment, CRM, etc.)</li>
   <li>✅SEO-ready structure</li>
   <li>✅2 Weeks delivery</li>
-  <li>✅15 days free support</li>
+  <li>✅6 Months free support</li>
 </ul>
-<span>Ideal for: Agencies, mid-size businesses, service providers.</span></div></div>
+<span>Ideal for: Agencies,small startups, service providers.</span></div></div>
  <div class="block plancategory"><div class="planheader">Premium (₹9,999 to ₹14,999)</div><div class="plancontent">
   <ul>
+  <li style="background-color: gainsboro;">All Standard paln ➕ </li>
   <li>✅Unlimited pages</li>
   <li>✅Dynamic admin dashboard</li>
-  <li>✅Custom backend (PHP + MySQL)</li>
   <li>✅API integration (payment, CRM, etc.)</li>
   <li>✅Advance SEO setup</li>
   <li>✅Performance + security optimization</li>
   <li>✅4-5 weeks delivery</li>
-  <li>✅30 days free support + Maintenance option</li>
+  <li>✅1Year free support + Maintenance option</li>
 </ul>
 <span>Ideal for: Startups, online stores, scalable business platforms.</span></div></div>
  </section>

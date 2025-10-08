@@ -47,20 +47,20 @@ include "../src/config.php";
 
 
 <style>
+
     .verifed-section {
-    background: linear-gradient(to right, #6366f1, #f43f5e );
-    padding: 2rem 0.5rem 1.5rem 0.5rem;
+    background: linear-gradient(to right, #004080, #f43f5e );
+    padding: 2rem 0.5rem 1rem 0.5rem;
     max-width: 600px;
     height:auto;
     margin: 2rem auto 2rem auto;
     box-shadow:0 8px 30px rgba(2,6,23,0.08);
-    border-radius: 10px;
+
   }
 
 
   .intern-info {
     background: #fff;
-border-radius: 20px;
     box-shadow: 0 2px 8px rgba(99,102,241,0.07);
     padding: 1.5rem 1rem;
     color: #222;
@@ -78,7 +78,7 @@ border-radius: 20px;
     box-shadow: 0 2px 4px rgba(34,197,94,0.12);
   }
   .intern-info strong {
-    color: #6366f1;
+    color: #004080;
     font-weight: 600;
     text-shadow: 1px 1px rgba(99,102,241,0.2);
   }
@@ -105,9 +105,9 @@ border-radius: 20px;
   .verifed-section {
     margin: 0.2rem 0.1rem;
     box-shadow: 0 2px 16px rgba(99,102,241,0.08);
-    padding: 0.2rem ;
+    padding: 5px;
   }#nverified .intern-info{
-    height: 100vh;
+    height:auto;
   }
 
 
@@ -161,11 +161,26 @@ $Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8
         else
     {
         echo " <section class='verifed-section' id='nverified'>
-    <div class='intern-info'>
-     <p><strong>The Intern is Not registred !</strong></p>
-      <a href='../internship-program' aria-label='know more about internship program offer by campusxchange'><p>Know More About CampusXchange</p></a>
+      <div class='intern-info'>
+    <h2 class='status-heading'>Intern Verification Status</h2>
+    <p class='status-message'>
+      <strong>⚠️ The intern is not registered with CampusXchange.</strong><br>
+      It seems this intern’s record is not found in our system. Please verify your registration details or contact our support team for assistance.
+    </p>
+    <a href='../internship-program' class='learn-more-btn' aria-label='Learn more about CampusXchange internship program'>
+      <p>Explore Internship Programs</p>
+    </a>
 
+    <div class='contact-info'>
+      <h3>Need Help?</h3>
+      <p>If you believe this is an error or want to apply for an internship, reach out to us:</p>
+      <ul style='list-style:none'>
+        <li>📧 <strong>Email:</strong> support@campusxchange.in</li>
+        <li>📞 <strong>Phone:</strong> +91 98765 43210</li>
+        <li>🌐 <strong>Website:</strong> <a href='https://www.campusxchange.in' target='_blank' rel='noopener'>www.campusxchange.in</a></li>
+      </ul>
     </div>
+  </div>
 </section>";
     }
 
@@ -174,7 +189,7 @@ $Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8
 
 
   }
-  include("../feedback.php");
+
  ?>
 
 <script src="../script.js"></script>
