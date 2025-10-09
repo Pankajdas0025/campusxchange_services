@@ -30,6 +30,7 @@ body
   overflow: hidden;
   background-color:var(--primary-color);
   height:100px;
+  margin: 0 ;
 }
 
 .topnav a {
@@ -114,7 +115,7 @@ body
   box-shadow: var(--shadow);
   transition: width 0.2s ease;
   z-index: 9999;
-  border-radius: 5px;
+
 }
 
 /* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
@@ -154,7 +155,14 @@ body
     display: block;
     width: 100%;
     text-align: left;
-  }
+  }/* Progress bar styling */
+#scroll-progress {
+
+  height: 10px;
+  margin: 0;
+
+}
+
 }
 
 /* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
@@ -198,7 +206,9 @@ body
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
+<br>
 <div id="scroll-progress"></div>
+<br>
 
 <script>
 

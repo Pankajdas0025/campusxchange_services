@@ -1,6 +1,5 @@
 :root {
-
-  --primary-color: #004080;
+  --primary-color: #385f87;
   --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
@@ -14,89 +13,31 @@
   --border:none;
 }
 /* ==== Custom Scrollbar Style ==== */
-::-webkit-scrollbar {
-  width: 10px;             /* Scrollbar width */
-}
+::-webkit-scrollbar {width: 10px;            }
+::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 10px;}
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--primary-color), var(--secondary-color)); border-radius: 10px;}
+html{scrollbar-width: thin; scrollbar-color: #007bff #f1f1f1;}
+/* reset */
+* {margin: 0;box-sizing: border-box;padding: 0;}
 
-/* Scrollbar background */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;      /* Light gray background */
-  border-radius: 10px;
-}
+body { font-family: var(--font-main); color: var(); line-height: 1.6; background-color: #f6f7fb; padding: 0 10px; overflow-x  : hidden}
 
-/* Scroll thumb (the draggable part) */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
-  border-radius: 10px;
-}
-
-
-
-/* ==== Firefox (cross-browser support) ==== */
-html {
-  scrollbar-width: thin;            /* ‘auto’ | ‘thin’ | ‘none’ */
-  scrollbar-color: #007bff #f1f1f1; /* thumb color | track color */
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-body {
-
-
-  font-family: var(--font-main);
-  color: var();
-  line-height: 1.6;
-  background-color: #f6f7fb;
-  padding: 0 10px;
-  overflow-x  : hidden;
-
-
-}h1 , h2 , h3
-
-{
-  color: var(--primary-color);
-}
-
+h1 , h2 , h3{  color: var(--primary-color);}
 p{font-size: 20px;}
 
-
-
 /* header for all pages  */
-
 header
 {
-  background-color:whitesmoke;
-  backdrop-filter: blur(25px);
-  overflow: hidden;
-  position: absolute;
 
-  height:100px;
-  font-size: 3rem;
-  font-style: italic;
-  /* background-color: var(--primary-color); */
   position: sticky;
   top: 0;
-  z-index: 999;
-}.Logo
-{
-  height: 100px;
-  width:25vw;
-  background-color:transparent;
-  padding: 0;
-  font-size:20px;
-  font-style: normal;
+  z-index: 9999; /* try higher */
+  background-color: var(--primary-color);
 
-  color: white;
-}.Logo img
-{
-  height:100px;
-  width:100%;
+
 }
-/* header for all pages end here  */
+.Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}
+.Logo img{ height:100px; width:100%;}
  /* home intro first section */
 .homeIntro {
     background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat;
@@ -108,14 +49,8 @@ header
     min-height: 80vh;
     width: 100%;
     display: flex;
-  }.introContent
-
-  {
-width: 45%;
-text-align: left;
-padding-left:25px;
-margin:5% 5%;
-  }#core-ser
+  }.introContent {width: 45%;text-align: left;padding-left:25px;margin:5% 5%;  }
+  #core-ser
   {
     background-color: white;
     color: black;
@@ -129,27 +64,9 @@ margin:5% 5%;
      border-radius:var(--radius);
      background-origin: var(--shadow);
   }
-  .introContent h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: 700;
-
-  }
-
-  .highlight {
-
-    color:var(--secondary-color);
-    padding: 4px 8px;
-    border-radius: 6px;
-  }
-
-  .introContent p {
-
-    max-width: 700px;
-    margin: 0 auto 20px;
-    line-height: 1.6;
-    color: white;
-  }
+.introContent h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+.highlight { color:var(--secondary-color);  padding: 4px 8px;  border-radius: 6px;}
+.introContent p {max-width: 700px;  margin: 0 auto 20px;  line-height: 1.6;  color: white;}
 
   .ctaBtn {
     display: inline-block;
@@ -162,18 +79,10 @@ margin:5% 5%;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
-
-  .ctaBtn:hover {
-    background-color:transparent;
-    backdrop-filter: blur(25px);
-    color: #ffffff;
-    transform: scale(1.05);
-  }
-
+  .ctaBtn:hover { background-color:transparent;  backdrop-filter: blur(25px);color: #ffffff;   transform: scale(1.05); }
 
 /* Homepage Hero section ------------------------------------------------------------------------------------------------------------- */
 .hero {
-
   color: rgb(0, 0, 0);
   border-radius: var(--radius);
   margin-bottom: 40px;
@@ -186,20 +95,14 @@ margin:5% 5%;
   align-content: center;
   padding: 3rem 2rem;
   border: var(--border);
+  z-index: 0;
 }
-.hero h1 {
-  font-size: 1.8rem;
-  text-align: left;
-}
-.hero p{
-  font-size:var(--pSize);
-  opacity: 1;
-}
+.hero h1 { font-size: 1.8rem; text-align: left;}
+.hero p{font-size:var(--pSize);opacity: 1;}
 /* Homepage Hero section end ------------------------------------------------------------------------------------------------------------- */
 /* Assignment section--------------------------------------------------------------------------------------------------------------------  */
 #Assignment
 {
-
   color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
@@ -211,18 +114,10 @@ margin:5% 5%;
   transition-delay: 10s;
   height: auto;
   border: var(--border);
-}#Assignment h2,p
-{
-  text-align: left;
 }
+#Assignment h2,p{ text-align: left;}
 /* Assignment Button Container --------------------------------*/
-.assignment-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
+.assignment-buttons {display: flex;flex-wrap: wrap;justify-content: center;gap: 15px;}
 /* Individual Button Styling */
 .assignment-buttons a {
   padding: 10px 20px;
@@ -238,7 +133,6 @@ margin:5% 5%;
   min-width: 160px;
   text-align: center;
 }
-
 .assignment-buttons a:hover {
   background-color: var(--hoverbg);
   transform: scale(1.05);
@@ -250,14 +144,12 @@ margin:5% 5%;
   height:auto;
   width: 100%;
   display: flex;
-
 }
 .service-type
 {
   height: 400px;
   width: 20%;
   margin: 100px 2.5%;
-
   display: flex;
   flex-wrap: wrap;
   border: 2px solid rgb(255, 255, 255);
@@ -286,8 +178,6 @@ background: linear-gradient(to top, var(--primary-color), var(--secondary-color)
 }.service-type-img img:hover{
     filter:grayscale(1);
     transform: scale(1.5);
-
-
 }
 .service-type-content
 {
@@ -300,7 +190,6 @@ transition: height 1.2s ease-in-out;
 border-radius:0 0 15px 15px;
 padding: 10px 30px;
 }.service-type:hover .service-type-content
-
 {
   height: 60%;
   opacity: 1;
@@ -312,7 +201,6 @@ padding: 10px 30px;
 /* section to display my core services in a single frame end here  */
 /* webService-demo section or slider -------------------------------------------------------------------------------------------------------- */
 #Service-demo{
-
   color: rgb(0, 0, 0);
   padding: 3rem 2rem;
   border-radius: var(--radius);
@@ -323,11 +211,9 @@ padding: 10px 30px;
   width: 90%;
   margin: 1% 5%;
   border: var(--border);
-
 } #Service-demo h2
 {
   text-align:left;
-
 }
 /* Get your website button */
 #Explorbtn , #Explorbtn2
@@ -366,30 +252,21 @@ padding: 10px 30px;
       position: relative;
       touch-action: pan-y;
       /* border: var(--border); */
-
-    }
-
-    .slider-images {
-      display: flex;
+}       .slider-images {
+     display: flex;
       transition: transform 0.8s ease-in-out;
       height: 100%;
-
     }
-
     .slider-images img {
        width: 400px;
       margin: 0 50px;
       height: 300px;
       /* object-fit: cover; */
       flex-shrink: 0;
-
-
     }
-
     .numbers {
       margin-top: 12px;
     }
-
     .num-btn {
       display: inline-block;
       margin: 0 5px;
@@ -400,20 +277,15 @@ padding: 10px 30px;
       cursor: pointer;
       font-weight: bold;
     }
-
     .num-btn.active {
       background-color: #333;
       color: white;
     }
-
 /* Service-demo section end -------------------------------------------------------------------------------------------------------- */
-
 /* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
-
 .seoSection h2
 {
   text-align:left;
-
 }
 .seoSection{
   color: rgb(0, 0, 0);
@@ -423,9 +295,6 @@ padding: 10px 30px;
   text-align: center;
   box-shadow: var(--shadow);
   height:650px;
-
-
-
 }
 .typeSeo
 {
@@ -447,65 +316,7 @@ padding: 10px 30px;
     2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
     5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
     10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-
-
-}#seo1
-{
-  background-color: #f43f5e;
-  animation: SeoAnn1  2s infinite;
 }
-#seo2
-{
-    background-color:var(--primary-color);
-    animation: SeoAnn2  2s infinite;
-}
-#seo3
-{
-    background-color: #f43f5e;
-    animation: SeoAnn3  2s infinite;
-}
-#seo4
-{
-    background-color:var(--primary-color);
-    animation: SeoAnn4  2s infinite;
-}
-
-@keyframes SeoAnn1
-{
-  0%{translate: 0 -20px;}
-  25%{translate: 0 -40px;}
-  50%{translate: 0 -60px;}
-  100%{translate: 0 0;}
-}
-@keyframes SeoAnn2
-{
-
-  0%{translate: 0 -40px;}
-  25%{translate: 0 -60px;}
-  50%{translate: 0 0;}
-  100%{translate: 0 -20px;}
-}
-
-@keyframes SeoAnn3
-{
-  0%{translate: 0 -60px;}
-  25%{translate: 0 0;}
-   50%{translate: 0 -20px;}
-  100%{translate: 0 -40px;}
-}@keyframes SeoAnn4
-{
-  0%{translate: 0 -60px;}
-   25%{translate: 0 -20px;}
-  50%{translate: 0 -40px;}
-    100%{translate: 0 0;}
-}
-.typeSeo:hover{
-  transform: rotate(360deg);
-}
-
-/* -- SEO service CTA section end here ------------------------------------------------------------------------------------------------ */
-
-
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
 .Home-page-about{
     border-radius: var(--radius);
@@ -525,7 +336,6 @@ padding: 10px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-
 }
 .Performance-card {
     background: white;
@@ -553,21 +363,16 @@ padding: 10px 30px;
     margin-bottom: 0.5rem;
      transition: transform 0.3s;
      text-shadow: 1px 1px 3px black;
-
 /* Performance and brif intro  section end -------------------------------------------------------------------------------------------------------- */
-
 }#Internship{
     color: rgb(0, 0, 0);
     height:auto;
     border-radius: var(--radius);
     background: #f9fafb;
 
-
 }#Internship:hover button
 {
-
   animation:buttonMove 1s ease-in-out 0s 1 forwards;
-
 }
 @keyframes buttonMove
 {
@@ -588,21 +393,16 @@ padding: 10px 30px;
   opacity: 1;
    }
 }
-
-
 .IHero
 {
   padding: 3rem 2rem;
   height:100%;
   border-radius: var(--radius);
-
-
 }.IHero img
 {
   height: 90%;
   width: 100%;
 }
-
 .IHero button
 {
   outline: none;
@@ -620,10 +420,8 @@ padding: 10px 30px;
   box-shadow:2px 2px 12px rgb(255, 255, 255);
   z-index:100;
 }
-
 main{
   opacity:1;
-
 }
 /* FAQ style start here -------------------------------*/
 .faq-section {
@@ -636,26 +434,22 @@ main{
   width: 100%;
 
 }
-
 .faq-section h2 {
   text-align:left;
   margin-bottom: 30px;
   color: white;
 }
-
 .faq {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
   padding-bottom: 15px;
 }
-
 .faq-question {
   font-weight: bold;
   cursor: pointer;
   position: relative;
   padding-right: 25px;
 }
-
 .faq-question::after {
   content: "+";
   position: absolute;
@@ -663,11 +457,9 @@ main{
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-
 .faq.active .faq-question::after {
   transform: rotate(45deg);
 }
-
 .faq-answer {
   display: none;
   padding-top: 10px;
@@ -703,17 +495,13 @@ main{
   display: none;
   border-radius: 50%;
   border:var(--border);
-
 } #btn1:hover
 {
   background-color: var(--hoverbg);
 }#btn2:hover
 {
   background-color: var(--hoverbg);
-
-
 }
-
 .Footer
 {
   height:auto;
@@ -725,14 +513,11 @@ main{
   height:50px;
   margin-top:12px;
   padding: 1rem 0;
-
 }.contact a
-
 {
   color: white;
   padding: 2px 5px;
 }
-
 #quicklinks a
 {
   color: var(--bg-light);
@@ -751,17 +536,13 @@ main{
   margin-top: 12px;
 }#Sociallinks a
 {
-
   padding: 0.5rem 1rem 0.5rem 0;
   font-size: 30px;
   color: var(--bg-light);
 }#CopyRight
 {
   height:100px;
-
-
 }
-
 
 @media screen and (max-width:700px)
 {
@@ -769,9 +550,7 @@ main{
   {
     padding: 0;
   }
-
   /* For all Mobile  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
-
 .Logo
 {
   height: 80px;
@@ -784,18 +563,14 @@ main{
   width:100%;
 }
     .homeIntro {
-
     display:block;
-
   }.introContent
-
   {
 width:100%;
 text-align: left;
 padding-left:0px;
 margin:0%;
   }#core-ser
-
   {
     width: 100%;
     padding: 10px 50px;
@@ -807,17 +582,12 @@ margin:0%;
   display: block;
   margin-top: 10px;
   }
-
-
   .introContent h1 {
       font-size: 2em;
     }
-
     .introContent p {
       font-size: 1em;
     }
-
-
   .HeroImg img
 {
   height:200px;

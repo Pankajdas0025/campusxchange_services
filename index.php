@@ -109,10 +109,10 @@
       <h2>Rank Your Website in Search Engine Result Page</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
       <br>
-      <div class="typeSeo" id="seo1">OnPage SEO</div>
-      <div class="typeSeo" id="seo2">OFFPage SEO</div>
-      <div class="typeSeo" id="seo3">Technical SEO</div>
-      <div class="typeSeo" id="seo4">Local SEO</div>
+      <div class="typeSeo" style="background-color:#f43f5e">OnPage SEO</div>
+      <div class="typeSeo" style="background-color:#385f87  ">OFFPage SEO</div>
+      <div class="typeSeo" style="background-color:#f43f5e">Technical SEO</div>
+      <div class="typeSeo" style="background-color:#385f87  ">Local SEO</div>
       <br>
       <a href="services/seo" title="Rank your website on Search Engine"><button id="Explorbtn2">Let's Discuss SEO</button></a>
       <br>
@@ -236,9 +236,6 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
 <!-- fotter section end  --------------------------------------------------------------------------------->
   </main>
 
-  <!-- CTA buttons  -->
-      <a href="internship-program" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
-      <button id="btn2" onclick="RemoveIpop()">&times;</button>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>

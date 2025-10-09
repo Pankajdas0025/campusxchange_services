@@ -52,7 +52,6 @@ include "src/config.php";
   --pSize:0.9rem;
   --border:none;
 }
-
   .contact-main {
     background: #f9fafb;
     padding: 3rem 1.5rem 2rem 1.5rem;
@@ -115,6 +114,7 @@ include "src/config.php";
     border: none;
 
   }
+  /* <!-- contact us newsletter section -----------------------------------------> */
     .newsletter-unique {
     display: flex;
     flex-wrap: wrap;
@@ -127,6 +127,7 @@ include "src/config.php";
     box-shadow: 0 4px 24px rgba(99,102,241,0.08);
     padding: 2.5rem 1rem;
   }
+
   .newsletter-card {
     background: #fff;
     box-shadow: 0 2px 12px rgba(99,102,241,0.07);
@@ -141,6 +142,13 @@ include "src/config.php";
     margin-bottom: 0;
     transition: transform 0.2s, box-shadow 0.2s;
     border-top: 6px solid var(--primary-color);
+  }.newsletter-card #f-Error
+  {
+    background-color:lightgray;
+    color: red;
+    font-weight: 600;
+    margin: 2% 0;
+
   }
   .newsletter-card:hover {
     transform: translateY(-8px) scale(1.03);
@@ -199,57 +207,7 @@ include "src/config.php";
     background:var(--secondary-color);
     color: #fff;
   }
-  .newsletter-card .form-success {
-    color: #22c55e;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-right: 25px;
-    background-color: skyblue;
-    color: black;
-    display: none;
 
-  }
-  /* contact us newsletter section  ----------------------------*/
-  .newsletter {
-    display: flex;
-    width: 100%;
-    height: 500px;
-    justify-content: center;
-
-  }.contact-form-box {
-
-    width: 40%;
-    height: 450px;
-    margin:25px 5%;
-
-  }.contact-form-box h3 {
-    color: var(--secondary-color);
-    margin: 0.5rem 0;
-  }
-
-  .contact-form-box input,textarea{
-    width: 80%;
-    padding: 0.8rem;
-    border: 1px solid var(--primary-color);
-    font-size: 1rem;
-    margin:1.5% 10% 1.5% 0%;
-  }
-
-  .contact-form-box button {
- background-color: #f3eded;
-  }
-  .contact-form-box button:hover {
-    background-color: var(--secondary-color);
-    color: #ffffff;
-  }
-
-  .form-success {
-   display: block;
-    color: #1f2421;
-    font-size: 0.98rem;
-    padding-left: 50px;
-    margin-top: 0rem;
-  }
   #newsletterForm
   {
     background-color: var(--primary-color);
@@ -290,28 +248,6 @@ include "src/config.php";
       height: 220px;
     }
 
-
-  /* contact us newsletter section  ----------------------------*/
-  .newsletter {
-    display:block;
-    width: 100%;
-    height: auto;
-
-
-  }.contact-form-box {
-
-    width: 90%;
-    height: 400px;
-    margin:25px 5%;
-
-
-
-  }.contact-form-box h3 {
-
-    color:var(--secondary-color);
-    margin: 0.5rem 0;
-  }
-
   .contact-form-box input,textarea,button {
     width: 100%;
     padding: 0.8rem;
@@ -321,15 +257,11 @@ include "src/config.php";
   }
   #newsletterForm
   {
-
     padding: 10% 0;
     height: 300px;
   }
   #newsletterForm span {
-
     font-size:0.67rem;
-
-
   } .newsletter-card button
   {
      margin-left: 0px;
@@ -362,8 +294,8 @@ include "src/config.php";
   <div class="contact-info">
     <h2>Contact Us</h2>
     <ul>
-      <li><i class="fa-solid fa-location-dot"></i> <strong>Head Office:</strong> Kishanganj, Bihar (855115), India</li>
-      <li><i class="fa-solid fa-building"></i> <strong>Branch:</strong> Patna, Bihar (800001), India</li>
+      <!-- <li><i class="fa-solid fa-location-dot"></i> <strong>Head Office:</strong> Kishanganj, Bihar (855115), India</li>
+      <li><i class="fa-solid fa-building"></i> <strong>Branch:</strong> Patna, Bihar (800001), India</li> -->
       <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@campusxchange.com</li>
       <li><i class="fa-solid fa-phone"></i> <strong>Mobile:</strong> +91 9155726625</li>
       <li><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> +91 9155726625</li>
@@ -385,41 +317,22 @@ include "src/config.php";
     <span class="card-icon"><i class="fa-solid fa-paper-plane"></i></span>
     <form class="contact-form" id="contactForm" autocomplete="off">
       <h3>Send Us a Message</h3>
+      <div id="f-Error"></div>
       <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
       <input type="email" id="contactEmail" name="contactEmail" placeholder="Your Email" required>
-      <input type="text" id="contactPhone" name="contactPhone" placeholder="Your Mobile (optional)">
-      <textarea id="contactMsg" name="contactMsg" placeholder="Your Message" rows="4" required></textarea>
+      <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your Mobile " maxlength="10" required>
+      <textarea id="contactMsg" name="contactMsg" placeholder="Your Message" rows="4" minlength="20" required></textarea>
       <button type="submit">Send Message</button>
-      <span class="form-success" id="formSuccess">Thank you! Your message has been sent.</span>
+
     </form>
   </div>
-
-  <script>
-document.getElementById("contactForm").addEventListener("submit", function(event){
-  event.preventDefault();
-  let name = document.getElementById("contactName").value;
-  let email = document.getElementById("contactEmail").value;
-  let number = document.getElementById("contactPhone").value;
-  let sms = document.getElementById("contactMsg").value;
-  let whatsappNumber = "919155726625"; // Apna WhatsApp number with country code
-  let url = "https://wa.me/" + whatsappNumber + "?text="
-            + "Hello, my name is " + name + "%0a"
-            + "Email: " + email+ "%0a"
-            + "Contact : " + number + "%0a"
-            + "Message: " + sms+ "%0a"
-            + "Please reply me for ny Query ?";
-  window.open(url, "_blank").focus();
-});
-</script>
-
+<!-- subscribe us newsletter section ----------------------------------------->
   <div class="animationtype3 newsletter-card">
     <span class="card-icon"><i class="fa-solid fa-bell" method="POST" ></i></span>
     <form class="contact-form" id="newsletterForm" method="POST" action="">
       <h3>Ready For New Updates</h3>
       <input type="email" id="newsletterEmail" name="contact_email" placeholder="Your Email" required>
       <button type="submit">Subscribe</button>
-      <span class="form-success" id="newsletterSuccess"></span>
-
     </form>
       <?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -430,24 +343,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     {
         echo"<script>alert('Please enter a valid email address.');</script>";
     }
-
-
     // Prepare and execute insert query
         $stmt = $conn->prepare("INSERT INTO email_list (Emails) VALUES (?)");
         $stmt->bind_param("s",$Email);
     if ($stmt->execute())
   {
- echo"<script>alert('Thank You ');</script>";
+   echo"<script>alert('Thank You for subscribe ');  window.location.href='http://localhost/Campusxchange/lettalk';  </script>";
   }
 }
  ?>
   </div>
-
-
 </section>
-
 <?php
-
 include("feedback.php");
 ?>
 </main>
@@ -455,6 +362,93 @@ include("feedback.php");
 <!-- footer section  --------------------------------------------------------------------------------->
 <?php include "components/footer.php" ?>
 <!-- fotter section end  here --------------------------------------------------------------------------------->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const form_sms = document.getElementById("f-Error"); //
+  const form_name = document.getElementById("contactName");
+  const form_email = document.getElementById("contactEmail");
+  const form_phone = document.getElementById("contactPhone");
+  const form_msg = document.getElementById("contactMsg");
+
+  // ✅ Name Validation
+  form_name.addEventListener("change", () => {
+    const name = form_name.value.trim();
+    if (!/^[a-zA-Z\s]{4,}$/.test(name)) {
+      form_sms.textContent = "Please enter a valid name (letters only, min 4 characters).";
+      form_name.style.color = "red";
+
+       setTimeout(() => {
+        form_sms.innerHTML = "";
+          form_name.value = "";
+          form_name.style.color = "black";
+        }, 3000);
+    } else {
+      form_sms.textContent = "";
+      form_name.style.color = "black";
+    }
+  });
+
+  // ✅ Email Validation
+  form_email.addEventListener("change", () => {
+    const email = form_email.value.trim();
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+      form_sms.textContent = "Please enter a valid email address.";
+      form_email.style.color = "red";
+       setTimeout(() => {
+        form_sms.innerHTML = "";
+          form_email.value = "";
+          form_email.style.color = "black";
+        }, 3000);
+    } else {
+      form_sms.textContent = "";
+      form_email.style.color = "black";
+    }
+  });
+
+  // ✅ Phone Validation (Optional)
+  form_phone.addEventListener("change", () => {
+    const mobile = form_phone.value.trim();
+    if (mobile !== "" && !/^\d{10}$/.test(mobile)) {
+      form_sms.textContent = "Mobile number must be exactly 10 digits.";
+      form_phone.style.color = "red";
+
+       setTimeout(() => {
+        form_sms.innerHTML = "";
+          form_phone.value = "";
+          form_phone.style.color = "black";
+        }, 3000);
+    } else {
+      form_sms.textContent = "";
+      form_phone.style.color = "black";
+    }
+  });
+
+  // ✅ Form Submission (Send to WhatsApp)
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = form_name.value.trim();
+    const email = form_email.value.trim();
+    const number = form_phone.value.trim();
+    const sms = form_msg.value.trim();
+
+    // Final validation before sending
+    if (name === "" || email === "" || sms === "") {
+      form_sms.textContent = "Please fill all required fields before submitting.";
+      return;
+    }
+
+    const whatsappNumber = "919155726625"; // Your WhatsApp number
+    const message = `Hello, my name is ${name}%0aEmail: ${email}%0aContact: ${number}%0aMessage: ${sms}%0aPlease reply to me for my query.`;
+    const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.open(url, "_blank");
+  });
+});
+</script>
+
+
 <script src="script.js"></script>
 
 </body>

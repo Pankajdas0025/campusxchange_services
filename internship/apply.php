@@ -133,7 +133,6 @@ height: auto;
 </style>
 </head>
 <body>
-<div class="cursor"></div>
 <header>
 <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
 </header>

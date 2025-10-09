@@ -63,7 +63,7 @@
       box-shadow: var(--shadow);
     }
     .about-hero h1 {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       margin-bottom: 1rem;
       color: rgb(218, 209, 209);
     }
@@ -159,14 +159,15 @@
       max-width: 600px;
       margin: auto;
       position: relative;
+      background-color: var(--primary-color );
     }
     .carousel-slide {
       display: none;
       font-size: 1.2rem;
-      color: #222;
+      background-color: var(--primary-color );
       border-radius: 10px;
       padding: 2rem;
-     box-shadow: var(--shadow);
+      box-shadow: var(--shadow);
     }
     .carousel-slide.active {
       display: block;
@@ -242,10 +243,8 @@
     } .founder-section span {
      border: 2px solid white;
      font-size: 9px;
-
     }
     }
-
   </style>
 </head>
 <body>

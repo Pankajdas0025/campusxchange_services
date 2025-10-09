@@ -185,8 +185,8 @@ button[type="submit"]:hover {
 .paid-note-box { background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 18px; width:30%; margin:0.5%; box-shadow: var(--shadow); }
 .paid-note-footer { margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
 .note-price { font-weight: bold; color: #2e7d32; }
-.buy-btn { background: #007bff; color: #fff; padding: 6px 16px; border-radius: 4px; text-decoration: none; }
-.buy-btn:hover { background: #0056b3; }
+.buy-btn { background:var(--primary-color); color: #fff; padding: 6px 16px; border-radius: 4px; text-decoration: none; }
+.buy-btn:hover { background:var(--secondary-color); }
 /* ........................................................................... */
 
 /*Notes  section  end------------------------------------------------------------------------------------------------------------- */

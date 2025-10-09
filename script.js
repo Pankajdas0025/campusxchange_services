@@ -5,15 +5,12 @@
     once: true,     // Animate only once
   });
 
-
-
 function myFunction()
 {
   var x = document.getElementById("myTopnav");
   // var y = document.getElementsByClassName("icon").InnerText="&times";
   if (x.className === "topnav") {
     x.className += " responsive";
-
 
   } else {
     x.className = "topnav";
@@ -117,7 +114,6 @@ function changCount() {
   },100); // run every 100ms
 }
 
-
 // to display popup box ................................................................................................
 setTimeout(function()
 {
@@ -136,8 +132,6 @@ function RemoveIpop()
   document.querySelector("main").style.opacity = "1";
   document.querySelector("main").style.pointerEvents ="fill";
 }
-
-
 
 /*Home page  FAQ script start here -------------------------------*/
  document.addEventListener("DOMContentLoaded", () => {
@@ -163,9 +157,6 @@ function RemoveIpop()
 });
 /* Home Page FAQ script end here -------------------------------*/
 
-
-
-
 // webpage client feedback----------------------------------------------
 function Clientfeedback(imgsrc, clientpos, rating , sms)
 {
@@ -177,9 +168,7 @@ function Clientfeedback(imgsrc, clientpos, rating , sms)
   b.innerText=clientpos;
   c.innerText=rating;
   d.innerText=sms;
-
 }
-
 function Client1()
 {
 Clientfeedback("../assets/images/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");

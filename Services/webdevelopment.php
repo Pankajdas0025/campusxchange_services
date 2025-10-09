@@ -288,8 +288,6 @@
 // require '../PHPMailer/src/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
     $name     = htmlspecialchars(trim($_POST['client_name'] ?? ''), ENT_QUOTES, 'UTF-8');
     $mobile = htmlspecialchars(trim($_POST['client_mobile'] ?? ''), ENT_QUOTES, 'UTF-8');
     $email    = filter_var(trim($_POST['client_email'] ?? ''), FILTER_SANITIZE_EMAIL);
@@ -518,60 +516,6 @@ else {
     });
   });
 });
-/* web development Page FAQ script end here -------------------------------*/
- // for my client section slider .....................................................................
-  const webpageslider = document.getElementById("slider");
-  const totalsliderln = webpageslider.children.length;
-  let currentIndexpostn = 0;
-
-  const numberContainerBox = document.getElementById("numberContainerBox");
-
-  // Create numbered buttons
-  for (let i = 0; i < totalsliderln; i++) {
-    const btn = document.createElement("span");
-    btn.classList.add("num-btn");
-    btn.textContent = i + 1;
-    if (i === 0) btn.classList.add("active");
-    btn.setAttribute("data-index", i);
-    btn.addEventListener("click", () => {
-      currentIndexpostn = i;
-      updatewebpageSlider();
-    });
-    numberContainerBox.appendChild(btn);
-  }
-
-  function  updatewebpageSlider() {
-    webpageslider.style.transform = `translateX(-${currentIndexpostn * 100}%)`;
-    document.querySelectorAll(".num-btn").forEach(btn => btn.classList.remove("active"));
-    document.querySelectorAll(".num-btn")[currentIndexpostn].classList.add("active");
-  }
-
-  // Auto scroll
-  setInterval(() => {
-    currentIndexpostn = (currentIndexpostn + 1) % totalsliderln;
-    updatewebpageSlider();
-  }, 2000);
-
-
-
-// scroll to top web..........................
-let mybtn = document.getElementById("movebtn");
-//When the user scrolls down 1000px from the top of the document, show the button........................
-window.onscroll = function() {crollFunction()};
-function crollFunction() {
-  if (document.body.scrollTop >1000 || document.documentElement.scrollTop >1000) {
-    mybtn.style.display = "block";
-  } else {
-    mybtn.style.display = "none";
-  }
-}
- function movetopFun() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
 
 
 </script>

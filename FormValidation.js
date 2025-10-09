@@ -1,6 +1,6 @@
 //  Webdevelopmet services formvalidation start...............................................
 
- const Errorsms = document.getElementById('Error');
+    const Errorsms = document.getElementById('Error');
     const nameInput = document.getElementById('client_name');
     const emailInput = document.getElementById('client_email');
     const mobInput = document.getElementById('client_mobile');
@@ -53,10 +53,7 @@
       }
     }
 
-
     function ShubmitForm() {
-
-
       //Check select dropdowns are not on the first (default) option................................
       if (
         nameInput.value.trim() === "" ||
@@ -81,7 +78,6 @@
       // setTimeout(() => {
       //   window.location.reload();
       // }, 10000);
-
       return true;
 
     }
@@ -92,7 +88,6 @@
 
 
 
-//  Webdevelopmet services formvalidation end here..............................................
-
+// Webdevelopmet services formvalidation end here..............................................
 
 

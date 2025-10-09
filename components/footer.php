@@ -35,7 +35,7 @@ body
   display: flex;
   flex-direction:row;
   min-height: 50vh;
-  margin:125px 0;
+  margin:0;
   background-color:#004080;
   width: 100%;
   height: auto;
@@ -119,6 +119,24 @@ body
   border-radius: 50%;
   padding:3px;
 
+} #All-reserved
+
+{
+  width: 100%;
+  background-color: #222;       /* dark and consistent footer tone */
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5;
+
+ text-align: left;
+
 }
   @media(max-width:600px)
 
@@ -173,6 +191,19 @@ body
   left:77%;
   height:55px;
   width:55px;
+}#All-reserved
+
+{
+    font-size: 0.8rem;
+    padding: 12px 8px;
+    flex-direction: row ;
+    text-align: center;
+    position: absolute;
+    margin-top:270vh;
+    min-width:100%;
+    display: block;
+
+
 }
 
 }
@@ -279,9 +310,8 @@ body
 <!-- <p>All rights reserved By: Pankaj&copy; 2025</p> -->
     </div>
       <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28665.22969122228!2d87.92639821019456!3d26.093900587226088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e516befd097303%3A0xb171e5facfa2a2d8!2sKishanganj%2C%20Bihar%20855107!5e0!3m2!1sen!2sin!4v1758648469245!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-
  </footer>
-
+ <div id="All-reserved"> All rights reserved By: campusxchange &copy; 2025</div>
  <script>
 
   // animated cursor --------------------------------------------------------

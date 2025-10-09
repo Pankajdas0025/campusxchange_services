@@ -48,10 +48,7 @@
   --border:none;
 }
      body {font-family: 'Poppins', Arial, sans-serif; margin:0;}
-    .dashboard-header {background: linear-gradient(300deg,var(--primary-color),#f43f5e); color:#fff; padding:1.5rem 1rem; text-align:center;}
-    .dashboard-header h1 {margin:0; font-size:2rem; letter-spacing:1px;}
-    .dashboard-header p {text-align: center;}
-    .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
+   .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
     .dashboard-link {display:flex; flex-direction:column; align-items:center; background:#f3f4f6; border-radius:12px; padding:1.2rem 1.5rem; min-width:160px; text-decoration:none; color:#222; box-shadow:0 2px 8px rgba(99,102,241,0.07); transition:box-shadow 0.2s,transform 0.2s;}
     .dashboard-link:hover {box-shadow:1px 1px 0.2px #f43f5e,0 2px 8px #f43f5e22; transform:translateY(-4px) scale(1.04); color:#6366f1;}
     .dashboard-link i {font-size:2.2rem; margin-bottom:0.7rem; color:#6366f1;}
@@ -67,10 +64,6 @@
   </style>
 </head>
 <body>
-  <div class="dashboard-header">
-    <h1><i class="fa-solid fa-gauge"></i> CampusXchange Sitemap</h1>
-    <p>Quick access to all your website's key pages and services</p>
-  </div>
   <nav class="dashboard-nav">
     <a class="dashboard-link" href="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
     <a class="dashboard-link" href="about"><i class="fa-solid fa-users"></i><span>About</span></a>
