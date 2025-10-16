@@ -2,37 +2,122 @@
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Expert SEO Services to Rank Higher - CampusXchange</title>
-  <meta name="title" content="Expert SEO Services to Rank Higher - CampusXchange">
-  <meta name="description" content="Drive traffic and improve visibility with our ethical SEO strategies. CampusXchange helps businesses achieve better Google rankings and more leads.">
-  <meta name="keywords" content="SEO services, search engine optimization, increase website traffic, Google ranking, digital marketing, CampusXchange SEO">
-  <meta name="author" content="CampusXchange"/>
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+ <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best SEO Services in India | Affordable SEO Agency - CampusXchange</title>
+<meta name="title" content="Best SEO Services in India | Affordable SEO Agency - CampusXchange">
+<meta name="description" content="CampusXchange offers professional SEO services that help your website rank higher on Google. Get affordable on-page, off-page, and technical SEO solutions for businesses, startups, and institutes. Boost traffic & visibility today.">
+<meta name="keywords" content="affordable seo services in india, best seo company for small business, local seo for startups, on page optimization, off page seo, link building service, seo audit 2025, campusxchange seo agency, technical seo experts, keyword research services, google ranking improvement">
+<meta name="author" content="CampusXchange" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://campusxchange.wuaze.com/services/seo" />
+<!--Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://campusxchange.wuaze.com/services/seo">
+<meta property="og:title" content="Top SEO Services for Businesses & Students - CampusXchange">
+<meta property="og:description" content="Rank higher and attract more traffic with CampusXchange SEO services. We specialize in on-page, off-page, and local SEO for small businesses and institutes.">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg">
+<meta property="og:site_name" content="CampusXchange">
+<!-- twitter Meta -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://campusxchange.wuaze.com/services/seo">
+<meta property="twitter:title" content="Top SEO Services for Businesses & Students - CampusXchange">
+<meta property="twitter:description" content="CampusXchange provides affordable SEO services in India—boost visibility, grow traffic, and improve rankings with ethical SEO strategies.">
+<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg">
 <!-- styles -->
 <link rel="stylesheet" href="../styles/animation.css" type="text/css">
 <link rel="stylesheet" href="../style.css" type="text/css">
-  <!-- cdns -->
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--favicon ------------------------------------------------------------------------------>
+<!-- cdns -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<!--Schema Markup Added Below -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CampusXchange SEO Services",
+  "url": "https://campusxchange.wuaze.com/services/seo",
+  "logo": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png",
+  "image": "https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg",
+  "description": "CampusXchange provides expert SEO services to boost your Google rankings and online visibility. We offer affordable SEO plans for small businesses, institutes, and startups.",
+  "priceRange": "₹₹",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "sameAs": [
+    "https://www.facebook.com/campusxchange",
+    "https://www.instagram.com/campusxchange.in",
+    "https://www.linkedin.com/company/campusxchange"
+  ],
+  "serviceType": [
+    "On-page SEO",
+    "Off-page SEO",
+    "Technical SEO",
+    "Keyword Research",
+    "Google My Business Optimization",
+    "SEO Content Writing"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SEO Packages",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Basic SEO Package",
+        "description": "Perfect for startups — includes keyword optimization, metadata setup, and basic backlinking.",
+        "price": "₹2999"
+      },
+      {
+        "@type": "Offer",
+        "name": "Professional SEO Package",
+        "description": "Ideal for growing businesses — includes advanced on-page, off-page SEO, and monthly reports.",
+        "price": "₹4999"
+      },
+      {
+        "@type": "Offer",
+        "name": "Enterprise SEO Package",
+        "description": "For established brands — full technical SEO audit, authority backlinks, and local SEO support.",
+        "price": "₹7999"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of SEO services do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CampusXchange provides on-page, off-page, technical SEO, keyword research, and local SEO for businesses, startups, and institutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to see SEO results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically, results start showing within 1–3 months depending on competition and website quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide SEO reports?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We share detailed monthly SEO reports with insights, ranking improvements, and traffic analytics."
+        }
+      }
+    ]
+  }
+}
+</script>
+
 <style>
   :root
 {
@@ -470,7 +555,7 @@ background-color:#60e08f;
 <body>
 
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-     <header><div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+     <header><div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
  <section id="home-hero">
   <div class="hero-content" data-aos="fade-right">
@@ -481,9 +566,9 @@ background-color:#60e08f;
       <a href="http://localhost/Campusxchange/lettalk" class="btn-secondary"><i class="fa-solid fa-comments"></i> Let's Talk</a>
     </div>
     <div class="hero-stats">
-      <div><i class="fa-solid fa-rocket"></i><span>+500 Projects</span></div>
+      <div><i class="fa-solid fa-rocket"></i><span>+50 Projects</span></div>
       <div><i class="fa-solid fa-globe"></i><span>20+ SEO Niches</span></div>
-      <div><i class="fa-solid fa-user-graduate"></i><span>1000+ Learners</span></div>
+      <div><i class="fa-solid fa-user-graduate"></i><span>100+ Learners</span></div>
     </div>
   </div>
 
@@ -491,13 +576,12 @@ background-color:#60e08f;
 
  <div class=" block whtsapp-cta-form">
 <form id="seoForm">
-
   <input type="text" id="name" name="name" placeholder="Enter your name" required>
   <input type="text" id="location" name="location" placeholder="Enter your location" required>
   <input type="url" id="weburl" name="weburl" placeholder="Enter your Website URL" required>
-  <button type="submit">
-    <i class="fa-brands fa-whatsapp"></i>  Send on WhatsApp
-  </button>
+<button type="submit" aria-label="Get Expert SEO Consultation via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i> Get Free SEO Consultation
+</button>
 </form>
 <script>
 document.getElementById("seoForm").addEventListener("submit", function(event){
@@ -540,7 +624,9 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
 </section>
  <br>
  <section class="block industryweserve">
-  <h2>Industries We Serve</h2>
+ <h2>SEO Services for Every Industry</h2>
+<p>Whether you’re in e-commerce, education, healthcare, or finance, CampusXchange tailors SEO strategies to fit your industry and audience, helping you gain visibility and drive growth.</p>
+
   <div class="industry">
     <div class="industrytype"><i class="fa-solid fa-cart-shopping"></i> E-commerce</div>
     <div class="industrytype"><i class="fa-solid fa-school"></i> Education</div>

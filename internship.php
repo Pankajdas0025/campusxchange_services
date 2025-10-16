@@ -9,19 +9,21 @@
   <meta name="description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
   <meta name="keywords" content="student mentorship, Internship, Real Project, academic support, online internship, internship certificate , internship-program">
   <meta name="author" content="CampusXchange"/>
+  <meta name="robots" content="index, follow" />
+   <link rel="canonical" href="https://campusxchange.wuaze.com/internship-program" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/internship-program">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/internship-program">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
   <!-- styles -->
   <link rel="stylesheet" href="style.css" type="text/css">
@@ -37,7 +39,7 @@
 
 </head>
 <body>
-<header><div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+<header><div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "components/header.php" ?>
 <br>
 <main>
@@ -155,7 +157,7 @@
   <h2 class="demo-title">Demo Certificate & Sample Projects</h2>
   <div class="demo-flex">
     <div class="demo-certificate">
-      <img src="assets/Images/demo-cert2.png" alt="Demo Certificate" id="demo-certificate-img" onmouseover="this.src='assets/Images/demo-cert.png'" onmouseout="this.src='assets/Images/demo-cert2.png'" style="cursor: pointer; transition: transform 0.3s;">
+      <img src="assets/Images/demo-cert2.jpg" alt="Demo Certificate" id="demo-certificate-img" onmouseover="this.src='assets/Images/demo-cert.png'" onmouseout="this.src='assets/Images/demo-cert2.jpg'" style="cursor: pointer; transition: transform 0.3s;">
       <h4>Internship Certificate (Demo)</h4>
       <p>All successful interns receive a verified certificate from CampusXchange.</p>
     </div>
@@ -190,20 +192,20 @@
   <h2 class="testimonials-title">Intern Testimonials</h2>
   <div class="testimonials-list">
     <div class="block testimonial-card">
-      <img src="assets/Images/avinash.jpg" class="intern-img" alt="Avinash Kumar">
-      <div class="intern-name">Avinash Kumar</div>
+      <img src="assets/Images/client.png" class="intern-img" alt="Aastha singh intern">
+      <div class="intern-name">Aastha singh</div>
       <div class="intern-role">Content Writing Intern</div>
       <div class="intern-text">“CampusXchange gave me the opportunity to work on real blogs and improve my writing skills. The mentorship was amazing!”</div>
     </div>
     <div class="block testimonial-card">
-      <img src="assets/Images/rajneesh.jpg" class="intern-img" alt="Rajneesh Kumar">
-      <div class="intern-name">Rajneesh Kumar</div>
+      <img src="assets/Images/client.png" class="intern-img" alt="Ranjeet Kumar intern">
+      <div class="intern-name">Ranjeet Kumar</div>
       <div class="intern-role">SEO Intern</div>
       <div class="intern-text">“I learned practical SEO strategies and got a certificate that helped me land my first job!”</div>
     </div>
     <div class="block testimonial-card">
-      <img src="assets/Images/banty.jpg" class="intern-img" alt="Pankaj Kumar Das">
-      <div class="intern-name">Banty Mishra</div>
+      <img src="assets/Images/client.png" class="intern-img" alt="khushi bhatt intern">
+      <div class="intern-name">Khushi Bhatt</div>
       <div class="intern-role">Web Development Intern</div>
       <div class="intern-text">“The web development internship was hands-on and project-based. I built my own portfolio site!”</div>
     </div>

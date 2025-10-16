@@ -1,0 +1,77 @@
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/services/web-development</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://campusxchange.wuaze.com/services/seo</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <!-- Assignments -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/handouts/notes</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blogs -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/handouts/blog</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+<!--Assignments -->
+   <url>
+    <loc>https://campusxchange.wuaze.com/handouts/assignments</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.8</priority>
+    </url>
+
+<!-- Internship Apply  -->
+     <url>
+    <loc>https://campusxchange.wuaze.com/internship/apply</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+<!-- Internship verification  -->
+     <url>
+    <loc>https://campusxchange.wuaze.com/internship/verification</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+<!-- Internship home  -->
+     <url>
+    <loc>https://campusxchange.wuaze.com/internship-program</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+ <!-- About -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/about</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://campusxchange.wuaze.com/lettalk</loc>
+    <lastmod>2025-10-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

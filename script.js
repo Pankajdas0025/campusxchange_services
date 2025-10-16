@@ -25,62 +25,6 @@ function myFunction()
       alert("Failed to copy!");
     });
   }
-
-
-  // for portfolio section slider .....................................................................
-  const slider = document.getElementById("slider");
-  const total = slider.children.length;
-  let currentIndex = 0;
-
-  const numberContainer = document.getElementById("numberContainer");
-
-  // Create numbered buttons
-  for (let i = 0; i < total; i++) {
-    const btn = document.createElement("span");
-    btn.classList.add("num-btn");
-    btn.textContent = i + 1;
-    if (i === 0) btn.classList.add("active");
-    btn.setAttribute("data-index", i);
-    btn.addEventListener("click", () => {
-      currentIndex = i;
-      updateSlider();
-    });
-    numberContainer.appendChild(btn);
-  }
-
-  function updateSlider() {
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-    document.querySelectorAll(".num-btn").forEach(btn => btn.classList.remove("active"));
-    document.querySelectorAll(".num-btn")[currentIndex].classList.add("active");
-  }
-
-  // Auto scroll
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % total;
-    updateSlider();
-  }, 2000);
-
-  // Swipe support for mobile only ...........................................................................................
-  const sliderBox = document.getElementById("sliderBox");
-  let startX = 0;
-
-  sliderBox.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  });
-
-  sliderBox.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
-
-    if (diff > 50) {
-      currentIndex = (currentIndex + 1) % total;
-    } else if (diff < -50) {
-      currentIndex = (currentIndex - 1 + total) % total;
-    }
-
-    updateSlider();
-  });
-
 // incresase count of numbers
 function changCount() {
   let count1 = 0;
@@ -176,15 +120,15 @@ Clientfeedback("../assets/images/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐
 }
 function Client2()
 {
-  Clientfeedback("../assets/Images/avinash.jpg", "CEO/GetNotes" ,"⭐⭐⭐⭐" ,  "The Services provide  by Campusxchange is meaning ful");;
+  Clientfeedback("../assets/Images/avinash.jpg", "CEO/GetNotes" ,"⭐⭐⭐⭐" ,  "The Services provide  by Campusxchange is meaningful and it gives a good outcome");;
 }
 function Client3()
 {
-Clientfeedback("../assets/Images/rajneesh.jpg", "Own/Memory Pzzle Game" ,"⭐⭐⭐" ,  "Post Development support is very Good");
+Clientfeedback("../assets/Images/rajneesh.jpg", "Own/Memory Pzzle Game" ,"⭐⭐⭐" ,  "The website design is highly user-friendly, offering smooth navigation and excellent browser compatibility. It adapts well across different devices, ensuring a consistent and engaging user experience. The overall layout is clean, visually appealing, and thoughtfully structured to meet user needs effectively.");
 }
 function Client4()
 {
- Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Coach" ,"⭐⭐⭐⭐" ,  "The Website desighn id user friendly and it is browser compatability ");
+ Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Coach" ,"⭐⭐⭐⭐" ,  "The website has an impressive and user-friendly design that makes navigation simple and intuitive for all visitors. It loads smoothly and maintains excellent compatibility across different browsers and devices, ensuring a consistent experience whether viewed on a desktop, tablet, or mobile. The layout is well-organized, visually appealing, and effectively balances both aesthetics and functionality. Overall, the design reflects thoughtful planning and attention to user experience.");
 }
 
 

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blogs | CampusXchange</title>
-  <meta name="title" content="Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange">
-  <meta name="description" content="CampusXchange Notes — Programming, AI, Data Science, Web Dev, ML notes curated for students and developers. Free, easy to read, and exam‑ready.">
-  <meta name="keywords" content="programming notes for students, python data science notes free, machine learning cheat sheet pdf, AI notes for beginners, web development notes 2025, ML interview prep notes, DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
-  <meta name="author" content="CampusXchange"/>
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <!-- Primary Meta Tags -->
+ <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+<title>Tech Blogs & Study Guides | CampusXchange</title>
+<meta name="title" content="Tech Blogs & Study Guides | CampusXchange">
+<meta name="description" content="Explore CampusXchange blogs for free, exam-ready notes, tutorials, and study guides on programming, AI, ML, Data Science, and Web Development. Learn fast and stay ahead!">
+<meta name="keywords" content="programming blogs for students, AI tutorials, ML cheat sheet pdf, data science notes, web development guides, Python study notes, DSA tutorials, AI ML study material, free programming guides, tech study blogs">
+<meta name="author" content="CampusXchange"/>
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://campusxchange.wuaze.com/handouts/blog" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://campusxchange.wuaze.com/handouts/blog">
+<meta property="og:title" content="Tech Blogs & Study Guides | CampusXchange">
+<meta property="og:description" content="Discover free programming, AI, ML, Data Science, and Web Development notes and study guides on CampusXchange blog. Learn, explore, and boost your skills!">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url"  href="https://campusxchange.wuaze.com/handouts/blog" />
+<meta property="twitter:title" content="Tech Blogs & Study Guides | CampusXchange">
+<meta property="twitter:description" content="Read CampusXchange tech blogs for students: programming, AI, ML, data science, and web development notes. Free guides, tutorials, and cheat sheets.">
+<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <!-- cdn-->
@@ -31,8 +32,30 @@
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How AI is Transforming Student Learning",
+  "author": {
+    "@type": "Organization",
+    "name": "CampusXchange"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CampusXchange",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://campusxchange.in/assets/favicon_io/favicon-32x32.png"
+    }
+  },
+  "mainEntityOfPage": "https://campusxchange.in/blogs",
+  "image": "https://campusxchange.in/assets/Images/og-image/og-all.jpeg"",
+  "datePublished": "2025-10-13",
+  "description": "Explore how Artificial Intelligence is reshaping student learning through personalized education, instant feedback, and smart tools for modern learners."
+}
+</script>
  <style>
-
 :root {
 
   --primary-color: #004080;
@@ -169,7 +192,7 @@
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-    <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+    <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
   </header>
 <?php include "../components/header.php" ?>
 
@@ -183,7 +206,10 @@
       <button class="blog-toggle">How AI is Transforming Student Learning ⯆</button>
       <div class="blog-content">
         <div class="blogmainImg">
-          <img src="../assets/Images/development-services.jpg">
+         <img src="../assets/Images/development-services.jpg"
+     alt="AI in Education Blog Cover Image"
+     title="How AI is Transforming Student Learning | CampusXchange">
+
         </div>
         <h3>
           Artificial Intelligence (AI) is no longer a futuristic concept confined to sci-fi movies; it's rapidly reshaping various aspects of our lives, and education is at the forefront of this revolution. For students today, AI isn't just a fancy buzzword – it's becoming an indispensable tool that promises to revolutionize how they learn, study, and prepare for the future.
@@ -218,9 +244,6 @@ But how exactly is AI impacting student learning, and what does it mean for you?
     });
   </script>
 </main>
-<button id="movebtn" onclick="movetopFun()"> <img src="../assets/Images/Scrolltotop.png" alt="whatsapp-logo Image"></button>
-<br>
-<br>
  <!-- fotter section  --------------------------------------------------------------------------------->
  <?php include "../components/footer.php" ?>
  <!-- fotter section end  --------------------------------------------------------------------------------->

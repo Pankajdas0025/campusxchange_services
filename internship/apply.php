@@ -1,7 +1,6 @@
 <?php
-
 include "../src/conn.php";
-// include "../src/config.php";
+include "../src/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,30 +13,30 @@ include "../src/conn.php";
   <meta name="description" content="Start your career journey with CampusXchange internships. Apply now for skill-based internship opportunities that help you gain experience and grow professionally.">
   <meta name="keywords" content="internship apply, student internships, CampusXchange internships, apply internship online, career opportunities, skill development">
   <meta name="author" content="CampusXchange"/>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/internship/apply">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/internship/apply">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/internship/apply/">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
-<!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="../animation.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- favicon- -->
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-<title>Apply Internship | CampusXchange</title>
-<style>
+  <!-- styles -->
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <link rel="stylesheet" href="../animation.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- favicon- -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <style>
 .apply-form-section {
 
 width: 100%;
@@ -134,7 +133,7 @@ height: auto;
 </head>
 <body>
 <header>
-<div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+<div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
 </header>
 <?php include "../components/header.php" ?>
 <br>
@@ -163,7 +162,7 @@ height: auto;
 <option value="Web Development in PHP">Web Development in PHP</option>
 <option value="SEO">SEO</option>
 <option value="C Programming">C Programming</option>
-<option value="Generative AI">Generative AI</option>
+<!-- <option value="Generative AI">Generative AI</option> -->
 <option value="Social media marketing">Social media marketing</option>
 </select>
 <select name="intern_duration" id="intern_duration" required>
@@ -187,6 +186,8 @@ height: auto;
   </div>
 
   <!-- Apply intern form data into databae table  ----------------------------------------->
+<!-- Apply intern form data into database ----------------------------------------->
+
 <?php
 // Include PHPMailer library files
 use PHPMailer\PHPMailer\PHPMailer;
@@ -196,10 +197,9 @@ require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 require '../PHPMailer/src/Exception.php';
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Sanitize input
+    // Sanitize inputs
     $Name     = htmlspecialchars(trim($_POST['intern_name'] ?? ''), ENT_QUOTES, 'UTF-8');
     $Email    = filter_var(trim($_POST['intern_email'] ?? ''), FILTER_SANITIZE_EMAIL);
     $Whatsapp = htmlspecialchars(trim($_POST['intern_phone'] ?? ''), ENT_QUOTES, 'UTF-8');
@@ -222,96 +222,82 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if (empty($Address)) $Errors[] = "Address is required.";
     if (empty($Domain)) $Errors[] = "Please select a domain type.";
-    if (empty($Duration)) $Errors[] = "Please select a duration type.";
+    if (empty($Duration)) $Errors[] = "Please select a duration.";
     if (empty($College)) $Errors[] = "Please enter your college name.";
 
-    // Show validation errors if any
+    // If validation errors exist
     if (!empty($Errors)) {
-        $errorMsg = implode("<br>", $Errors);
-        echo "<script>
-            document.getElementById('Error_sms').innerHTML='$errorMsg';
-        </script>";
+        echo "<div id='Error_sms' style='color:red;'>" . implode("<br>", $Errors) . "</div>";
         exit;
     }
 
-    // Insert data into database
+    // Prepare database insertion
     $stmt = $conn->prepare("INSERT INTO applied_intern (Name, Email, Whatsapp_No, Domain, Duration, College, Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
 
-    if (!$stmt->execute()) {
-        echo "<script>
-            document.getElementById('Error_sms').innerHTML='❌ Something went wrong while saving your data.';
-        </script>";
-        exit;
+    if ($stmt->execute()) {
+        // Email content
+        $subject = "✅ CampusXchange Internship Application Received!";
+        $message = "
+        <body style='margin:0; padding:10px; font-family: Arial,sans-serif; background:#f4f4f4; color:#333;'>
+            <div style='max-width:600px; margin:auto; padding:15px; background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);'>
+                <h2 style='color:#6366f1;'>Hello $Name 🎉</h2>
+                <p>Thank you for applying for an internship in the <strong>$Domain</strong> domain. Our support team will contact you within 24 hours.</p>
+                <p><strong>Details you submitted:</strong></p>
+                <ul>
+                    <li>Name: $Name</li>
+                    <li>Email: $Email</li>
+                    <li>Phone: $Whatsapp</li>
+                    <li>Domain: $Domain</li>
+                    <li>Duration: $Duration</li>
+                    <li>College: $College</li>
+                    <li>Address: $Address</li>
+                </ul>
+                <p>Be Happy with CampusXchange!</p>
+                <hr>
+                <p style='font-size:0.9em; color:#555;'>Visit our website:
+                <a href='https://campusxchange.wuaze.com/' target='_blank'>CampusXchange</a></p>
+            </div>
+        </body>";
+
+        // Send email via PHPMailer
+        $mail = new PHPMailer(true);
+        try {
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'campusxchangeservices@gmail.com';
+            $mail->Password   = 'gakh gqae uqvr apdw'; // App password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = 587;
+
+            $mail->setFrom('campusxchangeservices@gmail.com', 'Support CampusXchange');
+            $mail->addAddress($Email);
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body    = $message;
+            $mail->send();
+
+            echo "<script>
+                alert('✅ Thank you! Your internship details have been submitted successfully.');
+                window.location.href='apply';
+            </script>";
+
+        } catch (Exception $e) {
+            echo "<script>
+                alert('❌ Email could not be sent. Error: " . addslashes($mail->ErrorInfo) . "');
+                window.location.href='apply';
+            </script>";
+        }
+
+        $stmt->close();
+
+    } else {
+        echo "<div id='Error_sms' style='color:red;'>❌ Something went wrong while saving your data.</div>";
     }
-
-    $stmt->close();
-
-    // Prepare email content
-    $subject = "✅ CampusXchange Internship Application Received!";
-    $message = "
-    <body style='margin:0; padding:10px; font-family: Arial,sans-serif; background:#f4f4f4; color:#333;'>
-        <div style='max-width:600px; margin:auto; padding:15px; background:#fff; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);'>
-            <h2 style='color:#6366f1;'>Hello $Name 🎉</h2>
-            <p>Thank you for applying for an internship in the <strong>$Domain</strong> domain. Our support team will contact you within 24 hours.</p>
-            <p><strong>Details you submitted:</strong></p>
-            <ul>
-                <li>Name: $Name</li>
-                <li>Email: $Email</li>
-                <li>Phone: $Whatsapp</li>
-                <li>Domain: $Domain</li>
-                <li>Duration: $Duration</li>
-                <li>College: $College</li>
-                <li>Address: $Address</li>
-            </ul>
-            <p>Be Happy with CampusXchange!</p>
-            <hr>
-            <p style='font-size:0.9em; color:#555;'>Visit our website: <a href='https://pankajdas0025.github.io/CampusXchange/' target='_blank'>CampusXchange</a></p>
-        </div>
-    </body>";
-
-
-// Send email using mail()------------------------------------------------------------------------------------------
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// More headers
-$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
-mail($Email,$subject,$message,$headers);
-
-
-    // Send email using PHPMailer-----------------------------------------------------------------------------------
-    // $mail = new PHPMailer(true);
-    // try {
-    //     $mail->isSMTP();
-    //     $mail->Host       = 'smtp.gmail.com';
-    //     $mail->SMTPAuth   = true;
-    //     $mail->Username   = 'pd5569121@gmail.com';          // Your Gmail
-    //     $mail->Password   = 'your-app-password';            // Gmail App Password
-    //     $mail->SMTPSecure = 'ssl';                          // Use 'tls' with port 587
-    //     $mail->Port       = 587;                            // 587 if TLS
-    //    $mail->Debugoutput = 'html';
-    //     $mail->setFrom('pd5569121@gmail.com', 'CampusXchange');
-    //     $mail->addAddress($Email);                          // Send to applicant
-    //     $mail->isHTML(true);
-    //     $mail->Subject = $subject;
-    //     $mail->Body    = $message;
-    //     $mail->send();
-
-    //     echo "<script>
-    //         alert('✅ Your application has been submitted successfully!');
-    //         window.location.href='apply';
-    //     </script>";
-    // } catch (Exception $e) {
-    //     echo "<script>
-    //         alert('❌ Email could not be sent. Error: ".$mail->ErrorInfo."');
-    //         window.location.href='apply';
-    //     </script>";
-    // }
-
-     echo "<script> setTimeout(() => {   alert('✅ Thank you! Your INTERNSHIP details have been submitted.');  window.location.href='apply'}, 4000);</script>";
-
 }
 ?>
+
 
 </section>
 <!-- footer section start from here  ------------------------------------------------->

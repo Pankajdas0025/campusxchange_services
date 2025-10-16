@@ -2,56 +2,68 @@
 <html lang="en">
 <head>
   <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment Help & Tech Project Services - CampusXchange</title>
-  <meta name="title" content="Assignment Help & Tech Project Services - CampusXchange">
-  <meta name="description" content="CampusXchange offers expert support for programming assignments, AI/ML models, academic projects, and technical reports. Fast, reliable, and plagiarism-free.">
-  <meta name="keywords" content="assignment help, programming assignment, AI project help, ML model support, web development project, technical assignment service, CampusXchange services">
-  <meta name="author" content="CampusXchange"/>
-  <!-- Open Graph / Facebook -->
+  <title>Programming & AI Study Notes | CampusXchange Blogs</title>
+  <meta name="title" content="Programming & AI Study Notes — Free PDFs & Study Guides | CampusXchange">
+  <meta name="description" content="CampusXchange offers free, exam-ready notes and study guides for programming, AI, data science, web dev, and ML. Easily understandable, concise, and student-focused.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/assignment/">
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/assignment/">
+  <meta property="og:title" content="Assignment Help & Tech Project Services - CampusXchange">
+  <meta property="og:description" content="Expert assistance for programming, AI/ML, and technical projects. Fast, reliable, and plagiarism-free support for students.">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpeg">
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-<!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="../styles/assignment.css" type="text/css">
-<!-- cdns-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Assignment Help & Tech Project Services - CampusXchange">
+  <meta name="twitter:description" content="Programming and academic project help from CampusXchange — trusted, fast, and plagiarism-free.">
+  <meta name="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpeg">
+  <!-- styles -->
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <link rel="stylesheet" href="../styles/assignment.css" type="text/css">
+  <!-- cdns-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--favicon ------------------------------------------------------------------------------>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CampusXchange",
+  "url": "https://campusxchange.wuaze.com/",
+  "logo": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png",
+  "sameAs": [
+    "https://www.facebook.com/campusxchangeservices",
+    "https://www.instagram.com/campusxchange_services/"
+  ],
+  "description": "CampusXchange offers assignment help, academic projects, internships, and tech development services for students and professionals."
+}
+</script>
 </head>
 <body>
    <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div>
   </header>
 <?php include "../components/header.php" ?>
 <br>
 <main>
   <div class="marqueebox">
   <div class="marquee">
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" >
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"  />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"  />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Logo - Frontend Markup Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo - Web Styling Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript Logo - Dynamic Scripting Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap Logo - Responsive Framework">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Logo - JavaScript UI Library">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" alt="XML Logo - Data Markup Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo - Backend Scripting Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java Logo - Object Oriented Programming Language">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo - High Performance Programming Language">
   </div>
   </div>
  <!-- Assignment section  ------------------------------------------------------------------------------------------------>
@@ -61,13 +73,13 @@
   <p>Click on a subject below and instantly connect with our team via WhatsApp. We'll deliver your assignment just the way you want it!</p>
 <br>
   <div class="assignment-buttons">
-    <a href="https://wa.me/8252399138?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="_blank">C Programming</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="_blank">C Programming</a>
 
-    <a href="https://wa.me/6201962856?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="_blank">Web Technology</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="_blank">Web Technology</a>
 
-    <a href="https://wa.me/8340179575?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="_blank">DSA using C++</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="_blank">DSA using C++</a>
 
-    <a href="https://wa.me/9341218494?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="_blank">DBMS</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="_blank">DBMS</a>
 
     <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" target="_blank">PHP</a>
   </div>

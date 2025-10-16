@@ -1,51 +1,115 @@
-<?php include "../src/conn.php";
-      // include "../src/config.php";
+<?php
+include "../src/conn.php";
+include "../src/config.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Web Development Services - CampusXchange</title>
   <meta name="title" content="Professional Web Development Services - CampusXchange">
-  <meta name="description" content="Get responsive, secure, and SEO-friendly websites tailored to your needs. CampusXchange offers web-development that helps your business grow online.">
-  <meta name="keywords" content="web-development, responsive websites, SEO friendly websites, custom web design, CampusXchange development services">
-  <meta name="author" content="CampusXchange"/>
+  <meta name="description" content="Get responsive, secure, and SEO-friendly websites built by CampusXchange. Custom web development, landing pages, portfolios, and business websites.">
+  <meta name="keywords" content="Professional Web Development Services, Custom Website Development, Responsive Websites, SEO Friendly Website, Landing Page Development, Portfolio Website, CampusXchange Web Services">
+  <meta name="author" content="CampusXchange">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/services/web-development">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/services/web-development">
+  <meta property="og:title" content="Professional Web Development Services - CampusXchange">
+  <meta property="og:description" content="CampusXchange delivers custom web development, landing pages, portfolios, and SEO-friendly websites to grow your business.">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/services/web-development">
+  <meta property="twitter:title" content="Professional Web Development Services - CampusXchange">
+  <meta property="twitter:description" content="Get custom, responsive, and SEO-friendly websites built by CampusXchange. Launch your website today!">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
 
-<!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="../styles/animation.css" type="text/css">
-<link rel="stylesheet" href="../styles/webdev.css" type="text/css">
-<!-- cdns-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-<style>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style.css" type="text/css">
+  <link rel="stylesheet" href="../styles/animation.css" type="text/css">
+  <link rel="stylesheet" href="../styles/webdev.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
 
-</style>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Professional Web Development Services - CampusXchange",
+    "url": "https://campusxchange.wuaze.com/services/web-development",
+    "description": "Get responsive, secure, and SEO-friendly websites built by CampusXchange. Custom web development, landing pages, portfolios, and business websites.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CampusXchange",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png"
+      }
+    },
+    "mainEntity": [
+      {
+        "@type": "Service",
+        "name": "Custom Website Development",
+        "description": "Build fully custom websites aligned with your brand goals using HTML, CSS, JS, PHP, and more.",
+        "provider": {
+          "@type": "Organization",
+          "name": "CampusXchange"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Landing Page Design",
+        "description": "High-converting, purpose-driven landing pages for campaigns, events, or product launches.",
+        "provider": {
+          "@type": "Organization",
+          "name": "CampusXchange"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A basic site can take 1-2 weeks; a full custom solution may take 3-6 weeks depending on complexity and revisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you help redesign my existing website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! We specialize in redesigning outdated or poorly performing sites to modern, optimized ones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer SEO along with web development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every site is built with SEO in mind. We also offer add-on SEO services for deeper keyword research and ranking growth."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
   </header>
 <?php include "../components/header.php" ?>
 <main>
@@ -65,7 +129,6 @@
   <!-- first section for better UI or Hero Section end here------------------------------>
     <br>
   <!-- section for what we offer in web development start  ------------------------------->
-
 <section class="Weoffersection">
   <h2>Our Web Development Offerings</h2>
   <div class="offer-grid">
@@ -96,8 +159,7 @@
     </div>
   </div>
 </section>
-     <!-- section for what we offer in web development end here  ------------------------------->
-
+<!-- section for what we offer in web development end here  ------------------------------->
 <!-- our development process  section   -->
  <section class="process-section">
   <h2>Our Process: From Idea to Impact 🚀</h2>
@@ -128,7 +190,6 @@
     </div>
   </div>
 </section>
-
 <!-- Tech stack we work with section  -->
  <section class="tech-stack-box" aria-label="Tech Stack We Work With">
     <h2>Our Tech Stack</h2>
@@ -169,7 +230,6 @@
       </div>
     </div>
   </section>
-
   <!--for PORTFOLIO section  Auto Scrolling Gallery -->
   <section class="scroll-gallery"  id="gallery">
     <h2>Our Portfolio</h2>
@@ -180,18 +240,14 @@
 <img src="../assets/Images/blogscriptapp-website-mockup.png"alt="BlogScript web application-website">
 <img src="../assets/Images/notes-website-mockup.png"alt="tmu-notes-website">
 <img src="../assets/Images/memmory-puzzle-game-website.png"alt="memmory-puzzle-college-project-website">
-
-
 <!-- Duplicate for smooth infinite effect -->
  <img src="../assets/Images/paramount-website-mockup.png"alt="Paramount-coaching-website">
 <img src="../assets/Images/blogscriptapp-website-mockup.png"alt="BlogScript web application-website">
 <img src="../assets/Images/memmory-puzzle-game-website.png"alt="memmory-puzzle-college-project-website">
 <img src="../assets/Images/notes-website-mockup.png"alt="tmu-notes-website">
-
     </div>
   </section>
 <!-- for showing our clients  -->
-
 <?php  include("../feedback.php"); ?>
 <!-- for showing our clients section end here  -->
  <br>
@@ -245,14 +301,12 @@
 <br><br>
 <a href="https://wa.me/9155726625?text=Hi%20there!%20I'm%20interested%20in%20your%20web%20development%20services%20but%20need%20help%20choosing%20the%20right%20plan." target="_blank" title="👋Say Hey!"><button><i class="fa-brands fa-whatsapp" style="color: #53f547;"></i> Chat with us on WhatsApp</button></a></div>
 <!-- doughtpplanprice CTA button end here--------------------------------------------------------------------------------->
-
 <br>
 <!-- section from where clients can select their plan and put their idea and information -->
 <section class="block planorder" id="client-form">
 <div class="planordercontact-form"  id="planordercontact-form-img"><div class="contact_img"></div>
 <input type="submit" id="img_form_sbtn" value="Thanks! We'll connect with you within 24 hours"></div>
 <div class="planordercontact-form">
-
   <form id="clientForm" onsubmit="ShubmitForm(event) " method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
   <input type="text" placeholder="Enter your Name" id="client_name" name="client_name" onchange=" Check_Name() " required><br>
   <input type="tel" placeholder="Enter your Mobile Number" id="client_mobile" name="client_mobile" maxlength="10" onchange=" Check_Mob() " required><br>
@@ -276,16 +330,13 @@
   <span id="Error"></span>
   <input type="submit"  value="SUBMIT" id="client_form_sbtn"  >
   </form>
-
 <!-- store form data into databae table  --------------------------------------------------->
   <?php
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
-
-// // Include PHPMailer library files
-// require '../PHPMailer/src/PHPMailer.php';
-// require '../PHPMailer/src/SMTP.php';
-// require '../PHPMailer/src/Exception.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
+require '../PHPMailer/src/Exception.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name     = htmlspecialchars(trim($_POST['client_name'] ?? ''), ENT_QUOTES, 'UTF-8');
@@ -294,9 +345,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address  = htmlspecialchars(trim($_POST['client_address'] ?? ''), ENT_QUOTES, 'UTF-8');
     $plantype= htmlspecialchars(trim($_POST['client_plantype'] ?? ''), ENT_QUOTES, 'UTF-8');
     $websitetype  = htmlspecialchars(trim($_POST['client_websitetype'] ?? ''), ENT_QUOTES, 'UTF-8');
-
     $errors = [];
-
     // Server-side validation
     if (empty($name) || !preg_match("/^[a-zA-Z\s]+$/", $name)) {
         $errors[] = "Please enter a valid name.";
@@ -322,72 +371,62 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Prepare and execute insert query
         $stmt = $conn->prepare("INSERT INTO web_client (Name, Mobile, Email, Address, Choice, Plan) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $name, $mobile, $email, $address, $websitetype, $plantype);
-
-
     if ($stmt->execute()) {
-
-    $subject = "Testing From Campusxchange";
+    $subject = "Web Development | Campusxchange";
     $message = " <body style='margin: 0; padding:2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
     <div style='max-width: 1000px; margin: auto; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
-        <img src='https://pankajdas0025.github.io/PORTFOLIO/Images/client_email_banner.png' height='auto' width='100%' style='margin-top: 25px;font-size:2rem;'>
+
         <h1 style='color: #ffffff;padding:10px;height:150px; background: linear-gradient(to right, #6366f1,#f43f5e); text-align: center; font-size:1.5rem;'>🎉 Hello
-            <br>You are looking for a website 🌐
             <br><p style='font-size: 1rem;'>$name</p>
+           <br>You are looking for a website ->
+
         </h1>
         <div style='background-color: #ecf0f1; padding: 10px; border-radius: 5px; margin-top: 20px;'>
-Thanks for reaching out to CampusXchange—where ideas become digital realities. Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.
-            <p>🌟 <strong>Our Support Team will contact you within 24 Hr.</strong></p>
+Thanks for reaching out to CampusXchange where ideas become digital realities. Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that's fast, functional, and uniquely yours.
+            <p><strong>Our Support Team will contact you within 24 Hr.</strong></p>
             <p>Be Happy with CampusXchange</p>
         </div>
         <div style='margin-top: 30px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
             <p>Explore oue social Handle</p>
             <ul style='padding-left: 20px;'>
-                <li>LinkedIn: <a href='#' style='color: #2980b9;'>CampusXchange</a></li><br>
-                <li>Telegram: <a href='https://t.me/CampusXchange' target='_blank' style='color: #2980b9;'>https://t.me/CampusXchange</a></li><br>
-                <li>Email: <a href='#' style='color: #2980b9;'>support@CampusXchange</a></li><br>
-                <li>Website: <a href='https://pankajdas0025.github.io/CampusXchange/' target='_blank' style='color: #2980b9;'>www.CampusXchange.org</a></li><br>
+                <li>Facebook: <a href='https://www.facebook.com/campusxchangeservices' style='color: #2980b9;'>Click Here</a></li><br>
+                <li>Instagram: <a href='https://www.instagram.com/campusxchange_services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
+                <li>Email: <a href='mailto:campusxchangeservices@gmail.com' style='color: #2980b9;'>campusxchangeservices@gmail.com</a></li><br>
+                <li>Website: <a href='https://campusxchange.wuaze.com/?i=1' target='_blank' style='color: #2980b9;'>https://campusxchange.wuaze.com/?i=1</a></li><br>
             </ul>
         </div>
     </div>
     </body>";
-
-// Send email using mail()
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// Send email using mail()-------------------------------------------------------------
+//$headers = "MIME-Version: 1.0" . "\r\n";
+//$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
-$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
-mail($email,$subject,$message,$headers);
+//$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
+//mail($email,$subject,$message,$headers);
 
-    // // Send email using PHPMailer
-    // $mail = new PHPMailer(true);
-
-    // try {
-    //     // SMTP configuration
-    //     $mail->isSMTP();
-    //     $mail->Host       = 'smtp.gmail.com';
-    //     $mail->SMTPAuth   = true;
-    //     $mail->Username   = 'pd5569121@gmail.com'; // Gmail ID
-    //     $mail->Password   = 'carp uidg qexa uvyr';          // App password, not real password
-    //     $mail->SMTPSecure = 'tls';
-    //     $mail->Port       = 465;
-    //     PHPMaler :: ENCRYPTION_|STARTTLS;
-
-    //     // Email settings
-    //     $mail->setFrom('pd5569121@gmail.com');
-    //     $mail->addAddress($email);
-
-    //     $mail->isHTML(true);
-    //     $mail->Subject = $subject;
-    //     $mail->Body    = $message;
-
-    //     $mail->send();
-
-    // }
-    // catch (Exception $e) {
-    //     echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
-    // }
-
-
+    // Send email using PHPMailer------------------------------------------------------
+    $mail = new PHPMailer(true);
+     try {
+     // SMTP configuration--------------------------------------------------------------
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'campusxchangeservices@gmail.com';
+    $mail->Password   = 'gakh gqae uqvr apdw';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+    //Email settings
+    $mail->setFrom('campusxchangeservices@gmail.com' , 'Support CampusXchange');
+    $mail->addAddress($email);
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body    = $message;
+    $mail->send();
+     }
+    catch (Exception $e)
+     {
+    echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
+     }
  echo "<script> setTimeout(() => {   alert('✅ Thank you! Your details have been submitted.');  window.location.href='web-development'}, 4000);</script>";
  $stmt->close();
     }  else
@@ -421,45 +460,37 @@ else {
       <h3 id="clientfeedback">" Our journey is built with our clients. Read about the partnerships we've forged and the positive outcomes we've created together. "</h3>
     </div>
   </div>
-
 <div class="clientslist">
-  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/abhiraj.jpg"></button>
-  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/avinash.jpg"></button>
-  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/rajneesh.jpg"></button>
-  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/banty.jpg"></button>
+  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/abhiraj.jpg" alt="client-one"></button>
+  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/avinash.jpg" alt="client-two"></button>
+  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/rajneesh.jpg" alt="client-three"></button>
+  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/banty.jpg" alt="client-four"></button>
 </div>
 </div>
-
 <!-- right side -->
 <div class="happyabout" id="happy" style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; padding:20px 0;">
-
   <div class="animationtype2 happyabouttype" style="text-align:center;">
     <i class="fa-solid fa-briefcase" style="font-size:36px; color:#4f46e5;"></i>
     <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Experience</strong>
-    <h3 style="font-size:22px; color:#000;">2 Years</h3>
+    <h3 style="font-size:22px; color:#000;">1 Years</h3>
   </div>
-
   <div class="animationtype2 happyabouttype" style="text-align:center;">
     <i class="fa-solid fa-face-smile" style="font-size:36px; color:#16a34a;"></i>
     <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Satisfaction</strong>
     <h3 style="font-size:22px; color:#000;">100%</h3>
   </div>
-
   <div class="animationtype2 happyabouttype" style="text-align:center;">
     <i class="fa-solid fa-users" style="font-size:36px; color:#f59e0b;"></i>
     <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Clients</strong>
     <h3 style="font-size:22px; color:#000;">20+</h3>
   </div>
-
   <div class="animationtype2 happyabouttype" style="text-align:center;">
     <i class="fa-solid fa-diagram-project" style="font-size:36px; color:#dc2626;"></i>
     <strong style="font-size:20px; color:#210606; display:block; margin-top:8px;">Projects</strong>
-    <h3 style="font-size:22px; color:#000;">40+</h3>
+    <h3 style="font-size:22px; color:#000;">10+</h3>
   </div>
-
 </div>
 </section>
-
 <!-- web development  service webdevlopmentfaqS Section ---------------------------------->
   <section class="webdevlopmentfaq-section">
   <h2>Frequently Asked Questions</h2>
@@ -469,27 +500,21 @@ else {
   A basic site can take 1-2 weeks; a full custom solution may take 3–6 weeks depending on complexity and revisions.
  </div>
   </div>
-
   <div class="webdevlopmentfaq">
     <div class="webdevlopmentfaq-question">Can you help redesign my existing website?</div>
     <div class="webdevlopmentfaq-answer">
     Absolutely! We specialize in redesigning outdated or poorly performing sites to modern, optimized ones.
     </div>
   </div>
-
   <div class="webdevlopmentfaq">
     <div class="webdevlopmentfaq-question">Do you offer SEO along with web development?</div>
     <div class="webdevlopmentfaq-answer">
     Yes. Every site is built with SEO in mind. We also offer add-on SEO services for deeper keyword research and ranking growth.
     </div>
   </div>
-
 </section>
- <br>
-    <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
+ <br> <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
 </main>
-<!-- whtsapp and scroll top btn  -->
-
 <!-- fotter section  --------------------------------------------------------------------------------->
 <?php include "../components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
@@ -500,12 +525,10 @@ else {
 
   faqs.forEach(faq => {
     faq.querySelector(".webdevlopmentfaq-question").addEventListener("click", () => {
-      faq.classList.toggle("active");
-
+      fq.classList.toggle("active");
       const answer = faq.querySelector(".webdevlopmentfaq-answer");
       const isVisible = faq.classList.contains("active");
       answer.style.display = isVisible ? "block" : "none";
-
       // Close other FAQs
       faqs.forEach(otherFaq => {
         if (otherFaq !== faq) {
@@ -516,11 +539,7 @@ else {
     });
   });
 });
-
-
 </script>
-
 <script src="../script.js"></script><script src="../FormValidation.js"></script>
-
 </body>
 </html>

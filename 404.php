@@ -113,7 +113,7 @@ http_response_code(404);
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
-  <div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
    </header>
 
 <br>

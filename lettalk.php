@@ -8,33 +8,53 @@ include "src/config.php";
    <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Let's Talk - CampusXchange</title>
-  <meta name="title" content="Let's Talk - CampusXchange">
-  <meta name="description" content="Have questions or ideas? Let's talk! Reach out to CampusXchange for collaboration, support, or services in web development, SEO, and explore mentorship and internship program">
-  <meta name="keywords" content="contact CampusXchange, let's talk, connect with team, support CampusXchange, collaboration, CampusXchange contact ,CampusXchange location , CampusXchange email">
+  <title>Let's Talk - CampusXchange | Contact & Collaboration</title>
+  <meta name="title" content="Let's Talk - CampusXchange | Contact & Collaboration">
+  <meta name="description" content="Have questions or ideas? Connect with CampusXchange for support, web development, SEO services, mentorship, and internship opportunities.">
+  <meta name="keywords" content="contact CampusXchange, let's talk, reach CampusXchange, collaboration, mentorship support, web development services, SEO services, CampusXchange email, CampusXchange location">
   <meta name="author" content="CampusXchange"/>
-  <!-- -- Open Graph / Facebook -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://campusxchange.wuaze.com/lettalk" />
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="Let's Talk - CampusXchange">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
-  <!-- -- Twitter - -->
+  <meta property="og:url" content="https://campusxchange.wuaze.com/lettalk">
+  <meta property="og:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
+  <meta property="og:description" content="Reach out to CampusXchange for collaboration, support, or services in web development, SEO, mentorship, and internships.">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jepg">
+  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-
-<link rel="stylesheet" href="styles/animation.css" type="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
-<!-- cdns-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Favicon  -------------------------------------------------------------------->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/lettalk">
+  <meta property="twitter:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
+  <meta property="twitter:description" content="Connect with CampusXchange for questions, support, mentorship, and web or SEO services. Fast response guaranteed.">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jepg">
+  <link rel="stylesheet" href="styles/animation.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- cdns-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon  -------------------------------------------------------------------->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+<!-- JSON-LD Schema for ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://campusxchange.wuaze.com/letttalk",
+    "name": "Let's Talk - CampusXchange",
+    "description": "Reach out to CampusXchange for support, collaboration, web development, SEO services, mentorship, and internship programs.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CampusXchange",
+      "url": "https://campusxchange.wuaze.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://campusxchange.wuaze.com/assets/campusxchange-logo-transparent.png"
+      }
+    }
+  }
+  </script>
 <style>
 
 :root {
@@ -283,7 +303,7 @@ include "src/config.php";
 <body>
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
    <header style="border-radius: 0;">
-      <div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+      <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
    </header>
    <?php  include "components/header.php" ?>
 

@@ -1,10 +1,7 @@
-
-
-<?php include "../src/conn.php";
-      include "../src/config.php";
-
+<?php
+include "../src/conn.php";
+include "../src/config.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,19 +13,20 @@
   <meta name="description" content="CampusXchange Notes — Programming, AI, Data Science, Web Dev, ML notes curated for students and developers. Free, easy to read, and exam-ready.">
   <meta name="keywords" content="programming notes for students, python data science notes free, machine learning cheat sheet pdf, AI notes for beginners, web development notes 2025, ML interview prep notes, DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
   <meta name="author" content="CampusXchange"/>
+  <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/notes" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/notes">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-image/og-all.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/handouts/notes">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-image/og-all.jpeg">
 
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
@@ -45,7 +43,7 @@
 <body>
    <!--Note page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
   </header>
 <?php include "../components/header.php" ?>
  <!--Note page Header and navbar  end ----------------------------------------------------------------------------------------->
@@ -163,15 +161,14 @@ else
   </p>
 
   <ul class="notes-highlights">
-    <li><i class="fa-solid fa-code"></i> <strong>Programming Languages</strong> – PHP, Python, JavaScript, C/C++, Java</li>
-    <li><i class="fa-solid fa-brain"></i> <strong>Artificial Intelligence & Machine Learning</strong> – Core Concepts, Algorithms, and Models</li>
-    <li><i class="fa-solid fa-chart-line"></i> <strong>Data Science</strong> – Numpy, Pandas, Data Cleaning, Visualization</li>
-    <li><i class="fa-solid fa-laptop-code"></i> <strong>Web Development</strong> – HTML, CSS, JavaScript, PHP, React, Bootstrap, and more</li>
-    <li><i class="fa-solid fa-database"></i> <strong>Databases</strong> – MySQL, MongoDB, Firebase</li>
-    <li><i class="fa-solid fa-toolbox"></i> <strong>Developer Tools</strong> – Git, GitHub, APIs, JSON, Postman</li>
-    <li><i class="fa-solid fa-diagram-project"></i> <strong>DSA</strong> – Sorting, Trees, Graphs, Interview Prep Notes</li>
+    <li><i class="fa-solid fa-code"></i> <strong>Programming Languages</strong> - PHP, Python, JavaScript, C/C++, Java</li>
+    <li><i class="fa-solid fa-brain"></i> <strong>Artificial Intelligence & Machine Learning</strong> - Core Concepts, Algorithms, and Models</li>
+    <li><i class="fa-solid fa-chart-line"></i> <strong>Data Science</strong> - Numpy, Pandas, Data Cleaning, Visualization</li>
+    <li><i class="fa-solid fa-laptop-code"></i> <strong>Web Development</strong> - HTML, CSS, JavaScript, PHP, React, Bootstrap, and more</li>
+    <li><i class="fa-solid fa-database"></i> <strong>Databases</strong> - MySQL, MongoDB, Firebase</li>
+    <li><i class="fa-solid fa-toolbox"></i> <strong>Developer Tools</strong> - Git, GitHub, APIs, JSON, Postman</li>
+    <li><i class="fa-solid fa-diagram-project"></i> <strong>DSA</strong> - Sorting, Trees, Graphs, Interview Prep Notes</li>
   </ul>
-
   <p>
     Each note is built for <strong>clarity and practical understanding</strong> — featuring examples, diagrams, and simplified explanations.
     Perfect for <strong>students, self-learners, and interview preparation</strong>.
@@ -187,26 +184,29 @@ else
   <h2>Premium Notes</h2>
   <div class="paid-notes-list">
     <div class="paid-note-box">
-      <h3>Advanced Python for Data Science</h3>
-      <p>Unlock advanced Python concepts, libraries, and real-world data science workflows. Includes code samples and project ideas.</p>
+      <h3>Master Full Stack Web Development with PHP <br>All-in-One Notes Combo!</h3>
+      <p>Take your web development skills to the next level with our Full Stack with PHP Combo Notes, exclusively from CampusXchange.
+This combo pack covers everything you need to become an industry-ready web developer — from frontend to backend, with real-world project insights and interview preparation materials.</p>
       <div class="paid-note-footer">
-        <span class="note-price">₹199</span>
+        <span class="note-price">₹99</span>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
     </div>
     <div class="paid-note-box">
-      <h3>Machine Learning Interview Kit</h3>
-      <p>Comprehensive ML notes, cheat sheets, and solved interview questions. Perfect for job prep and revision.</p>
+      <h3>Master Database Management & SQL Queries Like a Pro!</h3>
+      <p>Understand the backbone of every modern application — Database Management Systems (DBMS) and Structured Query Language (SQL) — with this exclusive CampusXchange Notes Combo.
+Perfect for students, interns, and aspiring developers, this combo gives you a clear and practical understanding of how data is stored, managed, and accessed efficiently.</p>
       <div class="paid-note-footer">
-        <span class="note-price">₹249</span>
+        <span class="note-price">₹99</span>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
     </div>
     <div class="paid-note-box">
-      <h3>Full Stack Web Dev Guide</h3>
-      <p>Step-by-step guide covering HTML, CSS, JS, React, and backend essentials. Includes diagrams and mini-projects.</p>
+      <h3>DSA & C++ - Complete Notes Combo</h3>
+      <p>Unlock the power of problem-solving and programming efficiency with our DSA & C++ Notes Combo, exclusively available on CampusXchange.
+This combo is designed for students, coders, and job aspirants who want to build a strong foundation in Data Structures and Algorithms using the C++ language..</p>
       <div class="paid-note-footer">
-        <span class="note-price">₹299</span>
+        <span class="note-price">₹99</span>
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
     </div>

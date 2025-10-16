@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
- <!-- Primary Meta Tags -->
+  <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About - CampusXchange</title>
-  <meta name="title" content="About - CampusXchange">
-  <meta name="description" content="Learn about CampusXchange, a platform dedicated to education, mentorship, web solutions, and SEO services to support students and businesses.">
-  <meta name="keywords" content="about CampusXchange, education platform, student services, learning support, mentorship, CampusXchange story , campusXchange founder , campusXchange mentor">
+  <title>About CampusXchange - Education, Mentorship & Web Services</title>
+  <meta name="title" content="About CampusXchange - Education, Mentorship & Web Services">
+  <meta name="description" content="Discover CampusXchange: your platform for student support, mentorship, web development, and SEO services. Empowering learners and businesses online.">
+  <meta name="keywords" content="CampusXchange about, student support, mentorship platform, web development services, SEO services, education platform, online learning, CampusXchange story, CampusXchange founder">
   <meta name="author" content="CampusXchange"/>
+  <meta name="robots" content="index, follow" />
+   <link rel="canonical" href="https://campusxchange.wuaze.com/about" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="og:url" content="https://campusxchange.wuaze.com/about">
+  <meta property="og:title" content="About CampusXchange - Education, Mentorship & Web Services">
+  <meta property="og:description" content="Learn about CampusXchange, helping students and businesses with mentorship, web solutions, and SEO services.">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
-  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/about">
+  <meta property="twitter:title" content="About CampusXchange - Education, Mentorship & Web Services">
+  <meta property="twitter:description" content="Explore CampusXchange: supporting students and businesses with mentorship, web development, and SEO solutions.">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
 <!-- styles -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <!-- cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 
-
+  <!-- JSON-LD Schema for AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://campusxchange.wuaze.com/about",
+    "name": "About CampusXchange",
+    "description": "Discover CampusXchange: your platform for student support, mentorship, web development, and SEO services. Empowering learners and businesses online.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CampusXchange",
+      "url": "https://campusxchange.wuaze.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://campusxchange.wuaze.com/assets/campusxchange-logo-transparent.png"
+      }
+    }
+  }
+  </script>
   <style>
     :root {
 
@@ -250,7 +268,7 @@
 <body>
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
-      <div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div>
+      <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
    </header>
 <?php include "components/header.php" ?>
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
@@ -269,13 +287,13 @@
     <div class="founder-bio">
       <h2>Pankaj Kumar Das</h2>
       <h4>Founder & CEO</h4>
-      <p>Pankaj Kumar is a passionate educator and entrepreneur who founded CampusXchange to bridge the gap between academic learning and real-world skills. With a background in technology and a vision for inclusive growth, Priya leads the team to empower students, freelancers, and startups to achieve their dreams. Her commitment to mentorship and innovation drives CampusXchange's mission every day.</p>
+      <p>Pankaj Kumar is a full-stack web developer, educator, and entrepreneur who founded CampusXchange to bridge the gap between academic learning and real-world skills. With expertise in HTML, CSS, JavaScript, and PHP, he builds innovative web solutions while guiding students, freelancers, and startups to achieve their goals. His passion for technology, mentorship, and problem-solving drives CampusXchange’s mission to empower the next generation of digital professionals.</p>
 <br>
     <a href="#"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
-    <a href="#"> <span style="background:linear-gradient(to right, #6228d7,#ee2a7b,#f9ce34); padding:  5px; color: #fff;"> Instagram <i class="fa-brands fa-square-instagram"></i></span></a>
-    <a href="#"> <span style="background-color:#0077B5; padding: 5px; color: #fff;"> Linkedin <i class="fa-brands fa-linkedin"></i></span></a>
-    <a href="#"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;"> Portfolio <i class="fa-solid fa-globe"></i></span></a>
-    <a href="#"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a>
+    <a href="https://www.instagram.com/pankajdas_0025/"> <span style="background:linear-gradient(to right, #6228d7,#ee2a7b,#f9ce34); padding:  5px; color: #fff;"> Instagram <i class="fa-brands fa-square-instagram"></i></span></a>
+    <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#0077B5; padding: 5px; color: #fff;"> Linkedin <i class="fa-brands fa-linkedin"></i></span></a>
+    <a href="https://pankajkumardas.wuaze.com/"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;"> Portfolio <i class="fa-solid fa-globe"></i></span></a>
+    <a href="https://wa.me/91915576625?text=Hello%20Pankaj%20!"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a>
 
     </div>
   </section>

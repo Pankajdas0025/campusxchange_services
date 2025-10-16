@@ -9,40 +9,76 @@
 <meta name="description" content="Explore CampusXchange for web development, SEO services, notes, assignments, and mentorship to boost your academic and career journey.">
 <meta name="keywords" content="CampusXchange, student resources, web development, SEO services, study notes, mentorship, assignments">
 <meta name="author" content="CampusXchange"/>
+<meta name="robots" content="index, follow" />
+<!-- Goggle console verification -->
+<meta name="google-site-verification" content="QGJuxyrg3ScLkoXoq2UAnY0N-qOhhrAp2VmK4BCdn2o" />
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://campusxchange.in/">
+<meta property="og:url" content="https://campusxchange.wuaze.com/">
 <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
 <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-<meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://campusxchange.in/">
+<meta property="twitter:url" content="https://campusxchange.wuaze.com/">
 <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
 <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-<meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
+<!-- canocinal tag -->
+<link rel="canonical" href="https://campusxchange.wuaze.com/"/>
 <!-- internal and external Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css">
-<link rel="stylesheet" href="styles/animation.css" type="text/css">
 <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-<style>
 
-</style>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Web Development Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "CampusXchange",
+    "url": "https://campusxchange.wuaze.com/",
+    "logo": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png",
+    "sameAs": [
+      "https://www.facebook.com/campusxchangeservices",
+      "https://www.instagram.com/campusxchange_services/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9155726625",
+      "contactType": "Customer Support",
+      "email": "campusxchangeservices@gmail.com"
+    }
+  },
+  "description": "Professional online Web Development services including HTML, CSS, JavaScript, PHP, and full stack development. Get your website or web application built with modern technologies.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "IN"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://campusxchange.wuaze.com/services/web-development",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
 </head>
 <body>
   <main id="main">
   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-  <header><div class="Logo"><img src="assets/Images/transparent-logo-campusxchange.png" alt="CampusXchange Logo"></div></header>
+  <header><div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div></header>
   <?php include "components/header.php" ?>
 <!-- Home Intro Section -->
-<section class="homeIntro">
+<section class="homeIntro" data-aos="zoom-in" data-aos-delay="100">
   <div class="introContent">
     <h1 style="color: white;">Welcome to <span class="highlight">CampusXchange</span></h1>
     <p>Empowering learners, creators, and businesses through tech, mentorship, and original content. Dive into a world where innovation meets accessibility.</p>
@@ -50,7 +86,7 @@
      <a href="home" class="ctaBtn">Contact Now</a>
   </div>
 
-  <div class="introContent" id="core-ser">
+  <div class="introContent" id="core-ser" data-aos="fade-up">
     <h1>Our Core services</h1>
   <div class="core-ser">
 <ul style="list-style: none; padding: 5px;">
@@ -64,22 +100,22 @@
   </div>
 </section>
 <!-- hero section title of the project  ------------------------------------------------------------------------>
-<section class="block hero">
+<section class="block hero" data-aos="zoom-in" data-aos-delay="100">
 
       <h1>Your Gateway to Learning , <span style="background-color:#f43f5e; color:#FFF;padding: 1px 4px;">Development</span> & Career Excellence with Mentorship programs.</h1>
       <p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions and search engine optimization, we've got you covered. </p>
 <!-- section to display my core services in a single frame  -->
     </section>
-<section class="All-services">
+<section class="All-services" data-aos="fade-up">
 <div class="animationtype2 service-type"><div class="service-type-img"><img src="assets/Images/development-services.jpg" alt="campusxchange-development-services-image"> </div><div class="service-type-content"><h2>Web development</h2><ul><li>Custom Website Development</li><li>Ecommerce Website</li><li>Landing page</li><li>Business website</li></ul><a href="services/web-development">Learn more</a></div></div>
 <div class="animationtype3 service-type"><div class="service-type-img"><img src="assets/Images/seo-core-services.jpg" alt="campusxchange-seo-service-image"> </div><div class="service-type-content"><h2>SEO Services</h2><ul><li>Website Audit</li><li>Goggle Map SEO</li><li>On-page/Off-oage SEO</li><li>Technical SEO</li></ul><a href="services/seo">Learn more</a></div></div>
 <div class="animationtype2 service-type"><div class="service-type-img"><img src="assets/Images/mentorship-services.jpg" alt="campusxchange-mentorship-image"> </div><div class="service-type-content"><h2>Mentorship Program</h2><ul><li>Internship program</li><li>Projects Ideas</li><li>Live Courses</li><li>Some Others</li></ul><a href="internship-program">Learn more</a></div></div>
-<div class="animationtype3 service-type"><div class="service-type-img"><img src="assets/Images/handouts-services.jpg" alt="campusxchange-handouts-image"> </div><div class="service-type-content"><h2>Handouts</h2><ul><li>Programming Assignment</li><li>Notes</li><li>Basice Projects</li> <li>Free Portfolio Templates</li></ul><a href="handouts/notes">Learn more</a></div></div>
+<div class="animationtype3 service-type"><div class="service-type-img"><img src="assets/Images/home-page-hero.jpg" alt="campusxchange-handouts-image"> </div><div class="service-type-content"><h2>Handouts</h2><ul><li>Programming Assignment</li><li>Notes</li><li>Basice Projects</li> <li>Free Portfolio Templates</li></ul><a href="handouts/notes">Learn more</a></div></div>
 </section>
 <!-- section to display my core services in a single frame end here   -->
 <br>
 <!-- Web Service-demo section  ------------------------------------------------------------------------------------------------>
-      <section class="block"  id="Service-demo">
+      <section class="block"  id="Service-demo" data-aos="fade-up">
 
       <h2>Ready to Make Your Mark on the World?</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
@@ -104,7 +140,7 @@
 <!-- Service-demo section  end ------------------------------------------------------------------------------------------------>
  <br>
 <!-- SEO service CTA section  ------------------------------------------------------------------------------------------------>
-      <section class="block seoSection">
+      <section class="block seoSection" data-aos="zoom-in" data-aos-delay="100">
 
       <h2>Rank Your Website in Search Engine Result Page</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
@@ -120,7 +156,7 @@
 <!-- SEO service cta  section  end here------------------------------------------------------------------------------------------------>
 <br>
 <!-- in which we show our work done section  ------------------------------------------------------------------------------------------------>
- <section class="block Home-page-about">
+ <section class="block Home-page-about" data-aos="zoom-in" data-aos-delay="100">
         <div class="container">
             <div class="about-content">
                 <h2>Our Achievements Speak for Themselves</h2>
@@ -130,9 +166,9 @@ With happy clients, skilled interns, and multiple web projects completed, we've 
 
 Our journey is built on passion, dedication, and a strong commitment to delivering real value — whether it's a client project or a student mentorship.</p>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLTezVK4xV9zX_1jD_ZKwabaQ3d2psRPE7IkCf_bNuIO8tjw/viewform" class="btn btn-primary">Know More About CampusXchange</a>
+                <a href="about" class="btn btn-primary">Know More About CampusXchange</a>
             </div>
-            <div class="Performance-box" onmouseover="changCount()">
+            <div class="Performance-box" onmouseover="changCount()" data-aos="fade-up">
                 <div class="Performance-card">
                     <h3 id="Count1">10+</h3>
                     <p>😊Happy Clients</p>
@@ -152,23 +188,20 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
     <br>
 <!-- Assignment section  ------------------------------------------------------------------------------------------------>
 
-     <section class="block"  id="Assignment">
+     <section class="block"  id="Assignment" data-aos="zoom-in" data-aos-delay="100">
       <h2>Get Programming Assignments with Just a Click!</h2>
       <p></p>
       <p>Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
 
 Our team of experienced developers and mentors is ready to help you with all types of programming assignments — from beginner-level exercises to advanced projects across various languages and technologies.</P>
-    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
      <br>
      <br>
-
-               <div class="assignment-buttons"><a href="handouts/assignment" title="Programming Assignment">Go</a></div>
-
+<div class="assignment-buttons"><a href="handouts/assignment" title="Programming Assignment">Go</a></div>
     </section>
 <!-- Assignment section end  here ------------------------------------------------------------------------------------------------>
 <br>
 <!-- in which we show our internship CTA section  ---------------------------------------------------------------------------------------->
-       <section  class="block"  id="Internship">
+       <section  class="block"  id="Internship" data-aos="zoom-in" data-aos-delay="100">
         <div class="IHero">
           <!--------------------- internship banner  -->
           <img src="assets/Images/Banner.jpg">
@@ -184,7 +217,7 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
     </section>
     <br>
     <!-- FAQ section ---------------------------------------------------------------------------------->
-    <section class="faq-section">
+    <section class="faq-section" data-aos="zoom-in" data-aos-delay="100">
   <h2>Frequently Asked Questions</h2>
 
   <div class="faq">
@@ -198,7 +231,7 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
     <div class="faq-question">What types of projects do you provide?</div>
     <div class="faq-answer">
   We provide academic and live project support for students and small businesses. These include:
-<ul style="list-style: none;">
+<ul style="list-style: none;" data-aos="fade-up">
   <li>✅Frontend & Full Stack Web Development Projects</li>
   <li>✅Portfolio Websites  & College Projects</li>
   <li>✅Mini + Major Projects for Final Year</li>
@@ -235,9 +268,65 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
 <?php include "components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
   </main>
+<script>
+
+  AOS.init({
+    duration: 1000,  // Animation duration in ms
+    once: true,      // Animation happens only once while scrolling
+    easing: 'ease-in-out', // Smooth transition
+  });
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  // for portfolio section slider .....................................................................
+  const slider = document.getElementById("slider");
+  const total = slider.children.length;
+  let currentIndex = 0;
+  const numberContainer = document.getElementById("numberContainer");
+  // Create numbered buttons
+  for (let i = 0; i < total; i++) {
+    const btn = document.createElement("span");
+    btn.classList.add("num-btn");
+    btn.textContent = i + 1;
+    if (i === 0) btn.classList.add("active");
+    btn.setAttribute("data-index", i);
+    btn.addEventListener("click", () => {
+      currentIndex = i;
+      updateSlider();
+    });
+    numberContainer.appendChild(btn);
+  }
+  function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    document.querySelectorAll(".num-btn").forEach(btn => btn.classList.remove("active"));
+    document.querySelectorAll(".num-btn")[currentIndex].classList.add("active");
+  }
+  // Auto scroll
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % total;
+    updateSlider();
+  }, 2000);
+
+  // Swipe support for mobile only ...........................................................................................
+  const sliderBox = document.getElementById("sliderBox");
+  let startX = 0;
+
+  sliderBox.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+  sliderBox.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    if (diff > 50) {
+      currentIndex = (currentIndex + 1) % total;
+    } else if (diff < -50) {
+      currentIndex = (currentIndex - 1 + total) % total;
+    }
+    updateSlider();
+  });
+
+  </script>
 <script src="script.js"></script>
+
 </body>
 </html>

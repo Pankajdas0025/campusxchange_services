@@ -10,19 +10,21 @@
   <meta name="description" content="Secure your CampusXchange experience with account verification. Verify your internship certificate.">
   <meta name="keywords" content="account verification, secure login, CampusXchange verification, student account security, verify identity, campusxchange certificate-verification">
   <meta name="author" content="CampusXchange"/>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/internship/verification">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/internship/verification">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/internship/verification">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
@@ -100,7 +102,7 @@
 <!-- animated cursor end ---------------->
  <!-- header section  -------------------------------------l̥------------------->
 <header>
-    <div class="Logo"><img src="../assets/Images/transparent-logo-campusxchange.png" title="CampusXchange Logo"></div></header>
+    <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
  <!-- header section end here-------------------------------------------------------->
 <section class="verify-section">
