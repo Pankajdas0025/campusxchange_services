@@ -1,40 +1,36 @@
 
-
 <?php
 include "../src/conn.php";
 include "../src/config.php";
 
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
-    <meta name="robots" content="noindex">
+  <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Verified Intern | CampusXchange</title>
   <meta name="title" content="Mentorship & Remote Internship | CampusXchange">
   <meta name="description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
   <meta name="keywords" content="Technical Notes,Programming Assignment, SEO services,Web Development,Internship,Real Project">
   <meta name="author" content="CampusXchange"/>
+  <link rel="canonical" href="https://campusxchange.wuaze.com/internship/verifiedintern">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/internship/verifiedintern">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/internship/verifiedintern">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 <!-- styles ------------------->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <link rel="stylesheet" href="../animation.css" type="text/css">

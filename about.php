@@ -10,7 +10,7 @@
   <meta name="keywords" content="CampusXchange about, student support, mentorship platform, web development services, SEO services, education platform, online learning, CampusXchange story, CampusXchange founder">
   <meta name="author" content="CampusXchange"/>
   <meta name="robots" content="index, follow" />
-   <link rel="canonical" href="https://campusxchange.wuaze.com/about" />
+  <link rel="canonical" href="https://campusxchange.wuaze.com/about" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">

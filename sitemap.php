@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sitemap | CampusXchange</title>
-  <meta name="title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta name="description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta name="keywords" content="Technical Notes,Programming Assignment, SEO services,Web Development,Internship,Real Project">
+  <title>CampusXchange - Sitemap</title>
+  <meta name="title" content="CampusXchange - Sitemap">
+  <meta name="description" content="CampusXchange empowers students to discover and apply for internships, live projects, and career opportunities—completely online and with a simple application process.!">
+  <meta name="keywords" content="sitemap, website navigation, site map structure, campusxchange navigation, website index, how to create a sitemap, CampusXchange sitemap, sitemap page, site map for CampusXchange, website organization, how sitemaps help SEO">
   <meta name="author" content="CampusXchange"/>
+  <link rel="canonical" href="https://campusxchange.wuaze.com/sitemap" />
   <!-- -- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.in/">
-  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.in/assets/og-image.jpg">
-
+  <meta property="og:url" content="https://campusxchange.wuaze.com/">
+  <meta property="og:title" content="CampusXchange - works with Projects">
+  <meta property="og:description" content="CampusXchange helps students to discover and apply for internships, live projects">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
   <!-- -- Twitter - -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.in/">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
   <!-- Favicon  -------------------------------------------------------------------->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
@@ -29,7 +29,6 @@
   <!-- styles -->
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
    <style>
 :root
 {

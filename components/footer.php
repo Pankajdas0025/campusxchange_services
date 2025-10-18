@@ -230,69 +230,50 @@ body
 
 <div class="footer-div">
   <h2><i class="fa-solid fa-link"></i> Quick Links</h2>
-  <a href="http://localhost/Campusxchange/home" title="CampusXchange Home">
+  <a href="https://campusxchange.wuaze.com/home" title="CampusXchange Home">
     <i class="fa-solid fa-house"></i> Home
   </a>
-  <a href="http://localhost/Campusxchange/services/web-development" title="Professional Web Development Services by CampusXchange">
+  <a href="https://campusxchange.wuaze.com/services/web-development" title="Professional Web Development Services by CampusXchange">
     <i class="fa-solid fa-code"></i> Website Development
   </a>
-  <a href="http://localhost/Campusxchange/services/seo" title="SEO Optimization & Digital Marketing Services by CampusXchange">
+  <a href="https://campusxchange.wuaze.com/services/seo" title="SEO Optimization & Digital Marketing Services by CampusXchange">
     <i class="fa-solid fa-chart-line"></i> SEO Services
   </a>
-  <a href="http://localhost/Campusxchange/handouts/notes" title="Download Free Technical Notes from CampusXchange">
+  <a href="https://campusxchange.wuaze.com/handouts/notes" title="Download Free Technical Notes from CampusXchange">
     <i class="fa-solid fa-book-open"></i> Notes
   </a>
-  <a href="http://localhost/Campusxchange/handouts/blog" title="Read Latest Tech Blogs on CampusXchange">
+  <a href="https://campusxchange.wuaze.com/handouts/blog" title="Read Latest Tech Blogs on CampusXchange">
     <i class="fa-solid fa-pen-nib"></i> Blogs
   </a>
-  <a href="http://localhost/Campusxchange/handouts/assignment" title="Programming Assignments & Practice Questions">
+  <a href="https://campusxchange.wuaze.com/handouts/assignment" title="Programming Assignments & Practice Questions">
     <i class="fa-solid fa-laptop-code"></i> Programming Assignment
   </a>
-  <a href="http://localhost/Campusxchange/internship/apply" title="Apply for Internship Opportunities at CampusXchange">
+  <a href="https://campusxchange.wuaze.com/internship/apply" title="Apply for Internship Opportunities at CampusXchange">
     <i class="fa-solid fa-user-graduate"></i> Apply for Internship
   </a>
-  <a href="http://localhost/Campusxchange/internship/verification" title="Verify Internship or Certificate at CampusXchange">
+  <a href="https://campusxchange.wuaze.com/internship/verification" title="Verify Internship or Certificate at CampusXchange">
        <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verification
   </a>
-  <a href="http://localhost/Campusxchange/about" title="Learn More About CampusXchange">
+  <a href="https://campusxchange.wuaze.com/about" title="Learn More About CampusXchange">
     <i class="fa-solid fa-circle-info"></i> About Us
   </a>
-  <a href="http://localhost/Campusxchange/lettalk" title="Contact CampusXchange Team">
+  <a href="https://campusxchange.wuaze.com/lettalk" title="Contact CampusXchange Team">
     <i class="fa-solid fa-comments"></i> Let's Talk
   </a>
 </div>
-<div class="footer-div">
-  <h2><i class="fa-solid fa-handshake"></i> Social Links</h2>
-  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="https://www.instagram.com/campusxchange_services/" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
-  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-twitter"></i> Twitter
-  </a>
-  <a href="https://www.facebook.com/campusxchangeservices" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-facebook"></i> Facebook
-  </a>
-  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-youtube"></i> YouTube
-  </a>
-   <h2><i class="fa-solid fa-file-shield"></i> Policy</h2>
-<div class="policy-links">
-  <a href="http://localhost/Campusxchange/privacy-policyandterms" title="Learn More About CampusXchange Privacy">
-    <i class="fa-solid fa-circle-info"></i> Privacy Policy
-  </a>
-  <a href="http://localhost/Campusxchange/terms-and-condition" title="Learn More About CampusXchange Terms">
-    <i class="fa-solid fa-comments"></i> Terms & Conditions
-  </a>
-  <a href="http://localhost/Campusxchange/sitemap" title="Learn More About CampusXchange Terms">
-    <i class="fa-solid fa-route"></i>sitemap
-  </a>
-</div>
-<!-- <p>All rights reserved By: Pankaj&copy; 2025</p> -->
+ <div class="footer-div">
+      <h2><i class="fa-solid fa-handshake"></i> Social Links</h2>
+      <a href="https://www.linkedin.com/company/campusxchange" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.instagram.com/campusxchange_services/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://facebook.com/campusxchangeservices" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <h2><i class="fa-solid fa-file-shield"></i> Policy</h2>
+      <a href="/privacy-policyandterms"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
+      <a href="/privacy-policyandterms"><i class="fa-solid fa-comments"></i> Terms & Conditions</a>
+      <a href="/sitemap"><i class="fa-solid fa-route"></i> Sitemap</a>
     </div>
-      <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google-business-map"></iframe></div>
+  <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google-business-map"></iframe></div>
  </footer>
  <div id="All-reserved"> All rights reserved By: campusxchange &copy; 2025</div>
  <script>

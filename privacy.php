@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusXchange Policies</title>
+  <title>CampusXchange Privacy and Policies</title>
+  <meta name="title" content="CampusXchange Privacy and Policies">
+  <meta name="description" content="Secure your CampusXchange experience with account verification. Verify your internship certificate.">
+  <meta name="keywords" content="account verification, secure login, CampusXchange verification, student account security, verify identity, campusxchange certificate-verification">
+  <meta name="author" content="CampusXchange"/>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/privacy-policyandterms">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://campusxchange.wuaze.com/privacy-policyandterms">
+  <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
+  <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://campusxchange.wuaze.com/privacy-policyandterms">
+  <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
+  <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
 
   <!-- Styles & Fonts -->
   <link rel="stylesheet" href="style.css" type="text/css">

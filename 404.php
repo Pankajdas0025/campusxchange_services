@@ -51,8 +51,11 @@ http_response_code(404);
   --pSize:0.9rem;
   --border:none;
 }
+/* header for all pages  */
+/*
+.Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}
+.Logo img{ height:100px; width:100%;} */
   main{
-
     height:500px;
     padding:30px 0;
   }.Eroorbox
@@ -113,7 +116,7 @@ http_response_code(404);
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
-  <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
    </header>
 
 <br>
@@ -121,11 +124,11 @@ http_response_code(404);
 <main>
     <div class="Eroorbox">
         <h1>Oops! Page Not Found (404)</h1>
-                <img src="assets/Images/404.svg">
+                <img src="https://campusxchange.wuaze.com/assets/Images/404.svg" alt="404 Error Image" title="404 Error">
         <p>We're Sorry, but the page you requested isn't available right now. It might have been removed, renamed, or is temporarily unavailable.
 <br>
 Please try the following:</p>
-<a href="http://localhost/Campusxchange/home"><button>Go To Home Page !</button></a>
+<a href="https://campusxchange.wuaze.com/"><button>Go To Home Page !</button></a>
     </div>
 </main>
 <br>

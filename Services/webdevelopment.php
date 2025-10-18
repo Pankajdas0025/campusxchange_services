@@ -8,8 +8,8 @@ include "../src/config.php";
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Web Development Services - CampusXchange</title>
-  <meta name="title" content="Professional Web Development Services - CampusXchange">
+  <title>Professional Web Development & Design in Kishanganj & Patna | CampusXchange</title>
+  <meta name="title" content="Professional Web Development & Design in Kishanganj & Patna | CampusXchange">
   <meta name="description" content="Get responsive, secure, and SEO-friendly websites built by CampusXchange. Custom web development, landing pages, portfolios, and business websites.">
   <meta name="keywords" content="Professional Web Development Services, Custom Website Development, Responsive Websites, SEO Friendly Website, Landing Page Development, Portfolio Website, CampusXchange Web Services">
   <meta name="author" content="CampusXchange">
@@ -109,7 +109,7 @@ include "../src/config.php";
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
      <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="campusxchange-logo" alt="CampusXchange Logo"></div>
   </header>
 <?php include "../components/header.php" ?>
 <main>
@@ -117,7 +117,7 @@ include "../src/config.php";
 <section class="block first-webdev-section">
 <div class="overlay-content">
 <div class="maintext">
- <h1> <div></div>Let's Start Now </h1>
+ <h1>Professional Website Development Services in Kishanganj</h1>
 <P>We don't just build websites — we build digital experiences that perform, impress, and grow with your business.”</P>
 <p>From responsive web design to custom development, our solutions are built to impress, perform, and evolve with your business goals.
 </p>
@@ -392,7 +392,7 @@ Thanks for reaching out to CampusXchange where ideas become digital realities. W
                 <li>Facebook: <a href='https://www.facebook.com/campusxchangeservices' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Instagram: <a href='https://www.instagram.com/campusxchange_services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Email: <a href='mailto:campusxchangeservices@gmail.com' style='color: #2980b9;'>campusxchangeservices@gmail.com</a></li><br>
-                <li>Website: <a href='https://campusxchange.wuaze.com/?i=1' target='_blank' style='color: #2980b9;'>https://campusxchange.wuaze.com/?i=1</a></li><br>
+                <li>Website: <a href='https://campusxchange.wuaze.com/' target='_blank' style='color: #2980b9;'>https://campusxchange.wuaze.com/?i=1</a></li><br>
             </ul>
         </div>
     </div>
@@ -497,7 +497,7 @@ else {
   <div class="webdevlopmentfaq">
     <div class="webdevlopmentfaq-question">How long does it take to build a website?</div>
     <div class="webdevlopmentfaq-answer">
-  A basic site can take 1-2 weeks; a full custom solution may take 3–6 weeks depending on complexity and revisions.
+  A basic site can take 1-2 weeks; a full custom solution may take 3-6 weeks depending on complexity and revisions.
  </div>
   </div>
   <div class="webdevlopmentfaq">
@@ -519,16 +519,17 @@ else {
 <?php include "../components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
 <script>
-/*web development page  FAQ script start here -------------------------------*/
- document.addEventListener("DOMContentLoaded", () => {
+/* Web development page FAQ script start here */
+document.addEventListener("DOMContentLoaded", () => {
   const faqs = document.querySelectorAll(".webdevlopmentfaq");
 
   faqs.forEach(faq => {
     faq.querySelector(".webdevlopmentfaq-question").addEventListener("click", () => {
-      fq.classList.toggle("active");
+      faq.classList.toggle("active"); // Fixed typo here
       const answer = faq.querySelector(".webdevlopmentfaq-answer");
       const isVisible = faq.classList.contains("active");
       answer.style.display = isVisible ? "block" : "none";
+
       // Close other FAQs
       faqs.forEach(otherFaq => {
         if (otherFaq !== faq) {
@@ -540,6 +541,8 @@ else {
   });
 });
 </script>
-<script src="../script.js"></script><script src="../FormValidation.js"></script>
+
+<script src="../script.js"></script>
+<script src="../FormValidation.js"></script>
 </body>
 </html>

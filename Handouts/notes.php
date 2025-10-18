@@ -6,14 +6,14 @@ include "../src/config.php";
 <html lang="en">
 <head>
   <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange</title>
   <meta name="title" content="Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange">
   <meta name="description" content="CampusXchange Notes — Programming, AI, Data Science, Web Dev, ML notes curated for students and developers. Free, easy to read, and exam-ready.">
   <meta name="keywords" content="programming notes for students, python data science notes free, machine learning cheat sheet pdf, AI notes for beginners, web development notes 2025, ML interview prep notes, DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
   <meta name="author" content="CampusXchange"/>
-  <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/notes" />
+  <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/notes">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/notes">

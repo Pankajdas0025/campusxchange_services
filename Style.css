@@ -20,7 +20,7 @@ html{scrollbar-width: thin; scrollbar-color: #007bff #f1f1f1;}
 /* reset */
 * {margin: 0;box-sizing: border-box;padding: 0;}
 
-body { font-family: var(--font-main); color: var(); line-height: 1.6; background-color: #f6f7fb; padding: 0 10px; overflow-x  : hidden}
+body { font-family: var(--font-main); color: var(); line-height: 1.6; padding: 0 10px; overflow-x  : hidden}
 
 h1 , h2 , h3{  color: var(--primary-color);}
 p{font-size: 20px;}
@@ -64,7 +64,7 @@ header
      border-radius:var(--radius);
      background-origin: var(--shadow);
   }
-.introContent h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+.introContent h1 { font-size: 2.25em; margin-bottom: 10px; font-weight: 700; }
 .highlight { color:var(--secondary-color);  padding: 4px 8px;  border-radius: 6px;}
 .introContent p {max-width: 700px;  margin: 0 auto 20px;  line-height: 1.6;  color: white;}
 

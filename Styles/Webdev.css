@@ -46,17 +46,8 @@ overflow: hidden;
 .maintext h1{
     font-size:2rem;
     font-weight: bold;
-    color: var(--primary-color);
+       color: white;
 
-}.maintext h1 div
-{
-    background-color:var(--secondary-color);
-    height:100px;
-    width:100px;
-    border-radius:50%;
-    position: absolute;
-    z-index: -1001;
-    margin-left: -50px;
 }
 .maintext p
 {
@@ -667,9 +658,9 @@ padding: 10%;
 
 }
 .maintext h1{
-    font-size:3rem;
+    font-size:1.5rem;
     font-weight: bold;
-    color: white;
+
 }.maintext h1 div
 {
     background-color:var(--secondary-color);

@@ -4,7 +4,7 @@
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Programming & AI Study Notes | CampusXchange Blogs</title>
+  <title>Programming & AI Study Notes — Free PDFs & Study Guides | CampusXchange</title>
   <meta name="title" content="Programming & AI Study Notes — Free PDFs & Study Guides | CampusXchange">
   <meta name="description" content="CampusXchange offers free, exam-ready notes and study guides for programming, AI, data science, web dev, and ML. Easily understandable, concise, and student-focused.">
   <meta name="robots" content="index, follow">

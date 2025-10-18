@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
- <meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best SEO Services in India | Affordable SEO Agency - CampusXchange</title>
+<title>Best SEO Services in Bihar | Affordable SEO Agency - CampusXchange</title>
 <meta name="title" content="Best SEO Services in India | Affordable SEO Agency - CampusXchange">
 <meta name="description" content="CampusXchange offers professional SEO services that help your website rank higher on Google. Get affordable on-page, off-page, and technical SEO solutions for businesses, startups, and institutes. Boost traffic & visibility today.">
-<meta name="keywords" content="affordable seo services in india, best seo company for small business, local seo for startups, on page optimization, off page seo, link building service, seo audit 2025, campusxchange seo agency, technical seo experts, keyword research services, google ranking improvement">
-<meta name="author" content="CampusXchange" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://campusxchange.wuaze.com/services/seo" />
+<meta name="keywords" content="affordable seo services in Bihar, best seo company for small business, local seo for startups, on page optimization, off page seo, link building service, seo audit 2025, campusxchange seo agency, technical seo experts, keyword research services, google ranking improvement">
+<meta name="author" content="CampusXchange">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://campusxchange.wuaze.com/services/seo">
 <!--Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://campusxchange.wuaze.com/services/seo">
@@ -354,12 +354,13 @@ background-color:#60e08f;
   {
     width: 80%;
     margin: auto 10%;
-    height: 400px;
-    background-color: #f3eded;
+    min-height:50vh;
+    background-color: #f0ececff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
   }.industry
   {
     width: 90%;
@@ -436,9 +437,10 @@ background-color:#60e08f;
 
   .industryweserve
   {
-    width: 80%;
-    margin: auto 10%;
-    height: 700px;
+    width: 90%;
+    margin: auto 5%;
+    padding: 15px;
+    min-height: 800px;
 
   }.industry
   {
@@ -559,7 +561,8 @@ background-color:#60e08f;
 <?php include "../components/header.php" ?>
  <section id="home-hero">
   <div class="hero-content" data-aos="fade-right">
-    <h1>Boost Your Brand with <span>CampusXchange SEO</span></h1>
+    <h1>Boost Your Brand with <span>CampusXchange</span></h1>
+    <h2 style="color: white;">Best SEO Services in Bihar for Businesses & Students</h2>
     <p>Drive traffic, climb search rankings, and dominate your digital presence with our result-driven SEO strategies designed for businesses and students alike.</p>
     <div class="hero-buttons">
       <a href="" class="btn-primary"><i class="fa-solid fa-chart-line"></i> Explore SEO Services</a>
@@ -623,9 +626,11 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
   </div>
 </section>
  <br>
- <section class="block industryweserve">
+ <section class="industryweserve">
+  <br>
+  <br>
  <h2>SEO Services for Every Industry</h2>
-<p>Whether you’re in e-commerce, education, healthcare, or finance, CampusXchange tailors SEO strategies to fit your industry and audience, helping you gain visibility and drive growth.</p>
+<p>Whether you're in e-commerce, education, healthcare, or finance, CampusXchange tailors SEO strategies to fit your industry and audience, helping you gain visibility and drive growth.</p>
 
   <div class="industry">
     <div class="industrytype"><i class="fa-solid fa-cart-shopping"></i> E-commerce</div>

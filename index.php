@@ -2,27 +2,27 @@
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CampusXchange - Learning, Services & Student Resources</title>
-<meta name="title" content="CampusXchange - Learning, Services & Student Resources">
+<title>Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange</title>
+<meta name="title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
 <meta name="description" content="Explore CampusXchange for web development, SEO services, notes, assignments, and mentorship to boost your academic and career journey.">
-<meta name="keywords" content="CampusXchange, student resources, web development, SEO services, study notes, mentorship, assignments">
+<meta name="keywords" content="internship projects Bihar, technical internship programs Bihar, college internships Bihar, affordable web design Patna, low-cost web design companies Patna, web development Bihar, technical notes, programming notes, SEO services Bihar, small business SEO Bihar, startup web services Bihar">
 <meta name="author" content="CampusXchange"/>
 <meta name="robots" content="index, follow" />
 <!-- Goggle console verification -->
-<meta name="google-site-verification" content="QGJuxyrg3ScLkoXoq2UAnY0N-qOhhrAp2VmK4BCdn2o" />
+<meta name="google-site-verification" content="QGJuxyrg3ScLkoXoq2UAnY0N-qOhhrAp2VmK4BCdn2o">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://campusxchange.wuaze.com/">
-<meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-<meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
+<meta property="og:title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
+<meta property="og:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
 <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://campusxchange.wuaze.com/">
-<meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
-<meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
+<meta property="twitter:title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
+<meta property="twitter:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
 <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
 <!-- canocinal tag -->
 <link rel="canonical" href="https://campusxchange.wuaze.com/"/>
@@ -80,14 +80,14 @@
 <!-- Home Intro Section -->
 <section class="homeIntro" data-aos="zoom-in" data-aos-delay="100">
   <div class="introContent">
-    <h1 style="color: white;">Welcome to <span class="highlight">CampusXchange</span></h1>
+    <h1 style="color: white;">Affordable Web Development, SEO, and Internship Opportunities in <span class="highlight"> Bihar</span></h1>
     <p>Empowering learners, creators, and businesses through tech, mentorship, and original content. Dive into a world where innovation meets accessibility.</p>
     <a href="home" class="ctaBtn">Explore Now</a>
      <a href="home" class="ctaBtn">Contact Now</a>
   </div>
 
   <div class="introContent" id="core-ser" data-aos="fade-up">
-    <h1>Our Core services</h1>
+    <h2>Our Core services</h1>
   <div class="core-ser">
 <ul style="list-style: none; padding: 5px;">
    <li><i class="fa-solid fa-code"></i> Web Development</li>
@@ -102,7 +102,7 @@
 <!-- hero section title of the project  ------------------------------------------------------------------------>
 <section class="block hero" data-aos="zoom-in" data-aos-delay="100">
 
-      <h1>Your Gateway to Learning , <span style="background-color:#f43f5e; color:#FFF;padding: 1px 4px;">Development</span> & Career Excellence with Mentorship programs.</h1>
+      <h2>Your Gateway to Learning , <span style="background-color:#f43f5e; color:#FFF;padding: 1px 4px;">Development</span> & Career Excellence with Mentorship programs.</h1>
       <p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions and search engine optimization, we've got you covered. </p>
 <!-- section to display my core services in a single frame  -->
     </section>
@@ -117,7 +117,7 @@
 <!-- Web Service-demo section  ------------------------------------------------------------------------------------------------>
       <section class="block"  id="Service-demo" data-aos="fade-up">
 
-      <h2>Ready to Make Your Mark on the World?</h2>
+      <h2>Trusted Web Development Services for Startups</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
       <br>
       <a href="services/web-development" title="Webdevelopment"><button id="Explorbtn">Let's Discuss</button></a>
@@ -142,7 +142,7 @@
 <!-- SEO service CTA section  ------------------------------------------------------------------------------------------------>
       <section class="block seoSection" data-aos="zoom-in" data-aos-delay="100">
 
-      <h2>Rank Your Website in Search Engine Result Page</h2>
+      <h2>Professional SEO Services for Small Businesses in Bihar</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
       <br>
       <div class="typeSeo" style="background-color:#f43f5e">OnPage SEO</div>
@@ -189,7 +189,7 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <!-- Assignment section  ------------------------------------------------------------------------------------------------>
 
      <section class="block"  id="Assignment" data-aos="zoom-in" data-aos-delay="100">
-      <h2>Get Programming Assignments with Just a Click!</h2>
+      <h2>Comprehensive Technical notes and Programming Assignments`````````````````````````````````````````````</h2>
       <p></p>
       <p>Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
 
@@ -204,8 +204,8 @@ Our team of experienced developers and mentors is ready to help you with all typ
        <section  class="block"  id="Internship" data-aos="zoom-in" data-aos-delay="100">
         <div class="IHero">
           <!--------------------- internship banner  -->
-          <img src="assets/Images/Banner.jpg">
-           <h3>Begin Where Real Devs Do </h3>
+          <img src="assets/Images/Banner.jpg" alt="campusxchange-internship-banner" title="Enroll in our internship">
+           <h3>Technical Internship Programs and Projects for College Students in Bihar</h3>
       <p>Tired of just collecting certificates with no real skills?
 At CampusXchange, we're not just about learning — we're about doing.
 <br>
@@ -219,7 +219,6 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
     <!-- FAQ section ---------------------------------------------------------------------------------->
     <section class="faq-section" data-aos="zoom-in" data-aos-delay="100">
   <h2>Frequently Asked Questions</h2>
-
   <div class="faq">
     <div class="faq-question">What is CampusXchange?</div>
     <div class="faq-answer">
@@ -269,14 +268,6 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
 <!-- fotter section end  --------------------------------------------------------------------------------->
   </main>
 <script>
-
-  AOS.init({
-    duration: 1000,  // Animation duration in ms
-    once: true,      // Animation happens only once while scrolling
-    easing: 'ease-in-out', // Smooth transition
-  });
-
-
   // for portfolio section slider .....................................................................
   const slider = document.getElementById("slider");
   const total = slider.children.length;
