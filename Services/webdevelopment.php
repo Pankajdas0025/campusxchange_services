@@ -107,10 +107,6 @@ include "../src/config.php";
   </script>
 </head>
 <body>
-   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-     <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="campusxchange-logo" alt="CampusXchange Logo"></div>
-  </header>
 <?php include "../components/header.php" ?>
 <main>
   <!-- first section for better UI or Hero Section start ------------------------------>

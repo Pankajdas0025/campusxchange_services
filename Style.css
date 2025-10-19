@@ -1,11 +1,12 @@
-:root {
+:root
+{
   --primary-color: #385f87;
   --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
   --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --shadow:0 1px 5px  #141414 inset;
   --radius: 10px;
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#da6b7e;
@@ -17,868 +18,183 @@
 ::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 10px;}
 ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--primary-color), var(--secondary-color)); border-radius: 10px;}
 html{scrollbar-width: thin; scrollbar-color: #007bff #f1f1f1;}
-/* reset */
 * {margin: 0;box-sizing: border-box;padding: 0;}
-
-body { font-family: var(--font-main); color: var(); line-height: 1.6; padding: 0 10px; overflow-x  : hidden}
-
+body { font-family: var(--font-main); color: var(); line-height: 1.6; padding: 0 10px; overflow-x: hidden; background-color: #fff;}
 h1 , h2 , h3{  color: var(--primary-color);}
 p{font-size: 20px;}
+/* Main */
+main{opacity:1;}
 
-/* header for all pages  */
-header
-{
-
-  position: sticky;
-  top: 0;
-  z-index: 9999; /* try higher */
-  background-color: var(--primary-color);
-
-
-}
-.Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}
-.Logo img{ height:100px; width:100%;}
- /* home intro first section */
-.homeIntro {
-    background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    border-bottom: 5px solid #fff;
-    min-height: 80vh;
-    width: 100%;
-    display: flex;
-  }.introContent {width: 45%;text-align: left;padding-left:25px;margin:5% 5%;  }
-  #core-ser
-  {
-    background-color: white;
-    color: black;
-    height: 80%;
-    width:30%;
-    margin: 5%;
-    padding: 10px 50px;
-    align-items: center;
-    align-content: center;
-    justify-self:center;
-     border-radius:var(--radius);
-     background-origin: var(--shadow);
-  }
-.introContent h1 { font-size: 2.25em; margin-bottom: 10px; font-weight: 700; }
+/* home intro first section */
+.homeIntro {background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex;  box-shadow: var(--shadow);}
+.introContent {width: 45%;text-align: left;padding-left:25px;margin:5% 5%;}
+#core-ser{background-color: white;color: black;height: 80%;width:30%;margin: 5%;padding: 10px 50px;align-items: center;align-content: center;justify-self:center; border-radius:var(--radius);  box-shadow: var(--shadow);}
+.introContent h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
 .highlight { color:var(--secondary-color);  padding: 4px 8px;  border-radius: 6px;}
 .introContent p {max-width: 700px;  margin: 0 auto 20px;  line-height: 1.6;  color: white;}
-
-  .ctaBtn {
-    display: inline-block;
-    background-color:white;
-    color:black;
-    padding: 12px 24px;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  .ctaBtn:hover { background-color:transparent;  backdrop-filter: blur(25px);color: #ffffff;   transform: scale(1.05); }
+.ctaBtn {display: inline-block;background-color:white;color:black;padding: 12px 24px; font-weight: bold; border-radius: 10px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
+.ctaBtn:hover { background-color:transparent;  backdrop-filter: blur(25px);color: #ffffff;   transform: scale(1.05); }
 
 /* Homepage Hero section ------------------------------------------------------------------------------------------------------------- */
-.hero {
-  color: rgb(0, 0, 0);
-  border-radius: var(--radius);
-  margin-bottom: 40px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  height:auto;
-  width: 90%;
-  margin: 5% 5%;
-  align-items: center;
-  align-content: center;
-  padding: 3rem 2rem;
-  border: var(--border);
-  z-index: 0;
-}
+.hero {color: rgb(0, 0, 0); border-radius: var(--radius); margin-bottom: 40px; text-align: center;  box-shadow: var(--shadow);;height:auto; width: 90%;margin: 5% 5%;align-items: center;align-content: center;padding: 3rem 2rem;border: var(--border); z-index: 99;}
 .hero h1 { font-size: 1.8rem; text-align: left;}
 .hero p{font-size:var(--pSize);opacity: 1;}
-/* Homepage Hero section end ------------------------------------------------------------------------------------------------------------- */
-/* Assignment section--------------------------------------------------------------------------------------------------------------------  */
-#Assignment
-{
-  color: rgb(0, 0, 0);
-  padding: 3rem 2rem;
-  border-radius: var(--radius);
-  margin-bottom: 40px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  align-items: center;
-  align-content: center;
-  transition-delay: 10s;
-  height: auto;
-  border: var(--border);
-}
-#Assignment h2,p{ text-align: left;}
-/* Assignment Button Container --------------------------------*/
-.assignment-buttons {display: flex;flex-wrap: wrap;justify-content: center;gap: 15px;}
-/* Individual Button Styling */
-.assignment-buttons a {
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  align-items: center;
-  align-content: center;
-  border:var(--border);
-  border-radius:10px;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  min-width: 160px;
-  text-align: center;
-}
-.assignment-buttons a:hover {
-  background-color: var(--hoverbg);
-  transform: scale(1.05);
 
-}
 /* section to display our core services in a single frame  */
-.All-services
-{
-  height:auto;
-  width: 100%;
-  display: flex;
-}
-.service-type
-{
-  height: 400px;
-  width: 20%;
-  margin: 100px 2.5%;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 15px;
-  transition: 2s;
-  box-shadow: 2px 2px 24px black;box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
-    5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
-    10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-}.service-type-img
-{
-border-radius: 15px 15px 0 0 ;
-width: 100%;
-height: 40%;
-overflow: hidden;
-background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
-}.service-type-img img
-{
-  height: 98%;
-  width: 98%;
-  margin: 1%;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 15px 15px 0 0 ;
-  filter:grayscale(0);
-     transition: transform 0.3s ease;
-}.service-type-img img:hover{
-    filter:grayscale(1);
-    transform: scale(1.5);
-}
-.service-type-content
-{
-width: 100%;
-height: 0%;
-opacity: 0;
-background-color: #ffffff;
-color: var(--primary-color);
-transition: height 1.2s ease-in-out;
-border-radius:0 0 15px 15px;
-padding: 10px 30px;
-}.service-type:hover .service-type-content
-{
-  height: 60%;
-  opacity: 1;
-}.service-type-content li{
- color:var(--secondary-color);
- list-style-type: '→';
- padding-left: 10px;
-}
-/* section to display my core services in a single frame end here  */
-/* webService-demo section or slider -------------------------------------------------------------------------------------------------------- */
-#Service-demo{
-  color: rgb(0, 0, 0);
-  padding: 3rem 2rem;
-  border-radius: var(--radius);
-  margin-bottom: 40px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  height:700px;
-  width: 90%;
-  margin: 1% 5%;
-  border: var(--border);
-} #Service-demo h2
-{
-  text-align:left;
-}
+.All-services{height:auto;width: 100%;display: flex;}
+.service-type{height: 400px; width: 20%; margin: 100px 2.5%; display: flex; flex-wrap: wrap; border: 2px solid rgb(255, 255, 255);border-radius: 15px;transition: 2s;  box-shadow: var(--shadow);}
+.service-type-img{border-radius: 15px 15px 0 0 ;width: 100%;height: 40%;overflow: hidden;background: linear-gradient(to top, var(--primary-color), var(--secondary-color));}
+.service-type-img img{ height: 98%; width: 98%; margin: 1%;border: 2px solid rgb(255, 255, 255) ;border-radius: 15px 15px 0 0 ; filter:grayscale(0);}
+.service-type-img img:hover{ filter:grayscale(1); transform: scale(1.5);}
+.service-type-content{width: 100%;height: 0%;opacity: 0;background-color: #ffffff;color: var(--primary-color);transition: height 1.2s ease-in-out;border-radius:0 0 15px 15px;padding: 10px 30px;}
+.service-type:hover .service-type-content{height: 60%;opacity: 1;}
+.service-type-content li{color:var(--secondary-color);list-style-type: '→';padding-left: 10px;}
+
+/* OUR PORTFOLIO  -------------------------------------------------------------------------------------------------------- */
+#Service-demo{ color: rgb(0, 0, 0); padding: 3rem 2rem; border-radius: var(--radius); margin-bottom: 40px; text-align: center;  box-shadow: var(--shadow); height:700px;width: 90%;margin: 1% 5%; border: var(--border);}
+#Service-demo h2{text-align:left;}
+
 /* Get your website button */
-#Explorbtn , #Explorbtn2
-{
-  outline: none;
-  border: none;
-  background-color: var(--primary-color);
-  border:var(--border);
-  border-radius:10px;
-  color: rgb(255, 255, 255);
-  height:40px;
-  width:180px;
-  font-size: 1.0rem;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}#Explorbtn:hover
-{
-  background-color: var(--hoverbg);
-  transform: scale(1.05);
-} #Explorbtn2:hover
-{
-  background-color: var(--hoverbg);
-  transform: scale(1.05);
-}
-/* ------------------------------Service-demo slider  -------------------------------------------------------------------------*/
-.slider-box {
-       width: 500px;
-      height: 300px;
-      overflow: hidden;
-      margin: 1% auto;
-      border-radius: 15px;
-      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-      position: relative;
-      touch-action: pan-y;
-      /* border: var(--border); */
-}       .slider-images {
-     display: flex;
-      transition: transform 0.8s ease-in-out;
-      height: 100%;
-    }
-    .slider-images img {
-       width: 400px;
-      margin: 0 50px;
-      height: 300px;
-      /* object-fit: cover; */
-      flex-shrink: 0;
-    }
-    .numbers {
-      margin-top: 12px;
-    }
-    .num-btn {
-      display: inline-block;
-      margin: 0 5px;
-      padding: 6px 10px;
-      background: #ddd;
-      color: #000;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .num-btn.active {
-      background-color: #333;
-      color: white;
-    }
-/* Service-demo section end -------------------------------------------------------------------------------------------------------- */
-/* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
-.seoSection h2
-{
-  text-align:left;
-}
-.seoSection{
-  color: rgb(0, 0, 0);
-  padding: 3rem 2rem;
-  border-radius: var(--radius);
-  margin-bottom:20px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  height:650px;
-}
-.typeSeo
-{
+#Explorbtn , #Explorbtn2{ outline: none;border: none; background-color: var(--primary-color); border:var(--border); border-radius:10px;color: rgb(255, 255, 255); height:40px; width:180px; font-size: 1.0rem; align-items: center;align-content: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
+#Explorbtn:hover{background-color: var(--hoverbg);transform: scale(1.05);}
+#Explorbtn2:hover{background-color: var(--hoverbg);transform: scale(1.05);}
 
-  height: 100px;
-  width:100px;
-  margin:120px 10px;
-  display:inline-block;
-   align-items: center;
-  align-content: center;
-  border-radius: 50%;
-   border: var(--border);
-   text-align: left;
-   padding-left:20px;
-   transition: 2s;
-   color: white;
-   border-right: 4px solid black;
-    box-shadow: 2px 2px 24px black;box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
-    5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
-    10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-}
+/* Service-demo slider  -------------------------------------------------------------------------*/
+.slider-box{width:500px;height:300px;overflow:hidden;margin:1% auto;border-radius:15px;position:relative;touch-action:pan-y;}
+.slider-images{display:flex;transition:transform .8s ease-in-out;height:100%;}
+.slider-images img{width:400px;margin:0 50px;height:300px;flex-shrink:0;}
+.numbers{margin-top:12px}
+.num-btn{display:inline-block;margin:0 5px;padding:6px 10px;background:#ddd;color:#000;border-radius:5px;cursor:pointer;font-weight:bold}
+.num-btn.active{background-color:#333;color:white}
+
+/*SEO service CTA section  ------------------------------------------------------------------------------------------------ */
+.seoSection h2{text-align:left}
+.seoSection{color:#000;padding:3rem 2rem;border-radius:var(--radius);margin-bottom:20px;text-align:center;height:650px}
+.typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;color:white;border-right:4px solid black;  box-shadow: var(--shadow);}
+
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
-.Home-page-about{
-    border-radius: var(--radius);
-    padding: 3rem 2rem;
-    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
-    border: var(--border);
-    width: 90%;
-    margin: auto 5%;
+.Home-page-about{border-radius:var(--radius);padding:3rem 2rem;background:linear-gradient(180deg,var(--primary-color),var(--secondary-color));border:var(--border);width:90%;margin:auto 5%;}
+.Home-page-about h2{color:white}.about-content{max-width:600px;margin-bottom:3rem;color:#fff;}
+.Performance-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;}
+.Performance-card{background:white;padding:2rem;max-width:90%;margin-left:5%;border-radius:10px;text-align:center;  box-shadow: var(--shadow);;transition:var(--transition-base);transition:2s;}
+.Performance-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.Performance-card h3{font-size:2.5rem;color:var(--color-primary);margin-bottom:.5rem;transition:transform .3s;text-shadow:1px 1px 2px black}
 
-}.Home-page-about h2{color: white;}
-.about-content {
-    max-width: 600px;
-    margin-bottom: 3rem;
-    color: #ffffff;
-}
-.Performance-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-}
-.Performance-card {
-    background: white;
-    padding: 2rem;
-    max-width:90%;
-    margin-left:5%;
-    border-radius:15px;
-    text-align: center;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition-base);
-    border:2px dotted #6366f1;
-    transition: 2s;
-    box-shadow: 2px 2px 24px rgb(255, 255, 255);box-shadow:
-    2px 2px 5px rgba(0, 0, 0, 0.2),   /* Closer, sharper shadow */
-    5px 5px 15px rgba(0, 0, 10, .15), /* Medium shadow */
-    10px 10px 30px rgba(10, 0, 0, 0.1); /* Further, softer shadow */
-}
-.Performance-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-.Performance-card h3 {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: 0.5rem;
-     transition: transform 0.3s;
-     text-shadow: 1px 1px 3px black;
-/* Performance and brif intro  section end -------------------------------------------------------------------------------------------------------- */
-}#Internship{
-    color: rgb(0, 0, 0);
-    height:auto;
-    border-radius: var(--radius);
-    background: #f9fafb;
+/* Assignment section--------------------------------------------------------------------------------------------------------------------  */
+#Assignment{color:#000;padding:3rem 2rem;border-radius:var(--radius);margin-bottom:40px;text-align:center;align-items:center;align-content:center;transition-delay:10s;height:auto;border:var(--border);}
+#Assignment h2,p{text-align:left}
+.assignment-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
+.assignment-buttons a{padding:10px 20px;background-color:var(--primary-color);align-items:center;align-content:center;border:var(--border);border-radius:10px;color:white;font-size:1rem;text-decoration:none;transition:all .3s ease-in-out;min-width:160px;text-align:center}
+.assignment-buttons a:hover{background-color:var(--hoverbg);transform:scale(1.05);}
 
-}#Internship:hover button
-{
-  animation:buttonMove 1s ease-in-out 0s 1 forwards;
-}
+/* Internship CTA section */
+
+#Internship{ color: rgb(0, 0, 0);  height:auto;  border-radius: var(--radius);background: #f9fafb;}
+#Internship:hover button{animation:buttonMove 1s ease-in-out 0s 1 forwards;}
 @keyframes buttonMove
 {
-  0%{background-color:#f43f5e;;
-  margin-left:10%;
-  opacity: 0.1;
-   }
-  40%{background-color:#f43f5e;;
+0%{background-color:#f43f5e;; margin-left:10%; opacity: 0.1;  }
+40%{background-color:#f43f5e;opacity: 0.2;}
+70%{background-color:var(--hoverbg); opacity: 0.6;  }
+100%{background-color:var(--primary-color);margin-left: 40%;opacity: 1; }
+}
+.IHero{padding: 3rem 2rem;height:100%;border-radius: var(--radius);}
+.IHero img{height: 90%; width: 100%;}
+.IHero button{ outline: none; background-color: var(--primary-color);  border:var(--border);border-radius:10px; color: rgb(255, 255, 255); height:45px; width:20%; font-size: 1.1rem; align-items: center; align-content: center; transition:10s ease; opacity: 0; box-shadow:2px 2px 12px rgb(255, 255, 255); z-index:100;}
 
-  opacity: 0.2;
-   }
-  70%{background-color:var(--hoverbg);
-
-  opacity: 0.6;
-   }
-  100%{background-color:var(--primary-color);
-    margin-left: 40%;
-  opacity: 1;
-   }
-}
-.IHero
-{
-  padding: 3rem 2rem;
-  height:100%;
-  border-radius: var(--radius);
-}.IHero img
-{
-  height: 90%;
-  width: 100%;
-}
-.IHero button
-{
-  outline: none;
-  background-color: var(--primary-color);
-  border:var(--border);
-  border-radius:10px;
-  color: rgb(255, 255, 255);
-  height:45px;
-  width:20%;
-  font-size: 1.1rem;
-  align-items: center;
-  align-content: center;
-  transition:10s ease;
-  opacity: 0;
-  box-shadow:2px 2px 12px rgb(255, 255, 255);
-  z-index:100;
-}
-main{
-  opacity:1;
-}
 /* FAQ style start here -------------------------------*/
-.faq-section {
-  padding:2rem 3rem;
-  background: linear-gradient(200deg, var(--primary-color), var(--secondary-color));
-  border-radius: var(--radius);
-  color: var(--bg-light);
-  box-shadow:var(--shadow);
-  border: var(--border);
-  width: 100%;
+.faq-section{padding:2rem 3rem;background:linear-gradient(200deg,var(--primary-color),var(--secondary-color));border-radius:var(--radius);color:var(--bg-light);  box-shadow: var(--shadow); border:var(--border);width:100%}
+.faq-section h2{text-align:left;margin-bottom:30px;color:white}
+.faq{border-bottom:1px solid #ddd;margin-bottom:10px;padding-bottom:15px}
+.faq-question{font-weight:bold;cursor:pointer;position:relative;padding-right:25px}
+.faq-question::after{content:"+";position:absolute;right:0;font-size:20px;transition:transform .3s ease}
+.faq.active .faq-question::after{transform:rotate(45deg)}
+.faq-answer{display:none;padding-top:10px;color:#060000;line-height:1.6;transition:all .3s ease-in-out}
 
-}
-.faq-section h2 {
-  text-align:left;
-  margin-bottom: 30px;
-  color: white;
-}
-.faq {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
-  padding-bottom: 15px;
-}
-.faq-question {
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  padding-right: 25px;
-}
-.faq-question::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
-.faq.active .faq-question::after {
-  transform: rotate(45deg);
-}
-.faq-answer {
-  display: none;
-  padding-top: 10px;
-  color: #060000;
-  line-height: 1.6;
-  transition: all 0.3s ease-in-out;
-}
-/* FAQ style end here -------------------------------*/
-/* whatsapp , inter , remove btns for all pages ----- */
- #btn1
-{
-  padding: 12px 12px;
-  background-color: var(--primary-color);
-  color: var(--card-bg);
-  font-size: 1rem;
-  position:fixed;
-  top: 90%;
-  right:12.5%;
-  border-radius: var(--radius);
-  border:var(--border);
-  display: none;
-}
- #btn2
-{
-  padding: 8px 15px;
-  background-color:transparent;
-  color:rgb(244, 72, 72);
-  position:fixed;
-  top: 82%;
-  left: 82%;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  display: none;
-  border-radius: 50%;
-  border:var(--border);
-} #btn1:hover
-{
-  background-color: var(--hoverbg);
-}#btn2:hover
-{
-  background-color: var(--hoverbg);
-}
-.Footer
-{
-  height:auto;
-  background-color:var(--primary-color);
-  padding: 1.5rem 2rem;
-  color: var(--bg-light);
-}#quicklinks
-{
-  height:50px;
-  margin-top:12px;
-  padding: 1rem 0;
-}.contact a
-{
-  color: white;
-  padding: 2px 5px;
-}
-#quicklinks a
-{
-  color: var(--bg-light);
-  text-decoration: none;
-  display:inline;
-  padding: 0.5rem 1rem 0.5rem 0;
-
-}#Sociallinks a:hover
-{
-  color: rgb(170, 167, 163);
-}
-#Sociallinks
-{
-  height:100px;
-  padding: 1rem 1rem 1rem 0;
-  margin-top: 12px;
-}#Sociallinks a
-{
-  padding: 0.5rem 1rem 0.5rem 0;
-  font-size: 30px;
-  color: var(--bg-light);
-}#CopyRight
-{
-  height:100px;
-}
+/* Internship popup button  */
+#btn1{padding:12px 12px;background-color:var(--primary-color);color:var(--card-bg);font-size:1rem;position:fixed;top:90%;right:12.5%;border-radius:var(--radius);border:var(--border);display:none}
+#btn2{padding:8px 15px;background-color:transparent;color:#f44848;position:fixed;top:82%;left:82%;font-size:1.5rem;font-weight:bolder;display:none;border-radius:50%;border:var(--border)}
+#btn1:hover{background-color: var(--hoverbg);}
+#btn2:hover{ background-color: var(--hoverbg);}
 
 @media screen and (max-width:700px)
 {
-  body
-  {
-    padding: 0 5px;
-  }
-  /* For all Mobile  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
-.Logo
-{
-  height: 80px;
-  width: 90%;
-  margin: auto 5%;
-  background-color:transparent;
-  padding: 0;
-}.Logo img
-{
-  height:80px;
-  width:100%;
-}
-    .homeIntro {
-    display:block;
-  }.introContent
-  {
-width:100%;
-text-align: left;
-padding-left:0px;
-margin:0%;
-  }#core-ser
-  {
-    width: 100%;
-    padding: 10px 50px;
-    align-items: center;
-    align-content: center;
-    justify-self:center;
-     border-radius:var(--radius);
-  }  .ctaBtn {
-  display: block;
-  margin-top: 10px;
-  }
-  .introContent h1 {
-      font-size: 2em;
-    }
-    .introContent p {
-      font-size: 1em;
-    }
-  .HeroImg img
-{
-  height:200px;
-  width:200px;
-}.hero
-{
-  padding: 2rem 1rem;
-  height: auto;
-}.HeroImg
-{
-  background-color:transparent;
-  backdrop-filter: blur(10px);
-   border-radius: 50%;
-   height: 200px;
-   width: 200px;
-   margin: auto;
-   box-shadow: 1px 2px 50px white;
-   border-right: 6px solid black;
-}
-#Main
-{
-  height:150px;
-  width:150px;
-  margin:25px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 50px rgb(20, 17, 17);
-}
-.HerosubImg1 ,.HerosubImg2 ,.HerosubImg3 ,.HerosubImg4
-{
-height:40px;
-font-size:10px;
-padding:0;
-width: 75px;
-}
-.hero h1 {
-  font-size:1.75rem;
-  margin-bottom: 0;
-  width: 90%;
-  margin: 0px 5%;
-  justify-content: space-around;
+/* Control Bode */
+ body {padding: 0;overflow-x: hidden;}
+ /* First hero Section */
+.homeIntro {display:block;}
+.introContent{width:100%;text-align: left;padding-left:0px;margin:0%;}
+.introContent h1 {font-size: 2em;}.introContent p {font-size: 1em;}
+#core-ser{width: 100%;padding: 10px 50px;align-items: center;align-content: center;justify-self:center;border-radius:var(--radius);}
+.ctaBtn {display: block;margin-top: 10px;}
 
-}.hero p{
-  font-size:var(--pSize);
-  margin-bottom: 0;
-  margin: 0px 5%;
-}
-.hero h4 {
-  font-size:0.8rem;
-  margin-top:35px;
-  opacity:0.9;
-  padding: 25px 5px;
-  font-family:var(--font-main);
-  justify-content: center;
-}
-/* core services  */
-.All-services
-{
 
-  width: 100%;
-  display:block;
+/* Second Hero Section */
+.hero{ padding: 2rem .5rem; height: auto; }
+.hero h2 {font-size:1.5rem;margin-bottom: 0;text-align:left; padding-left: 10px;}
+.hero p{font-size:var(--pSize);margin-bottom: 0;margin: 0px 5%;}
 
-}
-.service-type
-{
-  width: 100%;
-  margin: 20px 0;
-}.service-type:hover
-{
-  transform: none;
-}
+/*type of core services  */
+.All-services{ width: 90%; margin: auto 5%;display:block;}
+.service-type{ width: 100%;margin: 20px 0;}
+.service-type:hover{transform: none;}
+
+/*Portfolio slider  -------------------------------------------------------------------------*/
+#Service-demo{height: 750px;}
+#Service-demo p {font-size:var(--pSize);}
+.slider-box { width: 250px; height: 200px; overflow: hidden; margin: 1% -50px;display: inline-block; position: relative;touch-action: pan-y;}
+.slider-images { height: 100%; width: 250px; height:200px;}
+.slider-images img {width: 250px;height:200px;flex-shrink: 0; margin: 0; }
+.numbers { margin-top: 12px;}
+.num-btn {padding: 1px 6px; border-radius: var(--radius); }
+
+/*SEO service CTA section  ------------------------------------------------------------------------------------------------ */
+.seoSection{height: auto;}
+.typeSeo{ height:50px; width:80vw; margin: auto; margin-top: 10px;border-radius:0;}
+#Explorbtn2{display:none;}
+
+/*Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
+.Home-page-about{ border-radius:0; width: 100%; margin: auto ;}
+.Home-page-about h2{color: white;}
+.about-content {max-width: 600px;margin-bottom: 3rem;color: #e6dfdf;}
+.Performance-card {background: white;padding: 2rem;max-width:100%; margin-left:0%;border-radius:10px;}
 
 /* Assignment section--------------------------------------------------------------------------------------------------------------------  */
-#Assignment
-{
+#Assignment{background-color: rgb(235, 235, 235);padding:3rem 2rem;justify-content: center;margin-bottom: 40px;word-wrap: inherit;text-align: center; align-items: center; border-radius:0;align-content: center;height: auto;}
+#Assignment a{ height:40px;  width:80%;  font-size: 1.1rem;margin-left:8%;margin-top:4vh; cursor: pointer;text-align: center;}
+#Assignment a:hover { background-color: #ffffff; transform:scale(1.0); text-decoration: overline;}
+/* Assignment section--------------------------------------------------*/
+#Internship { height:auto;margin: auto 2.5%; }
+#Internship button{ width:80%;font-size: 0.8rem;}
+@keyframes buttonMove{100%{background-color:var(--primary-color);margin-left:10%;opacity: 1;}}
 
-  padding:3rem 2rem;
-  justify-content: center;
-  border-radius: var(--radius);
-  margin-bottom: 40px;
-  word-wrap: inherit;
-  text-align: center;
-  box-shadow: var(--shadow);
-  align-items: center;
-  align-content: center;
-  height: auto;
-}
-/* Assignment box buttons  */
+/* Internship popup button  */
+ #btn1{ padding: 12px 12px; font-size: 1rem; top: 90%; right:10.5%;}
+ #btn2{padding: 8px 15px;top: 80%;left: 70%;font-size: 1.5rem;}
 
-#Assignment a
-{
+/* FAQ style start here -------------------------------*/
+.faq-section { border-radius:0;width: 100%;}
 
-  height:40px;
-  width:80%;
-  font-size: 1.1rem;
-  margin-left:8%;
-  margin-top:4vh;
-  cursor: pointer;
-  text-align: center;
-
-}
-#Assignment a:hover {
-  background-color: #ffffff;
-  transform:scale(1.0);
-  text-decoration: overline;
-
-
-}
- /* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
- .seoSection{
-  height: auto;
- }
-.typeSeo
-{
-  height:50px;
-  width:200px;
-  border-radius: 0 20% 20% 0;
-  margin-left:-10px;
-  background-color:var(--secondary-color);
-  transform:none;
-  display:block;
-  margin-bottom:0;
-  margin-top: 50px;
-  box-shadow:none;
-
-}#Explorbtn2
-
-{
-  display: none;
-}
-
-/* -- SEO service CTA section end here ------------------------------------------------------------------------------------------------ */
-#Service-demo p {
-  font-size:var(--pSize);
-
-}
-
-/* ------------------------------portfolio slider  -------------------------------------------------------------------------*/
-.slider-box {
-      width: 250px;
-      height: 200px;
-      overflow: hidden;
-      margin: 1% -50px;
-      display: inline-block;
-      position: relative;
-      touch-action: pan-y;
-    }
-     .slider-images {
-      display: flex;
-      transition: transform 0.8s ease-in;
-      height: 100%;
-      width: 250px;
-      height:200px;
-
-    }
-
-    .slider-images img {
-      width: 250px;
-      height:200px;
-      /* object-fit: cover; */
-      flex-shrink: 0;
-       margin: 0;
-    }
-
-.numbers {
-      margin-top: 12px;
-    }
-
-    .num-btn {
-
-      padding: 1px 6px;
-    border-radius: var(--radius);
-
-    }
-
-
-    #Internship
-    {
-      height:auto;
-    }
-    .IHero button
-{
-  width:80%;
-  font-size: 0.8rem;
-
-
-}@keyframes buttonMove
-{
-  0%{background-color:var(--secondary-color);;
-  margin-left:2.5%;
-  opacity: 0.1;
-   }
-  40%{background-color:var(--secondary-color);;
-
-  opacity: 0.2;
-   }
-  70%{background-color:var(--hoverbg);
-
-  opacity: 0.6;
-   }
-  100%{background-color:var(--primary-color);
-    margin-left:10%;
-  opacity: 1;
-   }
-}
- #btn1
-{
-  padding: 12px 12px;
-  font-size: 1rem;
-  top: 90%;
-  right:10.5%;
-}
- #btn2
-{
-  padding: 8px 15px;
-  top: 80%;
-  left: 70%;
-  font-size: 1.5rem;
-
-
-}
-#quicklinks
-{
-  height: auto;
-}
-#quicklinks a
-{
-
-  padding:0.2rem 0.2rem;
-  color: var(--bg-light);
-  display: block;
-
-}
-#CopyRight
-{
-  height:100px;
-  font-size:0.7rem;
-
-
-}
 }
 
 @media screen and (min-width: 450px) and (max-width:1100px)
 {
-.Logo
-{
-  height: 100px;
-  width:48vw;
-}.Logo img
-{
-  height:100px;
-  width:100%;
-}#quicklinks a
-{
-  color: var(--bg-light);
-  text-decoration: none;
-  display:inline;
-  padding: 2rem 1rem 1rem 1rem;
+.Logo{ height: 100px;width:48vw;}
+.Logo img{height:100px; width:100%;}
+#quicklinks a{color: var(--bg-light);text-decoration: none; display:inline;padding: 2rem 1rem 1rem 1rem;}
 }
-}
+
 @media screen and (min-width: 701px) and (max-width:1100px)
 {
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  outline: none;
-  border: none;
+
+.topnav a {float: left;display: block;color: #f2f2f2;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 15px;outline: none;border: none;}
+.service-type{width: 24%;margin: 100px 0.5%;}
+.service-type-content{padding: 2px 15px;}
+.service-type-content h2{font-size: 1.0rem;margin-bottom: 5px;}
+.service-type-content li{  padding-left: 10px; font-size:0.8rem;}
 }
-/* section to display my core services in a single frame  */
-.service-type
-{
-  width: 24%;
-  margin: 100px 0.5%;
-}
-.service-type-content
-{
-padding: 2px 15px;
-}
-.service-type-content h2
-{
-  font-size: 1.0rem;
-  margin-bottom: 5px;
-}.service-type-content li{
-  padding-left: 10px;
-  font-size:0.8rem;
-}
-}
+
+
+
 
 

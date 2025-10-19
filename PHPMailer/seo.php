@@ -52,7 +52,7 @@
   "sameAs": [
     "https://www.facebook.com/campusxchange",
     "https://www.instagram.com/campusxchange.in",
-    "https://www.linkedin.com/company/campusxchange"
+    "https://www.linkedin.com/company/campusxchange-services/"
   ],
   "serviceType": [
     "On-page SEO",
@@ -384,6 +384,11 @@ background-color:#60e08f;
 .industrytype:hover{
     background-color: var(--secondary-color);
     transform: scale(1.1);
+  }#seo-tools img {
+  width: 80%;
+  height: auto;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
   }
 
 
@@ -460,6 +465,14 @@ background-color:#60e08f;
     text-align: center;
     line-height: 50px;
     border-radius: 10px;
+  }
+  #seo-tool img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow);
+
+  border-radius: var(--radius);
+
   }
 
   }
@@ -555,9 +568,6 @@ background-color:#60e08f;
 </style>
 </head>
 <body>
-
-   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-     <header><div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
  <section id="home-hero">
   <div class="hero-content" data-aos="fade-right">
@@ -644,6 +654,12 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
   </div>
  </section>
  <br>
+ <!-- SEO Tools Marquee Section -->
+<section id="seo-tools" >
+  <div style="text-align:center; margin-bottom:30px;">
+    <h2 style="font-family:Poppins, sans-serif; font-size:2em; color:#333;">Our Associated SEO Tools</h2>
+    <img src="../assets/Images/seo-tools-use-by-campusxchange.jpeg">
+</section>
 <!-- fotter section  ------------------------------------------------------------------------------------->
 <?php include "../components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->

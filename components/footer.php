@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
   <style>
 /* Footer */
     :root {
@@ -176,13 +181,16 @@ body
   height:55px;
   width:55px;
   z-index:999;
+    box-shadow:0 1px 5px  #141414 inset;
 }
 #movebtn
 {
   top:85%;
-  left:77%;
+  left:70%;
   height:55px;
   width:55px;
+  z-index: 999;
+  box-shadow:0 1px 5px  #141414 inset;
 }#All-reserved
 {
     font-size: 0.8rem;
@@ -201,12 +209,11 @@ body
     <!-- Splash Screen Loader -->
   <div id="loading-screen">
   <div class="loader">
-<img src="https://campusxchange.wuaze.com/assets/Images/taransparent-profile-logo-campusxchange.png" alt="LOGO">
+<img src="https://campusxchange.wuaze.com/assets/Images/taransparent-profile-logo-campusxchange.png" alt="campusxchange-logo" title="splash-logo for page splash">
   </div>
   <div class="loader-text">Loading...</div>
 </div>
 <!-- Splash Screen Loader -->
-<!--End of Tawk.to Script-->
   <!-- animated cursor ------------------->
  <div class="cursor"></div>
 <!-- animated cursor end ---------------->
@@ -221,7 +228,7 @@ body
     <footer class="footer" id="include-footer">
   <div class="footer-div">
   <h2>Grow Smarter with CampusXchange</h2>
-<a href="#" style="text-decoration: none; cursor:alias; color: rgb(155, 164, 178);"> CampusXchange, we're building a space where you learn, create, and grow — with expert notes, hands-on projects, internships, and mentorship. Whether you're a student, freelancer, or startup, this is where your journey to smarter, real-world success begins.</a>
+<a style="text-decoration: none; cursor:alias; color: rgb(155, 164, 178);"> CampusXchange, we're building a space where you learn, create, and grow — with expert notes, hands-on projects, internships, and mentorship. Whether you're a student, freelancer, or startup, this is where your journey to smarter, real-world success begins.</a>
 
 <a href="tel:+91915576625" style="font-size:14px;"><i class="fa-solid fa-phone"></i> +919155726625</a>
 <a href="mailto:campusxchangeservices@gmail.com" style="font-size:12.5px;"><i class="fa-solid fa-envelope"></i> campusxchangeservices@gmail.com </a>
@@ -263,15 +270,15 @@ body
 </div>
  <div class="footer-div">
       <h2><i class="fa-solid fa-handshake"></i> Social Links</h2>
-      <a href="https://www.linkedin.com/company/campusxchange" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.linkedin.com/company/campusxchange-services/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://www.instagram.com/campusxchange_services/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
       <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
       <a href="https://facebook.com/campusxchangeservices" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
       <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
       <h2><i class="fa-solid fa-file-shield"></i> Policy</h2>
-      <a href="/privacy-policyandterms"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
-      <a href="/privacy-policyandterms"><i class="fa-solid fa-comments"></i> Terms & Conditions</a>
-      <a href="/sitemap"><i class="fa-solid fa-route"></i> Sitemap</a>
+      <a href="https://campusxchange.wuaze.com/privacy-policyandterms"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
+      <a href="https://campusxchange.wuaze.com/privacy-policyandterms"><i class="fa-solid fa-comments"></i> Terms & Conditions</a>
+      <a href="https://campusxchange.wuaze.com/sitemap"><i class="fa-solid fa-route"></i> Sitemap</a>
     </div>
   <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google-business-map"></iframe></div>
  </footer>

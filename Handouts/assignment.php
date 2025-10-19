@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Programming & AI Study Notes — Free PDFs & Study Guides | CampusXchange</title>
   <meta name="title" content="Programming & AI Study Notes — Free PDFs & Study Guides | CampusXchange">
-  <meta name="description" content="CampusXchange offers free, exam-ready notes and study guides for programming, AI, data science, web dev, and ML. Easily understandable, concise, and student-focused.">
+  <meta name="description" content="CampusXchange offers free, exam-ready assignments and study guides for programming, AI, data science, web dev, and ML. Easily understandable, concise, and student-focused.">
+  <meta name="keywords" content="programming assignments, AI study guides, free programming PDFs, data science assignments, web development study material, machine learning assignments, student resources, exam preparation, coding assignments, tech study guides">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/assignment/">
   <!-- Open Graph -->
@@ -46,10 +47,7 @@
 </script>
 </head>
 <body>
-   <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
-     <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div>
-  </header>
+<!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
 <?php include "../components/header.php" ?>
 <br>
 <main>
@@ -73,18 +71,18 @@
   <p>Click on a subject below and instantly connect with our team via WhatsApp. We'll deliver your assignment just the way you want it!</p>
 <br>
   <div class="assignment-buttons">
-    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="_blank">C Programming</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">C Programming</a>
 
-    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="_blank">Web Technology</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">Web Technology</a>
 
-    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="_blank">DSA using C++</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">DSA using C++</a>
 
-    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="_blank">DBMS</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">DBMS</a>
 
-    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" target="_blank">PHP</a>
+    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">PHP</a>
   </div>
   <br>
-   <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20work%20on%20my%20Assignment" target="_blank">Request for custom Assignments👋</a>
+   <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20work%20on%20my%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">Request for custom Assignments👋</a>
 
 </section>
 

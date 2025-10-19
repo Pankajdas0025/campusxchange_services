@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <style>
-/* Container for map with shadow, border radius and responsive */
-.map-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px; /* Max width */
-    height: 450px; /* Default height */
-    margin: 30px auto; /* Center align */
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
 }
 
-/* Hover effect */
-.map-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+.marquee {
+  display: flex;
+  width: calc(250px * 12); /* Adjust according to number of items */
+  animation: marquee 20s linear infinite;
 }
 
-/* Make iframe fill container */
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    filter: contrast(1.05) brightness(1.05); /* Slight enhancement */
-    transition: filter 0.3s;
+.marquee-item {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
 }
 
-/* Optional: Hover effect on iframe */
-.map-container:hover iframe {
-    filter: contrast(1.1) brightness(1.1);
+.marquee-item img {
+  max-height: 80px;
+  object-fit: contain;
 }
 
-/* Optional: Floating "Visit Us" badge */
-.map-badge {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background: #ff4b2b;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 12px;
-    font-weight: bold;
-    font-family: sans-serif;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.map-badge:hover {
-    background: #ff416c;
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 </style>
+
 </head>
 <body>
+<!-- SEO Tools Marquee Section -->
+<section id="seo-tools" style="padding:50px 0; background:#f9f9f9;">
+  <div style="text-align:center; margin-bottom:30px;">
+    <h2 style="font-family:Poppins, sans-serif; font-size:2em; color:#333;">Our Associated SEO Tools</h2>
+    <p style="color:#666; font-size:1.1em;">We leverage the best SEO tools to maximize your online presence.</p>
+  </div>
 
-<div id="map" style="height:450px;width:100%;border-radius:20px;"></div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAP6cQIgGzkkLB322hNjjqSGh0jTNqqtw"></script>
-<script>
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 26.1628517, lng: 87.7733601 }, // CampusXchange location
-    zoom: 18,
-    styles: [ /* Optional: Add your custom map styles here */ ],
-  });
+  <div class="marquee-container">
+    <div class="marquee">
+        <div class="marquee-item">
+        <img src="https://besttech2earnonline.com/wp-content/uploads/2020/09/ubersuggest-logo-1.png" alt="Ubersuggest" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.semrush.com/site/static/images/semrush-logo-small.881644e56a14347680f7.svg" alt="SEMrush" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.pikpng.com/pngl/m/127-1270624_download-seo-moz-logo-clipart.png" alt="Moz" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.howtobuysaas.com/wp-content/uploads/2020/10/edd8a55e287711a6db07194cdd6495df.png" alt="SEOptimer" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://smallseotools.com/webimages/logo.svg" alt="Small SEO Tools" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://cdn.techjockey.com/web/assets/images/techjockey/products/25143_25143_Sitecheckerlogo.jpg" alt="Small SEO Tools" />
+      </div>
+          <div class="marquee-item">
+        <img src="https://andisites.com/wp-content/uploads/2023/01/Google-Search-Console-WordPress.png" alt="Small SEO Tools" />
+      </div>
 
-  // Marker for CampusXchange
-  const marker = new google.maps.Marker({
-    position: { lat: 26.1628517, lng: 87.7733601 },
-    map: map,
-    title: "CampusXchange Services",
-    icon: "https://i.imgur.com/marker.png" // optional custom icon
-  });
 
-  const infoWindow = new google.maps.InfoWindow({
-    content: "<b>CampusXchange Services</b><br>Best tech and academic services!"
-  });
 
-  marker.addListener("click", () => {
-    infoWindow.open(map, marker);
-  });
-</script>
+      <!-- Repeat logos to create a continuous effect -->
+      <div class="marquee-item">
+        <img src="https://besttech2earnonline.com/wp-content/uploads/2020/09/ubersuggest-logo-1.png" alt="Ubersuggest" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.semrush.com/site/static/images/semrush-logo-small.881644e56a14347680f7.svg" alt="SEMrush" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.pikpng.com/pngl/m/127-1270624_download-seo-moz-logo-clipart.png" alt="Moz" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://www.howtobuysaas.com/wp-content/uploads/2020/10/edd8a55e287711a6db07194cdd6495df.png" alt="SEOptimer" />
+      </div>
+      <div class="marquee-item">
+        <img src="https://smallseotools.com/webimages/logo.svg" alt="Small SEO Tools" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 </body>
 </html>

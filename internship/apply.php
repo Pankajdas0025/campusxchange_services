@@ -9,9 +9,9 @@ include "../src/config.php";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Internship Apply - CampusXchange</title>
-  <meta name="title" content="Internship Apply - CampusXchange">
+  <meta name="title" content="Internship Apply - CampusXchange ">
   <meta name="description" content="Start your career journey with CampusXchange internships. Apply now for skill-based internship opportunities that help you gain experience and grow professionally.">
-  <meta name="keywords" content="internship apply, student internships, CampusXchange internships, apply internship online, career opportunities, skill development">
+  <meta name="keywords" content="internship apply, student internships, CampusXchange internships, apply internship online, career opportunities, skill development , web development internship, marketing internship, tech internships, internship programs, professional growth">
   <meta name="author" content="CampusXchange"/>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://campusxchange.wuaze.com/internship/apply">
@@ -132,9 +132,6 @@ height: auto;
 </style>
 </head>
 <body>
-<header>
-<div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-</header>
 <?php include "../components/header.php" ?>
 <br>
 <!-- Upcoming Batch section  ----------------------->

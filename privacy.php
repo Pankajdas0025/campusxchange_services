@@ -64,7 +64,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      color: #6366f1;
+      color:var(--primary-color);
     }
 
     section.policies h3 {
@@ -74,7 +74,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      color: #4f46e5;
+      color:var(--primary-color);
     }
 
     section.policies p {
@@ -114,13 +114,7 @@
   </style>
 </head>
 <body>
-
-<header>
-  <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div>
-</header>
-
 <?php include "components/header.php" ?>
-
 <!-- Combined Privacy Policy & Terms Section -->
 <section class="policies">
   <div class="container">

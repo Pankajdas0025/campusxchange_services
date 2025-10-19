@@ -34,6 +34,9 @@ function getLikes($conn, $blog_id){
     }
     return 0;
 }
+// session_unset();
+// session_reset();
+// session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -83,11 +86,11 @@ function getLikes($conn, $blog_id){
     "name": "CampusXchange",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://campusxchange.in/assets/favicon_io/favicon-32x32.png"
+      "url": "https://campusxchange.wuaze.com/assets/favicon_io/favicon-32x32.png"
     }
   },
   "mainEntityOfPage": "https://campusxchange.in/blogs",
-  "image": "https://campusxchange.in/assets/Images/og-image/og-all.jpeg"",
+  "image": "https://campusxchange.wuaze.com/assets/Images/og-image/og-all.jpeg"",
   "datePublished": "2025-10-13",
   "description": "Explore how Artificial Intelligence is reshaping student learning through personalized education, instant feedback, and smart tools for modern learners."
 }
@@ -121,30 +124,27 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
 </style>
 </head>
 <body>
-<header>
-    <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-</header>
 <?php include "../components/header.php" ?>
-
 <section class="container">
 <main>
     <h2>New Blogs</h2>
-
-    <!-- Blog 1 template for each new blog -->
-    <div class="blog-item">
-        <div class="blogmainImg">
-            <img src="../assets/Images/development-services.jpg" alt="AI in Education" title="How AI is Transforming Student Learning">
-        </div>
-        <h3>How AI is Transforming Student Learning</h3>
-        <p>Explore how Artificial Intelligence is reshaping student learning through personalized education, instant feedback, and smart tools for modern learners...</p>
-        <a href="blogs/blog-ai-student-learning.php" class="read-more">Read More</a>
-        <div class="like-section">
-            <button class="like-btn" data-blog="blog-ai-student-learning"
-            <?php echo (isset($_SESSION['liked_blogs']) && in_array('blog-ai-student-learning', $_SESSION['liked_blogs'])) ? 'disabled' : ''; ?>>
-            👍 Like (<span class="like-count" id="like-blog-ai-student-learning"><?php echo getLikes($conn, "blog-ai-student-learning"); ?></span>)
-            </button>
-        </div>
+<!-- ----------1. Add new blog--------------2. add in to blogs folder----------------------------3. add image--------------------------------------------------------------- -->
+<div class="blog-item">
+    <div class="blogmainImg">
+        <img src="../assets/Images/ai-tools-2025..jpeg" alt="AI Tools 2025" title="Top AI Tools for Developers and Students in 2025">
     </div>
+    <h3>Top AI Tools for Developers and Students in 2025</h3>
+    <p>Explore the best AI-powered tools that boost productivity, automate workflows, and simplify complex programming tasks in 2025...</p>
+    <a href="blogs/blog-top-ai-tools-2025.php" class="read-more">Read More</a>
+    <div class="like-section">
+        <button class="like-btn" data-blog="blog-top-ai-tools-2025"
+        <?php echo (isset($_SESSION['liked_blogs']) && in_array('blog-top-ai-tools-2025', $_SESSION['liked_blogs'])) ? 'disabled' : ''; ?>>
+        👍 Like (<span class="like-count" id="like-blog-top-ai-tools-2025"><?php echo getLikes($conn, "blog-top-ai-tools-2025"); ?></span>)
+        </button>
+    </div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
 
 
 </main>

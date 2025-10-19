@@ -302,9 +302,6 @@ include "src/config.php";
 </style>
 <body>
    <!--About page Header and navbar ----------------------------------------------------------------------------------------->
-   <header style="border-radius: 0;">
-      <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-   </header>
    <?php  include "components/header.php" ?>
 
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
@@ -327,7 +324,7 @@ include "src/config.php";
     </div>
   </div>
   <div class="contact-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441177.8354025553!2d87.56241976601278!3d25.974216198955848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56d32defea4c3%3A0x26474b27ef370457!2sprimary%20school%20Jhangidighi!5e1!3m2!1sen!2sin!4v1754764411570!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CampusXchange Location"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CampusXchange Location"></iframe>
   </div>
   </section>
   <br>

@@ -14,6 +14,11 @@ RewriteRule ^handouts/notes$ handouts/notes.php [L]
 RewriteRule ^handouts/blog$ handouts/blog.php [L]
 RewriteRule ^handouts/assignment$ handouts/assignment.php [L]
 
+
+
+
+
+
 # Clean URLs for services subfolder
 RewriteRule ^services/web-development$ services/webdevelopment.php [L]
 RewriteRule ^services/seo$ services/seo.php [L]
@@ -46,10 +51,6 @@ RewriteRule . /Campusxchange/404.php [L]
 
 # Set proper 404 status for Apache
 ErrorDocument 404 /Campusxchange/404.php
-
-
-
-
 
 
 

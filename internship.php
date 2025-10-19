@@ -39,7 +39,6 @@
 
 </head>
 <body>
-<header><div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "components/header.php" ?>
 <br>
 <main>

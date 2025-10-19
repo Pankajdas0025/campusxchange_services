@@ -8,7 +8,7 @@
   <title>Verification -  CampusXchange Secure Access</title>
   <meta name="title" content="Verification -  CampusXchange Secure Access">
   <meta name="description" content="Secure your CampusXchange experience with account verification. Verify your internship certificate.">
-  <meta name="keywords" content="account verification, secure login, CampusXchange verification, student account security, verify identity, campusxchange certificate-verification">
+  <meta name="keywords" content="Certificate verification, CampusXchange verification, student account security, verify internship certificate, campusxchange certificate-verification">
   <meta name="author" content="CampusXchange"/>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://campusxchange.wuaze.com/internship/verification">
@@ -54,7 +54,7 @@
     margin: 2rem auto 2rem auto;
     box-shadow: 0 2px 16px rgba(99,102,241,0.08);
   }
-  .verify-section h2 {
+  .verify-section h1 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 1.5rem;
@@ -101,12 +101,10 @@
  <div class="cursor"></div>
 <!-- animated cursor end ---------------->
  <!-- header section  -------------------------------------l̥------------------->
-<header>
-    <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div></header>
 <?php include "../components/header.php" ?>
  <!-- header section end here-------------------------------------------------------->
 <section class="verify-section">
-  <h2> <i class="fa-solid fa-file"></i> Internship Verification </h2>
+  <h1> <i class="fa-solid fa-file"></i> Internship Certificate Verification </h1>
   <form class="verify-form" id="verifyForm" action="verifiedintern.php" method="GET">
     <input type="text" id="internId" name="internid" placeholder="Enter Internship ID" maxlength="l5" required>
     <button type="submit"  onclick="return ChekID()">Verify</button>

@@ -7,10 +7,10 @@
   <title>About CampusXchange - Education, Mentorship & Web Services</title>
   <meta name="title" content="About CampusXchange - Education, Mentorship & Web Services">
   <meta name="description" content="Discover CampusXchange: your platform for student support, mentorship, web development, and SEO services. Empowering learners and businesses online.">
-  <meta name="keywords" content="CampusXchange about, student support, mentorship platform, web development services, SEO services, education platform, online learning, CampusXchange story, CampusXchange founder">
-  <meta name="author" content="CampusXchange"/>
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://campusxchange.wuaze.com/about" />
+  <meta name="keywords" content="CampusXchange about, student support, mission of campusxchange, web development services by campusxchange, SEO services by campusxchange , CampusXchange story, CampusXchange founder , CampusXchange mentorship programs">
+  <meta name="author" content="CampusXchange">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://campusxchange.wuaze.com/about">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -73,7 +73,7 @@
     .about-hero {
       background:linear-gradient(350deg,  var(--primary-color) ,#f43f5e);
       color: #fff;
-      padding: 3rem 2rem;
+      padding: 3rem 1.5rem;
       text-align: center;
       width: 90%;
       margin: 0 5%;
@@ -81,9 +81,9 @@
       box-shadow: var(--shadow);
     }
     .about-hero h1 {
-      font-size: 2.25rem;
+      font-size: 1.75rem;
       margin-bottom: 1rem;
-      color: rgb(218, 209, 209);
+      color: rgba(255, 255, 255, 1);
     }
     .about-hero p {
       font-size: 1.2rem;
@@ -266,38 +266,32 @@
   </style>
 </head>
 <body>
-   <!--About page Header and navbar ----------------------------------------------------------------------------------------->
-   <header>
-      <div class="Logo"><img src="assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-   </header>
+<!--About page Header and navbar ----------------------------------------------------------------------------------------->
 <?php include "components/header.php" ?>
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
 <br>
   <!-- Unique About Us Hero Section -->
   <section class="about-hero">
-    <h1>Empowering Learners, Shaping Futures</h1>
+    <h1>About Campusxchange </h1>
     <p>CampusXchange is not just a platform—it's a movement to transform education and career growth. We blend creativity, technology, and mentorship to help you unlock your true potential.</p>
   </section>
 
   <!-- Founder & CEO Section -->
   <section class="founder-section">
     <div class="founder-img">
-      <img src="assets/Images/pankaj-kumar-das.jpg" alt="Pankaj Kumar Das, Founder & CEO">
+      <img src="assets/Images/pankaj-kumar-das.jpg" alt="Pankaj Kumar Das, Founder & CEO" title="Pankaj kumar Das founder of Campusxchange">
     </div>
     <div class="founder-bio">
       <h2>Pankaj Kumar Das</h2>
       <h4>Founder & CEO</h4>
       <p>Pankaj Kumar is a full-stack web developer, educator, and entrepreneur who founded CampusXchange to bridge the gap between academic learning and real-world skills. With expertise in HTML, CSS, JavaScript, and PHP, he builds innovative web solutions while guiding students, freelancers, and startups to achieve their goals. His passion for technology, mentorship, and problem-solving drives CampusXchange’s mission to empower the next generation of digital professionals.</p>
 <br>
-    <a href="#"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
-    <a href="https://www.instagram.com/pankajdas_0025/"> <span style="background:linear-gradient(to right, #6228d7,#ee2a7b,#f9ce34); padding:  5px; color: #fff;"> Instagram <i class="fa-brands fa-square-instagram"></i></span></a>
-    <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#0077B5; padding: 5px; color: #fff;"> Linkedin <i class="fa-brands fa-linkedin"></i></span></a>
+    <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
     <a href="https://pankajkumardas.wuaze.com/"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;"> Portfolio <i class="fa-solid fa-globe"></i></span></a>
     <a href="https://wa.me/91915576625?text=Hello%20Pankaj%20!"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a>
 
     </div>
   </section>
-
   <!-- Why Choose Us Feature Grid -->
   <section class="feature-grid">
     <h2>Why Choose Us?</h2>

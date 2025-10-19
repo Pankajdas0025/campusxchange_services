@@ -8,10 +8,10 @@ include "../src/config.php";
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange</title>
+  <title>Programming, AI & ML Notes - Free and paid PDFs & Study Guides | CampusXchange</title>
   <meta name="title" content="Programming, AI & ML Notes - Free PDFs & Study Guides | CampusXchange">
   <meta name="description" content="CampusXchange Notes — Programming, AI, Data Science, Web Dev, ML notes curated for students and developers. Free, easy to read, and exam-ready.">
-  <meta name="keywords" content="programming notes for students, python data science notes free, machine learning cheat sheet pdf, AI notes for beginners, web development notes 2025, ML interview prep notes, DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
+  <meta name="keywords" content="programming notes for students,tech notes ,tmu notes,tmu study material ccsit ,tmu study material FOE , DSA notes programming, AI ML full course notes, data science project notes, python machine learning notes">
   <meta name="author" content="CampusXchange"/>
   <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/notes">
   <!-- Open Graph / Facebook -->
@@ -41,10 +41,7 @@ include "../src/config.php";
 
 </head>
 <body>
-   <!--Note page Header and navbar ----------------------------------------------------------------------------------------->
-     <header>
-  <div class="Logo"><img src="../assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-  </header>
+<!--Note page Header and navbar ----------------------------------------------------------------------------------------->
 <?php include "../components/header.php" ?>
  <!--Note page Header and navbar  end ----------------------------------------------------------------------------------------->
 
@@ -54,13 +51,12 @@ include "../src/config.php";
   <br>
  <section  id="NotesContent">
       <br>
-    <h1>Notes</h1>
-    <p>* Technical Study Notes</p>
+    <h1>Programming Notes PDFs</h1>
+    <p>* Technical Study Notes | Tech notes</p>
     <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <input type="text" name="search" placeholder="eg. Datascience,PHP,SQL" style="font-size:16px; font-family:'Poppins', sans-serif;">
     <button type="submit" class="btn btn-info btn-lg"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
     </form>
-
        <br>
        <br>
 <!------Notes section start from backend   -------------------------------------------------------------->
@@ -155,7 +151,7 @@ else
 <section class="block notes-section" data-aos="fade-up" data-aos-duration="1000">
   <h2><i class="fa-solid fa-book-open-reader"></i> Tech Notes That Actually Make Sense</h2>
   <p>
-    Learning technology doesn’t have to feel confusing. At <strong>CampusXchange</strong>, we’ve carefully created
+    Learning technology doesn't have to feel confusing. At <strong>CampusXchange</strong>, we've carefully created
     <strong>clear, concise, and practical notes</strong> for trending technologies — from <strong>Python</strong> to <strong>Machine Learning</strong>,
     and <strong>Web Development</strong> to <strong>Artificial Intelligence</strong>.
   </p>
@@ -189,7 +185,7 @@ else
 This combo pack covers everything you need to become an industry-ready web developer — from frontend to backend, with real-world project insights and interview preparation materials.</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="#" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
       </div>
     </div>
     <div class="paid-note-box">
@@ -198,7 +194,7 @@ This combo pack covers everything you need to become an industry-ready web devel
 Perfect for students, interns, and aspiring developers, this combo gives you a clear and practical understanding of how data is stored, managed, and accessed efficiently.</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="#" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
       </div>
     </div>
     <div class="paid-note-box">
@@ -207,13 +203,13 @@ Perfect for students, interns, and aspiring developers, this combo gives you a c
 This combo is designed for students, coders, and job aspirants who want to build a strong foundation in Data Structures and Algorithms using the C++ language..</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="#" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
       </div>
     </div>
   </div>
 </section>
 </main>
-<a href="Internship-program" title="Click here.."><button id="btn1">👋Join Our Internship Program</button></a>
+<a href="https://campusxchange.wuaze.com/Internship-program" title="Best Internship Program by campusxchange"><button id="btn1">👋Join Our Internship Program</button></a>
 <button id="btn2" onclick="RemoveIpop()">&times;</button>
 
 

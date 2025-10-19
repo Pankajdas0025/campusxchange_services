@@ -115,9 +115,6 @@ http_response_code(404);
 </head>
 <body>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-   <header>
-  <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" title="CampusXchange Logo"></div>
-   </header>
 
 <br>
 

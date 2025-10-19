@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
  <style>
     :root {
 
@@ -22,6 +22,20 @@
   --border:none;
 }
 /* header */
+
+/* header for all pages  */
+header
+{
+
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* try higher */
+  background-color: var(--primary-color);
+
+
+}
+.Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}
+.Logo img{ height:100px; width:100%;}
 body
 {
       font-family: var(--font-main);
@@ -123,7 +137,19 @@ body
 @media screen and (max-width:700px)
 {
 
-
+  /* For all Mobile  Navbar ----------------------------------------------------------------------------------------------------------------------------*/
+.Logo
+{
+  height: 80px;
+  width: 90%;
+  margin: auto 5%;
+  background-color:transparent;
+  padding: 0;
+}.Logo img
+{
+  height:80px;
+  width:100%;
+}
   .topnav {
 
   height:auto;
@@ -172,15 +198,17 @@ body
 <body>
 
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
+
+     <header><div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div></header>
 <div class="topnav" id="myTopnav">
-  <a href="http://localhost/Campusxchange/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
+  <a href="https://campusxchange.wuaze.com/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
     <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/services/web-development" title="Web Development From CampusXchange">Website Development</a>
-      <a href="http://localhost/Campusxchange/services/seo">SEO</a>
+      <a href="https://campusxchange.wuaze.com/services/web-development" title="Web Development From CampusXchange">Website Development</a>
+      <a href="https://campusxchange.wuaze.com/services/seo">SEO</a>
     </div>
   </div>
   <div class="dropdown">
@@ -188,21 +216,21 @@ body
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/handouts/notes" title="Technical Notes">Notes</a>
-      <a href="http://localhost/Campusxchange/handouts/blog" title="Scripted Blogs">Blogs</a>
-      <a href="http://localhost/Campusxchange/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
+      <a href="https://campusxchange.wuaze.com/handouts/notes" title="Technical Notes">Notes</a>
+      <a href="https://campusxchange.wuaze.com/handouts/blog" title="Scripted Blogs">Blogs</a>
+      <a href="https://campusxchange.wuaze.com/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
     </div>
   </div>
  <div class="dropdown">
     <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/internship/apply">Apply </a>
-      <a href="http://localhost/Campusxchange/internship/verification">Verification</a>
-      <a href="http://localhost/Campusxchange/internship-program">Internship-program</a>
+      <a href="https://campusxchange.wuaze.com/internship/apply">Apply </a>
+      <a href="https://campusxchange.wuaze.com/internship/verification">Verification</a>
+      <a href="https://campusxchange.wuaze.com/internship-program">Internship-program</a>
     </div>
   </div>
-      <a href="http://localhost/Campusxchange/about"><i class="fa-solid fa-bullseye"></i>About</a>
-          <a href="http://localhost/Campusxchange/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
+      <a href="https://campusxchange.wuaze.com/about"><i class="fa-solid fa-bullseye"></i>About</a>
+          <a href="https://campusxchange.wuaze.com/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
