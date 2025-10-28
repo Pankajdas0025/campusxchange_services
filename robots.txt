@@ -1,24 +1,17 @@
+# *
 User-agent: *
-Disallow: /
-# Robots.txt for CampusXchange
-# Last updated: 2025-10-12
+Allow: /
 
-# Allow all search engines full access to public pages
-User-agent:
+
+# *
+User-agent: *
+Disallow: /404
 Disallow: /dashboard/admin/
-
-# Block crawling of specific files
 Disallow: /login.php
 
-# Allow crawling of CSS, JS, images
-Allow: /assets/
-Allow: /styles/
-Allow: /handouts/
-Allow: /script.js
-Allow: /style.css
-Allow: /FormValidation.js
-Allow: /schema-markup.js
-Allow: /manifest.json
 
-# Sitemap location
-Sitemap: https://www.campusxchange.in/sitemap.xml
+# Host
+Host: https://campusxchange.wuaze.com/
+
+# Sitemaps
+Sitemap: https://campusxchange.wuaze.com/sitemap.xml

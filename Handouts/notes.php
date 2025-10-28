@@ -31,7 +31,6 @@ include "../src/config.php";
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <link rel="stylesheet" href="../styles/note.css" type="text/css">
-<link rel="stylesheet" href="../styles/animation.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
@@ -105,7 +104,7 @@ else
   $result = $conn->query("SELECT * FROM notes ORDER BY created_at DESC");
   $count = 0;
 
-    while ($count < 3 && $row = $result->fetch_assoc()) {
+    while ($count < 4 && $row = $result->fetch_assoc()) {
 
        $originalLink = $row['noteLink'];
 
@@ -175,39 +174,65 @@ else
   </a>
 </section>
 
-<!-- paid Notes section -->
+  <!-- Paid Notes Section -->
 <section class="paid-notes-section">
   <h2>Premium Notes</h2>
   <div class="paid-notes-list">
+
+    <!-- Note 1 -->
     <div class="paid-note-box">
+      <div class="note-img">
+        <img src="../assets/Notes/Full-stack-notes.gif" alt="Full Stack Web Development Notes" onclick="openPreview(this)">
+        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+      </div>
       <h3>Master Full Stack Web Development with PHP <br>All-in-One Notes Combo!</h3>
       <p>Take your web development skills to the next level with our Full Stack with PHP Combo Notes, exclusively from CampusXchange.
-This combo pack covers everything you need to become an industry-ready web developer — from frontend to backend, with real-world project insights and interview preparation materials.</p>
+      This combo pack covers everything you need to become an industry-ready web developer — from frontend to backend, with real-world project insights and interview preparation materials.</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/p/DQVJz0ljEbB/" class="buy-btn">Buy Now</a>
       </div>
     </div>
+
+    <!-- Note 2 -->
     <div class="paid-note-box">
+      <div class="note-img">
+        <img src="../assets/Notes/Full-stack-notes.gif" alt="DBMS & SQL Notes" onclick="openPreview(this)">
+        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+      </div>
       <h3>Master Database Management & SQL Queries Like a Pro!</h3>
       <p>Understand the backbone of every modern application — Database Management Systems (DBMS) and Structured Query Language (SQL) — with this exclusive CampusXchange Notes Combo.
-Perfect for students, interns, and aspiring developers, this combo gives you a clear and practical understanding of how data is stored, managed, and accessed efficiently.</p>
+      Perfect for students, interns, and aspiring developers, this combo gives you a clear and practical understanding of how data is stored, managed, and accessed efficiently.</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/p/DQVJz0ljEbB/" class="buy-btn">Buy Now</a>
       </div>
     </div>
+
+    <!-- Note 3 -->
     <div class="paid-note-box">
+      <div class="note-img">
+        <img src="../assets/Notes/Full-stack-notes.gif" alt="DSA & C++ Notes" onclick="openPreview(this)">
+        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+      </div>
       <h3>DSA & C++ - Complete Notes Combo</h3>
       <p>Unlock the power of problem-solving and programming efficiency with our DSA & C++ Notes Combo, exclusively available on CampusXchange.
-This combo is designed for students, coders, and job aspirants who want to build a strong foundation in Data Structures and Algorithms using the C++ language..</p>
+      This combo is designed for students, coders, and job aspirants who want to build a strong foundation in Data Structures and Algorithms using the C++ language.</p>
       <div class="paid-note-footer">
         <span class="note-price">₹99</span>
-        <a href="https://www.instagram.com/campusxchange_services/" title="Buy and explore" class="buy-btn">Buy Now</a>
+        <a href="https://www.instagram.com/p/DQVJz0ljEbB/" class="buy-btn">Buy Now</a>
       </div>
     </div>
+
   </div>
 </section>
+
+<!-- Image Preview Modal -->
+<div id="imgModal" class="img-modal" onclick="closePreview()">
+  <span class="close-btn" onclick="closePreview()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
 </main>
 <a href="https://campusxchange.wuaze.com/Internship-program" title="Best Internship Program by campusxchange"><button id="btn1">👋Join Our Internship Program</button></a>
 <button id="btn2" onclick="RemoveIpop()">&times;</button>
@@ -233,6 +258,17 @@ function RemoveIpop()
   document.querySelector("main").style.opacity = "1";
   document.querySelector("main").style.pointerEvents ="fill";
 }
+
+
+function openPreview(img) {
+  document.getElementById("imgModal").style.display = "block";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closePreview() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
 
 </script>
 <!-- fotter section  --------------------------------------------------------------------------------->

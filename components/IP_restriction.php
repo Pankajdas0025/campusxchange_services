@@ -1,6 +1,7 @@
 <?php
 include "../src/conn.php";
 session_start();
+
 // Simple session-based protection
 if (empty($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
     // Not logged in
@@ -21,8 +22,10 @@ $notesCount = $conn->query("SELECT COUNT(*) as total FROM notes")->fetch_assoc()
 
 
 // Simple IP allow list that works for localhost (IPv4/IPv6) and real public IPs
-$allowed_ips = [
+$allowed_ips =
+[
     "103.183.227.183", // your real public IP (replace)
+    "14.139.238.134",
     "127.0.0.1",       // localhost IPv4 (for local testing)
     "::1"              // localhost IPv6 (your ::1 output)
 ];
@@ -31,7 +34,8 @@ $allowed_ips = [
 $client_ip = $_SERVER['REMOTE_ADDR'];
 
 // If behind proxy (optional), prefer X-Forwarded-For first IP
-if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+if (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+{
     $client_ip = trim(explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'])[0]);
 }
 

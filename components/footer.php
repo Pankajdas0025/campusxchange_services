@@ -218,11 +218,12 @@ body
  <div class="cursor"></div>
 <!-- animated cursor end ---------------->
 <!-- WhatsApp Button -->
-<button id="whatsappbtn" aria-label="WhatsApp Button" style="font-size:28px; color:#00fd5d;  border:none; cursor:pointer;">
+
+<a href="https://wa.me/+919155726625?text=Hello%20CampusXchange%20Services%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer"> <button id="whatsappbtn" aria-label="WhatsApp Button" style="font-size:28px; color:#00fd5d;  border:none; cursor:pointer;">
 <i class="fa-brands fa-whatsapp"></i>
-</button>
+</button></a>
 <!-- Scroll to Top Button -->
-<button id="movebtn" onclick="movetopFun()" aria-label="Scroll to Top" style="font-size:28px; color:#ffffff; border:none; cursor:pointer;">
+<button id="movebtn" aria-label="Scroll to Top" style="font-size:28px; color:#ffffff; border:none; cursor:pointer;">
 <i class="fa-solid fa-arrow-up"></i>
 </button>
     <footer class="footer" id="include-footer">
@@ -283,11 +284,10 @@ body
   <div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google-business-map"></iframe></div>
  </footer>
  <div id="All-reserved"> All rights reserved By: campusxchange &copy; 2025</div>
- <script>
 
+<script>
   // animated cursor --------------------------------------------------------
 var cursor=document.querySelector(".cursor");
-
 document.addEventListener("mousemove",(e)=>
 {
   let x=e.pageX;

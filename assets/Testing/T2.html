@@ -4,96 +4,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-<style>
-.marquee-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background: #fff;
-  padding: 20px 0;
-}
-
-.marquee {
-  display: flex;
-  width: calc(250px * 12); /* Adjust according to number of items */
-  animation: marquee 20s linear infinite;
-}
-
-.marquee-item {
-  flex: 0 0 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 25px;
-}
-
-.marquee-item img {
-  max-height: 80px;
-  object-fit: contain;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-</style>
-
 </head>
 <body>
-<!-- SEO Tools Marquee Section -->
-<section id="seo-tools" style="padding:50px 0; background:#f9f9f9;">
-  <div style="text-align:center; margin-bottom:30px;">
-    <h2 style="font-family:Poppins, sans-serif; font-size:2em; color:#333;">Our Associated SEO Tools</h2>
-    <p style="color:#666; font-size:1.1em;">We leverage the best SEO tools to maximize your online presence.</p>
-  </div>
 
-  <div class="marquee-container">
-    <div class="marquee">
-        <div class="marquee-item">
-        <img src="https://besttech2earnonline.com/wp-content/uploads/2020/09/ubersuggest-logo-1.png" alt="Ubersuggest" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.semrush.com/site/static/images/semrush-logo-small.881644e56a14347680f7.svg" alt="SEMrush" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.pikpng.com/pngl/m/127-1270624_download-seo-moz-logo-clipart.png" alt="Moz" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.howtobuysaas.com/wp-content/uploads/2020/10/edd8a55e287711a6db07194cdd6495df.png" alt="SEOptimer" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://smallseotools.com/webimages/logo.svg" alt="Small SEO Tools" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://cdn.techjockey.com/web/assets/images/techjockey/products/25143_25143_Sitecheckerlogo.jpg" alt="Small SEO Tools" />
-      </div>
-          <div class="marquee-item">
-        <img src="https://andisites.com/wp-content/uploads/2023/01/Google-Search-Console-WordPress.png" alt="Small SEO Tools" />
-      </div>
+<style>
+/* Paid Notes Section */
+.paid-notes-section {
+  width: 80%;
+  margin: 40px 10%;
+  padding: 24px;
+  border-radius: 8px;
+}
 
+.paid-notes-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
 
+.paid-notes-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-      <!-- Repeat logos to create a continuous effect -->
-      <div class="marquee-item">
-        <img src="https://besttech2earnonline.com/wp-content/uploads/2020/09/ubersuggest-logo-1.png" alt="Ubersuggest" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.semrush.com/site/static/images/semrush-logo-small.881644e56a14347680f7.svg" alt="SEMrush" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.pikpng.com/pngl/m/127-1270624_download-seo-moz-logo-clipart.png" alt="Moz" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://www.howtobuysaas.com/wp-content/uploads/2020/10/edd8a55e287711a6db07194cdd6495df.png" alt="SEOptimer" />
-      </div>
-      <div class="marquee-item">
-        <img src="https://smallseotools.com/webimages/logo.svg" alt="Small SEO Tools" />
-      </div>
-    </div>
-  </div>
-</section>
+/* Card */
+.paid-note-box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
 
+.paid-note-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Image Section */
+.note-img {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.note-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.note-img:hover img {
+  transform: scale(1.1);
+}
+
+/* View Demo Button */
+.view-demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.note-img:hover .view-demo {
+  opacity: 1;
+}
+
+.view-demo:hover {
+  background: var(--primary-color);
+}
+
+/* Text */
+.paid-note-box h3 {
+  font-size: 18px;
+  margin: 14px 10px 8px;
+  color: #333;
+}
+
+.paid-note-box p {
+  font-size: 15px;
+  color: #555;
+  margin: 0 10px 12px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.paid-note-footer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.buy-btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .paid-note-box { width: 45%; }
+}
+@media (max-width: 600px) {
+  .paid-note-box { width: 100%; }
+}
+
+/* Modal Preview */
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.img-modal img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 6px;
+  animation: zoomIn 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: var(--secondary-color);
+}
+
+/* Zoom Animation */
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
 
 
 </body>

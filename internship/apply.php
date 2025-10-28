@@ -54,7 +54,7 @@ display: flex;
   border: 1px solid black;
   box-shadow:  0 8px 30px rgba(2,6,23,0.08);
 }
-.box iframe {
+.box img{
   width: 100%;
   height: 100%;
   border: none;
@@ -137,16 +137,16 @@ height: auto;
 <!-- Upcoming Batch section  ----------------------->
 <section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90; margin: auto 5%;">
   <h2 style="margin:0;font-size:2rem;letter-spacing:1px;"><i class="fa-solid fa-calendar-days"></i> Upcoming Batch</h2>
-  <p style="font-size:1.0rem;margin:0.7rem 0 0 0; color:black;">Next internship batch starts <b>September 10, 2025</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
+  <p style="font-size:1.0rem;margin:0.7rem 0 0 0; color:black;">Next internship batch starts <b>Coming soo...</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
 </section>
 <!-- Upcoming Batch section  end here ----------------------->
 <section class="apply-form-section">
-  <div class="box">
+  <div class="box" style="border: none;">
 
-    <iframe src="https://lottie.host/embed/61f2b338-e89e-462f-b6a5-1f8bde8bd31e/ESPJKDEeRZ.lottie"></iframe>
+    <img src="../assets/Images/internship-apply.png"></img>
   </div>
 
-  <div class="block box">
+  <div class="box">
 <h2 style="background-color: #f43f5e; color: #ffffff;"><i class="fa-solid fa-file-signature">  </i>Apply for Internship</h2>
 <form class="apply-form" id="internshipApplyForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
 <input type="text" name="intern_name" id="intern_name" placeholder="Full Name" onchange=" Check_Intername() " required>
@@ -178,7 +178,7 @@ height: auto;
 <option value="Other">Other</option>
 </select>
 <span class="form-error" id="Error_sms"></span>
-<input type="submit" value="Apply">
+<input type="submit" value="Apply" disabled>
 </form>
   </div>
 

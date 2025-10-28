@@ -313,10 +313,10 @@ include "src/config.php";
     <ul>
       <!-- <li><i class="fa-solid fa-location-dot"></i> <strong>Head Office:</strong> Kishanganj, Bihar (855115), India</li>
       <li><i class="fa-solid fa-building"></i> <strong>Branch:</strong> Patna, Bihar (800001), India</li> -->
-      <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> info@campusxchange.com</li>
-      <li><i class="fa-solid fa-phone"></i> <strong>Mobile:</strong> +91 9155726625</li>
-      <li><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> +91 9155726625</li>
-      <li><i class="fa-solid fa-globe"></i> <strong>Website:</strong> www.campusxchange.com</li>
+      <li> <strong>Email:</strong> campusxchangeservices@gmail.com</li>
+      <li> <strong>Mobile:</strong> +91 9155726625</li>
+      <li> <strong>WhatsApp:</strong> +91 9155726625</li>
+      <li> <strong>Website:</strong> www.campusxchange.wuaze.com</li>
     </ul>
     <div class="branch">
       <h4>Business Hours</h4>
@@ -324,7 +324,8 @@ include "src/config.php";
     </div>
   </div>
   <div class="contact-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225514.60613766374!2d87.69908297984767!3d26.13640743705686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760370781433!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CampusXchange Location"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7162.078172298884!2d87.7707852!3d26.1628565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760951798277!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CampusXchange Location"></iframe>
   </div>
   </section>
   <br>

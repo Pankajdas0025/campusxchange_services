@@ -1,5 +1,8 @@
 # Enable mod_rewrite
 RewriteEngine On
+# to redirect if any one open  with www.campusxchange.wuaze.com
+RewriteCond %{HTTP_HOST} ^www\.campusxchange\.wuaze\.com [NC]
+RewriteRule ^(.*)$ https://campusxchange.wuaze.com/$1 [L,R=301]
 
 # Clean URLs for root pages
 RewriteRule ^$ index.php [L]
@@ -13,11 +16,6 @@ RewriteRule ^privacy-policyandterms$ privacy.php [L]
 RewriteRule ^handouts/notes$ handouts/notes.php [L]
 RewriteRule ^handouts/blog$ handouts/blog.php [L]
 RewriteRule ^handouts/assignment$ handouts/assignment.php [L]
-
-
-
-
-
 
 # Clean URLs for services subfolder
 RewriteRule ^services/web-development$ services/webdevelopment.php [L]
@@ -38,33 +36,56 @@ RewriteRule ^dashboard/admin$ dashboard/admin.php [L]
 #sitemap
 RewriteRule ^sitemap$ sitemap.php [L]
 
-
 # Prevent redirect loop for 404.php itself
-RewriteCond %{REQUEST_URI} !^/Campusxchange/404\.php$
+RewriteCond %{REQUEST_URI} !^/404\.php$
 
 # If requested file or directory does NOT exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Redirect all non-existent URLs to 404.php
-RewriteRule . /Campusxchange/404.php [L]
+RewriteRule . /404.php [L]
 
 # Set proper 404 status for Apache
-ErrorDocument 404 /Campusxchange/404.php
+ErrorDocument 404 /404.php
 
 
+# =========================
+# 🔒 CAMPUSXCHANGE SECURITY HEADERS
+# =========================
+<IfModule mod_headers.c>
 
+    # Prevent MIME-type sniffing
+    Header set X-Content-Type-Options "nosniff"
 
+    # Protect from clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
 
-# # Prevent redirect loop for 404.php itself
-# RewriteCond %{REQUEST_URI} !^/404\.php$
+    # Basic XSS protection
+    Header set X-XSS-Protection "1; mode=block"
 
-# # If requested file or directory does NOT exist
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
+    # Hide detailed referrer info (fixes Missing Referrer Header)
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
 
-# # Redirect all non-existent URLs to 404.php
-# RewriteRule . /404.php [L]
+    # Restrict browser features (optional, safe defaults)
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 
-# # Set proper 404 status for Apache
-# ErrorDocument 404 /404.php
+    # Prevent content being loaded into iframes from other sites
+    Header set Cross-Origin-Embedder-Policy "require-corp"
+    Header set Cross-Origin-Opener-Policy "same-origin"
+    Header set Cross-Origin-Resource-Policy "same-origin"
+
+    # Optional: enable basic CSP (Content Security Policy)
+    Header set Content-Security-Policy "default-src 'self' https: data:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; frame-ancestors 'self';"
+
+</IfModule>
+
+# =========================
+# 🚫 Prevent Directory Listing
+# =========================
+Options -Indexes
+
+# Enable CORS for all resources
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

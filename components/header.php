@@ -199,7 +199,7 @@ body
 
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
 
-     <header><div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="CampusXchange Logo"></div></header>
+<header><div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div></header>
 <div class="topnav" id="myTopnav">
   <a href="https://campusxchange.wuaze.com/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">

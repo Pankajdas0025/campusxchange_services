@@ -46,7 +46,7 @@ overflow: hidden;
 .maintext h1{
     font-size:2rem;
     font-weight: bold;
-       color: white;
+    color: white;
 
 }
 .maintext p
@@ -658,7 +658,7 @@ padding: 10%;
 
 }
 .maintext h1{
-    font-size:1.5rem;
+    font-size:1.25rem;
     font-weight: bold;
 
 }.maintext h1 div
