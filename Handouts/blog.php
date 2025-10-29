@@ -76,7 +76,7 @@ function getLikes($conn, $blog_id){
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "How AI is Transforming Student Learning",
+  "headline": "SEO & Content Strategy in October 2025: Why Human-Centred Content Wins",
   "author": {
     "@type": "Organization",
     "name": "CampusXchange"
@@ -92,7 +92,7 @@ function getLikes($conn, $blog_id){
   "mainEntityOfPage": "https://campusxchange.in/blogs",
   "image": "https://campusxchange.wuaze.com/assets/Images/og-image/og-all.jpeg"",
   "datePublished": "2025-10-13",
-  "description": "Explore how Artificial Intelligence is reshaping student learning through personalized education, instant feedback, and smart tools for modern learners."
+  "description": "Explore how human-focused SEO and authentic storytelling are reshaping content strategies in 2025 — where real connection beats automation..."
 }
 </script>
 <style>
@@ -131,15 +131,15 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
 <!-- ----------1. Add new blog--------------2. add in to blogs folder----------------------------3. add image--------------------------------------------------------------- -->
 <div class="blog-item">
     <div class="blogmainImg">
-        <img src="../assets/Images/ai-tools-2025..jpeg" alt="AI Tools 2025" title="Top AI Tools for Developers and Students in 2025">
+        <img src="../assets/Images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" title="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
     </div>
-    <h3>Top AI Tools for Developers and Students in 2025</h3>
-    <p>Explore the best AI-powered tools that boost productivity, automate workflows, and simplify complex programming tasks in 2025...</p>
-    <a href="blogs/blog-top-ai-tools-2025.php" class="read-more">Read More</a>
+    <h3>SEO & Content Strategy in October 2025: Why Human-Centred Content Wins</h3>
+    <p>Explore how human-focused SEO and authentic storytelling are reshaping content strategies in 2025 — where real connection beats automation...</p>
+    <a href="blogs/blog-seo-content-strategy-october-2025.php" class="read-more">Read More</a>
     <div class="like-section">
-        <button class="like-btn" data-blog="blog-top-ai-tools-2025"
-        <?php echo (isset($_SESSION['liked_blogs']) && in_array('blog-top-ai-tools-2025', $_SESSION['liked_blogs'])) ? 'disabled' : ''; ?>>
-        👍 Like (<span class="like-count" id="like-blog-top-ai-tools-2025"><?php echo getLikes($conn, "blog-top-ai-tools-2025"); ?></span>)
+        <button class="like-btn" data-blog="blog-seo-content-strategy-october-2025"
+        <?php echo (isset($_SESSION['liked_blogs']) && in_array('blog-seo-content-strategy-october-2025', $_SESSION['liked_blogs'])) ? 'disabled' : ''; ?>>
+        👍 Like (<span class="like-count" id="like-blog-seo-content-strategy-october-2025"><?php echo getLikes($conn, "blog-seo-content-strategy-october-2025"); ?></span>)
         </button>
     </div>
 </div>
