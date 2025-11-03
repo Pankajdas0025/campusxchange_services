@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
  <style>
     :root {
@@ -240,6 +241,14 @@ body
 
 <script>
 
+// // CDN animation
+//   AOS.init({
+//     duration: 1000, // Animation duration (ms)
+//     offset: 120,    // Scroll offset
+//     once: true,     // Animate only once
+//   });
+
+
     function myFunction()
 {
   var x = document.getElementById("myTopnav");
@@ -265,6 +274,30 @@ function scrollIndicator() {
   // Set the width of progress bar
   document.getElementById("scroll-progress").style.width = scrolled + "%";
 }
+
+
+
+// Hide Inspect Element
+
+// document.onkeydown = function(e)
+// {
+//   // Disable F12
+// if (e.keyCode == 123) {return false;}
+//   // Disable Ctrl+Shift+I
+// if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {return false;}
+//   // Disable Ctrl+Shift+C
+// if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {return false;}
+//   // Disable Ctrl+Shift+J
+// if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {return false;}
+//   // Disable Ctrl+U
+// if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {return false;}
+//   // Disable Ctrl+S
+// if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {e.preventDefault();return false; }
+// };
+// // Disable Right-Click
+// document.addEventListener('contextmenu', function(e) {e.preventDefault();});
+// // Disable Double-Click
+// document.addEventListener('dblclick', function(e) {e.preventDefault();});
 </script>
 </body>
 </html>

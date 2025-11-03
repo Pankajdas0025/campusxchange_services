@@ -37,12 +37,12 @@ function getLikes($conn, $blog_id){
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>SEO & Content Strategy in October 2025: Why Human-Centred Content Wins | CampusXchange</title>
+<title>SEO & Content Strategy in October 2025</title>
 <meta name="description" content="Explore why human-centred SEO and authentic content dominate in October 2025. Learn how to combine AI tools with storytelling, expertise, and empathy for better rankings.">
 <meta name="keywords" content="SEO 2025, content strategy 2025, human centred SEO, E-E-A-T Google, AI content strategy, storytelling in SEO, CampusXchange blog">
 <meta property="og:title" content="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
 <meta property="og:description" content="Discover why authentic, human-centred content leads SEO success in 2025 and how creators can stand out amid AI automation.">
-<meta property="og:image" content="../assets/Images/seo-content-strategy-2025.jpg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/blog-images/seo-content-strategy-2025.jpg">
 <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/blogs/blog-seo-content-strategy-october-2025.php">
 
 <!-- Styles -->
@@ -85,7 +85,7 @@ h2 { font-size: 20px;}}
 <section class="container">
 <main>
     <h1>SEO & Content Strategy in October 2025: Why Human-Centred Content Wins</h1>
-    <img src="../../assets/Images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" class="blog-img">
+    <img src="../../assets/Images/blog-images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" class="blog-img">
 
     <p><strong>In October 2025</strong>, the world of <strong>SEO and content marketing</strong> continues to evolve — and one trend stands above all: <em>human-centred content</em>. With AI-generated material flooding the web, search engines like Google are now prioritizing authenticity, expertise, and genuine value for readers.</p>
 

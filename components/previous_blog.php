@@ -6,7 +6,7 @@ $countResult = $conn->query("SELECT COUNT(*) AS total FROM blog_likes");
 $rowCount = $countResult->fetch_assoc()['total'];
 
 // Calculate offset (skip latest 1)
-$offset = max(0, $rowCount - 1);
+$offset = max(0, $rowCount - 0);
 
 // Fetch all except latest 3 (oldest first)
 $sql = "SELECT * FROM blog_likes ORDER BY id ASC LIMIT $offset";

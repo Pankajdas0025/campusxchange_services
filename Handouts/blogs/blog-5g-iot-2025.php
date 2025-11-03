@@ -37,13 +37,12 @@ function getLikes($conn, $blog_id){
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>How 5G is Powering the Internet of Things Revolution in 2025 | CampusXchange</title>
+<title>How 5G is Powering the Internet of Things Revolution in 2025</title>
 <meta name="description" content="Explore how 5G is accelerating IoT innovation, connecting smart devices, and transforming industries worldwide in 2025. Discover its impact on healthcare, cities, and automation.">
 <meta name="keywords" content="5G technology 2025, IoT revolution, smart cities, connected devices, 5G and IoT, technology trends 2025">
 <meta property="og:title" content="How 5G is Powering the Internet of Things Revolution in 2025">
 <meta property="og:description" content="Discover how 5G is transforming IoT, powering smart devices, healthcare, and automation in 2025.">
-<meta property="og:image" content="../assets/Images/5g-iot.jpg">
-
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/blog-images/5G and IoT 2025.jpg">
 <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/blogs/blog-5g-iot-2025.php">
 
 <!-- Styles -->
@@ -86,7 +85,7 @@ h2 { font-size: 20px;}}
 <section class="container">
 <main>
     <h1>How 5G is Powering the Internet of Things Revolution in 2025</h1>
-    <img src="../../assets/Images/5G and IoT 2025.jpg" alt="5G and IoT 2025" class="blog-img">
+    <img src="../../assets/Images/blog-images/5G and IoT 2025.jpg" alt="5G and IoT 2025" class="blog-img">
 
     <p><strong>5G technology</strong> is transforming the way the world connects, enabling faster data speeds, ultra-low latency, and greater network capacity. In 2025, this innovation is powering a new wave of <strong>Internet of Things (IoT)</strong> applications that are reshaping industries, smart cities, and everyday life.</p>
 

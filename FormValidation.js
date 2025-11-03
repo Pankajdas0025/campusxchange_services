@@ -91,47 +91,4 @@
 // Webdevelopmet services formvalidation end here..............................................
 
 
-// // Hide Inspect Element
-// document.onkeydown = function(e) {
-//   // Disable F12
-//   if (e.keyCode == 123) {
-//     return false;
-//   }
-
-//   // Disable Ctrl+Shift+I
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-//     return false;
-//   }
-
-//   // Disable Ctrl+Shift+C
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-//     return false;
-//   }
-
-//   // Disable Ctrl+Shift+J
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-//     return false;
-//   }
-
-//   // Disable Ctrl+U
-//   if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-//     return false;
-//   }
-
-//   // Disable Ctrl+S
-//   if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-//     e.preventDefault();
-//     return false;
-//   }
-// };
-
-// // Disable Right-Click
-// document.addEventListener('contextmenu', function(e) {
-//   e.preventDefault();
-// });
-
-// // Disable Double-Click
-// document.addEventListener('dblclick', function(e) {
-//   e.preventDefault();
-// });
 

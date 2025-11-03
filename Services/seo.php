@@ -4,9 +4,9 @@
 <!-- Primary Meta Tags -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best SEO Services in Bihar | Affordable SEO Agency - CampusXchange</title>
-<meta name="title" content="Best SEO Services in India | Affordable SEO Agency - CampusXchange">
-<meta name="description" content="CampusXchange offers professional SEO services that help your website rank higher on Google. Get affordable on-page, off-page, and technical SEO solutions for businesses, startups, and institutes. Boost traffic & visibility today.">
+<title>Best SEO Services in Bihar | Affordable SEO Agency</title>
+<meta name="title" content="Best SEO Services in Bihar | Affordable SEO Agency">
+<meta name="description" content="We offer professional SEO services that help your website rank higher on Google. Get affordable on-page, off-page, and technical SEO solute your website.">
 <meta name="keywords" content="affordable seo services in Bihar, best seo company for small business, local seo for startups, on page optimization, off page seo, link building service, seo audit 2025, campusxchange seo agency, technical seo experts, keyword research services, google ranking improvement">
 <meta name="author" content="CampusXchange">
 <meta name="robots" content="index, follow">
@@ -25,7 +25,6 @@
 <meta property="twitter:description" content="CampusXchange provides affordable SEO services in India—boost visibility, grow traffic, and improve rankings with ethical SEO strategies.">
 <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg">
 <!-- styles -->
-<link rel="stylesheet" href="../styles/animation.css" type="text/css">
 <link rel="stylesheet" href="../style.css" type="text/css">
 <!-- cdns -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">

@@ -37,12 +37,12 @@ function getLikes($conn, $blog_id){
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Top AI Tools for Developers and Students in 2025 | CampusXchange</title>
+<title>Top AI Tools for Developers and Students in 2025</title>
 <meta name="description" content="Discover the top AI tools of 2025 for developers and students. Boost productivity, automate coding, and learn faster with tools like ChatGPT, GitHub Copilot, and Notion AI.">
 <meta name="keywords" content="AI tools 2025, AI for developers, AI for students, GitHub Copilot X, ChatGPT coding, Replit Ghostwriter, Notion AI, Jasper AI, productivity tools 2025">
 <meta property="og:title" content="Top AI Tools for Developers and Students in 2025">
 <meta property="og:description" content="Explore how AI tools are transforming learning and development in 2025 — from smart coding assistants to design automation.">
-<meta property="og:image" content="../assets/Images/ai-tools-2025.jpg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/blog-images/ai-tools-2025.jpg">
 <link rel="canonical" href="https://campusxchange.wuaze.com/handouts/blogs/blog-top-ai-tools-2025.php">
 
 <!-- Styles -->
@@ -85,7 +85,7 @@ h2 { font-size: 20px;}}
 <section class="container">
 <main>
     <h1>Top AI Tools for Developers and Students in 2025</h1>
-    <img src="../../assets/Images/ai-tools-2025..jpeg" alt="AI Tools 2025" class="blog-img">
+    <img src="../../assets/Images/blog-images/ai-tools-2025..jpeg" alt="AI Tools 2025" class="blog-img">
 
     <p><strong>Artificial Intelligence (AI)</strong> continues to shape the way developers and students work in 2025. From automating code to enhancing productivity, AI tools are now essential companions for learning, innovation, and faster project development.</p>
 

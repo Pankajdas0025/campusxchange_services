@@ -8,8 +8,8 @@ include "../src/config.php";
   <!-- Primary Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Web Development & Design in Kishanganj & Patna | CampusXchange</title>
-  <meta name="title" content="Professional Web Development & Design in Kishanganj & Patna | CampusXchange">
+  <title>Professional Web Development & Design in Kishanganj & Patna</title>
+  <meta name="title" content="Professional Web Development & Design in Kishanganj & Patna">
   <meta name="description" content="Get responsive, secure, and SEO-friendly websites built by CampusXchange. Custom web development, landing pages, portfolios, and business websites.">
   <meta name="keywords" content="Professional Web Development Services, Custom Website Development, Responsive Websites, SEO Friendly Website, Landing Page Development, Portfolio Website, CampusXchange Web Services">
   <meta name="author" content="CampusXchange">
@@ -32,7 +32,6 @@ include "../src/config.php";
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../style.css" type="text/css">
-  <link rel="stylesheet" href="../styles/animation.css" type="text/css">
   <link rel="stylesheet" href="../styles/webdev.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -369,30 +368,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ssssss", $name, $mobile, $email, $address, $websitetype, $plantype);
     if ($stmt->execute()) {
     $subject = "Web Development | Campusxchange";
-    $message = " <body style='margin: 0; padding:2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
-    <div style='max-width: 1000px; margin: auto; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
+    $message = "<body style='margin: 0; padding: 2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.5; color: #333;'>
+  <div style='max-width: 800px; margin: auto; padding: 15px;  box-shadow: 0 2px 10px rgba(0,0,0,0.1); background-color: #fff;'>
 
-        <h1 style='color: #ffffff;padding:10px;height:150px; background: linear-gradient(to right, #6366f1,#f43f5e); text-align: center; font-size:1.5rem;'>🎉 Hello
-            <br><p style='font-size: 1rem;'>$name</p>
-           <br>You are looking for a website ->
 
-        </h1>
-        <div style='background-color: #ecf0f1; padding: 10px; border-radius: 5px; margin-top: 20px;'>
-Thanks for reaching out to CampusXchange where ideas become digital realities. Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that's fast, functional, and uniquely yours.
-            <p><strong>Our Support Team will contact you within 24 Hr.</strong></p>
-            <p>Be Happy with CampusXchange</p>
-        </div>
-        <div style='margin-top: 30px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
-            <p>Explore oue social Handle</p>
-            <ul style='padding-left: 20px;'>
+    <img src='https://campusxchange.wuaze.com/assets/Images/campusxchange-email-header.jpg' alt='CampusXchange email banner' style='width: 100%; display: block;' />
+
+
+
+    <ol style='list-style: none; padding: 0 .5px; margin: 0;'>
+    <li>$name</li>
+    <li>📧: $email</li>
+    <li>📞: $mobile</li>
+    <li>🏠: $address</li>
+    <li>💻: $websitetype</li>
+    <li>📦: $plantype</li>
+
+    </ol>
+
+    <h1 style='color: #fff; padding: 40px 10px; background: linear-gradient(to right, #6366f1, #f43f5e); text-align: center; font-size: 1.6rem;margin: 0;'>
+    You're Looking for a Website 🌐
+    </h1>
+
+    <div style='background-color: #ecf0f1; padding: 20px;  margin-top: 20px;'>
+      <p style='margin: 0 0 10px;'>Thanks for reaching out to <strong>CampusXchange</strong> — where ideas become digital realities.</p>
+      <p style='margin: 0 0 10px;'>Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.</p>
+      <p>🌟 <strong>Our Support Team will contact you within 24 hours.</strong></p>
+      <p>Be Happy with <strong>CampusXchange</strong>!</p>
+    </div>
+
+
+    <div style='margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
+      <p style='font-weight: bold; margin-bottom: 10px;'>Explore our Social Handles:</p>
+      <ul style='padding-left: 15px; list-style: none; line-height: 1.8;'>
                 <li>Facebook: <a href='https://www.facebook.com/campusxchangeservices' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Instagram: <a href='https://www.instagram.com/campusxchange_services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
+                <li>LinkedIn: <a href='https://www.linkedin.com/company/campusxchange-services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Email: <a href='mailto:campusxchangeservices@gmail.com' style='color: #2980b9;'>campusxchangeservices@gmail.com</a></li><br>
-                <li>Website: <a href='https://campusxchange.wuaze.com/' target='_blank' style='color: #2980b9;'>https://campusxchange.wuaze.com/?i=1</a></li><br>
-            </ul>
-        </div>
+                <br>
+      </ul>
     </div>
-    </body>";
+
+
+    <footer style='margin-top: 25px; text-align: center; font-size: 0.85rem; color: #777; background-color: #fafafa; padding: 15px; '>
+      <p style='margin: 8px 0;'>You're receiving this email because you showed interest in <strong>CampusXchange</strong> web services.</p>
+      <p style='margin: 8px 0;'>If this wasn’t you, simply ignore this email.</p>
+      <div style='margin-top: 10px;'>
+        <a href='https://campusxchange.wuaze.com' target='_blank' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Home</a> |
+        <a href='https://campusxchange.wuaze.com/services/webdevelopment' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Services</a> |
+        <a href='https://campusxchange.wuaze.com/lettalk' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Contact</a>
+      </div>
+      <p style='margin-top: 12px; color: #999;'>© <span id='year'></span> CampusXchange. All rights reserved.</p>
+    </footer>
+  </div>>
+
+</body>";
 // Send email using mail()-------------------------------------------------------------
 //$headers = "MIME-Version: 1.0" . "\r\n";
 //$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -415,6 +445,8 @@ Thanks for reaching out to CampusXchange where ideas become digital realities. W
     $mail->setFrom('campusxchangeservices@gmail.com' , 'Support CampusXchange');
     $mail->addAddress($email);
     $mail->isHTML(true);
+    $mail->CharSet = "UTF-8";
+    $mail->Encoding = "base64";
     $mail->Subject = $subject;
     $mail->Body    = $message;
     $mail->send();
@@ -423,7 +455,13 @@ Thanks for reaching out to CampusXchange where ideas become digital realities. W
      {
     echo "❌ Email could not be sent. Error: {$mail->ErrorInfo}";
      }
- echo "<script> setTimeout(() => {   alert('✅ Thank you! Your details have been submitted.');  window.location.href='web-development'}, 4000);</script>";
+echo "<script>
+setTimeout(() => {
+  alert('✅ Thank you for submitting your details!\\n\\nPlease check your inbox for our email. If you don\\'t find it there, kindly check your spam or junk folder.');
+  window.location.href = 'web-development';
+}, 4000);
+</script>";
+
  $stmt->close();
     }  else
     {

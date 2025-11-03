@@ -4,8 +4,8 @@
 <!-- Primary Meta Tags -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange</title>
-<meta name="title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
+<title>Affordable Web Design, SEO Services & Internship Programs </title>
+<meta name="title" content="Affordable Web Design, SEO Services & Internship Programs ">
 <meta name="description" content="Explore CampusXchange for web development, SEO services, notes, assignments, and mentorship to boost your academic and career journey.">
 <meta name="keywords" content="internship projects Bihar, technical internship programs Bihar, college internships Bihar, affordable web design Patna, low-cost web design companies Patna, web development Bihar, technical notes, programming notes, SEO services Bihar, small business SEO Bihar, startup web services Bihar">
 <meta name="author" content="CampusXchange"/>
@@ -29,8 +29,6 @@
 <!-- internal and external Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css">
 <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
@@ -107,10 +105,10 @@
 <!-- section to display my core services in a single frame  -->
     </section>
 <section class="All-services" >
-<div class="service-type"><div class="service-type-img"><img src="assets/Images/development-services.jpg" alt="campusxchange-development-services-image"> </div><div class="service-type-content"><h2>Web development</h2><ul><li>Custom Website Development</li><li>Ecommerce Website</li><li>Landing page</li><li>Business website</li></ul><a href="services/web-development">Learn more</a></div></div>
-<div class="service-type"><div class="service-type-img"><img src="assets/Images/seo-core-services.jpg" alt="campusxchange-seo-service-image"> </div><div class="service-type-content"><h2>SEO Services</h2><ul><li>Website Audit</li><li>Goggle Map SEO</li><li>On-page/Off-oage SEO</li><li>Technical SEO</li></ul><a href="services/seo">Learn more</a></div></div>
-<div class="service-type"><div class="service-type-img"><img src="assets/Images/mentorship-services.jpg" alt="campusxchange-mentorship-image"> </div><div class="service-type-content"><h2>Mentorship Program</h2><ul><li>Internship program</li><li>Projects Ideas</li><li>Live Courses</li><li>Some Others</li></ul><a href="internship-program">Learn more</a></div></div>
-<div class="service-type"><div class="service-type-img"><img src="assets/Images/home-page-hero.jpg" alt="campusxchange-handouts-image"> </div><div class="service-type-content"><h2>Handouts</h2><ul><li>Programming Assignment</li><li>Notes</li><li>Basice Projects</li> <li>Free Portfolio Templates</li></ul><a href="handouts/notes">Learn more</a></div></div>
+<div class="service-type"><div class="service-type-img"><img src="assets/Images/development-services.jpg" alt="campusxchange-development-services-image"> </div><div class="service-type-content"><h2>Web services</h2><ul><li>Custom Website Development</li><li>Ecommerce Website</li><li>Landing page</li><li>Business website</li></ul><a href="services/web-development">Explore Web Development Services</a></div></div>
+<div class="service-type"><div class="service-type-img"><img src="assets/Images/seo-core-services.jpg" alt="campusxchange-seo-service-image"> </div><div class="service-type-content"><h2>SEO Services</h2><ul><li>Website Audit</li><li>Goggle Map SEO</li><li>On-page/Off-oage SEO</li><li>Technical SEO</li></ul><a href="services/seo">Discover Our SEO Services</a></div></div>
+<div class="service-type"><div class="service-type-img"><img src="assets/Images/mentorship-services.jpg" alt="campusxchange-mentorship-image"> </div><div class="service-type-content"><h2>Mentorship Program</h2><ul><li>Internship program</li><li>Projects Ideas</li><li>Live Courses</li><li>Some Others</li></ul><a href="internship-program">Join Our Mentorship Program</a></div></div>
+<div class="service-type"><div class="service-type-img"><img src="assets/Images/home-page-hero.jpg" alt="campusxchange-handouts-image"> </div><div class="service-type-content"><h2>Handouts</h2><ul><li>Programming Assignment</li><li>Notes</li><li>Basice Projects</li> <li>Free Portfolio Templates</li></ul><a href="handouts/notes">Browse Free Handouts & Notes</a></div></div>
 </section>
 <!-- section to display my core services in a single frame end here   -->
 <br>
@@ -297,24 +295,6 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
     updateSlider();
   }, 2000);
 
-  // Swipe support for mobile only ...........................................................................................
-  const sliderBox = document.getElementById("sliderBox");
-  let startX = 0;
-
-  sliderBox.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  });
-  sliderBox.addEventListener("touchend", (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
-
-    if (diff > 50) {
-      currentIndex = (currentIndex + 1) % total;
-    } else if (diff < -50) {
-      currentIndex = (currentIndex - 1 + total) % total;
-    }
-    updateSlider();
-  });
 
   </script>
 <script src="script.js"></script>

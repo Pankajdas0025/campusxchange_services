@@ -44,7 +44,7 @@ main{opacity:1;}
 .All-services{height:auto;width: 100%;display: flex;}
 .service-type{height: 400px; width: 20%; margin: 100px 2.5%; display: flex; flex-wrap: wrap; border: 2px solid rgb(255, 255, 255);border-radius: 15px;transition: 2s;  box-shadow: var(--shadow);}
 .service-type-img{border-radius: 15px 15px 0 0 ;width: 100%;height: 40%;overflow: hidden;background: linear-gradient(to top, var(--primary-color), var(--secondary-color));}
-.service-type-img img{ height: 98%; width: 98%; margin: 1%;border: 2px solid rgb(255, 255, 255) ;border-radius: 15px 15px 0 0 ; filter:grayscale(0);}
+.service-type-img img{ height: 98%; width: 98%; margin: 1%;border: 2px solid rgb(255, 255, 255) ;border-radius: 15px 15px 0 0 ; filter:grayscale(0); aspect-ratio: 2.35/1;}
 .service-type-img img:hover{ filter:grayscale(1); transform: scale(1.5);}
 .service-type-content{width: 100%;height: 0%;opacity: 0;background-color: #ffffff;color: var(--primary-color);transition: height 1.2s ease-in-out;border-radius:0 0 15px 15px;padding: 10px 30px;}
 .service-type:hover .service-type-content{height: 60%;opacity: 1;}
@@ -62,7 +62,7 @@ main{opacity:1;}
 /* Service-demo slider  -------------------------------------------------------------------------*/
 .slider-box{width:500px;height:300px;overflow:hidden;margin:1% auto;border-radius:15px;position:relative;touch-action:pan-y;}
 .slider-images{display:flex;transition:transform .8s ease-in-out;height:100%;}
-.slider-images img{width:400px;margin:0 50px;height:300px;flex-shrink:0;}
+.slider-images img{width:400px;margin:0 50px;height:300px;flex-shrink:0;aspect-ratio: 2.35/1;}
 .numbers{margin-top:12px}
 .num-btn{display:inline-block;margin:0 5px;padding:6px 10px;background:#ddd;color:#000;border-radius:5px;cursor:pointer;font-weight:bold}
 .num-btn.active{background-color:#333;color:white}
@@ -144,7 +144,7 @@ main{opacity:1;}
 #Service-demo p {font-size:var(--pSize);}
 .slider-box { width: 250px; height: 200px; overflow: hidden; margin: 1% -50px;display: inline-block; position: relative;touch-action: pan-y;}
 .slider-images { height: 100%; width: 250px; height:200px;}
-.slider-images img {width: 250px;height:200px;flex-shrink: 0; margin: 0; }
+.slider-images img {width: 250px;height:200px;flex-shrink: 0; margin: 0; aspect-ratio: 2.35/1;}
 .numbers { margin-top: 12px;}
 .num-btn {padding: 1px 6px; border-radius: var(--radius); }
 

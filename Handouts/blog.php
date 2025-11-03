@@ -131,7 +131,7 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
 <!-- ----------1. Add new blog--------------2. add in to blogs folder----------------------------3. add image--------------------------------------------------------------- -->
 <div class="blog-item">
     <div class="blogmainImg">
-        <img src="../assets/Images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" title="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
+        <img src="../assets/Images/blog-images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" title="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
     </div>
     <h3>SEO & Content Strategy in October 2025: Why Human-Centred Content Wins</h3>
     <p>Explore how human-focused SEO and authentic storytelling are reshaping content strategies in 2025 — where real connection beats automation...</p>
