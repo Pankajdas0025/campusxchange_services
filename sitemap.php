@@ -15,13 +15,13 @@
   <meta property="og:url" content="https://campusxchange.wuaze.com/">
   <meta property="og:title" content="CampusXchange - works with Projects">
   <meta property="og:description" content="CampusXchange helps students to discover and apply for internships, live projects">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
   <!-- -- Twitter - -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
   <!-- Favicon  -------------------------------------------------------------------->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
@@ -33,8 +33,8 @@
 :root
 {
 
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
+  --primary-color: #263F5A;
+  --secondary-color: #F8627B;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
@@ -47,7 +47,7 @@
   --border:none;
 }
      body {font-family: 'Poppins', Arial, sans-serif; margin:0;}
-   .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
+    .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
     .dashboard-link {display:flex; flex-direction:column; align-items:center; background:#f3f4f6; border-radius:12px; padding:1.2rem 1.5rem; min-width:160px; text-decoration:none; color:#222; box-shadow:0 2px 8px rgba(99,102,241,0.07); transition:box-shadow 0.2s,transform 0.2s;}
     .dashboard-link:hover {box-shadow:1px 1px 0.2px #f43f5e,0 2px 8px #f43f5e22; transform:translateY(-4px) scale(1.04); color:#6366f1;}
     .dashboard-link i {font-size:2.2rem; margin-bottom:0.7rem; color:#6366f1;}
@@ -77,11 +77,11 @@
     <a class="dashboard-link" href="handouts/notes"><i class="fa-solid fa-book"></i><span>Notes</span></a>
     <a class="dashboard-link" href="handouts/blog"><i class="fa-solid fa-blog"></i><span>Blogs</span></a>
     <a class="dashboard-link" href="handouts/assignment"><i class="fa-solid fa-file-lines"></i><span>Assignments</span></a>
-    <a class="dashboard-link" href="handouts/blog"><i class="fa-brands fa-square-instagram"></i><span>Instagram</span></a>
-    <a class="dashboard-link" href="handouts/blog"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
-    <a class="dashboard-link" href="handouts/blog"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
-    <a class="dashboard-link" href="handouts/blog"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
-    <a class="dashboard-link" href="handouts/blog"><i class="fa-solid fa-location-dot"></i><span>Maps</span></a>
+    <a class="dashboard-link" href="https://www.instagram.com/campusxchange_services/"><i class="fa-brands fa-square-instagram"></i><span>Instagram</span></a>
+    <a class="dashboard-link" href="https://www.facebook.com/campusxchangeservices"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+    <a class="dashboard-link" href="https://www.linkedin.com/company/campusxchange-services/"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
+    <a class="dashboard-link" href="https://www.youtube.com/@campusxchange_services"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
+    <a class="dashboard-link" href="https://maps.app.goo.gl/UgzS1SJvFiQxaswp6"><i class="fa-solid fa-location-dot"></i><span>Maps</span></a>
   </nav>
 <?php  include "components/footer.php"?>
 </body>

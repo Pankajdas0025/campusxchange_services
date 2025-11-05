@@ -19,13 +19,13 @@
 <meta property="og:url" content="https://campusxchange.wuaze.com/">
 <meta property="og:title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
 <meta property="og:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
-<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.about.jpg">
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://campusxchange.wuaze.com/">
 <meta property="twitter:title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
 <meta property="twitter:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
-<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.about.jpg">
 <!-- internal and external Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,40 +35,71 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 
-<script type="application/ld+json">
+<!-- Schema Markup -->
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Web Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "CampusXchange",
-    "url": "https://campusxchange.wuaze.com/",
-    "logo": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png",
-    "sameAs": [
-      "https://www.facebook.com/campusxchangeservices",
-      "https://www.instagram.com/campusxchange_services/"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9155726625",
-      "contactType": "Customer Support",
-      "email": "campusxchangeservices@gmail.com"
+  "@type": "LocalBusiness",
+  "name": "CampusXchange",
+  "url": "https://campusxchange.wuaze.com/",
+  "image": "https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png",
+  "telephone": "+91-9155726625",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Patna City, Bihar",
+    "addressLocality": "Patna",
+    "addressRegion": "Bihar",
+    "postalCode": "800001",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.5941",
+    "longitude": "85.1376"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
     }
-  },
-  "description": "Professional online Web Development services including HTML, CSS, JavaScript, PHP, and full stack development. Get your website or web application built with modern technologies.",
-  "areaServed": {
-    "@type": "Country",
-    "name": "IN"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://campusxchange.wuaze.com/services/web-development",
-    "priceCurrency": "INR",
-    "availability": "https://schema.org/InStock"
-  }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/campusxchangeservices",
+    "https://www.instagram.com/campusxchange_services/"
+  ],
+  "email": "campusxchangeservices@gmail.com",
+  "description": "CampusXchange is a professional digital services provider offering Web Development, SEO, Internship, and Mentorship programs. We deliver modern, responsive, and SEO-optimized websites tailored to client needs."
 }
 </script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '25184438234509573');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
   <main id="main">
@@ -143,10 +174,10 @@
       <h2>Professional SEO Services for Small Businesses in Bihar</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
       <br>
-      <div class="typeSeo" style="background-color:#f43f5e">OnPage SEO</div>
-      <div class="typeSeo" style="background-color:#385f87  ">OFFPage SEO</div>
-      <div class="typeSeo" style="background-color:#f43f5e">Technical SEO</div>
-      <div class="typeSeo" style="background-color:#385f87  ">Local SEO</div>
+      <div class="typeSeo" style="background-color:#F8627B; color:#000000;">On Page SEO</div>
+      <div class="typeSeo" style="background-color:#263F5A; color:#ffffff;  ">OFF Page SEO</div>
+      <div class="typeSeo" style="background-color:#F8627B; color:#000000;">Technical SEO</div>
+      <div class="typeSeo" style="background-color:#263F5A; color:#ffffff;">Local SEO</div>
       <br>
       <a href="services/seo" title="Rank your website on Search Engine"><button id="Explorbtn2">Let's Discuss SEO</button></a>
       <br>
@@ -260,7 +291,7 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
   </div>
 </section>
 <br>
-<!-- FAQ section  end here---------------------------------------------------------------------------------->
+
 <!-- fotter section  --------------------------------------------------------------------------------->
 <?php include "components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->

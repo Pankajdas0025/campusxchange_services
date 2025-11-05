@@ -21,13 +21,13 @@ include "src/config.php";
   <meta property="og:url" content="https://campusxchange.wuaze.com/lettalk">
   <meta property="og:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
   <meta property="og:description" content="Reach out to CampusXchange for collaboration, support, or services in web development, SEO, mentorship, and internships.">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jepg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/lettalk">
   <meta property="twitter:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
   <meta property="twitter:description" content="Connect with CampusXchange for questions, support, mentorship, and web or SEO services. Fast response guaranteed.">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jepg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
   <link rel="stylesheet" href="style.css" type="text/css">
   <!-- cdns-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -58,8 +58,8 @@ include "src/config.php";
 
 :root {
 
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
+  --primary-color: #263F5A;
+  --secondary-color: #F8627B;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;

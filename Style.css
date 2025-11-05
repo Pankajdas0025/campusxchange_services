@@ -1,7 +1,7 @@
 :root
 {
-  --primary-color: #385f87;
-  --secondary-color: #f43f5e;
+  --primary-color: #263F5A;
+  --secondary-color:#F8627B;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
@@ -70,7 +70,7 @@ main{opacity:1;}
 /*SEO service CTA section  ------------------------------------------------------------------------------------------------ */
 .seoSection h2{text-align:left}
 .seoSection{color:#000;padding:3rem 2rem;border-radius:var(--radius);margin-bottom:20px;text-align:center;height:650px}
-.typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;color:white;border-right:4px solid black;  box-shadow: var(--shadow);}
+.typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;border-right:4px solid black;  box-shadow: var(--shadow);}
 
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
 .Home-page-about{border-radius:var(--radius);padding:3rem 2rem;background:linear-gradient(180deg,var(--primary-color),var(--secondary-color));border:var(--border);width:90%;margin:auto 5%;}

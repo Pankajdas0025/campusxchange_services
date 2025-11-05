@@ -273,9 +273,9 @@ body
       <h2><i class="fa-solid fa-handshake"></i> Social Links</h2>
       <a href="https://www.linkedin.com/company/campusxchange-services/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://www.instagram.com/campusxchange_services/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://www.threads.com/@campusxchange_services/" target="_blank"><i class="fab fa-threads"></i> Threads</a>
       <a href="https://facebook.com/campusxchangeservices" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://www.youtube.com/@campusxchange_services" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
       <h2><i class="fa-solid fa-file-shield"></i> Policy</h2>
       <a href="https://campusxchange.wuaze.com/privacy-policyandterms"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
       <a href="https://campusxchange.wuaze.com/privacy-policyandterms"><i class="fa-solid fa-comments"></i> Terms & Conditions</a>

@@ -202,6 +202,42 @@ body
 
 <header><div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div></header>
 <div class="topnav" id="myTopnav">
+  <a href="http://localhost/Campusxchange/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://localhost/Campusxchange/services/web-development" title="Web Development From CampusXchange">Website Development</a>
+      <a href="http://localhost/Campusxchange/services/seo">SEO</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa-solid fa-book-open"></i>Handouts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://localhost/Campusxchange/handouts/notes" title="Technical Notes">Notes</a>
+      <a href="http://localhost/Campusxchange/handouts/blog" title="Scripted Blogs">Blogs</a>
+      <a href="http://localhost/Campusxchange/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
+            <a href="http://localhost/Campusxchange/handouts/courses" title="Youtube Courses">Courses</a>
+    </div>
+  </div>
+ <div class="dropdown">
+    <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="http://localhost/Campusxchange/internship/apply">Apply </a>
+      <a href="http://localhost/Campusxchange/internship/verification">Verification</a>
+      <a href="http://localhost/Campusxchange/internship-program">Internship-program</a>
+    </div>
+  </div>
+      <a href="http://localhost/Campusxchange/about"><i class="fa-solid fa-bullseye"></i>About</a>
+          <a href="http://localhost/Campusxchange/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
+    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
+ <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
+</div>
+
+<!-- <div class="topnav" id="myTopnav">
   <a href="https://campusxchange.wuaze.com/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
     <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
@@ -220,6 +256,7 @@ body
       <a href="https://campusxchange.wuaze.com/handouts/notes" title="Technical Notes">Notes</a>
       <a href="https://campusxchange.wuaze.com/handouts/blog" title="Scripted Blogs">Blogs</a>
       <a href="https://campusxchange.wuaze.com/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
+            <a href="https://campusxchange.wuaze.com/handouts/courses" title="Youtube Courses">Courses</a>
     </div>
   </div>
  <div class="dropdown">
@@ -231,10 +268,13 @@ body
     </div>
   </div>
       <a href="https://campusxchange.wuaze.com/about"><i class="fa-solid fa-bullseye"></i>About</a>
-          <a href="https://campusxchange.wuaze.com/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
+      <a href="https://campusxchange.wuaze.com/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
+
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
+ -->
+
+
 <br>
 <div id="scroll-progress"></div>
 <br>

@@ -19,14 +19,14 @@ include "../src/config.php";
   <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/notes">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/handouts/notes">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
 
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
@@ -182,7 +182,7 @@ else
     <!-- Note 1 -->
     <div class="paid-note-box">
       <div class="note-img">
-        <img src="../assets/Notes/Full-stack-notes.gif" alt="Full Stack Web Development Notes" onclick="openPreview(this)">
+        <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="Full Stack Web Development Notes" onclick="openPreview(this)">
         <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
       </div>
       <h3>Master Full Stack Web Development with PHP <br>All-in-One Notes Combo!</h3>
@@ -197,7 +197,7 @@ else
     <!-- Note 2 -->
     <div class="paid-note-box">
       <div class="note-img">
-        <img src="../assets/Notes/Full-stack-notes.gif" alt="DBMS & SQL Notes" onclick="openPreview(this)">
+        <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="DBMS & SQL Notes" onclick="openPreview(this)">
         <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
       </div>
       <h3>Master Database Management & SQL Queries Like a Pro!</h3>
@@ -212,7 +212,7 @@ else
     <!-- Note 3 -->
     <div class="paid-note-box">
       <div class="note-img">
-        <img src="../assets/Notes/Full-stack-notes.gif" alt="DSA & C++ Notes" onclick="openPreview(this)">
+        <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="DSA & C++ Notes" onclick="openPreview(this)">
         <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
       </div>
       <h3>DSA & C++ - Complete Notes Combo</h3>

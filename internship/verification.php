@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Verification -  CampusXchange Secure Access</title>
   <meta name="title" content="Verification -  CampusXchange Secure Access">
@@ -17,14 +17,14 @@
   <meta property="og:url" content="https://campusxchange.wuaze.com/internship/verification">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/internship/verification">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpg">
 
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
@@ -39,8 +39,8 @@
 <style>
   :root {
 
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
+   --primary-color: #263F5A;
+  --secondary-color: #F8627B;
   --shadow: 0 8px 30px rgba(2,6,23,0.08);
   --radius: 10px;
 

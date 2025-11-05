@@ -43,7 +43,7 @@ function getLikes($conn, $blog_id){
 <html lang="en">
 <head>
   <!-- Primary Meta Tags -->
- <meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tech Blogs & Study Guides | CampusXchange</title>
 <meta name="title" content="Tech Blogs & Study Guides | CampusXchange">
@@ -57,13 +57,13 @@ function getLikes($conn, $blog_id){
 <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/blog">
 <meta property="og:title" content="Tech Blogs & Study Guides | CampusXchange">
 <meta property="og:description" content="Discover free programming, AI, ML, Data Science, and Web Development notes and study guides on CampusXchange blog. Learn, explore, and boost your skills!">
-<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url"  href="https://campusxchange.wuaze.com/handouts/blog" />
 <meta property="twitter:title" content="Tech Blogs & Study Guides | CampusXchange">
 <meta property="twitter:description" content="Read CampusXchange tech blogs for students: programming, AI, ML, data science, and web development notes. Free guides, tutorials, and cheat sheets.">
-<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -97,8 +97,8 @@ function getLikes($conn, $blog_id){
 </script>
 <style>
 :root {
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
+  --primary-color: #263F5A;
+  --secondary-color: #F8627B;
   --bg-light: #f9fafb;
   --radius: 10px;
   --shadow: 0 8px 30px rgba(2,6,23,0.08);

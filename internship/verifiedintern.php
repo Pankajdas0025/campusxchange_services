@@ -13,9 +13,9 @@ include "../src/config.php";
 <html lang="en">
 <head>
 <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
-    <meta name="robots" content="noindex">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <title>Verified Intern | CampusXchange</title>
   <meta name="title" content="Mentorship & Remote Internship | CampusXchange">
   <meta name="description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
@@ -27,14 +27,14 @@ include "../src/config.php";
   <meta property="og:url" content="https://campusxchange.wuaze.com/">
   <meta property="og:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="og:description" content="Join CampusXchange and explore internships, live projects, and opportunities to build your career. Apply online today!">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com">
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
 
 <!-- styles ------------------->
 <link rel="stylesheet" href="../style.css" type="text/css">
@@ -48,7 +48,11 @@ include "../src/config.php";
 
 
 <style>
+:root{
 
+   --primary-color: #263F5A;
+  --secondary-color: #F8627B;
+}
     .verifed-section {
     background: linear-gradient(to right, #004080, #f43f5e );
     padding: 2rem 0.5rem 1rem 0.5rem;

@@ -21,14 +21,14 @@ include "../src/config.php";
   <meta property="og:url" content="https://campusxchange.wuaze.com/services/web-development">
   <meta property="og:title" content="Professional Web Development Services - CampusXchange">
   <meta property="og:description" content="CampusXchange delivers custom web development, landing pages, portfolios, and SEO-friendly websites to grow your business.">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/services/web-development">
   <meta property="twitter:title" content="Professional Web Development Services - CampusXchange">
   <meta property="twitter:description" content="Get custom, responsive, and SEO-friendly websites built by CampusXchange. Launch your website today!">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../style.css" type="text/css">

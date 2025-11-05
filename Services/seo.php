@@ -16,14 +16,14 @@
 <meta property="og:url" content="https://campusxchange.wuaze.com/services/seo">
 <meta property="og:title" content="Top SEO Services for Businesses & Students - CampusXchange">
 <meta property="og:description" content="Rank higher and attract more traffic with CampusXchange SEO services. We specialize in on-page, off-page, and local SEO for small businesses and institutes.">
-<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg">
+<meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-seo.jpg">
 <meta property="og:site_name" content="CampusXchange">
 <!-- twitter Meta -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://campusxchange.wuaze.com/services/seo">
 <meta property="twitter:title" content="Top SEO Services for Businesses & Students - CampusXchange">
 <meta property="twitter:description" content="CampusXchange provides affordable SEO services in India—boost visibility, grow traffic, and improve rankings with ethical SEO strategies.">
-<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/seo-services-hero.jpg">
+<meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-seo.jpg">
 <!-- styles -->
 <link rel="stylesheet" href="../style.css" type="text/css">
 <!-- cdns -->

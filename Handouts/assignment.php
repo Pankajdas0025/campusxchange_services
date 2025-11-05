@@ -15,12 +15,12 @@
   <meta property="og:url" content="https://campusxchange.wuaze.com/handouts/assignment/">
   <meta property="og:title" content="Assignment Help & Tech Project Services - CampusXchange">
   <meta property="og:description" content="Expert assistance for programming, AI/ML, and technical projects. Fast, reliable, and plagiarism-free support for students.">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Assignment Help & Tech Project Services - CampusXchange">
   <meta name="twitter:description" content="Programming and academic project help from CampusXchange — trusted, fast, and plagiarism-free.">
-  <meta name="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpeg">
+  <meta name="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
   <!-- styles -->
   <link rel="stylesheet" href="../style.css" type="text/css">
   <link rel="stylesheet" href="../styles/assignment.css" type="text/css">

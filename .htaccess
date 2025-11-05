@@ -25,6 +25,7 @@ RewriteRule ^privacy-policyandterms$ privacy.php [L]
 RewriteRule ^handouts/notes$ handouts/notes.php [L]
 RewriteRule ^handouts/blog$ handouts/blog.php [L]
 RewriteRule ^handouts/assignment$ handouts/assignment.php [L]
+RewriteRule ^handouts/courses$ handouts/courses.php [L]
 
 # Services subfolder
 RewriteRule ^services/web-development$ services/webdevelopment.php [L]

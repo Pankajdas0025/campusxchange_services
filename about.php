@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About CampusXchange - Education, Mentorship & Web Services</title>
   <meta name="title" content="About CampusXchange - Education, Mentorship & Web Services">
@@ -17,13 +17,13 @@
   <meta property="og:url" content="https://campusxchange.wuaze.com/about">
   <meta property="og:title" content="About CampusXchange - Education, Mentorship & Web Services">
   <meta property="og:description" content="Learn about CampusXchange, helping students and businesses with mentorship, web solutions, and SEO services.">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-about.jpg">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/about">
   <meta property="twitter:title" content="About CampusXchange - Education, Mentorship & Web Services">
   <meta property="twitter:description" content="Explore CampusXchange: supporting students and businesses with mentorship, web development, and SEO solutions.">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-all.jpeg">
+  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-about.jpg">
 <!-- styles -->
 <link rel="stylesheet" href="style.css" type="text/css">
 <!-- cdn -->
@@ -55,8 +55,8 @@
   <style>
     :root {
 
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
+  --primary-color: #263F5A;
+  --secondary-color: #F8627B;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
