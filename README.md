@@ -22,9 +22,13 @@
 
 
 
-# Services Offered                    
+# Services Offered       
 | 🌍 Web Development (Static & Dynamic Websites) |
+| ---------------------------------------------- |
 | 🔎 SEO Optimization for brands & startups      |
 | 💼 Internship Programs for students            |
-| 🧑‍🏫 Mentorship for beginners in Web & Tech      |
+| 🧑‍🏫 Mentorship for beginners in Web & Tech   |
+
+
+
 
