@@ -1,0 +1,51 @@
+🎯 Basic Direction Animations
+Effect	Attribute
+Fade	data-aos="fade"
+Fade Up	data-aos="fade-up"
+Fade Down	data-aos="fade-down"
+Fade Left	data-aos="fade-left"
+Fade Right	data-aos="fade-right"
+Fade Up-Right	data-aos="fade-up-right"
+Fade Up-Left	data-aos="fade-up-left"
+Fade Down-Right	data-aos="fade-down-right"
+Fade Down-Left	data-aos="fade-down-left"
+
+
+🔍 Zoom Animations
+Effect	Attribute
+Zoom In	data-aos="zoom-in"
+Zoom In Up	data-aos="zoom-in-up"
+Zoom In Down	data-aos="zoom-in-down"
+Zoom In Left	data-aos="zoom-in-left"
+Zoom In Right	data-aos="zoom-in-right"
+Zoom Out	data-aos="zoom-out"
+Zoom Out Up	data-aos="zoom-out-up"
+Zoom Out Down	data-aos="zoom-out-down"
+Zoom Out Left	data-aos="zoom-out-left"
+Zoom Out Right	data-aos="zoom-out-right"
+
+
+
+🔄 Flip Animations
+Effect	Attribute
+Flip Up	data-aos="flip-up"
+Flip Down	data-aos="flip-down"
+Flip Left	data-aos="flip-left"
+Flip Right	data-aos="flip-right"
+🌟 Slide Animations
+Effect	Attribute
+Slide Up	data-aos="slide-up"
+Slide Down	data-aos="slide-down"
+Slide Left	data-aos="slide-left"
+Slide Right	data-aos="slide-right"
+⚙️ Optional Customizations
+
+You can control each animation’s speed, delay, offset, and repeat:
+
+Attribute	Purpose	Example
+data-aos-delay	Delay in ms before animation starts	data-aos-delay="200"
+data-aos-duration	Animation time (default 400 ms)	data-aos-duration="1200"
+data-aos-offset	Scroll offset (in px)	data-aos-offset="150"
+data-aos-easing	Easing type	data-aos-easing="ease-in-out-sine"
+data-aos-once="true"	Run only once	data-aos-once="true"
+data-aos-anchor-placement	Defines trigger point	data-aos-anchor-placement="top-bottom"

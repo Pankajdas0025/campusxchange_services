@@ -112,7 +112,7 @@ include "../src/config.php";
 <section class="block first-webdev-section">
 <div class="overlay-content">
 <div class="maintext">
- <h1>Professional Website Development Services in Kishanganj</h1>
+ <h1>Professional Website Development Services</h1>
 <P>We don't just build websites — we build digital experiences that perform, impress, and grow with your business.”</P>
 <p>From responsive web design to custom development, our solutions are built to impress, perform, and evolve with your business goals.
 </p>
@@ -483,6 +483,7 @@ else {
 ?>
 </div>
 </section>
+<!-- Client feedback Section -->
 <section class="ourhappystatus">
   <!-- left side -->
 <div class="happyabout">
@@ -525,6 +526,35 @@ else {
   </div>
 </div>
 </section>
+
+<!-- Clients Real Projects -->
+<section id="client_projects">
+  <div class="client_card">
+    <iframe src="https://your-coaching-website.netlify.app/"></iframe>
+    <div class="project_buttons">
+      <a href="https://your-coaching-website.netlify.app/" title="Explore This Site" target="_blank" class="btn view">View</a>
+      <a href="https://www.instagram.com/p/DPs6LFJjFax/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" class="btn buy">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="client_card">
+    <iframe src="https://pankajkumardas.netlify.app/"></iframe>
+    <div class="project_buttons">
+      <a href="https://pankajkumardas.wuaze.com/" title="Explore This Site" target="_blank" class="btn view">View</a>
+      <a href="#" class="btn buy">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="client_card">
+    <iframe src="https://pankajdas0025.github.io/Tmu-Notes/"></iframe>
+    <div class="project_buttons">
+      <a href="https://pankajdas0025.github.io/Tmu-Notes/" title="Explore This Site" target="_blank" class="btn view">View</a>
+      <a href="#" class="btn buy">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+
 <!-- web development  service webdevlopmentfaqS Section ---------------------------------->
   <section class="webdevlopmentfaq-section">
   <h2>Frequently Asked Questions</h2>

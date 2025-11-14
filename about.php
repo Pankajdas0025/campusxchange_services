@@ -62,7 +62,7 @@
   --darktext-color:white;
   --card-bg: #f3eded;
   --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
+  --radius: 0px;
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#da6b7e;
   --pSize:0.9rem;
@@ -71,7 +71,7 @@
 
     /* Hero Section */
     .about-hero {
-      background:linear-gradient(350deg,  var(--primary-color) ,#f43f5e);
+      background:var(--primary-color);
       color: #fff;
       padding: 3rem 1.5rem;
       text-align: center;
@@ -98,7 +98,6 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
-
       width: 90%;
       margin: 2.5% 5%;
       border-radius: 10px;
@@ -107,21 +106,19 @@
     }
     .founder-img {
       flex: 0 0 160px;
-      border-radius: 50%;
+      background-color:skyblue;
+
       overflow: hidden;
-      border: 4px solid var(--primary-color);
-      width: 160px;
-      height: 160px;
+      width: 200px;
+      height: 100%;
     }
     .founder-img img {
+       box-shadow: 1px 0px 100px black inset;
       width: 100%;
       height: 100%;
       object-fit: cover;
-       filter: grayscale(1);
-       border-radius: 50%;
-        transform: scale(0.95);
+      filter: grayscale(1);
     }.founder-img:hover img {
-      transform: scale(0.5);
       transition: transform 0.3s ease;
       filter: grayscale(0);
     }

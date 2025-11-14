@@ -59,7 +59,7 @@ include "src/config.php";
 :root {
 
   --primary-color: #263F5A;
-  --secondary-color: #F8627B;
+  --secondary-color: #F9A4B2;
   --bg-light: #f9fafb;
   --Lighttext-color: #000000;
   --darktext-color:white;
@@ -72,7 +72,7 @@ include "src/config.php";
   --border:none;
 }
   .contact-main {
-    background: #f9fafb;
+    background: #ecedefff;
     padding: 3rem 1.5rem 2rem 1.5rem;
     width:90%;
     margin: 2rem auto 2rem auto;
@@ -89,6 +89,7 @@ include "src/config.php";
   .contact-info h2 {
     color:var(--primary-color);
     margin-bottom: 1rem;
+
   }
   .contact-info ul {
     list-style: none;

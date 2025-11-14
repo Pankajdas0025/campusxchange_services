@@ -1,18 +1,4 @@
-:root
-{
-  --primary-color: #263F5A;
-  --secondary-color:#F8627B;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow:0 1px 5px  #141414 inset;
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
+@import url("styles/root.css");
 /* ==== Custom Scrollbar Style ==== */
 ::-webkit-scrollbar {width: 10px;            }
 ::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 10px;}
@@ -27,7 +13,7 @@ main{opacity:1;}
 
 /* home intro first section */
 .homeIntro {background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex;  box-shadow: var(--shadow);}
-.introContent {width: 45%;text-align: left;padding-left:25px;margin:5% 5%;}
+.introContent {width:45%;text-align: left; padding-left:25px; margin:.5% 5%;}
 #core-ser{background-color: white;color: black;height: 80%;width:30%;margin: 5%;padding: 10px 50px;align-items: center;align-content: center;justify-self:center; border-radius:var(--radius);  box-shadow: var(--shadow);}
 .introContent h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
 .highlight { color:var(--secondary-color);  padding: 4px 8px;  border-radius: 6px;}
@@ -103,7 +89,7 @@ main{opacity:1;}
 .IHero button{ outline: none; background-color: var(--primary-color);  border:var(--border);border-radius:10px; color: rgb(255, 255, 255); height:45px; width:20%; font-size: 1.1rem; align-items: center; align-content: center; transition:10s ease; opacity: 0; box-shadow:2px 2px 12px rgb(255, 255, 255); z-index:100;}
 
 /* FAQ style start here -------------------------------*/
-.faq-section{padding:2rem 3rem;background:linear-gradient(200deg,var(--primary-color),var(--secondary-color));border-radius:var(--radius);color:var(--bg-light);  box-shadow: var(--shadow); border:var(--border);width:100%}
+.faq-section{padding:2rem 3rem;background:linear-gradient(200deg,var(--primary-color),var(--secondary-color));color:var(--bg-light);  box-shadow: var(--shadow);width:100%}
 .faq-section h2{text-align:left;margin-bottom:30px;color:white}
 .faq{border-bottom:1px solid #ddd;margin-bottom:10px;padding-bottom:15px}
 .faq-question{font-weight:bold;cursor:pointer;position:relative;padding-right:25px}

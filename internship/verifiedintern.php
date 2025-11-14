@@ -156,7 +156,7 @@ $Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8
       <br><strong><a href='$Project_link'>View Projects <i class='fa-solid fa-eye'></i></a></strong>
       <p><strong>Status:</strong> <span style='color:#22c55e;font-weight:bold;'>Active & Verified</span></p>
       <p><strong>About:</strong> <b>$Name</b> has successfully completed all requirements for the CampusXchange internship program in  $Domain, demonstrating strong technical and teamwork skills. All credentials have been verified by the CampusXchange team.</p>
-      <img src='../assets/Images/campusxchange-logo.svg' alt='campusxchange-logo'> <img src='../assets/Images/founder-sign.jpg' alt='campusxchange-logo'>   <img src='../assets/Images/verified-stamp.jpg' alt='campusxchange-logo'>
+      <img src='../assets/Images/taransparent-profile-logo-campusxchange.png' alt='campusxchange-logo'> <img src='../assets/Images/founder-sign.jpg' alt='campusxchange-logo'>   <img src='../assets/Images/verified-stamp.jpg' alt='campusxchange-logo'>
       <a href='../internship-program' aria-label='know more about internship program offer by campusxchange'><p>Know More About CampusXchange</p></a>
 
     </div>
@@ -170,7 +170,7 @@ $Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8
     <h2 class='status-heading'>Intern Verification Status</h2>
     <p class='status-message'>
       <strong>⚠️ The intern is not registered with CampusXchange.</strong><br>
-      It seems this intern’s record is not found in our system. Please verify your registration details or contact our support team for assistance.
+      It seems this intern's record is not found in our system. Please verify your registration details or contact our support team for assistance.
     </p>
     <a href='../internship-program' class='learn-more-btn' aria-label='Learn more about CampusXchange internship program'>
       <p>Explore Internship Programs</p>

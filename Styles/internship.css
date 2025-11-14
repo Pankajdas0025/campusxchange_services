@@ -1,127 +1,26 @@
 
-:root {
-  --primary-color: #263F5A;
-  --secondary-color:#F8627B;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow:0 1px 5px  #141414 inset;
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
+@import url("root.css");
 
-}
-
-.Notice
-{
-  background-color: #f9edbe; /* Light yellow for a notice */
-  height: 40px;
-  width: 100%;
-  padding: 10px;
-  margin: 25px 0;
-  color:var(--primary-color);
-}
-.mentor-hero {
-  background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
-  color: white;
-  padding: 60px 0 40px 0;
-  text-align: center;
-  min-height: 60vh;
-}
-.mentor-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-.mentor-hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
+.Notice{ background-color: #f9edbe; /* Light yellow for a notice */  height: 40px; width: 100%; padding: 10px;  margin: 25px 0; color:var(--primary-color);}
+.mentor-hero { background: linear-gradient(360deg, var(--secondary-color), var(--primary-color));  color: white; padding: 60px 0 40px 0;  text-align: center;min-height: 60vh;}
+.mentor-hero h1 {  font-size: 2.5rem; margin-bottom: 10px; outline: 2px white;}
+.mentor-hero p {  font-size: 1.2rem;  max-width: 700px;  margin: 0 auto;}
 /* Mentorship program  Section ------------------------------*/
-.mentor-section {
-  background: var(--bg-light);
-  padding: 40px 0;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  justify-content: center;
-}
-.mentor-card {
-  background: var(--card-bg);
-  border-radius: 12px;
-  box-shadow: 1px 4px 16px rgba(0,0,0,0.07);
-  margin: 20px;
-  padding: 30px 24px;
-  width: 320px;
-  text-align: left;
-  transition: box-shadow 0.3s;
-  border: 2px solid white;
-}
-.mentor-card:hover {
-box-shadow: var(--shadow);
-  transform: scale(1.05);
-}
-.mentor-card h2 {
-  color: var(--primary-color);
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-.mentor-card ul {
-  padding-left: 18px;
-  font-size: 1rem;
-}
-.mentor-cta {
-  text-align: center;
-  margin: 40px 0;
-}
-.mentor-cta a {
-  background: var(--primary-color);
-  color: white;
-  padding: 14px 32px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(99,102,241,0.12);
-  transition: background 0.2s;
-}
-.mentor-cta a:hover {
-  background: var(--secondary-color);
-}
+.mentor-section {  background: var(--bg-light);  padding: 40px 0; display: flex; flex-wrap: wrap; padding: 0; justify-content: center;}
+.mentor-card { background: var(--card-bg); border-radius: 12px; box-shadow: 1px 4px 16px rgba(0,0,0,0.07); margin: 20px;  padding: 30px 24px; width: 320px; text-align: left; transition: box-shadow 0.3s; border: 2px solid white;}
+.mentor-card:hover { box-shadow: var(--shadow); transform: scale(1.05);}
+.mentor-card h2 {color: var(--primary-color); font-size: 1.3rem; margin-bottom: 10px;}
+.mentor-card ul {padding-left: 18px; font-size: 1rem;}
+.mentor-cta {  text-align: center; margin: 40px 0;}
+.mentor-cta a {  background: var(--primary-color); color: white; padding: 14px 32px; border-radius: 8px; font-size: 1.1rem; text-decoration: none; box-shadow: 0 2px 8px rgba(99,102,241,0.12); transition: background 0.2s;}
+.mentor-cta a:hover {background: var(--secondary-color);}
 /* Mentorship program  end --------- ------------------------------*/
 /* Mentor Cards Section */
-.mentors-section {
-
-  padding: 32px 0 16px 0;
-}
-.mentors-title {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 2rem;
-  margin-bottom: 24px;
-}
-.mentors-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
-}
-.mentor-profile-card {
-  background:var(--primary-color);
-  border-radius: 12px;
-  border: 2px solid white;
-  color: white;
-  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
-  padding: 24px 18px;
-  width: 260px;
-  text-align: center;
-  transition: 0.1s;
-}.mentor-profile-card:hover {
-  transform:translateY(-15px);
-}
+.mentors-section { padding: 32px 0 16px 0;}
+.mentors-title { text-align: center; color: var(--primary-color); font-size: 2rem; margin-bottom: 24px;}
+.mentors-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 32px;}
+.mentor-profile-card {background:var(--primary-color); border-radius: 12px; border: 2px solid white;  color: white; box-shadow: 0 2px 12px rgba(99,102,241,0.08); padding: 24px 18px; width: 260px;  text-align: center; transition: 0.1s;}
+.mentor-profile-card:hover {  transform:translateY(-15px);}
 .mentor-profile-card img {
   width: 80px;
   height: 80px;

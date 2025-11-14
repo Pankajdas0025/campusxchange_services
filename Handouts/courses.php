@@ -155,7 +155,7 @@
 
       <!-- Example Course 2 -->
       <div class="course-card">
-        <iframe src="https://www.youtube.com/embed/SyYhum0x8RM?si=TxfJcdPyA9DaK-yX" title="CSS Tutorial - CampusXchange"></iframe>
+        <iframe src="https://www.youtube.com/embed/WJ-Ng1v3lPc?si=fbO1YI4vO6YKyQXn" title="CSS Tutorial - CampusXchange"></iframe>
         <div class="course-content">
           <h3>CSS Tutorial From Dark to Light Mode</h3>
           <p>Master website styling with CSS—learn colors, layout, and responsive design.</p>
@@ -171,7 +171,7 @@
     <div class="courses-grid">
       <!-- Example Upcoming Course -->
       <div class="course-card">
-        <img src="../assets/Images/og-images/og-internship.jpeg" alt="JavaScript Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
+        <img src="../assets/Images/og-images/og-internship.jpg" alt="JavaScript Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
         <div class="course-content">
           <h3>JavaScript for Beginners</h3>
           <p>Learn how to make your website interactive and dynamic using JavaScript.</p>
@@ -180,7 +180,7 @@
       </div>
 
       <div class="course-card">
-        <img src="../assets/Images/og-images/og-internship.jpeg" alt="Python Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
+        <img src="../assets/Images/og-images/og-internship.jpg" alt="Python Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
         <div class="course-content">
           <h3>Python Programming Series</h3>
           <p>Get ready to explore Python concepts, from basics to advanced projects.</p>

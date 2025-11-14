@@ -85,7 +85,7 @@ ErrorDocument 404 /404.php
     Header set Cross-Origin-Resource-Policy "cross-origin"
 
     # Content Security Policy (allow Google Maps & YouTube)
-Header set Content-Security-Policy "default-src 'self' https: data:; script-src 'self' 'unsafe-inline' https://www.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://cdnjs.cloudflare.com https://use.fontawesome.com https://kit.fontawesome.com; style-src * 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.google.com https://www.google.com/maps https://maps.google.com; frame-ancestors 'self';"
+Header set Content-Security-Policy "default-src 'self' https: data:; script-src 'self' 'unsafe-inline' https://www.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://cdnjs.cloudflare.com https://use.fontawesome.com https://kit.fontawesome.com; style-src * 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.google.com https://wuaze.com https://pankajkumardas.netlify.app/ https://pankajdas0025.github.io/Tmu-Notes/ https://your-coaching-website.netlify.app https://www.google.com/maps https://maps.google.com; frame-ancestors 'self';"
 
 
 </IfModule>
