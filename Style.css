@@ -32,8 +32,8 @@ main{opacity:1;}
 .service-type-img{border-radius: 15px 15px 0 0 ;width: 100%;height: 40%;overflow: hidden;background: linear-gradient(to top, var(--primary-color), var(--secondary-color));}
 .service-type-img img{ height: 98%; width: 98%; margin: 1%;border: 2px solid rgb(255, 255, 255) ;border-radius: 15px 15px 0 0 ; filter:grayscale(0); aspect-ratio: 2.35/1;}
 .service-type-img img:hover{ filter:grayscale(1); transform: scale(1.5);}
-.service-type-content{width: 100%;height: 0%;opacity: 0;background-color: #ffffff;color: var(--primary-color);transition: height 1.2s ease-in-out;border-radius:0 0 15px 15px;padding: 10px 30px;}
-.service-type:hover .service-type-content{height: 60%;opacity: 1;}
+.service-type-content{width: 100%;height: 60%;opacity:0.5;background-color: #ffffff;color: var(--primary-color);transition: height 1.2s ease-in-out;border-radius:0 0 15px 15px;padding: 10px 30px;}
+.service-type:hover .service-type-content{opacity: 1;}
 .service-type-content li{color:var(--secondary-color);list-style-type: '→';padding-left: 10px;}
 
 /* OUR PORTFOLIO  -------------------------------------------------------------------------------------------------------- */

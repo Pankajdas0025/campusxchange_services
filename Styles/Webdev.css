@@ -2,6 +2,7 @@
 @import url("root.css");
 
 html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
+/* Hero Section =============================================================================================== */
 .first-webdev-section
 {min-height: 90vh;width: 100%;border: var(--border);position: relative;overflow: hidden;}
 .overlay-content {position: absolute;top: 0; left: 0;width: 100%; height: 100%;display: flex;background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/webdevelopment-services-hero.jpg') center/cover no-repeat;backdrop-filter: blur(5px);}
@@ -9,7 +10,7 @@ html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
 .maintext h1{ font-size:2rem; font-weight: bold; color: white;}
 .maintext p{color: white;font-size:1.25rem;}.maintext button{ padding: 12px 12px; background-color:white;color:black; font-size: 1rem; border-radius: var(--radius); border:var(--border);cursor: pointer;transition: background 0.2s;}
 .maintext button:hover{background-color: var(--primary-color);color: white;transform: scale(1.01);}
-/* what we offer section ------------------------------------------*/
+/* what we offer section ======================================================================================*/
 .Weoffersection {background: linear-gradient(120deg, #f9fafb 60%, #e0e7ff 100%); padding: 3rem 1rem; box-shadow: 0 4px 24px rgba(99,102,241,0.08); margin-bottom: 2rem;}
 .Weoffersection h2 {text-align: center;font-size: 2.2rem;color: #6366f1;margin-bottom: 2rem;letter-spacing: 1px;}
 .offer-grid {display: flex;flex-wrap: wrap;gap: 2rem;justify-content: center;align-items: stretch;}
@@ -18,117 +19,32 @@ html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
 .offer-card .offer-icon { font-size: 2.2rem; color: #6366f1; margin-bottom: 1rem; align-self: center;}
 .offer-card h3 { font-size: 1.25rem; color: #222; margin-bottom: 0.7rem;font-weight: 600;}
 .offer-card p { font-size: 1rem; color: #444;  margin-bottom: 0;}
-/*our development process  section  */
+/*our development process  section ===============================================================================  */
 .process-section{text-align:center;padding:60px 20px;color:#fff;font-family:'Poppins',sans-serif;background-color:white;box-shadow: var(--shadow);width: 90%; margin: 2.5% 5%;}
 .process-section h2{ font-size:26px; margin-bottom:40px; color:var(--primary-color);letter-spacing:0.5px;}
 .process-steps{ display:flex;flex-wrap:wrap;justify-content:center;gap:25px;}
 .step{ background:var(--primary-color);padding:30px 20px;border-radius:16px;width:180px;text-align:center; position:relative;border:1px solid rgba(255,255,255,0.1); transition:transform .3s ease, background .3s ease;}
 .num{ width:60px; height:60px; background:var(--secondary-color); border-radius:50%; border: 1px solid white; display:flex; align-items:center; justify-content:center; margin:0 auto 15px;font-size:20px; font-weight:700; color:#000;}
 .step h3{ font-size:15px; color:#e2e8f0}
- /* tech stack we work with section  */
-    .tech-stack-box {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      width: 100%;
-      padding: 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 35px;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    /* Title */
-    .tech-stack-box  h2 {
-      grid-column: 1 / -1;
-      font-size: 2.6rem;
-      color:var(--primary-color);
-      text-align: center;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    .tech-stack-box  p {
-      grid-column: 1 / -1;
-      text-align: center;
-      color: #272525;
-      margin-bottom: 40px;
-      font-size: 1.1rem;
-    }
-
-    /* Category Card */
-    .tech-category {
-      background: #fff;
-      border-radius: 18px;
-      padding: 25px;
-      box-shadow: 0 6px 18px rgba(0, 86, 210, 0.12);
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .tech-category:hover {
-      transform: translateY(-6px) scale(1.03);
-
-    }
-
-    .tech-category h3 {
-      font-size: 1.5rem;
-      color:var(--secondary-color);
-      border-left: 6px solid var(--primary-color);
-      padding-left: 12px;
-      margin-bottom: 18px;
-      font-weight: 600;
-    }
-
-    /* Icons */
-    .icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    .icons img {
-      width: 60px;
-      height: 60px;
-      background: #f9fbff;
-      padding: 12px;
-      border-radius: 14px;
-      box-shadow: 0 4px 10px rgba(0, 86, 210, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      object-fit: contain;
-    }
-
-    .icons img:hover {
-      transform: scale(1.2) rotate(3deg);
-      box-shadow: 0 1px 5px var(--secondary-color);
-    }
-
-/* For PORTFOLIO section Auto Scroll Gallery */
-    .scroll-gallery {
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      width: 80%;
-      margin: 2.5% 10%;
-      padding: 20px 0;
-    }
-
-    .scroll-track {
-      display: inline-flex;
-      animation: scroll-left 10s linear infinite;
-    }
-
-    .scroll-track img {
-      width: 300px;
-      height: 200px;
-      margin: 0 15px;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-
-    /* Animation */
+ /* tech stack we work with section ===================================================================================== */
+.tech-stack-box {  background: rgba(255, 255, 255, 0.92);  backdrop-filter: blur(8px);  width: 100%;  padding: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 35px;  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);animation: fadeInUp 1s ease forwards; }
+ /* Title */
+.tech-stack-box  h2 {  grid-column: 1 / -1;font-size: 2.6rem; color:var(--primary-color);  text-align: center;   margin-bottom: 15px;  font-weight: 700;  }
+.tech-stack-box  p { grid-column: 1 / -1; text-align: center; color: #272525;margin-bottom: 40px;font-size: 1.1rem;}
+/* Category Card */
+.tech-category {  background: #fff;  border-radius: 18px;  padding: 25px;  box-shadow: 0 6px 18px rgba(0, 86, 210, 0.12);  transition: transform 0.35s ease, box-shadow 0.35s ease;  animation: fadeInUp 1s ease forwards;}
+.tech-category:hover {transform: translateY(-6px) scale(1.03);}
+.tech-category h3 { font-size: 1.5rem;color:var(--secondary-color);border-left: 6px solid var(--primary-color);padding-left: 12px;margin-bottom: 18px;font-weight: 600;}
+/* Icons */
+.icons { display: flex;flex-wrap: wrap;gap: 18px;}
+.icons img { width: 60px; height: 60px;   background: #f9fbff; padding: 12px; border-radius: 14px; box-shadow: 0 4px 10px rgba(0, 86, 210, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;cursor: pointer;object-fit: contain;}
+.icons img:hover {
+transform: scale(1.2) rotate(3deg); box-shadow: 0 1px 5px var(--secondary-color); }
+/* For PORTFOLIO section Auto Scroll Gallery =========================================================================================*/
+.scroll-gallery { overflow: hidden; white-space: nowrap;position: relative;width: 80%; margin: 2.5% 10%;padding: 20px 0;}
+.scroll-track { display: inline-flex; animation: scroll-left 10s linear infinite; }
+.scroll-track img { width: 300px;height: 200px;margin: 0 15px; border-radius: 10px; object-fit: cover;box-shadow: 0 4px 6px rgba(0,0,0,0.2);}
+/* Animation */
     @keyframes scroll-left {
       0% {
         transform: translateX(0);
@@ -137,281 +53,47 @@ html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
         transform: translateX(-50%);
       }
     }
+/* Price-plan section ============================================================================================================================= */
+.pricingplan{ height: 800px;  width: 90%; display: block; margin-top:8%; margin: auto 5%;}
+.plancategory{box-shadow:var(--shadow); height: 550px;width: 30%;display:flex;flex-wrap: wrap;float: left;margin: 30px 1.65%; overflow: hidden;justify-content: space-between;}
+.planheader{top:0;width:100%;height:10%;background:linear-gradient(to right,var(--secondary-color),var(--primary-color));text-align:center;align-items:center;align-content:center;color:#fff;font-size:22px;display:inline-block;position:relative}
+.plancontent{height:90%;width:100%;background-color:tra;padding:0 3rem}
+.plancontent li{padding:5px;list-style:none;transform-style:preserve-3d;transition:.1s 0.1s}
+.plancontent li::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(60deg,var(--primary-color),transparent);transform:rotateY(90deg);transform-origin:right;transition:transform .5s;z-index:0}
+.plancontent li:hover::before{transform:rotateY(0)}
+.plancontent span{background-color:#e0dfac;color:var(--primary-color)}
+/* Whatsapp integration section  ============================================================================================= */
+.doughtplanprice{width:80%;margin:0 10%;height:200px;background-color:#fff;box-shadow:var(--shadow);border-radius:var(--radius);padding:3rem 2rem;font-size:20px;text-align:center}
+.doughtplanprice button{font-size:20px;padding:15px;background-color:var(--primary-color);color:#fff;border:var(--border);outline:0;transition:background .5s}
+.doughtplanprice button:hover{background-color:var(--secondary-color);transform:scale(1.01)}
+/*Plan select Contcat Form ===================================================================================================== */
+.planorder{height:600px;width:95%;margin:auto 2.5%;background:linear-gradient(to right,var(--secondary-color),var(--primary-color));display:flex;border-radius:var(--radius)}
+.planordercontact-form{width:40%;height:500px;margin:50px 5%;padding:10px 20px;background-color:transparent}
+.planordercontact-form input,select{height:50px;width:90%;margin:1% 5%;font-size:15px;padding:2px 15px}
+.planordercontact-form input:focus,.planordercontact-form select:focus{outline:0;border:2px solid var(--primary-color)}
+.planordercontact-form span{opacity:.9;margin:80px 28px;color:#eee6e6;padding:2px 15px;position:absolute}
+#client_form_sbtn,#img_form_sbtn{background-color:var(--primary-color);color:#fff;font-size:20px;border:var(--border);transition:background .5s}
+#img_form_sbtn{background-color:#9ef09e;display:none;color:#221b1b}#client_form_sbtn:hover{background-color:var(--secondary-color);transform:scale(1.01)}
+.contact_img{width:80%;height:300px;margin:33px 10%;background-image:url(../assets/Images/webdevelopment-client-contact.png);background-size:cover;background-position:center}
 
-
-/* For PORTFOLIO section Auto Scroll Gallery-------------------------- */
-.pricingplan
-{
-    height: 800px;
-    width: 90%;
-    display: block;
-    margin-top:8%;
-    margin: auto 5%;
-
-}.plancategory
-{
-    box-shadow:var(--shadow);
-    height: 550px;
-    width: 30%;
-    display:flex;
-    flex-wrap: wrap;
-    float: left;
-    margin: 30px 1.65%;
-    overflow: hidden;
-    justify-content: space-between;
-
-
-}.planheader
-{
-    top: 0;
-    width:100%;
-    height: 10%;
-     background: linear-gradient(to right, var(--secondary-color),var(--primary-color));
-     text-align: center;
-     align-items: center;
-     align-content: center;
-     color: white;
-     font-size: 22px;
-     display: inline-block;
-     position: relative;
-
-
-}.plancontent
-{
-   height:90%;
-    width:100%;
-     background-color:tra;
-     padding: 0rem 3rem;
-
-
-}.plancontent li{
-    padding: 5px;
-    list-style: none;
-    transform-style: preserve-3d;
-    transition: 0.1s;
-    transition-delay: 0.1s;
-
-}
-.plancontent li::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(60deg, var(--primary-color),transparent);
-  transform: rotateY(90deg);
-  transform-origin: right;
-  transition: transform 0.5s ease;
-  z-index: 0;
-}
-
-.plancontent li:hover::before {
-  transform: rotateY(0deg);
-}
-
-
-
-.plancontent span
-{
-    background-color: #e0dfac;
-    color:var(--primary-color);
-}
-
-
-/* Dought Plan CTA */
-.doughtplanprice
-{
-    width: 80%;
-    margin: 0 10%;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    padding: 3rem 2rem;
-    font-size: 20px;
-    text-align: center;
-}.doughtplanprice button
-{
-    font-size: 20px;
-    padding: 15px;
-    background-color:var(--primary-color);
-    color: white;
-    border: var(--border);
-    outline: none;
-    transition:background 0.5s;
-}.doughtplanprice button:hover
-{
-background-color: var(--secondary-color);
-transform: scale(1.01);
-
-}
-
-/*section from where clients can select their plan and put their idea and information  */
-.planorder
-
-{
- height: 600px;
- width: 95%;
- margin: auto 2.5%;
- background: linear-gradient(to right, var(--secondary-color),var(--primary-color));
- display: flex;
-border-radius: var(--radius);
-
-}.planordercontact-form
-{
-    width: 40%;
-    height: 500px;
-    margin: 50px 5%;
-    padding:10px 20px;
-    background-color: transparent;
-
-}.planordercontact-form input, select
-{
-    height: 50px;
-    width:90%;
-    margin:1% 5% ;
-    font-size: 15px;
-    padding:2px 15px;
-
-}.planordercontact-form input:focus ,
-.planordercontact-form select:focus
-{
-    outline: none;
-    border: 2px solid var(--primary-color);
-}.planordercontact-form  span{
-    /* background-color:#f4abb7; */
-    opacity:0.9;
-    margin:80px 28px;
-    color: rgb(238, 230, 230);
-    padding: 2px 15px;
-
-    position:absolute;
-}
-
-#client_form_sbtn , #img_form_sbtn
-{
-    background-color:var(--primary-color);
-    color: white;
-    font-size: 20px;
-    border: var(--border);
-    transition: background 0.5s;
-}
-#img_form_sbtn
-{
-    background-color: rgb(158, 240, 158);
-    display:none;
-    color: rgb(34, 27, 27);
-}
-
-#client_form_sbtn:hover
-{
-    background-color: var(--secondary-color);
-    transform: scale(1.01);
-
-}
-.contact_img
-{
-    width: 80%;
-    height: 300px;
-    margin: 33px 10%;
-    background-image: url(../assets/Images/webdevelopment-client-contact.png);
-    background-size: cover;
-    background-position: center;
-
-
-}
-/*  happy experience  and client feedback  box  ---------------------------------------*/
-.ourhappystatus
-{
-    height: 500px;
-    width: 100%;
-    display: flex;
-}
-
-/* right side happy experience box  ---------------------------------------*/
-.happyabout
-{
-    height: 400px;
-    width: 45%;
-    margin: 25px 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.happyabouttype
-{
-    height: 150px;
-    width:30%;
-    margin:25px 5%;
-    border-radius: 20px;
-    background-color:rgb(255, 255, 255);
-    color: white;
-    box-shadow: var(--shadow);
-    text-align: center;
-    align-content: center;
-    transition: 2s;
-}.happyabouttype:hover
-{
-    transform:scale(1.2)
-}
-
-/* right side end here --------------------------------------------------*/
-/*left side client feedbaack box  ---------------------------------------*/
-.clientsfeedback
-{
-    height: 400px;
-    width: 85%;
-}
-.clientsfeedback img
-{
-height: 130px;
-width: 27%;
-border-radius: 50%;
-margin: 15px 36.5%;
-border: 2px solid rgb(9, 4, 4);
-}
-.feedbackcontent
-{
-    height: 230px;
-    width: 100%;
-    margin: 0 0px;
- color: rgb(0, 0, 0);
-}.feedbackcontent h2{
-
-    font-family:var(--font-main);
-    text-align: center;
-    padding: 10px 0;
-}.feedbackcontent p{
-    text-align: center;
-}
-.feedbackcontent h3{
-    font-size: 15px;
-    font-family:var(--font-main);
-    font-weight: normal;
-    padding: 5px 20px;
-}
-.clientslist
-{
-    width: 15%;
-    height: 400px;
-    background-color: transparent;
-}.clienttype
-{
-    width: 100%;
-    height: 25%;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-}.clienttype:hover
-{
-    transform:scale(1.2);
-}
-.clienttype img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 2px double rgb(30, 23, 23);
-}
-/* CLIENT PROJECTS SECTION */
+/* happy experience  and client feedback  box  =========================================================================================*/
+.ourhappystatus{  height: 500px; width: 100%; display: flex}
+/* right side happy experience box  =======================================================================================================*/
+.happyabout{height:400px;width:45%;margin:25px 5%;display:flex;flex-wrap:wrap}
+.happyabouttype{height:150px;width:30%;margin:25px 5%;border-radius:20px;background-color:#fff;color:#fff;box-shadow:var(--shadow);text-align:center;align-content:center;transition:2s}
+.happyabouttype:hover{transform:scale(1.2)}
+/*left side client feedbaack box ================================================================================================================*/
+.clientsfeedback{ height: 400px; width: 85%;}
+.clientsfeedback img{height: 130px;width: 27%;border-radius: 50%;margin: 15px 36.5%;border: 2px solid rgb(9, 4, 4);}
+.feedbackcontent{height: 230px; width: 100%; margin: 0 0px;color: rgb(0, 0, 0);}
+.feedbackcontent h2{font-family:var(--font-main);  text-align: center;  padding: 10px 0;}
+.feedbackcontent p{text-align: center;}
+.feedbackcontent h3{ font-size: 15px; font-family:var(--font-main); font-weight: normal; padding: 5px 20px;}
+.clientslist{ width: 15%;height: 400px;background-color: transparent;}
+.clienttype{  width: 100%;  height: 25%;  align-content: center; align-items: center;  text-align: center; border: none;background-color: transparent;}
+.clienttype:hover{ transform:scale(1.2);}
+.clienttype img{ height: 50px; width: 50px; border-radius: 50%; border: 2px double rgb(30, 23, 23);}
+/* CLIENT PROJECTS showcase SECTION  ==============================================================================================================*/
 #client_projects {display: flex; flex-wrap: wrap; justify-content: space-around; margin: 40px 0;}
 .client_card { position: relative; width: 22%; margin: 20px 5.66%; box-shadow: 0 0 10px rgba(0,0,0,0.2); overflow: hidden; transition: 0.3s ease;}
 .client_card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.3);}
@@ -423,255 +105,51 @@ border: 2px solid rgb(9, 4, 4);
 .btn.view {background:var(--primary-color);color: white;}
 .btn.buy {background:var(--secondary-color);color: white;}
 .btn:hover {opacity: 0.85;transform: scale(1.05);}
-
-/* Web development services webdevlopmentfaq style start here -------------------------------*/
-.webdevlopmentfaq-section {
-  padding:2rem 3rem;
-  background: linear-gradient(270deg, var(--primary-color), var(--secondary-color));
-  color: var(--bg-light);
-  box-shadow:var(--shadow);
-
-}
-
-.webdevlopmentfaq-section h2 {
-  text-align:left;
-  margin-bottom: 30px;
-}
-
-.webdevlopmentfaq {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
-  padding-bottom: 15px;
-}
-
-.webdevlopmentfaq-question {
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  padding-right: 25px;
-}
-
-.webdevlopmentfaq-question::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
-
-.webdevlopmentfaq.active .webdevlopmentfaq-question::after {
-  transform: rotate(45deg);
-}
-
-.webdevlopmentfaq-answer {
-  display: none;
-  padding-top: 10px;
-  color: #060000;
-  line-height: 1.6;
-  transition: all 0.3s ease-in-out;
-}
-/* Webdevelopment servics webdevlopmentfaq style end here -------------------------------*/
+/* FAQS ===============================================================================================================================================*/
+.webdevlopmentfaq-section {  padding:2rem 3rem; background: linear-gradient(270deg, var(--primary-color), var(--secondary-color)); color: var(--bg-light);box-shadow:var(--shadow);}
+.webdevlopmentfaq-section h2 {text-align:left;margin-bottom: 30px;}
+.webdevlopmentfaq {  border-bottom: 1px solid #ddd;  margin-bottom: 10px;  padding-bottom: 15px;}
+.webdevlopmentfaq-question { font-weight: bold; cursor: pointer;  position: relative;  padding-right: 25px;}
+.webdevlopmentfaq-question::after { content: "+";position: absolute;right: 0;font-size: 20px; transition: transform 0.3s ease;}
+.webdevlopmentfaq.active .webdevlopmentfaq-question::after {transform: rotate(45deg);}
+.webdevlopmentfaq-answer { display: none; padding-top: 10px;  color: #060000;line-height: 1.6; transition: all 0.3s ease-in-out;}
 
 
-
-
-
-
-
-
-
-/* mobile responsive ----------------------------------------------*/
+/* RESPONSIVE =================================================================================================================*/
 @media screen and (max-width:700px) {
 
-.first-webdev-section
-{
-height:500px;
-width: 100%;
-border-radius:none;
-position: relative;
-}
+.first-webdev-section {height:500px;width: 100%;border-radius:none;position: relative;}
 .first-webdev-section video {width: 100%;height: 500px;}
-.overlay-content {
-position: absolute;
-top: 0; left: 0;
-width: 100%; height: 100%;
-display: flex;
-border: none;
-background-color: transparent;
-backdrop-filter: blur(5px);
-
-}.maintext{
-margin-left: 50%;
-height: 100%;
-width: 100%;
-margin:0.01%;
-padding: 10%;
-
-
-}
-.maintext h1{
-    font-size:1.25rem;
-    font-weight: bold;
-
-}.maintext h1 div
-{
-    background-color:var(--secondary-color);
-    height:100px;
-    width:100px;
-    border-radius:50%;
-    position: absolute;
-    z-index: -1001;
-    margin-left: -35px;
-}
-.maintext p
-{
-    color: white;
-    font-size:0.9rem;
-
-} .offer-grid {
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .Weoffersection {
-      padding: 1.2rem 0.2rem;
-    }
-    .offer-card {
-      border-left: 4px solid #6366f1;
-      padding: 1rem 0.5rem;
-    }
-    .Weoffersection h2 {
-      font-size: 1.4rem;
-    }
-  /* tech stack we work eith section  */
-
-      .tech-stack-box {
-        padding: 30px 20px;
-        grid-template-columns: 1fr;
-      }
-      .tech-category h3 {
-        text-align: center;
-        border-left: none;
-        border-bottom: 3px solid #FFD500;
-        padding-bottom: 8px;
-      }
-      .icons {
-        justify-content: center;
-      }
-/* process section start  */
-
-.webdevprocess
-{   height:600px;
-    width: 100%;
-    padding:0;
-    position: relative;
-
-}.webdevprocess .processbox
-{
-    color: white;
-    height:50px;
-    width: 100%;
-    margin:5px 0px;
-    padding: 2px 2rem;
-    border-right:none;
-
-
-}.client-slider
-{
-    height: 25%;
-    width: 80%;
-    position: absolute;
-    margin: -100px 7%;
-    overflow: hidden;
-
-}
- .clients-images {
-      display: flex;
-      transition: transform 0.8s ease-in-out;
-      height: 100%;
-       width: 100%;
-
-       /* overflow: hidden; */
-
-
-    } .clients-images img {
-      flex-shrink: 0;
-      height:100%;
-      width:100%;
-      /* object-fit: cover; */
-    }.numbers
-    {
-        position: absolute;
-        margin: 25% 20%;
-        float: left;
-        width: 60%;
-
-
-    }.pricingplan
-{
-    height:1650px;
-    padding: 0;
-
-}.plancategory
-{
-    height: 545px;
-    width: 100%;
-    display:block;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    justify-content:none;
-    margin:1.5px 0;
-}.planheader
-{
-
-     font-size:18px;
-
-
-
-}.plancontent
-{
-     padding: 2rem 2rem;
-
-
-}.plancontent li{
-    padding: 2px ;
-    list-style: none;
-}.doughtplanprice
-
-{
-    width: 95%;
-    height: 300px;
-    margin: 0 2.5%;
-    padding:1rem 2rem;
-
-}
-.planorder
-
-{
- height: 854px;
- display:block;
-
-
-}.planordercontact-form
-{
-    width: 99%;
-    height: 500px;
-    margin: 15px 0.5%;
-    padding:10px 20px;
-
-}#planordercontact-form-img
-{
-    background-color: transparent;
-    height: 300px;
-    padding: 0;
-}.planordercontact-form input ,select
-{
-    height: 50px;
-    width:90%;
-    margin:1% 5% ;
-    font-size: 15px;
-    padding:2px 15px;
-
-}#client_form_sbtn ,
+.overlay-content {position: absolute;top: 0; left: 0;width: 100%; height: 100%;display: flex;border: none;background-color: transparent;backdrop-filter: blur(5px);}
+.maintext{margin-left: 50%;height: 100%;width: 100%;margin:0.01%;padding: 10%;}
+.maintext h1{font-size:1.25rem; font-weight: bold;}
+.maintext h1 div{background-color:var(--secondary-color);height:100px; width:100px; border-radius:50%;position: absolute;z-index: -1001;margin-left: -35px;}
+.maintext p{color: white;font-size:0.9rem;}
+.offer-grid {flex-direction: column;gap: 1rem; }
+.Weoffersection {padding: 1.2rem 0.2rem;}
+.offer-card {border-left: 4px solid #6366f1; padding: 1rem 0.5rem;}
+.Weoffersection h2 {  font-size: 1.4rem;}
+.tech-stack-box {padding: 30px 20px;grid-template-columns: 1fr;}
+.tech-category h3 {text-align: center; border-left: none;border-bottom: 3px solid #FFD500;padding-bottom: 8px;}
+.icons {  justify-content: center;}
+/* WEB Development Process ==================================================================================================*/
+.webdevprocess {height:600px; width: 100%; padding:0; position: relative;}
+.webdevprocess .processbox{ color: white; height:50px;width: 100%;margin:5px 0px; padding: 2px 2rem; border-right:none;}
+.client-slider{ height: 25%;  width: 80%;  position: absolute;   margin: -100px 7%;  overflow: hidden;}
+.clients-images { display: flex;transition: transform 0.8s ease-in-out;height: 100%; width: 100%;}
+.clients-images img { flex-shrink: 0;height:100%; width:100%;/* object-fit: cover; */}
+.numbers{position: absolute; margin: 25% 20%;float: left; width: 60%;}
+.pricingplan{height:1650px; padding: 0;}
+.plancategory{height: 545px; width: 100%; display:block;flex-wrap: nowrap; overflow: hidden; justify-content:none;margin:1.5px 0;}
+.planheader{font-size:18px;}
+.plancontent{padding: 2rem 2rem;}
+.plancontent li{padding: 2px ; list-style: none;}
+.doughtplanprice{ width: 95%; height: 300px;margin: 0 2.5%;padding:1rem 2rem;}
+.planorder{height: 854px; display:block;}
+.planordercontact-form{ width: 99%;height: 500px;margin: 15px 0.5%;padding:10px 20px;}
+#planordercontact-form-img{  background-color: transparent;  height: 300px; padding: 0;}
+.planordercontact-form input ,select{height: 50px; width:90%; margin:1% 5% ; font-size: 15px;padding:2px 15px;}
+#client_form_sbtn ,
 #img_form_sbtn
 {
 font-size:12px;

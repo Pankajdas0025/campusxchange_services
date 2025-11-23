@@ -183,7 +183,7 @@ else
     <div class="paid-note-box">
       <div class="note-img">
         <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="Full Stack Web Development Notes" onclick="openPreview(this)">
-        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+        <a href="#" class="view-demo" >View Demo</a>
       </div>
       <h3>Master Full Stack Web Development with PHP <br>All-in-One Notes Combo!</h3>
       <p>Take your web development skills to the next level with our Full Stack with PHP Combo Notes, exclusively from CampusXchange.
@@ -198,7 +198,7 @@ else
     <div class="paid-note-box">
       <div class="note-img">
         <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="DBMS & SQL Notes" onclick="openPreview(this)">
-        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+        <a href="#" class="view-demo" >View Demo</a>
       </div>
       <h3>Master Database Management & SQL Queries Like a Pro!</h3>
       <p>Understand the backbone of every modern application — Database Management Systems (DBMS) and Structured Query Language (SQL) — with this exclusive CampusXchange Notes Combo.
@@ -213,7 +213,7 @@ else
     <div class="paid-note-box">
       <div class="note-img">
         <img src="../assets/Notes/Master Full Stack Web Development with PHP By Campusxchange.png" alt="DSA & C++ Notes" onclick="openPreview(this)">
-        <a href="javascript:void(0)" class="view-demo" onclick="openPreview(this.previousElementSibling)">View Demo</a>
+        <a href="#" class="view-demo" >View Demo</a>
       </div>
       <h3>DSA & C++ - Complete Notes Combo</h3>
       <p>Unlock the power of problem-solving and programming efficiency with our DSA & C++ Notes Combo, exclusively available on CampusXchange.
@@ -226,12 +226,6 @@ else
 
   </div>
 </section>
-
-<!-- Image Preview Modal -->
-<div id="imgModal" class="img-modal" onclick="closePreview()">
-  <span class="close-btn" onclick="closePreview()">&times;</span>
-  <img class="modal-content" id="modalImg">
-</div>
 
 </main>
 <a href="https://campusxchange.wuaze.com/Internship-program" title="Best Internship Program by campusxchange"><button id="btn1">👋Join Our Internship Program</button></a>
@@ -258,18 +252,6 @@ function RemoveIpop()
   document.querySelector("main").style.opacity = "1";
   document.querySelector("main").style.pointerEvents ="fill";
 }
-
-
-function openPreview(img) {
-  document.getElementById("imgModal").style.display = "block";
-  document.getElementById("modalImg").src = img.src;
-}
-
-function closePreview() {
-  document.getElementById("imgModal").style.display = "none";
-}
-
-
 </script>
 <!-- fotter section  --------------------------------------------------------------------------------->
 <?php include "../components/footer.php" ?>

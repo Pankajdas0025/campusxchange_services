@@ -1,413 +1,60 @@
-@import url("root.css");
-/*  Notes  section ------------------------------------------------------------------------------------------------------------- */
-#NotesContent
-{
-  height: 530px auto;
-  padding:2rem 3rem;
-  width: 100%;
-
-}#NotesContent h1
-{
-
-  color: var(--primary-color);
-  margin-bottom: 20px;
-}
-
-input[type="text"] {
-  padding: 12px;
-  width: 260px;
-  border: 2px solid #e5e7eb;
-  border-radius: var(--radius);
-  outline: none;
-  transition: border-color 0.3s;
-  font-size: 1rem;
-}
-
-input[type="text"]:focus {
-  border-color: var(--primary-color);
-}button[type="submit"]
-{
-  height:52px;
-  width: 110px;
-  font-size: 20px;
-  border-radius:14px;
-  outline: none;
-  border: none;
-}
-
-button[type="submit"]:hover {
-  background-color:var(--secondary-color);
-  transform: translateY(-2px);
-  color: white;
-
-}
-
-.Note_box
-{
-  background:linear-gradient(270deg, var(--primary-color), var(--secondary-color));
-  padding:20px;
-  border-radius: var(--radius);
-  transition: transform 0.2s;
-  border: 0;
-  width:45%;
-  display: inline-block;
-  margin: 15px  2.5%;
-
-}
-
-.Note_box:hover {
-  transform: scale(1.01);
-}
-
-#Note_tittle {
-  font-size: 2rem;
-  color:rgb(204, 198, 198);
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#span {
-  background:transparent;
-  border: none;
-  color:white;
-  font-size:2.2rem;
-  cursor: pointer;
-  transition: color 0.3s;
-
-}
-
-#span:hover {
-  color: var(--hoverbg);
-}
-
-#Note_content {
-  width: 100%;
-  height: 120px;
-  padding: 12px;
-  font-size:17px;
-  font-family: var(--font-main);
-  background-color:transparent;
-  border-radius: var(--radius);
-  margin-top:5px;
-  resize: none;
-  color: #ffffff;
-}
-.Note_footer {
-  display: flex;
-  justify-content:space-between;
-  margin-top: 15px;
-  font-size:2rem;
-
-
-}.Note_footer a
-{
-  color: rgb(3, 0, 0);
-  height: 40px;
-  width: 150px;
-  padding:2px;
-  padding-left:10px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: var(--radius);
-  text-decoration: none;
-  background-color:var(--card-bg);
-  border-radius: 14px;
-  border: var(--border);
-}.Note_footer a:hover{
-    background-color: var(--hoverbg);
-}
-/*.............................................All types of notes details... */
- .notes-section {
-  background: #f9f9ff;
-  width: 90%;
-  margin:0 5%;
-  padding: 60px 20px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.08);
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-}
-.notes-section h2 {
-  font-size: 1.8rem;
-  color: #004080;
-  margin-bottom: 15px;
-}
-.notes-highlights {
-  list-style: none;
-  padding: 0;
-  margin: 25px 0;
-}
-.notes-highlights li {
-  font-size: 1rem;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.notes-highlights i {
-  color: #004080;
-  font-size: 1.2rem;
-}
-.explore-notes-btn {
-  display: inline-block;
-  background: #004080;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-weight: 600;
-}
-.explore-notes-btn:hover {
-  background: #02285f;
-  transform: translateY(-2px);
-}
-
-
-
-/* ........................................................................... */
-/* Paid Notes Section */
-
-/* Paid Notes Section */
-.paid-notes-section {
-  width: 80%;
-  margin: 40px 10%;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow:0 10px 5px rgba(0, 0, 0, 0.08) inset;
-
-}
-
-.paid-notes-section h2 {
-  text-align: center;
-  font-size: 28px;
-  color: var(--primary-color);
-  margin-bottom: 24px;
-}
-
-.paid-notes-list {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Card */
-.paid-note-box {
-  background: #fff;
-  border: 1px solid var(--primary-color);
-  width: 30%;
-  transition: transform 0.3s;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.paid-note-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-/* Image Section */
-.note-img {
-  width: 100%;
-  height: 180px;
-  position: relative;
-  overflow: hidden;
-}
-
-.note-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-.note-img:hover img {
-  transform: scale(1.1);
-}
-
-/* View Demo Button */
-.view-demo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow:0 10px 5px rgba(0, 0, 0, 0.08) inset;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 4px;
-  font-size: 14px;
-  text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.3s ease, background 0.3s ease;
-}
-
-.note-img:hover .view-demo {
-  opacity: 1;
-}
-
-.view-demo:hover {
-  background: var(--primary-color);
-}
-
-/* Text */
-.paid-note-box h3 {
-  font-size: 18px;
-  margin: 14px 10px 8px;
-  color: #333;
-}
-
-.paid-note-box p {
-  font-size: 15px;
-  color: #555;
-  margin: 0 10px 12px;
-  line-height: 1.5;
-}
-
-/* Footer */
-.paid-note-footer {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin-top: auto;
-}
-
-.note-price {
-  font-weight: bold;
-  color: #2e7d32;
-}
-
-.buy-btn {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 6px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
-
-.buy-btn:hover {
-  background: var(--secondary-color);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .paid-note-box { width: 45%; }
-}
-@media (max-width: 600px) {
-  .paid-note-box { width: 100%; }
-}
-
-/* Modal Preview */
-.img-modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 25vh;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-}
-
-.img-modal img {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  border-radius: 6px;
-  animation: zoomIn 0.4s ease;
-}
-
-
-
-/* Zoom Animation */
-@keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-/*Notes  section  end------------------------------------------------------------------------------------------------------------- */
-/* Mobile Responsive */
-@media screen and (max-width:600px)
-{
-  #Note_tittle {font-size:1.5rem;}
-#span {  margin-right: 20px;}
-#NotesContent{padding:2rem 1rem;}
-
-#Note_content {
-  width: 100%;
-  height: 120px;
-  padding:2rem 1rem;
-  font-size:1.2rem;
-  font-family: var(--font-main);
-  border: none;
-  border-radius: var(--radius);
-  margin-top:5px;
-  resize: none;
-  color: #000103;
-}
-button[type="submit"]
-{
-  height:52px;
-  margin-top: 20px;
-
-}.Note_box {
-
-  width: 90%;
-  margin:2.5% 5%;
-
-}
-
-.notes-section {
-  padding:2rem 1rem;
-
-}.notes-section h2 {
-  font-size: 20px;
-
-}
-
-.notes-section p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.7;
-}
-
-.notes-highlights {
-  list-style: none;
-  padding: 0;
-  margin: 25px 0;
-}
-
-.notes-highlights li {
-  margin-bottom: 14px;
-  position: relative;
-  font-size: 15px;
-}
-.Note_footer {
-  margin-top: 15px;
-  justify-content:space-between;
-}.Note_footer a
-{
-  font-size:0.5rem;
-  height: 30px;
-  width: 80px;
-  padding:auto;
-  text-align: center;
-  border-radius: var(--radius);
-  text-decoration: none;
-}
-
-.paid-notes-section { padding:0px; }
-.paid-note-box {width:100%; margin:0; }
-
+@import url(root.css);
+#Note_tittle,.Note_footer{font-size:2rem;display:flex}
+#NotesContent{height:530px auto;padding:2rem 3rem;width:100%}
+#NotesContent h1{color:var(--primary-color);margin-bottom:20px}
+/*Search button =======================================================================================================================*/
+input[type=text]{padding:12px;width:260px;border:2px solid #e5e7eb;border-radius:var(--radius);outline:0;transition:border-color .3s;font-size:1rem}
+input[type=text]:focus{border-color:var(--primary-color)}
+button[type=submit]{height:52px;width:110px;font-size:20px;border-radius:14px;outline:0;border:none}
+button[type=submit]:hover{background-color:var(--secondary-color);transform:translateY(-2px);color:#fff}
+/* Free Notes section ==================================================================================================================*/
+.Note_box{background:linear-gradient(270deg,var(--primary-color),var(--secondary-color));padding:20px;border-radius:var(--radius);transition:transform .2s;border:0;width:45%;display:inline-block;margin:15px 2.5%}
+.Note_box:hover{transform:scale(1.01)}
+#Note_tittle{color:#ccc6c6;font-weight:700;justify-content:space-between;align-items:center}
+#span{background:0 0;border:none;color:#fff;font-size:2.2rem;cursor:pointer;transition:color .3s}
+#span:hover{color:var(--hoverbg)}
+#Note_content{width:100%;height:120px;padding:12px;font-size:17px;font-family:var(--font-main);background-color:transparent;border-radius:var(--radius);margin-top:5px;resize:none;color:#fff}
+.Note_footer{justify-content:space-between;margin-top:15px}.Note_footer a{color:#030000;height:40px;width:150px;padding:2px 2px 2px 10px;font-size:20px;text-align:center;border-radius:var(--radius);text-decoration:none;background-color:var(--card-bg);border-radius:14px;border:var(--border)}
+.Note_footer a:hover{background-color:var(--hoverbg)}.notes-section{background:#f9f9ff;width:90%;margin:0 5%;padding:60px 20px;border-radius:16px;box-shadow:0 0 20px rgba(0,0,0,.08);text-align:left;font-family:Poppins,sans-serif}
+/* Paid Notes section =============================================================================================================================== */
+.paid-notes-section,.view-demo{box-shadow:0px 0px 20px black inset}
+.notes-section h2{font-size:1.8rem;color:#004080;margin-bottom:15px}
+.notes-highlights{list-style:none;padding:0;margin:25px 0}.notes-highlights li{font-size:1rem;margin:10px 0;display:flex;align-items:center;gap:10px}
+.notes-highlights i{color:#004080;font-size:1.2rem}.explore-notes-btn{display:inline-block;background:#004080;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;transition:.3s;font-weight:600}
+.explore-notes-btn:hover{background:#02285f;transform:translateY(-2px)}
+.paid-notes-section{width:80%;margin:40px 10%;padding:24px;border-radius:10px}
+.paid-notes-section h2{text-align:center;font-size:28px;color:var(--primary-color);margin-bottom:24px}
+.paid-notes-list{display:flex;gap:24px;flex-wrap:wrap;justify-content:center}
+.paid-note-box{background:#fff;border:1px solid var(--primary-color);width:30%;transition:transform .3s;overflow:hidden;display:flex;flex-direction:column}
+.buy-btn,.view-demo{border-radius:4px;text-decoration:none}
+.paid-note-box:hover{transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.note-img{width:100%;height:180px;position:relative;overflow:hidden}
+.note-img img{width:100%;height:100%;object-fit:cover;cursor:pointer;transition:transform .4s}
+.note-img:hover img{transform:scale(1.1)}
+.view-demo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.7);color:#fff;padding:8px 18px;font-size:14px;opacity:0;transition:opacity .3s,background .3s}
+.buy-btn,.view-demo:hover{background:var(--primary-color)}
+.note-img:hover .view-demo{opacity:1}
+.paid-note-box h3{font-size:18px;margin:14px 10px 8px;color:#333}
+.paid-note-box p{font-size:15px;color:#555;margin:0 10px 12px;line-height:1.5}
+.paid-note-footer{display:flex;justify-content:space-between;align-items:center;padding:10px;margin-top:auto}
+.note-price{font-weight:700;color:#2e7d32}.buy-btn{color:#fff;padding:6px 16px;font-weight:500;transition:background .3s}
+.buy-btn:hover{background:var(--secondary-color)}
+/* Basic Responsive ====================================================================================================================================== */
+@media (max-width:900px){.paid-note-box{width:45%}}
+@media (max-width:600px){.paid-note-box{width:100%}}
+/* Responsive ====================================================================================================================================== */
+@media screen and (max-width:600px){
+#Note_content,#NotesContent,.notes-section{padding:2rem 1rem}
+#Note_tittle{font-size:1.5rem}#span{margin-right:20px}
+#Note_content{width:100%;height:120px;font-size:1.2rem;font-family:var(--font-main);border:none;border-radius:var(--radius);margin-top:5px;resize:none;color:#000103}
+button[type=submit]{height:52px;margin-top:20px}
+.Note_box{width:90%;margin:2.5% 5%}
+.notes-section h2{font-size:20px}
+.notes-section p{font-size:16px;color:#444;line-height:1.7}
+.notes-highlights{list-style:none;padding:0;margin:25px 0}
+.notes-highlights li{margin-bottom:14px;position:relative;font-size:15px}
+.Note_footer{margin-top:15px;justify-content:space-between}
+.Note_footer a{font-size:.5rem;height:30px;width:80px;padding:auto;text-align:center;border-radius:var(--radius);text-decoration:none}
+.paid-notes-section{padding:0}
+.paid-note-box{width:100%;margin:0}
 }

@@ -148,7 +148,7 @@ animation-delay: 0.75s;
 </iframe>
 </div>
 </footer>
-<div id="all-reserved" style="text-align:center; font-family:'Poppins', sans-serif; font-size:15px; color:#555; background:#f8f9fa; padding:10px 0; border-bottom:1px solid #ddd;">© 2025 <strong>CampusXchange</strong> | All Rights Reserved • <span style="color:#0078ff;">Fearless Web solution ❤ </span></div>
+<div id="all-reserved" style="text-align:center; font-family:'Poppins', sans-serif; font-size:15px; color:#555; background:#f8f9fa; padding:10px 0; border-bottom:1px solid #ddd;">© <?php echo date("Y"); ?> <strong>CampusXchange</strong> | All Rights Reserved • <span style="color:#0078ff;">Fearless Web solution ❤ </span></div>
 
 
 
@@ -166,7 +166,7 @@ document.addEventListener("mousemove",(e)=>
 document.addEventListener("DOMContentLoaded", function() {
 
   // Get the button if it exists
-  const mybutton = document.getElementById("movebtn");
+  const mybutton = document.getElementById("topBtn");
   if (!mybutton) return; // Exit if button not present
 
   // Show button on scroll
