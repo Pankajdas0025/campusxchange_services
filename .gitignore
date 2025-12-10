@@ -1,10 +1,12 @@
 *.temp
 *.log
+
+
 src/
+PHPMailer/
 .htaccess
 dashboard/
-
-*.xlsx
+campusxchange-seo-audit.xlsx
 
 
 
