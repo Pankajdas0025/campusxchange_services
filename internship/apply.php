@@ -190,7 +190,7 @@ height: auto;
 </form>
   </div>
 
-  <!-- Apply intern form data into databae table  ----------------------------------------->
+
 <!-- Apply intern form data into database ----------------------------------------->
 
 <?php
@@ -272,7 +272,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
             $mail->Username   = 'campusxchangeservices@gmail.com';
-            $mail->Password   = 'gakh gqae uqvr apdw'; // App password
+            $mail->Password   = $app;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 

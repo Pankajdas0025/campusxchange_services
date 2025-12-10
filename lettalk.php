@@ -55,22 +55,7 @@ include "src/config.php";
   }
   </script>
 <style>
-
-:root {
-
-  --primary-color: #263F5A;
-  --secondary-color: #F9A4B2;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
+@import url("root.css");
   .contact-main {
     background: #ecedefff;
     padding: 3rem 1.5rem 2rem 1.5rem;
@@ -315,7 +300,6 @@ include "src/config.php";
       <li><i class="fa-solid fa-building"></i> <strong>Branch:</strong> Patna, Bihar (800001), India</li> -->
       <li> <strong>Email:</strong> campusxchangeservices@gmail.com</li>
       <li> <strong>Mobile:</strong> +91 9155726625</li>
-      <li> <strong>WhatsApp:</strong> +91 9155726625</li>
       <li> <strong>Website:</strong> www.campusxchange.wuaze.com</li>
     </ul>
     <div class="branch">
@@ -333,7 +317,7 @@ include "src/config.php";
 <section class="newsletter-unique">
   <div class="animationtype3 newsletter-card">
     <span class="card-icon"><i class="fa-solid fa-paper-plane"></i></span>
-    <form class="contact-form" id="contactForm" autocomplete="off">
+    <form class="contact-form" id="contactForm" autocomplete="off" method="POST" action="">
       <h3>Send Us a Message</h3>
       <div id="f-Error"></div>
       <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
@@ -341,7 +325,29 @@ include "src/config.php";
       <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your Mobile " maxlength="10" required>
       <textarea id="contactMsg" name="contactMsg" placeholder="Your Message" rows="4" minlength="20" required></textarea>
       <button type="submit">Send Message</button>
+<!-- Add To Database table ========================================================= -->
+ <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    // Collect and sanitize input
+      $Cname =htmlspecialchars($_POST['contactName']);
+      $Cemail =htmlspecialchars($_POST['contactEmail']);
+      $Cphone =htmlspecialchars($_POST['contactPhone']);
+      $Cmsg =htmlspecialchars($_POST['contactMsg']);
+
+      if (empty($Cemail) || !filter_var($Cemail, FILTER_VALIDATE_EMAIL))
+    {
+        echo"<script>alert('Please enter a valid email address.');</script>";
+    }
+    // Prepare and execute insert query
+        $stmt = $conn->prepare("INSERT INTO data (name, email, phone, message) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss",$Cname, $Cemail, $Cphone, $Cmsg);
+    if ($stmt->execute())
+  {
+   echo"<script>alert('Your Data submitted!');  window.location.href='http://localhost/Campusxchange/lettalk';  </script>";
+  }
+}
+ ?>
     </form>
   </div>
 <!-- subscribe us newsletter section ----------------------------------------->
@@ -440,28 +446,6 @@ document.addEventListener("DOMContentLoaded", () => {
       form_sms.textContent = "";
       form_phone.style.color = "black";
     }
-  });
-
-  // ✅ Form Submission (Send to WhatsApp)
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const name = form_name.value.trim();
-    const email = form_email.value.trim();
-    const number = form_phone.value.trim();
-    const sms = form_msg.value.trim();
-
-    // Final validation before sending
-    if (name === "" || email === "" || sms === "") {
-      form_sms.textContent = "Please fill all required fields before submitting.";
-      return;
-    }
-
-    const whatsappNumber = "919155726625"; // Your WhatsApp number
-    const message = `Hello, my name is ${name}%0aEmail: ${email}%0aContact: ${number}%0aMessage: ${sms}%0aPlease reply to me for my query.`;
-    const url = `https://wa.me/${whatsappNumber}?text=${message}`;
-
-    window.open(url, "_blank");
   });
 });
 </script>

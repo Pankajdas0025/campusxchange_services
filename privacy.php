@@ -33,17 +33,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
   <style>
-    :root {
-      --primary-color: #004080;
-      --secondary-color: #f43f5e;
-      --bg-light: #f9fafb;
-      --text-color: #111;
-      --card-bg: #f3eded;
-      --shadow: 0 8px 30px rgba(2,6,23,0.08);
-      --radius: 10px;
-      --font-main: 'Poppins', sans-serif;
-      --hoverbg: #da6b7e;
-    }
+    @import url("root.css");
 
     body {
       font-family: var(--font-main);

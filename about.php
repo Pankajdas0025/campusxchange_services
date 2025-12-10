@@ -53,22 +53,7 @@
   }
   </script>
   <style>
-    :root {
-
-  --primary-color: #263F5A;
-  --secondary-color: #F8627B;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 0px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
-
+  @import url("root.css");
     /* Hero Section */
     .about-hero {
       background:var(--primary-color);

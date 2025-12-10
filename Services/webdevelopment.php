@@ -412,7 +412,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <footer style='margin-top: 25px; text-align: center; font-size: 0.85rem; color: #777; background-color: #fafafa; padding: 15px; '>
       <p style='margin: 8px 0;'>You're receiving this email because you showed interest in <strong>CampusXchange</strong> web services.</p>
-      <p style='margin: 8px 0;'>If this wasn’t you, simply ignore this email.</p>
+      <p style='margin: 8px 0;'>If this wasn't you, simply ignore this email.</p>
       <div style='margin-top: 10px;'>
         <a href='https://campusxchange.wuaze.com' target='_blank' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Home</a> |
         <a href='https://campusxchange.wuaze.com/services/webdevelopment' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Services</a> |
@@ -438,7 +438,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'campusxchangeservices@gmail.com';
-    $mail->Password   = 'gakh gqae uqvr apdw';
+    $mail->Password   = $app;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     //Email settings

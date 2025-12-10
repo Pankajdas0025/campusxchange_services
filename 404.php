@@ -36,8 +36,8 @@ http_response_code(404);
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 <style>
-
-:root {
+    @import url("root.css");
+/* :root {
  --primary-color: #004080;
   --secondary-color: #f43f5e;
   --bg-light: #f9fafb;
@@ -50,7 +50,7 @@ http_response_code(404);
   --hoverbg :#da6b7e;
   --pSize:0.9rem;
   --border:none;
-}
+} */
 /* header for all pages  */
 /*
 .Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}

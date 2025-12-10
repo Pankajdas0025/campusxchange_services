@@ -49,6 +49,8 @@
 <div class=" block mentor-hero">
   <h1><i class="fa-solid fa-user-graduate"></i> &nbsp; Mentorship & Internship Programs</h1>
   <p>Unlock your potential with CampusXchange's personalized mentorship and hands-on internship programs. Whether you're a student, fresher, or professional, our expert mentors guide you through real-world projects, career planning, and skill development to help you achieve your goals.</p>
+<br>
+<hr width="50%" size="15" style="background-color:white; margin:0 25%"/>
 </div>
 <br>
 <section class="mentor-section">
@@ -145,7 +147,7 @@
     <h2><i class="fa-solid fa-video"></i>Internship Program Process</h2>
     <br>
     <div>
-      <iframe  src="https://www.youtube.com/embed/Xze4efOAWao?si=MaF8pu9vXBx9RwWL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe  src="https://www.youtube.com/embed/mLidOOVKTQE?si=n3aIEOEsXRimJR7v&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </section>
   <br>
