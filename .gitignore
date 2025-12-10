@@ -1,3 +1,6 @@
+*.temp
+*.log
+
 # Ignore Source Folder
 src/
 # Ignore htaccess
@@ -5,3 +8,6 @@ src/
 
 #Ignored admin
 dashboard/
+
+
+
