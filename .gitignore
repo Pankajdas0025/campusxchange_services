@@ -1,13 +1,10 @@
 *.temp
 *.log
-
-# Ignore Source Folder
 src/
-# Ignore htaccess
 .htaccess
-
-#Ignored admin
 dashboard/
+
+*.xlsx
 
 
 
