@@ -1,7 +1,5 @@
 *.temp
 *.log
-
-
 src/
 PHPMailer/
 .htaccess
