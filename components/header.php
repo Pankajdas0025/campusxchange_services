@@ -62,9 +62,10 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
 
 <header>
-<div id="scroll-progress"></div>
+     <div id="scroll-progress"></div>
+     <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div>
+</header>
 
-  <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div></header>
 <div class="topnav" id="myTopnav">
   <a href="http://localhost/Campusxchange/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
