@@ -1,6 +1,6 @@
 
 
-# 🌐 CampusXchange
+# CampusXchange
 
 ### CampusXchange is an educational hub designed to simplify student life. It offers handouts, notes, blogs, assignments, and professional services like Web Development, SEO, Internship, and Mentorship programs — all in one place.
 ---
