@@ -1,5 +1,6 @@
 *.temp
 *.log
+*.sql/
 src/
 PHPMailer/
 .htaccess
