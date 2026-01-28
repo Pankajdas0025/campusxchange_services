@@ -3,6 +3,7 @@
 *.sql/
 src/
 PHPMailer/
+IP_restriction.php
 .htaccess
 dashboard/
 Database schema/
