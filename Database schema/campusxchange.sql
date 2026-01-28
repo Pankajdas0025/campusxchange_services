@@ -14,9 +14,6 @@ CREATE TABLE admins (
   PRIMARY KEY (id)
 );
 
--- Dumping data for admins
-INSERT INTO admins (id, username, password_hash, created_at) VALUES
-(1, 'admin/Pankaj', '$2y$10$vdMpcAFXERK4TwMcz113lOkPzFhLfZ3bZ6qpPsjeoMWmIK8WN.sP6', '2025-10-11 12:43:06');
 
 -- Table structure for applied_intern
 CREATE TABLE applied_intern (
@@ -35,10 +32,6 @@ CREATE TABLE applied_intern (
 -- Dumping data for applied_intern
 INSERT INTO applied_intern (id, Name, Email, Whatsapp_No, Domain, Duration, College, Address, Verification) VALUES
 (1, 'PANKAJ KUMAR DAS', 'useremail5569121@gmail.com', '9155726627', 'SEO', '2 Months', 'CCSIT', 'Kkishanganj', 1),
-(2, 'PANKAJ KUMAR DAS', 'useremail5569121@gmail.com', '9155726627', 'Web Development in PHP', '2 Months', 'CCSIT', 'Kkishanganj', 1),
-(3, 'PANKAJ KUMAR DAS', 'useremail5569121@gmail.com', '9155726627', 'C Programming', '45 Days', 'CCSIT', 'Kkishanganj', 0),
-(4, 'PANKAJ KUMAR DAS', 'useremail5569121@gmail.com', '9155726627', 'Full-stack Development', '45 Days', 'CCSIT', 'Kkishanganj', 0),
-(5, 'PANKAJ KUMAR DAS', 'useremail5569121@gmail.com', '9155726627', 'C Programming', '1 Month', 'CCSIT', 'Kkishanganj', 0);
 
 -- Table structure for data
 CREATE TABLE data (
@@ -60,13 +53,7 @@ CREATE TABLE email_list (
 -- Dumping data for email_list
 INSERT INTO email_list (Emails, Date) VALUES
 ('Pd5569121@gmail.com', '2025-09-19 18:56:48'),
-('Pd5569121@gmail.com', '2025-10-07 04:10:03'),
-('usereail55695121@gmail.com', '2025-10-07 04:10:10'),
-('Pd5569121@gmail.com', '2025-10-08 21:30:17'),
-('Pd5569121@gmail.com', '2025-10-08 21:35:29'),
-('Pd5569121@gmail.com', '2025-10-08 21:35:34'),
-('Pd5569121@gmail.com', '2025-10-08 21:36:52'),
-('Pd5569121@gmail.com', '2025-10-08 21:37:50');
+
 
 -- Table structure for notes
 CREATE TABLE notes (
