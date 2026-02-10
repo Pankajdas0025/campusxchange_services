@@ -108,6 +108,9 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"
   <main id="main">
   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
   <?php include "components/header.php" ?>
+  <?php include "chatboat.php" ?>
+
+
 <!-- Home Intro Section -->
 <section class="homeIntro" >
   <div class="introContent" data-aos="fade-up">

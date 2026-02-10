@@ -102,7 +102,7 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
 
-<!-- <div class="topnav" id="myTopnav">
+<!--<div class="topnav" id="myTopnav">
   <a href="https://campusxchange.wuaze.com/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
     <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
@@ -140,8 +140,8 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
  -->
 
 
-
-
+<!--------------------------------------------------------->
+<!-------------------------------------------------------->
 <script>
 function myFunction()
 {
@@ -171,7 +171,7 @@ function scrollIndicator() {
 
 
 
-// Hide Inspect Element
+// Hide Inspect Element ----------------------------------------------------------------
 
 // document.onkeydown = function(e)
 // {

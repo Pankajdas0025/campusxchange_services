@@ -56,13 +56,12 @@
   @import url("root.css");
     /* Hero Section */
     .about-hero {
-      background:var(--primary-color);
+      background:rgb(248, 98, 123 , 0.8);
       color: #fff;
       padding: 3rem 1.5rem;
       text-align: center;
-      width: 90%;
-      margin: 0 5%;
-      border-radius: var(--radius);
+      width: 100%;
+      margin: 0%;
       box-shadow: var(--shadow);
     }
     .about-hero h1 {
@@ -265,12 +264,12 @@
     </div>
     <div class="founder-bio">
       <h2>Pankaj Kumar Das</h2>
-      <h4>Founder & CEO</h4>
+      <h4>Founder</h4>
       <p>Pankaj Kumar is a full-stack web developer, educator, and entrepreneur who founded CampusXchange to bridge the gap between academic learning and real-world skills. With expertise in HTML, CSS, JavaScript, and PHP, he builds innovative web solutions while guiding students, freelancers, and startups to achieve their goals. His passion for technology, mentorship, and problem-solving drives CampusXchange’s mission to empower the next generation of digital professionals.</p>
 <br>
-    <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
+    <!-- <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
     <a href="https://pankajkumardas.wuaze.com/"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;"> Portfolio <i class="fa-solid fa-globe"></i></span></a>
-    <a href="https://wa.me/91915576625?text=Hello%20Pankaj%20!"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a>
+    <a href="https://wa.me/91915576625?text=Hello%20Pankaj%20!"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a> -->
 
     </div>
   </section>

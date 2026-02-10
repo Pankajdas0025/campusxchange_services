@@ -81,7 +81,7 @@ animation-delay: 0.75s;
     animation: fadeText 1.5s ease-in-out infinite;
   }
   @keyframes fadeText {
-    0%, 100% { opacity: 1; }
+    0%, 100% { opacity: 0.1; }
     50% { opacity: 0.5; }
   }
   @media(max-width:600px)
@@ -97,12 +97,12 @@ animation-delay: 0.75s;
 </head>
 <body>
 <!-- Splash Screen Loader -->
-  <div id="loading-screen">
+  <!-- <div id="loading-screen">
     <div class="loader">
        <img src="https://campusxchange.wuaze.com/assets/Images/taransparent-profile-logo-campusxchange.png" alt="campusxchange-logo" title="splash-logo for page splash">
      </div>
   <div class="loader-text">Loading...</div>
-</div>
+</div> -->
   <!-- animated cursor ------------------->
  <div class="cursor"></div>
 <!-- WhatsApp Floating Button -->
