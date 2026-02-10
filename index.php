@@ -29,8 +29,6 @@
 <!-- internal and external Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Aos Animation -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="style.css" type="text/css">
 
 <!--favicon ------------------------------------------------------------------------------>
@@ -298,7 +296,6 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <?php include "components/footer.php" ?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   // for portfolio section slider .....................................................................
   const slider = document.getElementById("slider");
@@ -330,7 +327,6 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
   }, 2000);
 
 
-  AOS.init({ duration: 1000, once: true });
 
 function prefillDestination(city){
   document.getElementById('to').value = city;

@@ -164,31 +164,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Coming Soon Courses -->
-  <section>
-    <h2 class="section-title">Coming Soon</h2>
-    <div class="courses-grid">
-      <!-- Example Upcoming Course -->
-      <div class="course-card">
-        <img src="../assets/Images/og-images/og-internship.jpg" alt="JavaScript Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
-        <div class="course-content">
-          <h3>JavaScript for Beginners</h3>
-          <p>Learn how to make your website interactive and dynamic using JavaScript.</p>
-          <a href="https://www.youtube.com/@Campusxchange_services" title="Subscribe and allow notifications for latest videos!" target="_blank" class="cta-btn">Notify Me</a>
-        </div>
-      </div>
-
-      <div class="course-card">
-        <img src="../assets/Images/og-images/og-internship.jpg" alt="Python Course Coming Soon" style="width:100%; height:220px; object-fit:cover;">
-        <div class="course-content">
-          <h3>Python Programming Series</h3>
-          <p>Get ready to explore Python concepts, from basics to advanced projects.</p>
-          <a href="https://www.youtube.com/@campusxchange_services" title="Subscribe our channel for latest videos!" target="_blank" class="cta-btn">Subscribe</a>
-        </div>
-      </div>
-    </div>
-  </section>
 <!-- Footer section -->
  <br>
 <?php include "../components/footer.php" ?>

@@ -41,20 +41,20 @@
 <?php include "components/header.php" ?>
 <br>
 <main>
-<span class="Notice">
+<span class="Notice" data-aos="fade-left">
   <i class="fa-solid fa-circle-info"></i>  <strong>Important Notice:</strong> Currently, CampusXchange is not offering internships as AICTE approval is under process. Stay tuned for updates! 🚀
   </span>
 <br>
 <br>
-<div class=" block mentor-hero">
-  <h1><i class="fa-solid fa-user-graduate"></i> &nbsp; Mentorship & Internship Programs</h1>
-  <p>Unlock your potential with CampusXchange's personalized mentorship and hands-on internship programs. Whether you're a student, fresher, or professional, our expert mentors guide you through real-world projects, career planning, and skill development to help you achieve your goals.</p>
+<div class=" block mentor-hero" >
+  <h1 data-aos="fade-up"><i class="fa-solid fa-user-graduate"></i> &nbsp; Mentorship & Internship Programs</h1>
+  <p data-aos="fade-up">Unlock your potential with CampusXchange's personalized mentorship and hands-on internship programs. Whether you're a student, fresher, or professional, our expert mentors guide you through real-world projects, career planning, and skill development to help you achieve your goals.</p>
 <br>
 <hr width="50%" size="15" style="background-color:white; margin:0 25%"/>
 </div>
 <br>
 <section class="mentor-section">
-  <div class="block mentor-card">
+  <div class="block mentor-card" data-aos="fade-right">
     <h2><i class="fa-solid fa-user-graduate"></i> Student Mentorship</h2>
     <ul>
       <li>Guidance for academic & career growth</li>
@@ -64,7 +64,7 @@
     </ul>
     <a href="lettalk" style="display:block;margin-top:16px;background:#004080;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Book a Mentor</a>
   </div>
-  <div class="block mentor-card">
+  <div class="block mentor-card" data-aos="zoom">
     <h2><i class="fa-solid fa-briefcase"></i> Internship Program</h2>
     <ul>
       <li>Web Development Internship</li>
@@ -76,7 +76,7 @@
     </ul>
     <a href="internship/apply" style="display:block;margin-top:16px;background:#f43f5e;color:#fff;padding:8px 18px;border-radius:6px;text-align:center;text-decoration:none;">Apply for Internship</a>
   </div>
-  <div class="block mentor-card">
+  <div class="block mentor-card" data-aos="fade-left">
     <h2><i class="fa-solid fa-chalkboard-user"></i> Professional Mentorship</h2>
     <ul>
       <li>Skill upgradation program</li>
@@ -92,22 +92,22 @@
  <section class="mentors-section">
   <h2 class="mentors-title">Meet Our Mentors</h2>
   <div class="mentors-list">
-    <div class="animationtype2 mentor-profile-card">
+    <div class="animationtype2 mentor-profile-card" data-aos="flip-left">
       <img src="assets/Images/pankaj-kumar-das.jpg" alt="Pankaj Kumar Das">
       <h4>Pankaj Kumar Das</h4>
       <small>Full Stack Developer Mentor <i class="fa-solid fa-envelope"></i></small>
     </div>
-    <div class="animationtype2 mentor-profile-card">
+    <div class="animationtype2 mentor-profile-card" data-aos="flip-left">
       <img src="assets/Images/dipul.jpg" alt="Dipul Raj">
       <h4>Dipul Raj</h4>
       <small>MERN Stack Mentor <i class="fa-solid fa-envelope"></i></small>
     </div>
-    <div class="animationtype2 mentor-profile-card">
+    <div class="animationtype2 mentor-profile-card" data-aos="flip-left">
       <img src="assets/Images/rahul.jpg" alt="Rahul Kumar">
       <h4>Rahul Kumar</h4>
       <small>Educational Counsler Mentor <i class="fa-solid fa-envelope"></i></small>
     </div>
-    <div class="animationtype2 mentor-profile-card">
+    <div class="animationtype2 mentor-profile-card" data-aos="flip-left">
       <img src="assets/Images/avinash.jpg" alt="Banty Mishra">
       <h4>Avinash Kumar</h4>
       <small>Data Analytics mentor <i class="fa-solid fa-envelope"></i></small>
@@ -118,22 +118,22 @@
 <section class="internship-types-section">
   <h2 class="internship-types-title">Types of Internships We Offer</h2>
   <div class="internship-types-list">
-    <div class="animationtype3 internship-type-card">
+    <div class="animationtype3 internship-type-card"data-aos="fade-left">
       <h4>Web Development</h4>
       <p>Frontend & Backend projects, responsive design, deployment, and teamwork.</p>
       <a href="internship/apply"> <button class="apply-btn" data-internship="Web Development">Apply</button></a>
     </div>
-    <div class="animationtype3 internship-type-card">
+    <div class="animationtype3 internship-type-card"data-aos="fade-left">
       <h4>SEO & Digital Marketing</h4>
       <p>Keyword research, on-page/off-page SEO, analytics, and campaign management.</p>
       <a href="internship/apply"> <button class="apply-btn" data-internship="SEO & Digital Marketing">Apply</button></a>
     </div>
-    <div class="animationtype3 internship-type-card">
+    <div class="animationtype3 internship-type-card"data-aos="fade-left">
       <h4>Content Writing</h4>
       <p>Blog writing, technical documentation, creative content, and editing.</p>
       <a href="internship/apply"> <button class="apply-btn" data-internship="Content Writing">Apply</button></a>
     </div>
-    <div class="animationtype3 internship-type-card">
+    <div class="animationtype3 internship-type-card"data-aos="fade-left">
       <h4>Data Analytics</h4>
       <p>Data visualization, reporting, Python/Excel projects, and business insights.</p>
       <a href="internship/apply"> <button class="apply-btn" data-internship="Data Analytics">Apply</button></a>
@@ -191,19 +191,19 @@
 <section class="testimonials-section">
   <h2 class="testimonials-title">Intern Testimonials</h2>
   <div class="testimonials-list">
-    <div class="block testimonial-card">
+    <div class="block testimonial-card" data-aos="fade-down">
       <img src="assets/Images/client.png" class="intern-img" alt="Aastha singh intern">
       <div class="intern-name">Aastha singh</div>
       <div class="intern-role">Content Writing Intern</div>
       <div class="intern-text">“CampusXchange gave me the opportunity to work on real blogs and improve my writing skills. The mentorship was amazing!”</div>
     </div>
-    <div class="block testimonial-card">
+    <div class="block testimonial-card" data-aos="fade-down">
       <img src="assets/Images/client.png" class="intern-img" alt="Ranjeet Kumar intern">
       <div class="intern-name">Ranjeet Kumar</div>
       <div class="intern-role">SEO Intern</div>
       <div class="intern-text">“I learned practical SEO strategies and got a certificate that helped me land my first job!”</div>
     </div>
-    <div class="block testimonial-card">
+    <div class="block testimonial-card" data-aos="fade-down">
       <img src="assets/Images/client.png" class="intern-img" alt="khushi bhatt intern">
       <div class="intern-name">Khushi Bhatt</div>
       <div class="intern-role">Web Development Intern</div>

@@ -122,12 +122,9 @@ include "src/config.php";
   /* <!-- contact us newsletter section -----------------------------------------> */
     .newsletter-unique {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    margin: 0 auto 2rem auto;
     background: linear-gradient(120deg, #e0e7ff 60%, #f9fafb 100%);
     box-shadow: 0 4px 24px rgba(99,102,241,0.08);
     padding: 2.5rem 1rem;
@@ -135,16 +132,8 @@ include "src/config.php";
 
   .newsletter-card {
     background: #fff;
-    box-shadow: 0 2px 12px rgba(99,102,241,0.07);
-    flex: 1 1 340px;
-    min-width: 260px;
-    max-width: 420px;
     padding: 2rem 1.2rem 1.2rem 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-bottom: 0;
+
     transition: transform 0.2s, box-shadow 0.2s;
     border-top: 6px solid var(--primary-color);
   }.newsletter-card #f-Error
@@ -316,42 +305,6 @@ include "src/config.php";
 <!-- contact us newsletter section ----------------------------------------->
 <section class="newsletter-unique">
   <div class="animationtype3 newsletter-card">
-    <span class="card-icon"><i class="fa-solid fa-paper-plane"></i></span>
-    <form class="contact-form" id="contactForm" autocomplete="off" method="POST" action="">
-      <h3>Send Us a Message</h3>
-      <div id="f-Error"></div>
-      <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
-      <input type="email" id="contactEmail" name="contactEmail" placeholder="Your Email" required>
-      <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your Mobile " maxlength="10" required>
-      <textarea id="contactMsg" name="contactMsg" placeholder="Your Message" rows="4" minlength="20" required></textarea>
-      <button type="submit">Send Message</button>
-<!-- Add To Database table ========================================================= -->
- <?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Collect and sanitize input
-      $Cname =htmlspecialchars($_POST['contactName']);
-      $Cemail =htmlspecialchars($_POST['contactEmail']);
-      $Cphone =htmlspecialchars($_POST['contactPhone']);
-      $Cmsg =htmlspecialchars($_POST['contactMsg']);
-
-      if (empty($Cemail) || !filter_var($Cemail, FILTER_VALIDATE_EMAIL))
-    {
-        echo"<script>alert('Please enter a valid email address.');</script>";
-    }
-    // Prepare and execute insert query
-        $stmt = $conn->prepare("INSERT INTO data (name, email, phone, message) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss",$Cname, $Cemail, $Cphone, $Cmsg);
-    if ($stmt->execute())
-  {
-   echo"<script>alert('Your Data submitted!');  window.location.href='http://localhost/Campusxchange/lettalk';  </script>";
-  }
-}
- ?>
-    </form>
-  </div>
-<!-- subscribe us newsletter section ----------------------------------------->
-  <div class="animationtype3 newsletter-card">
     <span class="card-icon"><i class="fa-solid fa-bell" method="POST" ></i></span>
     <form class="contact-form" id="newsletterForm" method="POST" action="">
       <h3>Ready For New Updates</h3>
@@ -386,71 +339,6 @@ include("feedback.php");
 <!-- footer section  --------------------------------------------------------------------------------->
 <?php include "components/footer.php" ?>
 <!-- fotter section end  here --------------------------------------------------------------------------------->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const form_sms = document.getElementById("f-Error"); //
-  const form_name = document.getElementById("contactName");
-  const form_email = document.getElementById("contactEmail");
-  const form_phone = document.getElementById("contactPhone");
-  const form_msg = document.getElementById("contactMsg");
-
-  // ✅ Name Validation
-  form_name.addEventListener("change", () => {
-    const name = form_name.value.trim();
-    if (!/^[a-zA-Z\s]{4,}$/.test(name)) {
-      form_sms.textContent = "Please enter a valid name (letters only, min 4 characters).";
-      form_name.style.color = "red";
-
-       setTimeout(() => {
-        form_sms.innerHTML = "";
-          form_name.value = "";
-          form_name.style.color = "black";
-        }, 3000);
-    } else {
-      form_sms.textContent = "";
-      form_name.style.color = "black";
-    }
-  });
-
-  // ✅ Email Validation
-  form_email.addEventListener("change", () => {
-    const email = form_email.value.trim();
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-      form_sms.textContent = "Please enter a valid email address.";
-      form_email.style.color = "red";
-       setTimeout(() => {
-        form_sms.innerHTML = "";
-          form_email.value = "";
-          form_email.style.color = "black";
-        }, 3000);
-    } else {
-      form_sms.textContent = "";
-      form_email.style.color = "black";
-    }
-  });
-
-  // ✅ Phone Validation (Optional)
-  form_phone.addEventListener("change", () => {
-    const mobile = form_phone.value.trim();
-    if (mobile !== "" && !/^\d{10}$/.test(mobile)) {
-      form_sms.textContent = "Mobile number must be exactly 10 digits.";
-      form_phone.style.color = "red";
-
-       setTimeout(() => {
-        form_sms.innerHTML = "";
-          form_phone.value = "";
-          form_phone.style.color = "black";
-        }, 3000);
-    } else {
-      form_sms.textContent = "";
-      form_phone.style.color = "black";
-    }
-  });
-});
-</script>
-
-
 <script src="script.js"></script>
 
 </body>

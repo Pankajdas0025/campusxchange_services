@@ -1,16 +1,19 @@
-# *
-User-agent: *
-Allow: /
+        # *
+        User-agent: *
+        Allow: /
 
-# *
-User-agent: *
-Disallow: /404
-Disallow: /dashboard/admin/
-Disallow: /login.php
+        # *
+        User-agent: *
+        Disallow: /404
+        Disallow: /dashboard/admin/
+        Disallow: /login.php
 
 
-# Host
-Host: https://campusxchange.wuaze.com/
+        # Host
+        Host: https://campusxchange.wuaze.com/
 
-# Sitemaps
-Sitemap: https://campusxchange.wuaze.com/sitemap.xml
+        # Sitemaps
+        Sitemap: https://campusxchange.wuaze.com/sitemap.xml
+
+        #Last read 10/16/25
+

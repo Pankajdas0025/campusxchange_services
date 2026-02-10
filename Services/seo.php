@@ -138,11 +138,9 @@
  #home-hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 70px 10%;
+  padding:2.5% 6%;
   background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/seo-services-hero.jpg') center/cover no-repeat;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   margin:0;
   font-family: 'Poppins', sans-serif;
@@ -151,7 +149,7 @@
 .hero-content {
   flex: 1 1 45%;
   max-width: 600px;
-  z-index: 2;
+  margin: 0;
 }
 
 .hero-content h1 {
@@ -359,7 +357,7 @@ background-color:#60e08f;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 2.5px;
   }.industry
   {
     width: 90%;
@@ -477,7 +475,10 @@ background-color:#60e08f;
   }
   @media screen and (min-width:701px) and (max-width:1100px)
 {
+   #home-hero {
 
+  padding:2.5% 0;
+}
   #seo-homepage
   {
     height: 500px;
@@ -499,10 +500,10 @@ background-color:#60e08f;
 .overlay
   {
 
-    height:50%;
-    position: absolute;
-   margin: 0;
-   width: 300px;
+  height:50%;
+  position: absolute;
+  margin: 0;
+  width: 300px;
   }
   .type
   {
@@ -568,8 +569,10 @@ background-color:#60e08f;
 </head>
 <body>
 <?php include "../components/header.php" ?>
+<?php include "../chatboat.php" ?>
+
  <section id="home-hero">
-  <div class="hero-content" data-aos="fade-right">
+  <div class="hero-content" data-aos="fade-up">
     <h1>Boost Your Brand with <span>CampusXchange</span></h1>
     <h2 style="color: white;">Best SEO Services in Bihar for Businesses & Students</h2>
     <p>Drive traffic, climb search rankings, and dominate your digital presence with our result-driven SEO strategies designed for businesses and students alike.</p>
@@ -616,21 +619,21 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
 
   <div class="topics-container">
 
-    <div class="topic-card"><i class="fa-solid fa-key"></i> Keywords Research</div>
-    <div class="topic-card"><i class="fa-solid fa-copy"></i> Content Duplicity Check</div>
-    <div class="topic-card"><i class="fa-solid fa-user-secret"></i> Competitor Analysis</div>
-    <div class="topic-card"><i class="fa-solid fa-tags"></i> Meta Tags Creation</div>
-    <div class="topic-card"><i class="fa-solid fa-link"></i> URL Optimization</div>
-    <div class="topic-card"><i class="fa-solid fa-pen-nib"></i> Content Optimization</div>
-    <div class="topic-card"><i class="fa-solid fa-image"></i> Image Optimization</div>
-    <div class="topic-card"><i class="fa-solid fa-gauge-high"></i> Speed Optimization</div>
-    <div class="topic-card"><i class="fa-solid fa-robot"></i> Robots.txt</div>
-    <div class="topic-card"><i class="fa-solid fa-sitemap"></i> Sitemap Creation</div>
-    <div class="topic-card"><i class="fa-solid fa-map-location-dot"></i> Google Map Integration</div>
-    <div class="topic-card"><i class="fa-solid fa-briefcase"></i> Google Business Page Setup</div>
-    <div class="topic-card"><i class="fa-solid fa-pen"></i> Article Writing</div>
-    <div class="topic-card"><i class="fa-solid fa-link"></i> Backlink Building</div>
-    <div class="topic-card"><i class="fa-solid fa-sliders"></i> Slide Submissions</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-key"></i> Keywords Research</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-copy"></i> Content Duplicity Check</div>
+    <div class="topic-card" data-aos="flip-left"><i class="fa-solid fa-user-secret"></i> Competitor Analysis</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-tags"></i> Meta Tags Creation</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-link"></i> URL Optimization</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-pen-nib"></i> Content Optimization</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-image"></i> Image Optimization</div>
+    <div class="topic-card" data-aos="flip-left"><i class="fa-solid fa-gauge-high"></i> Speed Optimization</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-robot"></i> Robots.txt</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-sitemap"></i> Sitemap Creation</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-map-location-dot"></i> Google Map Integration</div>
+    <div class="topic-card" data-aos="fade-right"><i class="fa-solid fa-briefcase"></i> Google Business Page Setup</div>
+    <div class="topic-card" data-aos="flip-left"><i class="fa-solid fa-pen"></i> Article Writing</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-link"></i> Backlink Building</div>
+    <div class="topic-card" data-aos="fade-left"><i class="fa-solid fa-sliders"></i> Slide Submissions</div>
 
   </div>
 </section>

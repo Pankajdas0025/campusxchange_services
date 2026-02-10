@@ -59,7 +59,7 @@ main{opacity:1;}
 .typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;border-right:4px solid black;  box-shadow: var(--shadow);}
 
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
-.Home-page-about{border-radius:var(--radius);padding:3rem 2rem;background:linear-gradient(180deg,var(--primary-color),var(--secondary-color));border:var(--border);width:90%;margin:auto 5%;}
+.Home-page-about{padding:3rem 2rem;background:linear-gradient(0deg,var(--primary-color),var(--secondary-color));}
 .Home-page-about h2{color:white}.about-content{max-width:600px;margin-bottom:3rem;color:#fff;}
 .Performance-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;}
 .Performance-card{background:white;padding:2rem;max-width:90%;margin-left:5%;border-radius:10px;text-align:center;  box-shadow: var(--shadow);;transition:var(--transition-base);transition:2s;}

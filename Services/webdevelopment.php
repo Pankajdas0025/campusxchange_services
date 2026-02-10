@@ -107,11 +107,13 @@ include "../src/config.php";
 </head>
 <body>
 <?php include "../components/header.php" ?>
+<?php include "../chatboat.php" ?>
+
 <main>
   <!-- first section for better UI or Hero Section start ------------------------------>
-<section class="block first-webdev-section">
+<section class="block first-webdev-section" >
 <div class="overlay-content">
-<div class="maintext">
+<div class="maintext" data-aos="fade-up">
  <h1>Professional Website Development Services</h1>
 <P>We don't just build websites — we build digital experiences that perform, impress, and grow with your business.”</P>
 <p>From responsive web design to custom development, our solutions are built to impress, perform, and evolve with your business goals.
@@ -127,27 +129,27 @@ include "../src/config.php";
 <section class="Weoffersection">
   <h2>Our Web Development Offerings</h2>
   <div class="offer-grid">
-    <div class="offer-card">
+    <div class="offer-card" data-aos="fade-left">
       <span class="offer-icon"><i class="fa-solid fa-code"></i></span>
       <h3>Custom Website Development</h3>
       <p>No templates. No shortcuts. We build fully custom websites from scratch that align with your brand goals and business logic using HTML, CSS, JavaScript, PHP and more.</p>
     </div>
-    <div class="offer-card">
+    <div class="offer-card" data-aos="fade-left">
       <span class="offer-icon"><i class="fa-solid fa-laptop"></i></span>
       <h3>Front-End & UI Development</h3>
       <p>We create engaging, user-friendly interfaces that deliver a smooth browsing experience using modern frameworks and clean code architecture.</p>
     </div>
-    <div class="offer-card">
+    <div class="offer-card" data-aos="fade-left">
       <span class="offer-icon"><i class="fa-solid fa-sync"></i></span>
       <h3>Website Redesign & Optimization</h3>
       <p>Already have a site? Let us revamp it for speed, security, mobile-responsiveness, and SEO to increase conversions and engagement.</p>
     </div>
-    <div class="offer-card">
+    <div class="offer-card" data-aos="fade-left">
       <span class="offer-icon"><i class="fa-solid fa-bullseye"></i></span>
       <h3>Landing Page Design</h3>
       <p>High-converting, purpose-driven landing pages for campaigns, events, or product launches.</p>
     </div>
-    <div class="offer-card">
+    <div class="offer-card" data-aos="fade-left">
       <span class="offer-icon"><i class="fa-solid fa-id-card"></i></span>
       <h3>Portfolio Design</h3>
       <p>Stand out with a professional, visually captivating portfolio that showcases your skills, projects, and achievements—ideal for freelancers and creatives.</p>
@@ -159,27 +161,27 @@ include "../src/config.php";
  <section class="process-section">
   <h2>Our Process: From Idea to Impact 🚀</h2>
   <div class="process-steps">
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">1</div>
       <h3>Discovery & Requirement</h3>
     </div>
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">2</div>
       <h3>Planning & Wireframing</h3>
     </div>
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">3</div>
       <h3>UI/UX & Front-End Dev</h3>
     </div>
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">4</div>
       <h3>Back-End Development</h3>
     </div>
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">5</div>
       <h3>Launch & Deployment</h3>
     </div>
-    <div class="step">
+    <div class="step" data-aos="flip-left">
       <div class="num">6</div>
       <h3>Post-Launch Support</h3>
     </div>
@@ -190,7 +192,7 @@ include "../src/config.php";
     <h2>Our Tech Stack</h2>
     <p>CampusXchange builds with the latest technologies to deliver fast, secure, and scalable solutions.</p>
 
-    <div class="tech-category">
+    <div class="tech-category" data-aos="zoom-in">
       <h3>Front-End</h3>
       <div class="icons">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 Logo" />
@@ -200,7 +202,7 @@ include "../src/config.php";
       </div>
     </div>
 
-    <div class="tech-category">
+    <div class="tech-category" data-aos="zoom-in">
       <h3>Back-End</h3>
       <div class="icons">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo" />
@@ -209,7 +211,7 @@ include "../src/config.php";
       </div>
     </div>
 
-    <div class="tech-category">
+    <div class="tech-category" data-aos="zoom-in">
       <h3>Database</h3>
       <div class="icons">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL Logo" />
@@ -217,7 +219,7 @@ include "../src/config.php";
       </div>
     </div>
 
-    <div class="tech-category">
+    <div class="tech-category" data-aos="zoom-in">
       <h3>Server</h3>
       <div class="icons">
         <img src="../assets/Images/bluehostLogo.webp" alt="Bluehost Logo" />
@@ -228,7 +230,7 @@ include "../src/config.php";
   <!--for PORTFOLIO section  Auto Scrolling Gallery -->
   <section class="scroll-gallery"  id="gallery">
     <h2>Our Portfolio</h2>
-    <div class="scroll-track">
+    <div class="scroll-track" data-aos="fade-right">
 <!-- Educational Image Gallery -->
 <!-- Same images twice for infinite loop effect -->
 <img src="../assets/Images/paramount-website-mockup.png"alt="Paramount-coaching-website">
@@ -248,7 +250,7 @@ include "../src/config.php";
  <br>
  <!-- Website development price plan ----------------------------------------------------------------------->
  <section class="pricingplan" id="pricingplan">
- <div class="block plancategory"><div class="planheader">Basic (₹999 to ₹1599)</div><div class="plancontent">
+ <div class="block plancategory" data-aos="slide-up"><div class="planheader">Basic (₹999 to ₹1599)</div><div class="plancontent">
   <ul>
   <li>✅Free Domain(.free.nf , .page.gd, .host)</li>
   <li>✅Free Hosting & SSL</li>
@@ -261,7 +263,7 @@ include "../src/config.php";
   <li>✅30 days free support</li>
 </ul>
 <span>Ideal for: Students, freelancers, consultants</span></div></div>
- <div class="block plancategory"><div class="planheader">Standard (₹5000 to ₹9,999)</div><div class="plancontent">
+ <div class="block plancategory" data-aos="slide-up"><div class="planheader">Standard (₹5000 to ₹9,999)</div><div class="plancontent">
   <ul>
   <li>✅Paid custom Domain(.com , .in , .org)</li>
   <li>✅Paid Hosting & SSL</li>
@@ -275,7 +277,7 @@ include "../src/config.php";
   <li>✅6 Months free support</li>
 </ul>
 <span>Ideal for: Agencies,small startups, service providers.</span></div></div>
- <div class="block plancategory"><div class="planheader">Premium (₹9,999 to ₹14,999)</div><div class="plancontent">
+ <div class="block plancategory" data-aos="slide-up"><div class="planheader">Premium (₹9,999 to ₹14,999)</div><div class="plancontent">
   <ul>
   <li style="background-color: gainsboro;">All Standard paln ➕ </li>
   <li>✅Unlimited pages</li>

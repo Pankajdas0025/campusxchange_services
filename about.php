@@ -253,8 +253,8 @@
 <br>
   <!-- Unique About Us Hero Section -->
   <section class="about-hero">
-    <h1>About Campusxchange </h1>
-    <p>CampusXchange is not just a platform—it's a movement to transform education and career growth. We blend creativity, technology, and mentorship to help you unlock your true potential.</p>
+    <h1 data-aos="fade-up">About Campusxchange </h1>
+    <p data-aos="fade-up">CampusXchange is not just a platform—it's a movement to transform education and career growth. We blend creativity, technology, and mentorship to help you unlock your true potential.</p>
   </section>
 
   <!-- Founder & CEO Section -->
@@ -277,22 +277,22 @@
   <section class="feature-grid">
     <h2>Why Choose Us?</h2>
     <div class="feature-items">
-      <div class="feature-item">
+      <div class="feature-item" data-aos="fade-left">
         <i class="fa-solid fa-lightbulb" style="color:#f43f5e;"></i>
         <h4>Innovative Learning</h4>
         <p>We use creative methods and real-world projects to make learning fun and effective.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item" data-aos="fade-left">
         <i class="fa-solid fa-users" style="color:#6366f1;"></i>
         <h4>Expert Mentors</h4>
         <p>Our team consists of industry professionals who guide you at every step.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item" data-aos="fade-left">
         <i class="fa-solid fa-rocket" style="color:#f43f5e;"></i>
         <h4>Career Launchpad</h4>
         <p>From internships to job-ready skills, we help you launch your dream career.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item" data-aos="fade-left">
         <i class="fa-solid fa-globe" style="color:#6366f1;"></i>
         <h4>Global Community</h4>
         <p>Join a vibrant network of learners, creators, and leaders from around the world.</p>
@@ -304,7 +304,7 @@
   <section class="carousel-section">
     <h2>Our Mission & Vision</h2>
     <br>
-    <div class="carousel-container">
+    <div class="carousel-container" data-aos="fade-up">
       <div class="carousel-slide active" id="slide1">
         <strong style="color: #6366f1;"><i class="fa-solid fa-bullseye"></i> </strong> To bridge the gap between theory and practice by providing hands-on learning, mentorship, and real-world opportunities for growth.
       </div>
@@ -331,19 +331,19 @@
   <section class="core-values">
     <h2>Our Core Values</h2>
     <div class="core-values-items">
-      <div class="core-value-item">
+      <div class="core-value-item" data-aos="fade-right">
         <h4>Integrity</h4>
         <p>We believe in honesty, transparency, and ethical practices in everything we do.</p>
       </div>
-      <div class="core-value-item">
+      <div class="core-value-item" data-aos="fade-right">
         <h4>Collaboration</h4>
         <p>We foster teamwork and open communication to achieve shared goals.</p>
       </div>
-      <div class="core-value-item">
+      <div class="core-value-item" data-aos="fade-right">
         <h4>Growth</h4>
         <p>We encourage continuous learning and personal development for all.</p>
       </div>
-      <div class="core-value-item">
+      <div class="core-value-item" data-aos="fade-right">
         <h4>Innovation</h4>
         <p>We embrace creativity and new ideas to drive progress and impact.</p>
       </div>

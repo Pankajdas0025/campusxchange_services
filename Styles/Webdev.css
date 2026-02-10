@@ -3,11 +3,10 @@
 
 html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
 /* Hero Section =============================================================================================== */
-.first-webdev-section
-{min-height: 90vh;width: 100%;border: var(--border);position: relative;overflow: hidden;}
+.first-webdev-section{min-height: 70vh;width: 100%;border: var(--border);position: relative;overflow: hidden;}
 .overlay-content {position: absolute;top: 0; left: 0;width: 100%; height: 100%;display: flex;background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/webdevelopment-services-hero.jpg') center/cover no-repeat;backdrop-filter: blur(5px);}
-.maintext{ height:100%; width:40%;margin: 0% 30% 1% 0%;padding:1% 5%;background-color: transparent;}
-.maintext h1{ font-size:2rem; font-weight: bold; color: white;}
+.maintext{ height:100%; width:60%;margin: 0% 30% 0% 0%;padding:2.5% 0% 0 6%;background-color:transparent;}
+.maintext h1{ font-size:2.5rem; font-weight: bold; color: white;}
 .maintext p{color: white;font-size:1.25rem;}.maintext button{ padding: 12px 12px; background-color:white;color:black; font-size: 1rem; border-radius: var(--radius); border:var(--border);cursor: pointer;transition: background 0.2s;}
 .maintext button:hover{background-color: var(--primary-color);color: white;transform: scale(1.01);}
 /* what we offer section ======================================================================================*/
