@@ -27,7 +27,7 @@
 .mentor-profile-card small { color: #e0e0e0;}
 /* Internship Types Section ---------------------------------------------*/
 .internship-types-section {padding: 40px 0 32px 0;}
-.internship-types-title {text-align: center;color: var(--primary-color);font-size: 2rem;margin-bottom: 24px;}
+.internship-types-title {text-align: center;color: var(--primary-color);font-size: 1.5rem;margin-bottom: 24px;}
 .apply-btn,.youtube-section{color:#fff;text-align:center}
 .internship-types-list,.testimonials-list{display:flex;flex-wrap:wrap;justify-content:center;gap:32px}
 .internship-type-card{background:#f3eded;border-radius:12px;padding:24px 18px;width:260px;text-align:center;border:2px solid #fff}
@@ -37,12 +37,12 @@
 .apply-btn{background:var(--secondary-color);border:none;padding:8px 18px;border-radius:6px;text-decoration:none;font-size:1rem;margin-top:12px;cursor:pointer;transition:background .2s}
 .apply-btn:hover{background:var(--primary-color)}
 /* Youtube Section ----------------------------------------------- */
-.youtube-section{height:780px;align-items:center;padding:40px}
+.youtube-section{height:500px;align-items:center;padding:40px; width: 70%; margin: auto;}
 .youtube-section div{display:flex;justify-content:center;border:2px solid #fff;align-items:center;height:90%;width:90%;margin:0 auto}
 /*Demo certtificate and Projects Section ----------------------------------------------- */
 .youtube-section div iframe{width:100%;height:100%;box-shadow:0 2px 12px rgba(99,102,241,.08)}
 .demo-section{background:#f9fafb;padding:32px 0 16px}
-.demo-title,.testimonials-title{text-align:center;color:var(--primary-color);font-size:2rem;margin-bottom:24px}
+.demo-title,.testimonials-title{text-align:center;color:var(--primary-color);font-size:1.5rem;margin-bottom:24px}
 .demo-flex{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;align-items:center}
 .demo-certificate,.demo-projects{background:#fff;border-radius:2px;box-shadow:0 2px 12px rgba(99,102,241,.08);padding:24px 18px;width:320px;text-align:center;border:2px solid #ddd}
 .demo-certificate img{width:90%;max-width:260px;margin-bottom:12px}

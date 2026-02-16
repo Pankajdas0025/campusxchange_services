@@ -249,6 +249,8 @@
 <body>
 <!--About page Header and navbar ----------------------------------------------------------------------------------------->
 <?php include "components/header.php" ?>
+<?php include "chatboat.php" ?>
+
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
 <br>
   <!-- Unique About Us Hero Section -->
