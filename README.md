@@ -30,6 +30,10 @@
 | Internship Programs for students            |
 | Mentorship for beginners in Web & Tech   |
 
+#
+#
+<img src="campusxchange.png" height="100%" width="100%">
+
 ### 🛡️ License
 © 2025 CampusXchange. All Rights Reserved.
 
