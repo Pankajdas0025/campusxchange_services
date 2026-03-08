@@ -5,21 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <style>
-    :root {
-      --primary-color: #004080;
-      --secondary-color: #f43f5e;
-      --bg-light: #f9fafb;
-      --Lighttext-color: #000000;
-      --darktext-color: white;
-      --card-bg: #f3eded;
-      --shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
-      --radius: 10px;
-      --font-main: 'Poppins', sans-serif;
-      --hoverbg: #da6b7e;
-      --pSize: 0.9rem;
-      --border: none;
-    }
-
+    @import url("<?php echo ROOT_URL ?>assets/css/root.css");
 
     #feedbackBox {
       width: 80%;

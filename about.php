@@ -1,3 +1,7 @@
+<?php
+    include_once __DIR__ . '/src/config.php';
+    include_once __DIR__ . '/src/conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -25,13 +29,7 @@
   <meta property="twitter:description" content="Explore CampusXchange: supporting students and businesses with mentorship, web development, and SEO solutions.">
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-about.jpg">
 <!-- styles -->
-<link rel="stylesheet" href="style.css" type="text/css">
-<!-- cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
 
   <!-- JSON-LD Schema for AboutPage -->
   <script type="application/ld+json">
@@ -53,7 +51,7 @@
   }
   </script>
   <style>
-  @import url("root.css");
+@import url("<?php echo ROOT_URL;?>assets/css/root.css");
     /* Hero Section */
     .about-hero {
       background:rgb(248, 98, 123 , 0.8);
@@ -248,8 +246,10 @@
 </head>
 <body>
 <!--About page Header and navbar ----------------------------------------------------------------------------------------->
-<?php include "components/header.php" ?>
-<?php include "chatboat.php" ?>
+<?php include_once __DIR__ . "/components/header.php"?>
+<?php include_once __DIR__ . "/chatboat.php"?>
+
+
 
   <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
 <br>
@@ -269,9 +269,6 @@
       <h4>Founder</h4>
       <p>Pankaj Kumar is a full-stack web developer, educator, and entrepreneur who founded CampusXchange to bridge the gap between academic learning and real-world skills. With expertise in HTML, CSS, JavaScript, and PHP, he builds innovative web solutions while guiding students, freelancers, and startups to achieve their goals. His passion for technology, mentorship, and problem-solving drives CampusXchange’s mission to empower the next generation of digital professionals.</p>
 <br>
-    <!-- <a href="https://www.facebook.com/campusxchangeservices/"> <span style="background-color:#1877F2; padding: 5px; color: #fff;"> Facebook <i class="fa-brands fa-facebook"></i></span></a>
-    <a href="https://pankajkumardas.wuaze.com/"> <span style="background:linear-gradient(to right, #f43f5e, #6366f1); padding: 5px; color: #fff;"> Portfolio <i class="fa-solid fa-globe"></i></span></a>
-    <a href="https://wa.me/91915576625?text=Hello%20Pankaj%20!"> <span style="background:linear-gradient(to right,#25D366); padding: 5px; color: #fff;"> WhatsApp <i class="fa-brands fa-whatsapp"></i></span></a> -->
 
     </div>
   </section>
@@ -352,7 +349,7 @@
     </div>
   </section>
 <!-- footer section  --------------------------------------------------------------------------------->
-<?php include "components/footer.php" ?>
+<?php include_once __DIR__ . "/components/footer.php"?>
 <!-- fotter section end  here --------------------------------------------------------------------------------->
 <script>
 // Simple carousel for Mission & Vision
@@ -362,6 +359,6 @@ function showSlide(n) {
   document.getElementById('slide'+n).classList.add('active');
 }
 </script>
-<script src="script.js"></script>
+
 </body>
 </html>

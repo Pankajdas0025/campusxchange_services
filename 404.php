@@ -27,34 +27,10 @@ http_response_code(404);
 <meta property="twitter:description" content="Oops! The page you are looking for doesn't exist. Explore internships, projects, and career opportunities at CampusXchange.">
 <meta property="twitter:image" content="https://campusxchange.in/assets/og-image.jpg">
 
-<link rel="stylesheet" href="style.css" type="text/css">
- <!-- cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
 
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 <style>
-    @import url("root.css");
-/* :root {
- --primary-color: #004080;
-  --secondary-color: #f43f5e;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-} */
-/* header for all pages  */
-/*
-.Logo{height: 100px;width:25vw;background-color:transparent;padding: 0;font-size:20px;font-style: normal;color: white;}
-.Logo img{ height:100px; width:100%;} */
+@import url("<?php echo ROOT_URL ?>assets/css/root.css");
   main{
     height:500px;
     padding:30px 0;
@@ -130,8 +106,8 @@ Please try the following:</p>
 </main>
 <br>
 <!-- fotter section  --------------------------------------------------------------------------------->
- <?php include "components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
 <!-- fotter section end  ----------------------------------------------------------------------------->
-<script src="/CX/script.js"></script>
+<script src="<?php echo ROOT_URL?>assets/js/script.js"> </script>
 </body>
 </html>

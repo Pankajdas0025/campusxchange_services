@@ -1,14 +1,11 @@
         # *
         User-agent: *
         Allow: /
-
         # *
         User-agent: *
         Disallow: /404
         Disallow: /dashboard/admin/
         Disallow: /login.php
-
-
         # Host
         Host: https://campusxchange.wuaze.com/
 

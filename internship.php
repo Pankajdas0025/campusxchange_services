@@ -1,3 +1,7 @@
+<?php
+    include_once __DIR__ . '/src/config.php';
+    include_once __DIR__ . '/src/conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,19 +30,12 @@
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
 
   <!-- styles -->
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="styles/internship.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <!-- Favicon  --------------------------------------------------------------------------->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/internship.css" type="text/css">
 
 </head>
 <body>
-<?php include "components/header.php" ?>
+<?php include_once __DIR__ . "/components/header.php"?>
 <br>
 <main>
 <span class="Notice" data-aos="fade-left">
@@ -147,7 +144,7 @@
     <h2><i class="fa-solid fa-video"></i>Internship Program Process</h2>
     <br>
     <div>
-      <iframe  src="https://www.youtube.com/embed/mLidOOVKTQE?si=n3aIEOEsXRimJR7v&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe  src="https://www.youtube.com/embed/WJ-Ng1v3lPc?si=fbO1YI4vO6YKyQXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </section>
   <br>
@@ -219,7 +216,7 @@
 </main>
 <br>
 <!-- Footer  -->
-<?php include "components/footer.php" ?>
-<script src="script.js"></script>
+<?php include_once __DIR__ . "/components/footer.php"?>
+
 </body>
 </html>

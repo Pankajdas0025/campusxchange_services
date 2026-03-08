@@ -1,18 +1,20 @@
-@import url("styles/root.css");
+@import url("root.css");
+
 /* ==== Custom Scrollbar Style ==== */
 ::-webkit-scrollbar {width: 10px;            }
 ::-webkit-scrollbar-track {background: #f1f1f1; border-radius: 10px;}
 ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--primary-color), var(--secondary-color)); border-radius: 10px;}
 html{scrollbar-width: thin; scrollbar-color: #007bff #f1f1f1;}
 * {margin: 0;box-sizing: border-box;padding: 0;}
-body { font-family: var(--font-main); color: var(); line-height: 1.6; padding: 0 10px; overflow-x: hidden; background-color: #fff;}
+body { font-family: var(--font-main); color: var(); line-height: 1.6; padding: 0 10px; overflow-x: hidden;}
 h1 , h2 , h3{  color: var(--primary-color);}
 p{font-size: 20px;}
 /* Main */
 main{opacity:1;}
 
 /* home intro first section */
-.homeIntro {background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('assets/Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex;  box-shadow: var(--shadow);}
+
+.homeIntro {background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)),url('../Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex;}
 .introContent {width:45%;text-align: left; padding-left:25px; margin:.5% 5%;}
 #core-ser{background-color: white;color: black;height: 80%;width:30%;margin: 5%;padding: 10px 50px;align-items: center;align-content: center;justify-self:center; border-radius:var(--radius);  box-shadow: var(--shadow);}
 .introContent h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }

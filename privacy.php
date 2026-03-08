@@ -25,13 +25,7 @@
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og.png">
 
   <!-- Styles & Fonts -->
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
- <!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
   <style>
     @import url("root.css");
 
@@ -104,7 +98,7 @@
   </style>
 </head>
 <body>
-<?php include "components/header.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
 <!-- Combined Privacy Policy & Terms Section -->
 <section class="policies">
   <div class="container">
@@ -178,7 +172,7 @@
   </div>
 </section>
 
-<?php include "components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
 
 </body>
 </html>

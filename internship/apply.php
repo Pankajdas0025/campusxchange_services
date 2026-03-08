@@ -1,7 +1,9 @@
 <?php
-include "../src/conn.php";
-include "../src/config.php";
+    include_once __DIR__ . '/../src/config.php';
+    include_once __DIR__ . '/../src/conn.php';
+    include_once __DIR__ . "/../components/header.php"
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,24 +31,12 @@ include "../src/config.php";
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
 
   <!-- styles -->
-  <link rel="stylesheet" href="../style.css" type="text/css">
-  <link rel="stylesheet" href="../animation.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- favicon- -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-  <style>
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
+ <style>
 
-    :root
+@import url("<?php echo ROOT_URL;?>assets/css/root.css");
 
-    {
-
-  --primary-color: #263F5A;
-  --secondary-color:#F8627B;
-    }
 .apply-form-section {
-
 width: 100%;
 height: 800px;
 margin: 2rem auto;
@@ -140,7 +130,6 @@ height: auto;
 </style>
 </head>
 <body>
-<?php include "../components/header.php" ?>
 <br>
 <!-- Upcoming Batch section  ----------------------->
 <section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90; margin: auto 5%;">
@@ -306,8 +295,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </section>
 <!-- footer section start from here  ------------------------------------------------->
-<?php include "../components/footer.php" ?>
-<script src="../script.js"></script>
+<?php include_once __DIR__ . "/../components/footer.php"?>
+
 <script>
 // internship apply form validation start.................................................
 

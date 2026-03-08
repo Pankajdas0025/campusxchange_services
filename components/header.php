@@ -1,3 +1,8 @@
+<?php
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/../src/conn.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
 
  <style>
-  :root {
-  --primary-color: #263F5A;
-  --secondary-color: #f43f5e;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
+@import url('<?php echo ROOT_URL; ?>assets/css/root.css');
 body{font-family: var(--font-main);}
 
 /* header for all pages  */
@@ -70,14 +66,14 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
 </header>
 
 <div class="topnav" id="myTopnav">
-  <a href="http://localhost/Campusxchange/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
+  <a href="<?php echo ROOT_URL;?>home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
     <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/services/web-development" title="Web Development From CampusXchange">Website Development</a>
-      <a href="http://localhost/Campusxchange/services/seo">SEO</a>
+      <a href="<?php echo ROOT_URL;?>services/web-development" title="Web Development From CampusXchange">Website Development</a>
+      <a href="<?php echo ROOT_URL;?>services/seo">SEO</a>
     </div>
   </div>
   <div class="dropdown">
@@ -85,69 +81,26 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/handouts/notes" title="Technical Notes">Notes</a>
-      <a href="http://localhost/Campusxchange/handouts/blog" title="Scripted Blogs">Blogs</a>
-      <a href="http://localhost/Campusxchange/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
-      <a href="http://localhost/Campusxchange/handouts/courses" title="Youtube Courses">Courses</a>
+      <a href="<?php echo ROOT_URL;?>handouts/notes" title="Technical Notes">Notes</a>
+      <a href="<?php echo ROOT_URL;?>handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
+      <a href="<?php echo ROOT_URL;?>handouts/courses" title="Youtube Courses">Courses</a>
     </div>
   </div>
  <div class="dropdown">
     <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
     <div class="dropdown-content">
-      <a href="http://localhost/Campusxchange/internship/apply">Apply </a>
-      <a href="http://localhost/Campusxchange/internship/verification">Verification</a>
-      <a href="http://localhost/Campusxchange/internship-program">Internship-program</a>
+      <a href="<?php echo ROOT_URL;?>internship/apply">Apply </a>
+      <a href="<?php echo ROOT_URL;?>internship/verification">Verification</a>
+      <a href="<?php echo ROOT_URL;?>internship-program">Internship-program</a>
     </div>
   </div>
-      <a href="http://localhost/Campusxchange/about"><i class="fa-solid fa-bullseye"></i>About</a>
-          <a href="http://localhost/Campusxchange/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
+      <a href="<?php echo ROOT_URL;?>about"><i class="fa-solid fa-bullseye"></i>About</a>
+          <a href="<?php echo ROOT_URL;?>lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
-
-<!--<div class="topnav" id="myTopnav">
-  <a href="https://campusxchange.wuaze.com/home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
-   <div class="dropdown">
-    <button class="dropbtn">  <i class="fa-solid fa-gears"></i>Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="https://campusxchange.wuaze.com/services/web-development" title="Web Development From CampusXchange">Website Development</a>
-      <a href="https://campusxchange.wuaze.com/services/seo">SEO</a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa-solid fa-book-open"></i>Handouts
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="https://campusxchange.wuaze.com/handouts/notes" title="Technical Notes">Notes</a>
-      <a href="https://campusxchange.wuaze.com/handouts/blog" title="Scripted Blogs">Blogs</a>
-      <a href="https://campusxchange.wuaze.com/handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
-      <a href="https://campusxchange.wuaze.com/handouts/courses" title="Youtube Courses">Courses</a>
-    </div>
-  </div>
- <div class="dropdown">
-    <button class="dropbtn">Mentorship & Internship<i class="fa fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="https://campusxchange.wuaze.com/internship/apply">Apply </a>
-      <a href="https://campusxchange.wuaze.com/internship/verification">Verification</a>
-      <a href="https://campusxchange.wuaze.com/internship-program">Internship-program</a>
-    </div>
-  </div>
-      <a href="https://campusxchange.wuaze.com/about"><i class="fa-solid fa-bullseye"></i>About</a>
-      <a href="https://campusxchange.wuaze.com/lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
-
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
-</div>
- -->
-
-
-<!--------------------------------------------------------->
-<!-------------------------------------------------------->
 <script>
 AOS.init({ duration: 1000, once: true });
-
 function myFunction()
 {
   var x = document.getElementById("myTopnav");
@@ -174,29 +127,7 @@ function scrollIndicator() {
   document.getElementById("scroll-progress").style.width = scrolled + "%";
 }
 
-
-
-// Hide Inspect Element ----------------------------------------------------------------
-
-// document.onkeydown = function(e)
-// {
-//   // Disable F12
-// if (e.keyCode == 123) {return false;}
-//   // Disable Ctrl+Shift+I
-// if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {return false;}
-//   // Disable Ctrl+Shift+C
-// if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {return false;}
-//   // Disable Ctrl+Shift+J
-// if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {return false;}
-//   // Disable Ctrl+U
-// if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {return false;}
-//   // Disable Ctrl+S
-// if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {e.preventDefault();return false; }
-// };
-// // Disable Right-Click
-// document.addEventListener('contextmenu', function(e) {e.preventDefault();});
-// // Disable Double-Click
-// document.addEventListener('dblclick', function(e) {e.preventDefault();});
 </script>
+<script src="<?php echo ROOT_URL;?>assets/js/script.js"> </script>
 </body>
 </html>

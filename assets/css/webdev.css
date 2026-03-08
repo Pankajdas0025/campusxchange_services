@@ -1,10 +1,10 @@
-/* Tottal Line OF code  */
+
 @import url("root.css");
 
 html {  scroll-behavior: smooth;  font-family:'Poppins',sans-serif;}
 /* Hero Section =============================================================================================== */
 .first-webdev-section{min-height: 70vh;width: 100%;border: var(--border);position: relative;overflow: hidden;}
-.overlay-content {position: absolute;top: 0; left: 0;width: 100%; height: 100%;display: flex;background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/webdevelopment-services-hero.jpg') center/cover no-repeat;backdrop-filter: blur(5px);}
+.overlay-content {position: absolute;top: 0; left: 0;width: 100%; height: 100%;display: flex;background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../Images/webdevelopment-services-hero.jpg') center/cover no-repeat;backdrop-filter: blur(5px);}
 .maintext{ height:100%; width:60%;margin: 0% 30% 0% 0%;padding:2.5% 0% 0 6%;background-color:transparent;}
 .maintext h1{ font-size:2.5rem; font-weight: bold; color: white;}
 .maintext p{color: white;font-size:1.25rem;}.maintext button{ padding: 12px 12px; background-color:white;color:black; font-size: 1rem; border-radius: var(--radius); border:var(--border);cursor: pointer;transition: background 0.2s;}
@@ -73,7 +73,7 @@ transform: scale(1.2) rotate(3deg); box-shadow: 0 1px 5px var(--secondary-color)
 .planordercontact-form span{opacity:.9;margin:80px 28px;color:#eee6e6;padding:2px 15px;position:absolute}
 #client_form_sbtn,#img_form_sbtn{background-color:var(--primary-color);color:#fff;font-size:20px;border:var(--border);transition:background .5s}
 #img_form_sbtn{background-color:#9ef09e;display:none;color:#221b1b}#client_form_sbtn:hover{background-color:var(--secondary-color);transform:scale(1.01)}
-.contact_img{width:80%;height:300px;margin:33px 10%;background-image:url(../assets/Images/webdevelopment-client-contact.png);background-size:cover;background-position:center}
+.contact_img{width:80%;height:300px;margin:33px 10%; background-image:url(../Images/webdevelopment-client-contact.png); background-size:cover;background-position:center}
 
 /* happy experience  and client feedback  box  =========================================================================================*/
 .ourhappystatus{  height: 500px; width: 100%; display: flex}

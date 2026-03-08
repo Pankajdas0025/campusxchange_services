@@ -1,6 +1,7 @@
 <?php
 session_start(); // Start session to track likes
-include "../src/conn.php";
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/..//src/conn.php';
 // Handle AJAX like requests
 if(isset($_POST['like_blog_id'])){
     $blog_id = $_POST['like_blog_id'];
@@ -34,9 +35,7 @@ function getLikes($conn, $blog_id){
     }
     return 0;
 }
-// session_unset();
-// session_reset();
-// session_destroy();
+
 ?>
 
 <!DOCTYPE html>
@@ -65,13 +64,10 @@ function getLikes($conn, $blog_id){
 <meta property="twitter:description" content="Read CampusXchange tech blogs for students: programming, AI, ML, data science, and web development notes. Free guides, tutorials, and cheat sheets.">
 <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
 <!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
+<link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,6 +112,7 @@ h2 { margin-bottom:1rem; color:var(--primary-color); }
 .like-btn { background: var(--primary-color); color:#fff; border:none; padding:0.5rem 1rem; border-radius:var(--radius); cursor:pointer; margin-top:0.5rem; }
 .like-btn:disabled { background: grey; cursor: not-allowed; }
 .like-btn:hover:enabled { background: var(--secondary-color); }
+aside { background-color: red; display: block;}
 aside h3 { margin-bottom:1rem; color:#004080; }
 aside .sidebar-item { margin-bottom:1rem; padding:0.5rem; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); }
 aside .sidebar-item a { text-decoration:none; color:#004080; }
@@ -124,7 +121,8 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
 </style>
 </head>
 <body>
-<?php include "../components/header.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
+
 <section class="container">
 <main>
     <h2>New Blogs</h2>
@@ -143,15 +141,11 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
         </button>
     </div>
 </div>
-
-<!-- ------------------------------------------------------------------------------------------------------------------- -->
-
-
 </main>
 
 <aside>
     <h3>Previous Blogs</h3>
-       <?php include "../components/previous_blog.php" ?>
+    <?php include "../components/previous_blog.php" ?>
 </aside>
 </section>
 
@@ -170,6 +164,6 @@ $(document).ready(function(){
 });
 </script>
 
-<?php include "../components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
 </body>
 </html>

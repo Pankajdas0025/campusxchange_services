@@ -22,30 +22,12 @@
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
-  <!-- Favicon  -------------------------------------------------------------------->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-  <!-- styles -->
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <style>
-:root
-{
 
-  --primary-color: #263F5A;
-  --secondary-color: #F8627B;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
+  <!-- styles -->
+  <link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
+   <style>
+@import url("<?php echo ROOT_URL ?>assets/css/root.css");
+
      body {font-family: 'Poppins', Arial, sans-serif; margin:0;}
     .dashboard-nav {display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; padding:1.2rem 0;}
     .dashboard-link {display:flex; flex-direction:column; align-items:center; background:#f3f4f6; border-radius:12px; padding:1.2rem 1.5rem; min-width:160px; text-decoration:none; color:#222; box-shadow:0 2px 8px rgba(99,102,241,0.07); transition:box-shadow 0.2s,transform 0.2s;}
@@ -83,6 +65,6 @@
     <a class="dashboard-link" href="https://www.youtube.com/@campusxchange_services"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
     <a class="dashboard-link" href="https://maps.app.goo.gl/UgzS1SJvFiQxaswp6"><i class="fa-solid fa-location-dot"></i><span>Maps</span></a>
   </nav>
-<?php  include "components/footer.php"?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
 </body>
 </html>

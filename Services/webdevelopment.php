@@ -1,6 +1,6 @@
 <?php
-include "../src/conn.php";
-include "../src/config.php";
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/../src/conn.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,16 +29,10 @@ include "../src/config.php";
   <meta property="twitter:title" content="Professional Web Development Services - CampusXchange">
   <meta property="twitter:description" content="Get custom, responsive, and SEO-friendly websites built by CampusXchange. Launch your website today!">
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../style.css" type="text/css">
-  <link rel="stylesheet" href="../styles/webdev.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/webdev.css" type="text/css">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -106,8 +100,8 @@ include "../src/config.php";
   </script>
 </head>
 <body>
-<?php include "../components/header.php" ?>
-<?php include "../chatboat.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
+<?php include_once __DIR__ . "/../components/chatboat.php"?>
 
 <main>
   <!-- first section for better UI or Hero Section start ------------------------------>
@@ -245,7 +239,7 @@ include "../src/config.php";
     </div>
   </section>
 <!-- for showing our clients  -->
-<?php  include("../feedback.php"); ?>
+<?php  include("../components/feedback.php"); ?>
 <!-- for showing our clients section end here  -->
  <br>
  <!-- Website development price plan ----------------------------------------------------------------------->
@@ -581,7 +575,8 @@ else {
  <br> <!-- webdevlopmentfaq section  end here---------------------------------------------------------------------------------->
 </main>
 <!-- fotter section  --------------------------------------------------------------------------------->
-<?php include "../components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
+
 <!-- fotter section end  --------------------------------------------------------------------------------->
 <script>
 /* Web development page FAQ script start here */
@@ -606,8 +601,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-
-<script src="../script.js"></script>
-<script src="../FormValidation.js"></script>
+<script src="<?php echo ROOT_URL?>assets/js/FormValidation.js"> </script>
 </body>
 </html>

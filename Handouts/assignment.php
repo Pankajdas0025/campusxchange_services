@@ -1,3 +1,7 @@
+<?php
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/../src/conn.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +26,8 @@
   <meta name="twitter:description" content="Programming and academic project help from CampusXchange — trusted, fast, and plagiarism-free.">
   <meta name="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
   <!-- styles -->
-  <link rel="stylesheet" href="../style.css" type="text/css">
-  <link rel="stylesheet" href="../styles/assignment.css" type="text/css">
-  <!-- cdns-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--favicon ------------------------------------------------------------------------------>
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/assignment.css" type="text/css">
   <!-- Schema Markup -->
 <script type="application/ld+json">
 {
@@ -48,7 +46,7 @@
 </head>
 <body>
 <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
-<?php include "../components/header.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
 <br>
 <main>
   <div class="marqueebox">
@@ -159,7 +157,7 @@
 </main>
 
 <!-- footer section  --------------------------------------------------------------------------------->
-<?php include "../components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
     <script>
           function viewall()
           {
@@ -201,6 +199,5 @@
 });
 /* assignment section   FAQ script end here -------------------------------*/
          </script>
-<script src="../script.js"></script>
 </body>
 </html>

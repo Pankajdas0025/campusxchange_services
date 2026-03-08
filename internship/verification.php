@@ -1,4 +1,7 @@
-
+<?php
+    include_once __DIR__ . '/../src/config.php';
+    include_once __DIR__ . '/../src/conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,26 +28,12 @@
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/images/og-images/og-internship.jpg">
-
-<!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="../animation.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- favicon- -->
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-<title>Certificate Verification</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
+  <title>Certificate Verification</title>
 
 <style>
-  :root {
-
-   --primary-color: #263F5A;
-  --secondary-color: #F8627B;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-
-}
+@import url("<?php echo ROOT_URL;?>assets/css/root.css");
 
   .verify-section {
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color) );
@@ -97,11 +86,10 @@
 
 </head>
 <body>
-   <!-- animated cursor ------------------->
- <div class="cursor"></div>
-<!-- animated cursor end ---------------->
+
  <!-- header section  -------------------------------------l̥------------------->
-<?php include "../components/header.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
+
  <!-- header section end here-------------------------------------------------------->
 <section class="verify-section">
   <h1> <i class="fa-solid fa-file"></i> Internship Certificate Verification </h1>
@@ -144,7 +132,7 @@
   </script>
 </section>
 <br>
-<?php include "../components/footer.php" ?>
-<script src="../script.js"></script>
+<?php include_once __DIR__ . "/../components/footer.php"?>
+
 </body>
 </html>

@@ -1,13 +1,9 @@
 
-
 <?php
-include "../src/conn.php";
-include "../src/config.php";
-
-
+    include_once __DIR__ . '/../src/config.php';
+    include_once __DIR__ . '/../src/conn.php';
+    include_once __DIR__ . "/../components/header.php"
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,22 +33,14 @@ include "../src/config.php";
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
 
 <!-- styles ------------------->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="../animation.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Favicon ------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
+
 <title>verified Intern</title>
 
 
 <style>
-:root{
+@import url("<?php echo ROOT_URL;?>assets/css/root.css");
 
-   --primary-color: #263F5A;
-  --secondary-color: #F8627B;
-}
     .verifed-section {
     background: linear-gradient(to right, #004080, #f43f5e );
     padding: 2rem 0.5rem 1rem 0.5rem;
@@ -196,7 +184,5 @@ $Project_link =  htmlspecialchars($row['Project_Link'] ?? '', ENT_QUOTES, 'UTF-8
   }
 
  ?>
-
-<script src="../script.js"></script>
 </body>
 </html>

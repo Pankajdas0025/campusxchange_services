@@ -1,3 +1,8 @@
+<?php
+include_once __DIR__ . '/src/config.php';
+include_once __DIR__ . '/src/conn.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +32,8 @@
 <meta property="twitter:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
 <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.about.jpg">
 <!-- internal and external Styles -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 
 <!-- Schema Markup -->
  <script type="application/ld+json">
@@ -100,13 +99,12 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
 </head>
 <body>
-  <main id="main">
-  <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
-  <?php include "components/header.php" ?>
-  <?php include "chatboat.php" ?>
+
+<main id="main">
+<?php include_once __DIR__ . "/components/header.php"?>
+<?php include_once __DIR__ . "/components/chatboat.php"?>
 
 
 <!-- Home Intro Section -->
@@ -293,7 +291,7 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <br>
 
 <!-- fotter section  --------------------------------------------------------------------------------->
-<?php include "components/footer.php" ?>
+<?php include_once __DIR__ . "/components/footer.php"?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
   </main>
 <script>
@@ -333,8 +331,6 @@ function prefillDestination(city){
   window.location='#calculator';
 }
 
-  </script>
-<script src="script.js"></script>
-
+</script>
 </body>
 </html>

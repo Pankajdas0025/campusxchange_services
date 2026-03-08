@@ -1,3 +1,8 @@
+<?php
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/../src/conn.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,22 +28,10 @@
 <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-courses.jpg">
 
 <!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/style.css" type="text/css">
 
   <style>
-    :root {
-      --primary-color: #263F5A;
-      --secondary-color: #F8627B;
-      --text-dark: #222;
-      --text-light: #555;
-
-    }
+   @import url("<?php echo ROOT_URL; ?>assets/css/root.css");
     .section-title {
       text-align:left;
       margin: 1rem 5rem;
@@ -132,12 +125,7 @@
 </head>
 
 <body>
-    <?php include "../components/header.php" ?>
-
-  <!-- <header>
-    <h1>CampusXchange YouTube Courses</h1>
-    <p>Enhance your learning with our free YouTube tutorials. Explore uploaded courses or stay tuned for upcoming ones.</p>
-  </header> -->
+<?php include_once __DIR__ . "/../components/header.php"?>
 
   <!-- Uploaded Courses -->
   <section>
@@ -166,6 +154,7 @@
   </section>
 <!-- Footer section -->
  <br>
-<?php include "../components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
+
 </body>
 </html>

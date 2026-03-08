@@ -1,3 +1,7 @@
+<?php
+include_once __DIR__ . '/../src/config.php';
+include_once __DIR__ . '/../src/conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,14 +29,8 @@
 <meta property="twitter:description" content="CampusXchange provides affordable SEO services in India—boost visibility, grow traffic, and improve rankings with ethical SEO strategies.">
 <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-seo.jpg">
 <!-- styles -->
-<link rel="stylesheet" href="../style.css" type="text/css">
-<!-- cdns -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css">
+
 <!--Schema Markup Added Below -->
 <script type="application/ld+json">
 {
@@ -116,30 +114,13 @@
   }
 }
 </script>
-
 <style>
-  :root
-{
-
-  --primary-color: #004080;
-  --secondary-color: #f43f5e;
-  --bg-light: #f9fafb;
-  --Lighttext-color: #000000;
-  --darktext-color:white;
-  --card-bg: #f3eded;
-  --shadow: 0 8px 30px rgba(2,6,23,0.08);
-  --radius: 10px;
-  --font-main: 'Poppins', sans-serif;
-  --hoverbg :#da6b7e;
-  --pSize:0.9rem;
-  --border:none;
-}
-
+@import url("<?php echo ROOT_URL; ?>assets/css/root.css");
  #home-hero {
   display: flex;
   flex-wrap: wrap;
   padding:2.5% 6%;
-  background:linear-gradient(90deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../assets/Images/seo-services-hero.jpg') center/cover no-repeat;
+  background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)), url('../assets/Images/seo-services-hero.jpg') center/cover no-repeat;
   min-height: 80vh;
   width: 100%;
   margin:0;
@@ -244,15 +225,13 @@
 /* whatsapp contact form -------------------------------------------------------------------------------- */
 .whtsapp-cta-form
 {
-
-  box-shadow: var(--shadow);
   border-radius: var(--radius);
   width: 80%;
   height: 200px;
   align-items: center;
   align-content: center;
   padding: 0 25px;
-  margin: auto 10%;
+  margin: 10px 10%;
 
 }.whtsapp-cta-form input
 {
@@ -263,6 +242,7 @@
   border-radius: 5px;
   border: none;
   padding: 2px 20px;
+  border: 1px solid var(--secondary-color);
   font-size: 18px;
 }.whtsapp-cta-form input:focus
 {
@@ -357,7 +337,7 @@ background-color:#60e08f;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 2.5px;
+    padding: 10px 15px;
   }.industry
   {
     width: 90%;
@@ -427,8 +407,6 @@ background-color:#60e08f;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: none;
-  padding: 2px 20px;
   font-size: 18px;
 }.whtsapp-cta-form button
 {
@@ -568,8 +546,8 @@ background-color:#60e08f;
 </style>
 </head>
 <body>
-<?php include "../components/header.php" ?>
-<?php include "../chatboat.php" ?>
+<?php include_once __DIR__ . "/../components/header.php"?>
+<?php include_once __DIR__ . "/../components/chatboat.php"?>
 
  <section id="home-hero">
   <div class="hero-content" data-aos="fade-up">
@@ -663,8 +641,8 @@ document.getElementById("seoForm").addEventListener("submit", function(event){
     <img src="../assets/Images/seo-tools-use-by-campusxchange.jpeg">
 </section>
 <!-- fotter section  ------------------------------------------------------------------------------------->
-<?php include "../components/footer.php" ?>
+<?php include_once __DIR__ . "/../components/footer.php"?>
 <!-- fotter section end  --------------------------------------------------------------------------------->
-<script src="../script.js"></script>
+
 </body>
 </html>
