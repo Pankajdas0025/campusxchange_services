@@ -1,41 +1,82 @@
 <?php
-    include_once __DIR__ . '/src/config.php';
-    include_once __DIR__ . '/src/conn.php';
+include_once __DIR__ . '/src/config.php';
+include_once __DIR__ . '/src/conn.php';
+
+$newsletter_message = '';
+$newsletter_message_type = '';
+$newsletter_email = '';
+
+if (isset($_POST['subscribe_newsletter'])) {
+    $newsletter_email = trim($_POST['newsletter_email'] ?? '');
+
+    if (empty($newsletter_email) || !filter_var($newsletter_email, FILTER_VALIDATE_EMAIL)) {
+        $newsletter_message = 'Please enter a valid email address.';
+        $newsletter_message_type = 'error';
+    } else {
+        $check = $conn->prepare('SELECT id FROM email_list WHERE Emails = ? LIMIT 1');
+        $check->bind_param('s', $newsletter_email);
+        $check->execute();
+        $result = $check->get_result();
+
+        if ($result && $result->num_rows > 0) {
+            $newsletter_message = 'This email is already subscribed.';
+            $newsletter_message_type = 'warning';
+        } else {
+            $stmt = $conn->prepare('INSERT INTO email_list (Emails) VALUES (?)');
+            $stmt->bind_param('s', $newsletter_email);
+
+            if ($stmt->execute()) {
+                $newsletter_message = 'Thank you for subscribing to CampusXchange updates.';
+                $newsletter_message_type = 'success';
+                $newsletter_email = '';
+            } else {
+                $newsletter_message = 'Something went wrong. Please try again.';
+                $newsletter_message_type = 'error';
+            }
+
+            if ($stmt) {
+                $stmt->close();
+            }
+        }
+
+        if ($check) {
+            $check->close();
+        }
+    }
+}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-   <!-- Primary Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Let's Talk - CampusXchange | Contact & Collaboration</title>
-  <meta name="title" content="Let's Talk - CampusXchange | Contact & Collaboration">
-  <meta name="description" content="Have questions or ideas? Connect with CampusXchange for support, web development, SEO services, mentorship, and internship opportunities.">
-  <meta name="keywords" content="contact CampusXchange, let's talk, reach CampusXchange, collaboration, mentorship support, web development services, SEO services, CampusXchange email, CampusXchange location">
-  <meta name="author" content="CampusXchange"/>
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://campusxchange.wuaze.com/lettalk" />
+  <meta name='title' content='Let's Talk - CampusXchange | Contact & Collaboration'>
+  <meta name='description' content='Have questions or ideas? Connect with CampusXchange for support, web development, SEO services, mentorship, and internship opportunities.'>
+  <meta name='keywords' content='contact CampusXchange, let us talk, reach CampusXchange, collaboration, mentorship support, web development services, SEO services, CampusXchange email, CampusXchange location'>
+  <meta name='author' content='CampusXchange'>
+  <meta name='robots' content='index, follow'>
+  <link rel='canonical' href='https://campusxchange.wuaze.com/lettalk'>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://campusxchange.wuaze.com/lettalk">
-  <meta property="og:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
-  <meta property="og:description" content="Reach out to CampusXchange for collaboration, support, or services in web development, SEO, mentorship, and internships.">
-  <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://campusxchange.wuaze.com/lettalk">
-  <meta property="twitter:title" content="Let's Talk - CampusXchange | Contact & Collaboration">
-  <meta property="twitter:description" content="Connect with CampusXchange for questions, support, mentorship, and web or SEO services. Fast response guaranteed.">
-  <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
-  <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
+  <meta property='og:type' content='website'>
+  <meta property='og:url' content='https://campusxchange.wuaze.com/lettalk'>
+  <meta property='og:title' content='Let us Talk - CampusXchange | Contact & Collaboration'>
+  <meta property='og:description' content='Reach out to CampusXchange for collaboration, support, or services in web development, SEO, mentorship, and internships.'>
+  <meta property='og:image' content='https://campusxchange.wuaze.com/assets/Images/og-images/og.png'>
 
-<!-- JSON-LD Schema for ContactPage -->
-  <script type="application/ld+json">
+  <meta property='twitter:card' content='summary_large_image'>
+  <meta property='twitter:url' content='https://campusxchange.wuaze.com/lettalk'>
+  <meta property='twitter:title' content='Let us Talk - CampusXchange | Contact & Collaboration'>
+  <meta property='twitter:description' content='Connect with CampusXchange for questions, support, mentorship, and web or SEO services.'>
+  <meta property='twitter:image' content='https://campusxchange.wuaze.com/assets/Images/og-images/og.png'>
+
+  <link rel='stylesheet' href='<?php echo ROOT_URL; ?>assets/css/style.css' type='text/css'>
+
+  <script type='application/ld+json'>
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "url": "https://campusxchange.wuaze.com/letttalk",
+    "url": "https://campusxchange.wuaze.com/lettalk",
     "name": "Let's Talk - CampusXchange",
     "description": "Reach out to CampusXchange for support, collaboration, web development, SEO services, mentorship, and internship programs.",
     "publisher": {
@@ -49,292 +90,379 @@
     }
   }
   </script>
-<style>
-@import url("<?php echo ROOT_URL;?>assets/css/root.css");
-  .contact-main {
-    background: #ecedefff;
-    padding: 3rem 1.5rem 2rem 1.5rem;
-    width:90%;
-    margin: 2rem auto 2rem auto;
-    box-shadow: 0 2px 16px rgba(99,102,241,0.08);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-  .contact-info {
-    flex: 1 1 320px;
-    min-width: 260px;
-  }
-  .contact-info h2 {
-    color:var(--primary-color);
-    margin-bottom: 1rem;
 
-  }
-  .contact-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-  }
-  .contact-info li {
-    margin-bottom: 0.7rem;
-    font-size: 1.08rem;
-    color: #222;
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-  }
-  .contact-info li i {
-    color:var(--primary-color);
-    font-size: 1.2rem;
-  }
-  .branch {
-    margin-top: 1.2rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(99,102,241,0.07);
-    padding: 1rem 1rem 0.5rem 1rem;
-  }
-  .branch h4 {
-    color:var(--secondary-color);
-    margin-bottom: 0.5rem;
-  }
-  .contact-map {
-    flex: 1 1 320px;
-    min-width: 260px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(99,102,241,0.07);
-    background: #fff;
-    height: 380px;
-    margin-top: 1.2rem;
-  }
-  .contact-map iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+  <style>
+    @import url('<?php echo ROOT_URL; ?>assets/css/root.css');
 
-  }
-  /* <!-- contact us newsletter section -----------------------------------------> */
-    .newsletter-unique {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    background: linear-gradient(120deg, #e0e7ff 60%, #f9fafb 100%);
-    box-shadow: 0 4px 24px rgba(99,102,241,0.08);
-    padding: 2.5rem 1rem;
-  }
-
-  .newsletter-card {
-    background: #fff;
-    padding: 2rem 1.2rem 1.2rem 1.2rem;
-
-    transition: transform 0.2s, box-shadow 0.2s;
-    border-top: 6px solid var(--primary-color);
-  }.newsletter-card #f-Error
-  {
-    background-color:lightgray;
-    color: red;
-    font-weight: 600;
-    margin: 2% 0;
-
-  }
-  .newsletter-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(99,102,241,0.13);
-    border-top: 6px solid var(--secondary-color);
-  }
-  .newsletter-card .card-icon {
-    font-size: 2.5rem;
-    color:var(--primary-color);
-    margin-bottom: 1rem;
-    background: #f3eded;
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(99,102,241,0.10);
-  }
-  .newsletter-card h3 {
-    color: #a19b9bff;
-    margin: 0.5rem 0 1rem 0;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-  .newsletter-card input, .newsletter-card textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--primary-color);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 6px;
-    background: #f9fafb;
-    transition: border 0.2s;
-  }
-  .newsletter-card input:focus, .newsletter-card textarea:focus {
-    border: 1.5px solid var(--secondary-color);
-    outline: none;
-  }
-  .newsletter-card button {
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 0.8rem 1.6rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(99,102,241,0.13);
-    transition: background 0.2s, color 0.2s;
-    margin-top: 0.5rem;
-    margin-left: 40px;
-  }
-  .newsletter-card button:hover {
-    background:var(--secondary-color);
-    color: #fff;
-  }
-
-  #newsletterForm
-  {
-    background-color: var(--primary-color);
-    padding: 10% ;
-  }
-
-  @media (max-width: 700px) {
-.contact-main {
-
-    padding:10px;
-    width:100%;
-    margin:0;
-    box-shadow: 0 2px 16px rgba(99,102,241,0.08);
-    display: block;
-
-    gap: 0rem;
-    align-items: flex-start;
-  }
-  .contact-info {
-
-   width: 100%;
-    font-size:1rem;
-
-  }.contact-info li {
-    margin-bottom: 0.7rem;
-    font-size: 0.8rem;
-    color: #222;
-    display: flex;
-    align-items: center;
-     gap: 0.5rem;
-
-  }
-    .contact-map, .contact-info {
-      min-width: 0;
+    .contact-main {
+      background:
+      linear-gradient(180deg  , var(--secondary-color), var(--primary-color) ),
+      url('assets/Images/og-images/og-about.jpg') top/cover no-repeat;
+      background-attachment: fixed;
+      padding: 3rem;
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: stretch;
+      color: white;
+      overflow: hidden;
     }
+
+    .contact-info {
+      flex: 1 1 320px;
+      min-width: 260px;
+    }
+
+    .contact-info h2 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .contact-info p.contact-text {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 0.9rem;
+      font-size: 1.05rem;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      line-height: 1.5;
+    }
+
+    .contact-info li i {
+      color: #ffd166;
+      font-size: 1.1rem;
+      min-width: 18px;
+    }
+
+    .contact-info a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .branch {
+      margin-top: 1.2rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 1rem 1rem 0.8rem 1rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .branch h4 {
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .branch p {
+      margin: 0;
+      color: rgba(255,255,255,0.92);
+      line-height: 1.7;
+    }
+
     .contact-map {
-      height: 220px;
+      flex: 1 1 320px;
+      min-width: 260px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      background: #fff;
+      height: 380px;
+      border-radius: 16px;
     }
 
-  .contact-form-box input,textarea,button {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--primary-color);
-    font-size: 1rem;
-    margin:1% 0%;
-  }
-  #newsletterForm
-  {
-    padding: 10% 0;
-    height: 300px;
-  }
-  #newsletterForm span {
-    font-size:0.67rem;
-  } .newsletter-card button
-  {
-     margin-left: 0px;
-  }
-  }  @media (max-width: 900px) {
-    .newsletter-unique {
-      flex-direction: column;
-      gap: 1.2rem;
-      padding: 1.2rem 0rem;
-    }
-    .newsletter-card {
-      min-width: 0;
+    .contact-map iframe {
       width: 100%;
-      padding: 1.2rem 0.7rem;
+      height: 100%;
+      border: none;
     }
-  }
 
-</style>
+    .newsletter-modern {
+      padding: 30px 0 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .newsletter-box {
+      background: linear-gradient(135deg, #ffffff, #f8fbff);
+      padding: 36px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 950px;
+      width: 100%;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+      border: 1px solid rgba(107, 83, 204, 0.08);
+    }
+
+    .newsletter-left {
+      flex: 1;
+    }
+
+    .newsletter-badge {
+      width: 64px;
+      height: 64px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      background: linear-gradient(135deg , var(--primary-color) , var(--secondary-color));
+      color: white;
+      font-size: 24px;
+      box-shadow: 0 12px 25px rgba(107, 83, 204, 0.25);
+      margin-bottom: 16px;
+    }
+
+    .newsletter-left h3 {
+      margin: 0 0 10px;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .newsletter-left p {
+      margin: 0;
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .newsletter-form-wrap {
+      flex: 1;
+      width: 100%;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 0;
+      height: 54px;
+      padding: 0 16px;
+      border-radius: 12px;
+      border: 1px solid #dbe2ea;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s ease;
+      background: #fff;
+    }
+
+    .newsletter-form input:focus {
+      border-color: #6B53CC;
+      box-shadow: 0 0 0 4px rgba(107, 83, 204, 0.10);
+    }
+
+    .newsletter-form button {
+      background:var(--secondary-color);
+      color: #000;
+      border: none;
+      height: 54px;
+      padding: 0 22px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(107, 83, 204, 0.22);
+    }
+
+    .newsletter-message {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .newsletter-message.success {
+      background: #ecfdf3;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .newsletter-message.error {
+      background: #fef2f2;
+      color: #b91c1c;
+      border: 1px solid #fecaca;
+    }
+
+    .newsletter-message.warning {
+      background: #fff7ed;
+      color: #c2410c;
+      border: 1px solid #fdba74;
+    }
+
+    @media (max-width: 900px) {
+      .newsletter-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-form button,
+      .newsletter-form input {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .contact-main {
+        padding: 18px;
+        display: block;
+        background-position:center;
+      }
+
+      .contact-info {
+        width: 100%;
+      }
+
+      .contact-info h2 {
+        font-size: 1.6rem;
+      }
+
+      .contact-info li {
+        font-size: 0.95rem;
+        gap: 0.55rem;
+      }
+
+      .contact-map,
+      .contact-info {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .contact-map {
+        height: 240px;
+        margin-top: 16px;
+      }
+
+      .newsletter-modern {
+        padding: 24px 0 6px;
+      }
+
+      .newsletter-left h3 {
+        font-size: 1.5rem;
+      }
+
+      .newsletter-left p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
 <body>
-   <!--About page Header and navbar ----------------------------------------------------------------------------------------->
-<?php include_once __DIR__ . "/components/header.php"?>
 
-  <!--about page Header and navbar end ----------------------------------------------------------------------------------------->
+<?php include_once __DIR__ . '/components/header.php'; ?>
+
 <br>
+
 <main>
-  <section class="contact-main">
-  <div class="contact-info">
-    <h2>Contact Us</h2>
-    <ul>
-      <!-- <li><i class="fa-solid fa-location-dot"></i> <strong>Head Office:</strong> Kishanganj, Bihar (855115), India</li>
-      <li><i class="fa-solid fa-building"></i> <strong>Branch:</strong> Patna, Bihar (800001), India</li> -->
-      <li> <strong>Email:</strong> campusxchangeservices@gmail.com</li>
-      <li> <strong>Mobile:</strong> +91 9155726625</li>
-      <li> <strong>Website:</strong> www.campusxchange.wuaze.com</li>
-    </ul>
-    <div class="branch">
-      <h4>Business Hours</h4>
-      <p>Monday - Saturday: 9:00 AM to 7:00 PM<br>Sunday: Closed</p>
+  <section class='contact-main'>
+    <div class='contact-info' data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p class='contact-text'>
+        Have questions, ideas, or want to work with CampusXchange? We would love to hear from you.
+        Reach out for support, collaboration, mentorship, web development, or SEO services.
+      </p>
+
+      <ul>
+        <li><i class='fa-solid fa-envelope'></i> <strong>Email:</strong> <a href='mailto:campusxchangeservices@gmail.com'>campusxchangeservices@gmail.com</a></li>
+        <li><i class='fa-solid fa-phone'></i> <strong>Mobile:</strong> <a href='tel:+919155726625'>+91 9155726625</a></li>
+        <li><i class='fa-solid fa-globe'></i> <strong>Website:</strong> <a href='https://campusxchange.wuaze.com' target='_blank'>www.campusxchange.wuaze.com</a></li>
+      </ul>
+
+      <div class='branch'>
+        <h4>Business Hours</h4>
+        <p>Monday - Saturday: 9:00 AM to 7:00 PM<br>Sunday: Closed</p>
+      </div>
     </div>
-  </div>
-  <div class="contact-map">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7162.078172298884!2d87.7707852!3d26.1628565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760951798277!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CampusXchange Location"></iframe>
-  </div>
+    <div class='contact-map'data-aos="fade-left">
+      <iframe
+        src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7162.078172298884!2d87.7707852!3d26.1628565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760951798277!5m2!1sen!2sin'
+        allowfullscreen=''
+        loading='lazy'
+        referrerpolicy='no-referrer-when-downgrade'
+        title='CampusXchange Location'>
+      </iframe>
+    </div>
   </section>
+
   <br>
-<!-- contact us newsletter section ----------------------------------------->
-<section class="newsletter-unique">
-  <div class="animationtype3 newsletter-card">
-    <span class="card-icon"><i class="fa-solid fa-bell" method="POST" ></i></span>
-    <form class="contact-form" id="newsletterForm" method="POST" action="">
-      <h3>Ready For New Updates</h3>
-      <input type="email" id="newsletterEmail" name="contact_email" placeholder="Your Email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-      <?php
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Collect and sanitize input
-    $Email = trim($_POST['contact_email'] ?? '');
-      if (empty($Email) || !filter_var($Email, FILTER_VALIDATE_EMAIL))
-    {
-        echo"<script>alert('Please enter a valid email address.');</script>";
-    }
-    // Prepare and execute insert query
-        $stmt = $conn->prepare("INSERT INTO email_list (Emails) VALUES (?)");
-        $stmt->bind_param("s",$Email);
-    if ($stmt->execute())
-  {
-  $url = ROOT_URL;
-   echo"<script>alert('Thank You for subscribe ');  window.location.href='$url/lettalk';  </script>";
-  }
-}
- ?>
-  </div>
-</section>
-<?php
-include("components/feedback.php");
-?>
+  <section class='newsletter-modern'>
+    <div class='newsletter-box' data-aos="fade-right">
+      <div class='newsletter-left'>
+        <span class='newsletter-badge'>
+          <i class='fa-solid fa-bell'></i>
+        </span>
+        <h3>Stay Updated with CampusXchange</h3>
+        <p>
+          Subscribe to receive the latest updates, useful tech resources, student opportunities,
+          and important announcements directly in your inbox.
+        </p>
+      </div>
+
+      <div class='newsletter-form-wrap'>
+        <form method='POST' class='newsletter-form' action=''>
+          <input
+            type='email'
+            name='newsletter_email'
+            placeholder='Enter your email address'
+            value='<?php echo htmlspecialchars($newsletter_email); ?>'
+            required
+          >
+          <button type='submit' name='subscribe_newsletter'>Subscribe</button>
+        </form>
+
+        <?php if (!empty($newsletter_message)) : ?>
+          <div class='newsletter-message <?php echo $newsletter_message_type; ?>'>
+            <?php echo htmlspecialchars($newsletter_message); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
+  </section>
+
+  <?php include 'components/feedback.php'; ?>
 </main>
-<br>
-<!-- footer section  --------------------------------------------------------------------------------->
-<?php include_once __DIR__ . "/components/footer.php"?>
 
+<br>
+
+<?php include_once __DIR__ . '/components/footer.php'; ?>
 
 </body>
 </html>

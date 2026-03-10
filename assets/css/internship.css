@@ -2,7 +2,7 @@
 @import url("root.css");
 
 .Notice{ background-color: #f9edbe; /* Light yellow for a notice */  height: 40px; width: 100%; padding: 10px;  margin: 25px 0; color:var(--primary-color);}
-.mentor-hero { background: linear-gradient(360deg, var(--secondary-color), var(--primary-color));  color: white; padding: 60px 0 40px 0;  text-align: center;min-height: 60vh;}
+.mentor-hero {background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)),url('../Images/Internship.png') center/cover no-repeat; color: white; padding: 80px 0 40px 0;  text-align: center;min-height: 70vh;}
 .mentor-hero h1 {  font-size: 2.5rem; margin-bottom: 10px; color:#fff;}
 .mentor-hero p {  font-size: 1.2rem;  max-width: 700px;  margin: 0 auto;}
 /* type Mentorship program  Section ------------------------------*/

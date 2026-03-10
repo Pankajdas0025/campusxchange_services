@@ -54,12 +54,13 @@
 @import url("<?php echo ROOT_URL;?>assets/css/root.css");
     /* Hero Section */
     .about-hero {
-      background:rgb(248, 98, 123 , 0.8);
+      background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)),url('assets/Images/seo-services-hero.jpg') center/cover no-repeat;
       color: #fff;
+      background-attachment: fixed;
       padding: 3rem 1.5rem;
       text-align: center;
       width: 100%;
-      margin: 0%;
+      min-height:70vh;
       box-shadow: var(--shadow);
     }
     .about-hero h1 {

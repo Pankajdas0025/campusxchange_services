@@ -120,10 +120,11 @@ include_once __DIR__ . '/../src/conn.php';
   display: flex;
   flex-wrap: wrap;
   padding:2.5% 6%;
-  background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)), url('../assets/Images/seo-services-hero.jpg') center/cover no-repeat;
+  background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)), url('../assets/Images/og-images/og-seo.jpg') center/cover no-repeat;
+  margin-top: 15px;
+  background-attachment: fixed;
   min-height: 80vh;
   width: 100%;
-  margin:0;
   font-family: 'Poppins', sans-serif;
 }
 

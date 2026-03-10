@@ -2,7 +2,6 @@
 include_once __DIR__ . '/src/config.php';
 include_once __DIR__ . '/src/conn.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,8 +95,8 @@ fbq('init', '25184438234509573');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"
-/></noscript>
+src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
 </head>
 <body>
@@ -109,34 +108,149 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"
 
 <!-- Home Intro Section -->
 <section class="homeIntro" >
-  <div class="introContent" data-aos="fade-up">
+<div class="introContent" data-aos="fade-up">
     <h1 style="color: white;">Affordable Web Development, SEO, and Internship Opportunities</h1>
     <p>Empowering learners, creators, and businesses through tech, mentorship, and original content. Dive into a world where innovation meets accessibility.</p>
     <a href="https://campusxchange.wuaze.com/services/web-development" title="Explore our services" class="ctaBtn">Explore Now</a>
     <a href="https://campusxchange.wuaze.com/lettalk" title="Explore our services" class="ctaBtn">Contact Now</a>
-  </div>
+</div>
 
-  <div class="introContent" id="core-ser" data-aos="fade">
-    <h2>Our Core services</h1>
-
-  <div class="core-ser" data-aos="fade-up">
-<ul style="list-style: none; padding: 5px;">
-   <li><i class="fa-solid fa-code"></i> Web Development</li>
-  <li><i class="fa-solid fa-chart-line"></i> SEO Services</li>
-  <li><i class="fa-solid fa-user-graduate"></i> Mentorship Program</li>
-  <li><i class="fa-solid fa-book-open"></i> Handouts</li>
-</ul>
+<div class="introContent" id="core-ser" data-aos="fade-left">
+  <h2>Our Core services</h1>
+  <div class="core-ser" >
+    <ul style="list-style: none; padding: 5px;">
+      <li><i class="fa-solid fa-code"></i> Web Development</li>
+      <li><i class="fa-solid fa-chart-line"></i> SEO Services</li>
+      <li><i class="fa-solid fa-user-graduate"></i> Mentorship Program</li>
+      <li><i class="fa-solid fa-book-open"></i> Handouts</li>
+    </ul>
   </div>
-
-  </div>
+</div>
 </section>
-<!-- hero section title of the project  ------------------------------------------------------------------------>
-<section class="hero" data-aos="fade-down">
-<h2>Your Gateway to Learning , <span style="background-color:#f43f5e; color:#FFF;padding: 1px 4px;">Development</span> & Career Excellence with Mentorship programs.</h2>
-<p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions and search engine optimization, we've got you covered. </p>
+<!-- Slide animation -->
+<!-- Technologies & Platforms Section -->
+<section class="ai-section py-5">
+<div class="container-fluid">
+
+<h2>Tools & Technologies We Work With</h2>
+
+<div class="ai-slider">
+<div class="ai-track">
+<!-- Hosting -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hostinger.svg" alt="Hostinger">
+<p>Hostinger Hosting</p>
+</div>
+
+<!-- Cloudflare -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cloudflare.svg" alt="Cloudflare">
+<p>Cloudflare</p>
+</div>
+
+<!-- Google Analytics -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleanalytics.svg" alt="Google Analytics">
+<p>Google Analytics</p>
+</div>
+
+<!-- Google Search Console -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Google Search Console">
+<p>Search Console</p>
+</div>
+
+<!-- GitHub -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+<p>GitHub</p>
+</div>
+
+<!-- WordPress -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wordpress.svg" alt="WordPress">
+<p>WordPress</p>
+</div>
+
+<!-- PHP -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/php.svg" alt="PHP">
+<p>PHP</p>
+</div>
+
+<!-- Laravel -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/laravel.svg" alt="Laravel">
+<p>Laravel</p>
+</div>
+
+<!-- React -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg" alt="React">
+<p>React</p>
+</div>
+
+<!-- JavaScript -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript">
+<p>JavaScript</p>
+</div>
+
+<!-- HTML -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML">
+<p>HTML5</p>
+</div>
+
+<!-- CSS -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS">
+<p>CSS3</p>
+</div>
+
+<!-- Stripe -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" alt="Stripe">
+<p>Stripe</p>
+</div>
+
+<!-- Razorpay -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/razorpay.svg" alt="Razorpay">
+<p>Razorpay</p>
+</div>
+
+<!-- duplicate for smooth infinite slider -->
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hostinger.svg">
+<p>Hostinger</p>
+</div>
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cloudflare.svg">
+<p>Cloudflare</p>
+</div>
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg">
+<p>React</p>
+</div>
+
+</div>
+</div>
+
+</div>
 </section>
-<!-- section to display my core services in a single frame  -->
+
+  <!-- hero section title of the project  ------------------------------------------------------------------------>
+  <section class="hero" data-aos="fade-down">
+  <h2>Your Gateway to Learning , <span style="background-color:#f43f5e; color:#FFF;padding: 1px 4px;">Development</span> & Career Excellence with Mentorship programs.</h2>
+  <p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions and search engine optimization, we've got you covered. </p>
+  </section>
+  <!-- section to display my core services in a single frame  -->
 <section class="All-services" >
+
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/development-services.jpg" alt="campusxchange-development-services-image"> </div><div class="service-type-content"><h2>Web services</h2><ul><li>Custom Website Development</li><li>Ecommerce Website</li><li>Landing page</li><li>Business website</li></ul><a href="services/web-development">Explore Web Development Services</a></div></div>
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/seo-core-services.jpg" alt="campusxchange-seo-service-image"> </div><div class="service-type-content"><h2>SEO Services</h2><ul><li>Website Audit</li><li>Goggle Map SEO</li><li>On-page/Off-oage SEO</li><li>Technical SEO</li></ul><a href="services/seo">Discover Our SEO Services</a></div></div>
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/mentorship-services.jpg" alt="campusxchange-mentorship-image"> </div><div class="service-type-content"><h2>Mentorship Program</h2><ul><li>Internship program</li><li>Projects Ideas</li><li>Live Courses</li><li>Some Others</li></ul><a href="internship-program">Join Our Mentorship Program</a></div></div>
@@ -232,7 +346,7 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <section   id="Internship" data-aos="fade-up">
 <div class="IHero">
 <!--------------------- internship banner  -->
-<img src="assets/Images/Banner.jpg" alt="campusxchange-internship-banner" title="Enroll in our internship">
+<img src="assets/Images/Home Page Banner.png" alt="campusxchange-internship-banner" title="Enroll in our internship">
 <h3>Technical Internship Programs and Projects for College Students in Bihar</h3>
 <p>Tired of just collecting certificates with no real skills? At CampusXchange, we're not just about learning — we're about doing.</p>
 <br>
