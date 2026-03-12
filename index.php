@@ -344,17 +344,17 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <br>
 <!-- in which we show our internship CTA section  ---------------------------------------------------------------------------------------->
 <section   id="Internship" data-aos="fade-up">
-<div class="IHero">
-<!--------------------- internship banner  -->
-<img src="assets/Images/Home Page Banner.png" alt="campusxchange-internship-banner" title="Enroll in our internship">
-<h3>Technical Internship Programs and Projects for College Students in Bihar</h3>
-<p>Tired of just collecting certificates with no real skills? At CampusXchange, we're not just about learning — we're about doing.</p>
-<br>
-<br>
-<p>Whether you're passionate about crafting pixel-perfect frontends or building powerful backend logic, you'll work on real-world projects under expert mentorship. Here, you'll gain full-stack experience, contribute to meaningful development, and grow into the developer the industry wants.</P>
-<br>
-<a href="internship-program"><button>Explore Our Internship Program</button></a>
-</div>
+  <div class="IHero">
+  <!--------------------- internship banner  -->
+  <img src="assets/Images/Home Page Banner.png" alt="campusxchange-internship-banner" title="Enroll in our internship">
+  <h3>Technical Internship Programs and Projects for College Students in Bihar</h3>
+  <p>Tired of just collecting certificates with no real skills? At CampusXchange, we're not just about learning — we're about doing.</p>
+  <br>
+  <br>
+  <p>Whether you're passionate about crafting pixel-perfect frontends or building powerful backend logic, you'll work on real-world projects under expert mentorship. Here, you'll gain full-stack experience, contribute to meaningful development, and grow into the developer the industry wants.</P>
+  <br>
+  <a href="internship-program"><button>Explore Our Internship Program</button></a>
+  </div>
 </section>
     <br>
     <!-- FAQ section ---------------------------------------------------------------------------------->

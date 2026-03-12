@@ -27,7 +27,7 @@ main{opacity:1;}
 
 /* ai tools srection -------------------------------------------------------- */
 .ai-section{
-background:#f8f9fa;
+background:#FFF;
 overflow:hidden;
 }
 .ai-section h2{text-align:center;margin-bottom:30px;color:rgb(25, 16, 16); padding: 15px;}
@@ -42,6 +42,8 @@ overflow:hidden;
     gap:40px;
     width:max-content;
     animation:scroll 25s linear infinite;
+    background-color:#FFF;
+    padding: 10px 0;
 }
 
 .ai-card{
@@ -51,7 +53,7 @@ overflow:hidden;
     text-align:center;
     border: 1px solid #ffffff;
     min-width:180px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .ai-card img{
@@ -112,7 +114,7 @@ transform:translateX(-50%);
 .typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;border-right:4px solid black;  box-shadow: var(--shadow);}
 
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
-.Home-page-about{padding:3rem 2rem;background:linear-gradient(rgb(38, 63, 90 , 0.6))}
+.Home-page-about{padding:3rem 2rem;background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../Images/webdevelopment-services-hero.jpg') top/cover no-repeat;}
 .Home-page-about h2{color:white}
 .about-content{max-width:600px;margin-bottom:3rem;color:#fff;}
 .Performance-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;}
@@ -129,7 +131,7 @@ transform:translateX(-50%);
 
 /* Internship CTA section */
 
-#Internship{ color: rgb(0, 0, 0);  height:auto;  border-radius: var(--radius);background: #f9fafb;}
+#Internship{ color: rgb(0, 0, 0);  height:auto;  border-radius: var(--radius);background: #ffffff;}
 #Internship:hover button{animation:buttonMove 1s ease-in-out 0s 1 forwards;}
 @keyframes buttonMove
 {

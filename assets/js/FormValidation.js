@@ -53,42 +53,13 @@
       }
     }
 
-    function ShubmitForm() {
-      //Check select dropdowns are not on the first (default) option................................
-      if (
-        nameInput.value.trim() === "" ||
-        mobInput.value.trim() === "" ||
-        emailInput.value.trim() === "" ||
-        addressInput.value.trim() === "" ||
-        webInput.selectedIndex === 0 ||
-        planInput.selectedIndex === 0 ||
-        webInput.selectedIndex === ""||
-        planInput.selectedIndex === ""
-      ) {
-        Errorsms.innerHTML = "⚠️ Please fill all fields correctly before submitting.";
-        return false;
-      }
 
-      // // Show success message
-      // const Sbtn = document.getElementById("img_form_sbtn");
-      // Sbtn.style.display = "block";
-      // Errorsms.innerHTML = "✅ Form submitted successfully!";
-
-      // // Optionally reset after 4 seconds
-      // setTimeout(() => {
-      //   window.location.reload();
-      // }, 10000);
-      return true;
-
-    }
 
     nameInput.addEventListener('focus', () => nameInput.style.color = "black");
     emailInput.addEventListener('focus', () => emailInput.style.color = "black");
     mobInput.addEventListener('focus', () => mobInput.style.color = "black");
 
 
-
-// Webdevelopmet services formvalidation end here..............................................
 
 
 

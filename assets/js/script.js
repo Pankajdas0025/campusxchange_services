@@ -61,10 +61,10 @@ function Clientfeedback(imgsrc, clientpos, rating , sms)
   d.innerText=sms;
 }
 
-function Client1(){Clientfeedback("../assets/images/abhiraj.jpg", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");}
-function Client2(){Clientfeedback("../assets/Images/avinash.jpg", "CEO/GetNotes" ,"⭐⭐⭐⭐" ,  "The Services provide  by Campusxchange is meaningful and it gives a good outcome");;}
-function Client3(){Clientfeedback("../assets/Images/rajneesh.jpg", "Own/Memory Pzzle Game" ,"⭐⭐⭐" ,  "The website design is highly user-friendly,smooth navigation and excellent browser compatibility. It adapts well across different devices, ensuring a consistent and engaging user experience.");}
-function Client4(){Clientfeedback("../assets/Images/banty.jpg", "Founder/Admission Coach" ,"⭐⭐⭐⭐" ,"The website has an impressive and user-friendly design that makes navigation simple and intuitive for all visitors.");}
+function Client1(){Clientfeedback("../assets/images/client.png", "Founder(BlogScript)" ,"⭐⭐⭐⭐" ,  "The team's professionalism and quick response time were outstanding. They were always available to answer our questions, and the project was completed ahead of schedule. The results have been fantastic, and we're already seeing a significant return on our investment");}
+function Client2(){Clientfeedback("../assets/Images/client.png", "CEO/GetNotes" ,"⭐⭐⭐⭐" ,  "The Services provide  by Campusxchange is meaningful and it gives a good outcome");;}
+function Client3(){Clientfeedback("../assets/Images/client.png", "Own/Memory Pzzle Game" ,"⭐⭐⭐" ,  "The website design is highly user-friendly,smooth navigation and excellent browser compatibility. It adapts well across different devices, ensuring a consistent and engaging user experience.");}
+function Client4(){Clientfeedback("../assets/Images/client.png", "Founder/Admission Coach" ,"⭐⭐⭐⭐" ,"The website has an impressive and user-friendly design that makes navigation simple and intuitive for all visitors.");}
 
 
 

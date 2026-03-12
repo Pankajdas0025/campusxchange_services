@@ -182,6 +182,112 @@ include_once __DIR__ . '/../src/conn.php';
   </div>
 </section>
 <!-- Tech stack we work with section  -->
+<div class="ai-slider">
+<div class="ai-track">
+<!-- Hosting -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hostinger.svg" alt="Hostinger">
+<p>Hostinger Hosting</p>
+</div>
+
+<!-- Cloudflare -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cloudflare.svg" alt="Cloudflare">
+<p>Cloudflare</p>
+</div>
+
+<!-- Google Analytics -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googleanalytics.svg" alt="Google Analytics">
+<p>Google Analytics</p>
+</div>
+
+<!-- Google Search Console -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Google Search Console">
+<p>Search Console</p>
+</div>
+
+<!-- GitHub -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+<p>GitHub</p>
+</div>
+
+<!-- WordPress -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wordpress.svg" alt="WordPress">
+<p>WordPress</p>
+</div>
+
+<!-- PHP -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/php.svg" alt="PHP">
+<p>PHP</p>
+</div>
+
+<!-- Laravel -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/laravel.svg" alt="Laravel">
+<p>Laravel</p>
+</div>
+
+<!-- React -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg" alt="React">
+<p>React</p>
+</div>
+
+<!-- JavaScript -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript">
+<p>JavaScript</p>
+</div>
+
+<!-- HTML -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML">
+<p>HTML5</p>
+</div>
+
+<!-- CSS -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS">
+<p>CSS3</p>
+</div>
+
+<!-- Stripe -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" alt="Stripe">
+<p>Stripe</p>
+</div>
+
+<!-- Razorpay -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/razorpay.svg" alt="Razorpay">
+<p>Razorpay</p>
+</div>
+
+<!-- duplicate for smooth infinite slider -->
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hostinger.svg">
+<p>Hostinger</p>
+</div>
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cloudflare.svg">
+<p>Cloudflare</p>
+</div>
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg">
+<p>React</p>
+</div>
+
+</div>
+</div>
+<!-- Tech stack we work with section  -->
  <section class="tech-stack-box" aria-label="Tech Stack We Work With">
     <h2>Our Tech Stack</h2>
     <p>CampusXchange builds with the latest technologies to deliver fast, secure, and scalable solutions.</p>
@@ -365,66 +471,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
     $subject = "Web Development | Campusxchange";
     $message = "<body style='margin: 0; padding: 2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.5; color: #333;'>
-  <div style='max-width: 800px; margin: auto; padding: 15px;  box-shadow: 0 2px 10px rgba(0,0,0,0.1); background-color: #fff;'>
+                <div style='max-width: 800px; margin: auto; padding: 15px;  box-shadow: 0 2px 10px rgba(0,0,0,0.1); background-color: #fff;'>
+
+                <img src='https://campusxchange.wuaze.com/assets/Images/campusxchange-email-header.jpg' alt='CampusXchange email banner' style='width: 100%; display: block;' />
+                <ol style='list-style: none; padding: 0 .5px; margin: 0;'>
+                <li>$name</li>
+                <li>📧: $email</li>
+                <li>📞: $mobile</li>
+                <li>🏠: $address</li>y
+                <li>💻: $websitetype</li>
+                <li>📦: $plantype</li>
+                </ol>
+                <h1 style='color: #fff; padding: 40px 10px; background: linear-gradient(to right, #6366f1, #f43f5e); text-align: center; font-size: 1.6rem;margin: 0;'>
+                You're Looking for a Website 🌐
+                </h1>
+
+                <div style='background-color: #ecf0f1; padding: 20px;  margin-top: 20px;'>
+                <p style='margin: 0 0 10px;'>Thanks for reaching out to <strong>CampusXchange</strong> — where ideas become digital realities.</p>
+                <p style='margin: 0 0 10px;'>Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.</p>
+                <p>🌟 <strong>Our Support Team will contact you within 24 hours.</strong></p>
+                <p>Be Happy with <strong>CampusXchange</strong>!</p>
+                </div>
 
 
-    <img src='https://campusxchange.wuaze.com/assets/Images/campusxchange-email-header.jpg' alt='CampusXchange email banner' style='width: 100%; display: block;' />
-
-
-
-    <ol style='list-style: none; padding: 0 .5px; margin: 0;'>
-    <li>$name</li>
-    <li>📧: $email</li>
-    <li>📞: $mobile</li>
-    <li>🏠: $address</li>
-    <li>💻: $websitetype</li>
-    <li>📦: $plantype</li>
-
-    </ol>
-
-    <h1 style='color: #fff; padding: 40px 10px; background: linear-gradient(to right, #6366f1, #f43f5e); text-align: center; font-size: 1.6rem;margin: 0;'>
-    You're Looking for a Website 🌐
-    </h1>
-
-    <div style='background-color: #ecf0f1; padding: 20px;  margin-top: 20px;'>
-      <p style='margin: 0 0 10px;'>Thanks for reaching out to <strong>CampusXchange</strong> — where ideas become digital realities.</p>
-      <p style='margin: 0 0 10px;'>Whether you're launching a startup, showcasing your brand, or building a personal portfolio, our expert team is ready to craft a website that’s fast, functional, and uniquely yours.</p>
-      <p>🌟 <strong>Our Support Team will contact you within 24 hours.</strong></p>
-      <p>Be Happy with <strong>CampusXchange</strong>!</p>
-    </div>
-
-
-    <div style='margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
-      <p style='font-weight: bold; margin-bottom: 10px;'>Explore our Social Handles:</p>
-      <ul style='padding-left: 15px; list-style: none; line-height: 1.8;'>
+                <div style='margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
+                <p style='font-weight: bold; margin-bottom: 10px;'>Explore our Social Handles:</p>
+                <ul style='padding-left: 15px; list-style: none; line-height: 1.8;'>
                 <li>Facebook: <a href='https://www.facebook.com/campusxchangeservices' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Instagram: <a href='https://www.instagram.com/campusxchange_services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>LinkedIn: <a href='https://www.linkedin.com/company/campusxchange-services/' target='_blank' style='color: #2980b9;'>Click Here</a></li><br>
                 <li>Email: <a href='mailto:campusxchangeservices@gmail.com' style='color: #2980b9;'>campusxchangeservices@gmail.com</a></li><br>
                 <br>
-      </ul>
-    </div>
+                </ul>
+                </div>
 
 
-    <footer style='margin-top: 25px; text-align: center; font-size: 0.85rem; color: #777; background-color: #fafafa; padding: 15px; '>
-      <p style='margin: 8px 0;'>You're receiving this email because you showed interest in <strong>CampusXchange</strong> web services.</p>
-      <p style='margin: 8px 0;'>If this wasn't you, simply ignore this email.</p>
-      <div style='margin-top: 10px;'>
-        <a href='https://campusxchange.wuaze.com' target='_blank' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Home</a> |
-        <a href='https://campusxchange.wuaze.com/services/webdevelopment' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Services</a> |
-        <a href='https://campusxchange.wuaze.com/lettalk' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Contact</a>
-      </div>
-      <p style='margin-top: 12px; color: #999;'>© <span id='year'></span> CampusXchange. All rights reserved.</p>
-    </footer>
-  </div>>
+                <footer style='margin-top: 25px; text-align: center; font-size: 0.85rem; color: #777; background-color: #fafafa; padding: 15px; '>
+                <p style='margin: 8px 0;'>You're receiving this email because you showed interest in <strong>CampusXchange</strong> web services.</p>
+                <p style='margin: 8px 0;'>If this wasn't you, simply ignore this email.</p>
+                <div style='margin-top: 10px;'>
+                <a href='https://campusxchange.wuaze.com' target='_blank' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Home</a> |
+                <a href='https://campusxchange.wuaze.com/services/webdevelopment' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Services</a> |
+                <a href='https://campusxchange.wuaze.com/lettalk' style='margin: 0 6px; text-decoration: none; color: #6366f1;'>Contact</a>
+                </div>
+                <p style='margin-top: 12px; color: #999;'>© <span id='year'></span> CampusXchange. All rights reserved.</p>
+                </footer>
+                </div>>
+                </body>";
 
-</body>";
-// Send email using mail()-------------------------------------------------------------
-//$headers = "MIME-Version: 1.0" . "\r\n";
-//$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-// More headers
-//$headers .= 'From: <pd5569121@gmail.com>' . "\r\n";
-//mail($email,$subject,$message,$headers);
 
     // Send email using PHPMailer------------------------------------------------------
     $mail = new PHPMailer(true);
@@ -492,10 +586,10 @@ else {
     </div>
   </div>
 <div class="clientslist">
-  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/abhiraj.jpg" alt="client-one"></button>
-  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/avinash.jpg" alt="client-two"></button>
-  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/rajneesh.jpg" alt="client-three"></button>
-  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/banty.jpg" alt="client-four"></button>
+  <button class="clienttype" onclick=" Client1() "><img src="../assets/Images/client.png" alt="client-one"></button>
+  <button class="clienttype" onclick=" Client2() "><img src="../assets/Images/client.png" alt="client-two"></button>
+  <button class="clienttype" onclick=" Client3() "><img src="../assets/Images/client.png" alt="client-three"></button>
+  <button class="clienttype" onclick=" Client4() "><img src="../assets/Images/client.png" alt="client-four"></button>
 </div>
 </div>
 <!-- right side -->
