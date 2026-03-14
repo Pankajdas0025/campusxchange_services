@@ -87,7 +87,7 @@ include_once __DIR__ . '/../src/conn.php'
   <!-- Assignment section end  ------------------------------------------------------------------------------------------------>
       <br>
   <!--Basic project demo section  ------------------------------------------------------------------------------------------------>
-      <section class="block"  id="basic-project">
+      <!-- <section class="block"  id="basic-project">
       <h2>Some Basic Web Projects</h2>
       <br>
       <div class="demoview">
@@ -102,7 +102,10 @@ include_once __DIR__ . '/../src/conn.php'
       <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/login-signup-form-project.jpg" alt="Login & Signup Form image"/></div><h3>Login & Signup Form</h3><span>HTML</span><span>T.CSS</span><span>JavaScript</span><span>PHP</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
       </div>
       <h2><button id="Cbtn" onclick="closeall()">Close</button></h2>
-    </section>
+    </section> -->
+
+
+
   <!--Basic project demo section end  ------------------------------------------------------------------------------------------------>
    <br>
     <!-- descreption cta For My core services ------------------------------------------------------------------------------>

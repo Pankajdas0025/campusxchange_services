@@ -33,24 +33,20 @@ include "../src/config.php";
 <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/note.css" type="text/css">
 </head>
 <body>
-<!--Note page Header and navbar ----------------------------------------------------------------------------------------->
 <?php include_once __DIR__ . "/../components/header.php"?>
- <!--Note page Header and navbar  end ----------------------------------------------------------------------------------------->
 
 <!------Notes section start -------------------------------------------------------------->
-<!--Search box --------------------------------------------------------------------------->
 <main>
-  <br>
  <section  id="NotesContent">
-      <br>
-    <h1>Programming Notes PDFs</h1>
-    <p>* Technical Study Notes | Tech notes</p>
-    <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    <input type="text" name="search" placeholder="eg. Datascience,PHP,SQL" style="font-size:16px; font-family:'Poppins', sans-serif;">
-    <button type="submit" class="btn btn-info btn-lg"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
-    </form>
-       <br>
-       <br>
+  <br>
+  <h1>Programming Notes PDFs</h1>
+  <p>* Technical Study Notes | Tech notes</p>
+  <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  <input type="text" name="search" placeholder="eg. Datascience,PHP,SQL" style="font-size:16px; font-family:'Poppins', sans-serif;">
+  <button type="submit" class="btn btn-info btn-lg"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+  </form>
+  <br>
+  <br>
 <!------Notes section start from backend   -------------------------------------------------------------->
   <?php
 if (isset($_GET['search']) && !empty(trim($_GET['search']))) {
@@ -97,7 +93,7 @@ else
   $result = $conn->query("SELECT * FROM notes ORDER BY created_at DESC");
   $count = 0;
 
-    while ($count < 4 && $row = $result->fetch_assoc()) {
+    while ($count < 5 && $row = $result->fetch_assoc()) {
 
        $originalLink = $row['noteLink'];
 
@@ -134,12 +130,82 @@ else
       alert("Failed to copy!");
     });
   }
-      </script>
-    <!------Notes section start from backend  end here  -------------------------------------------------------------->
+    </script>
     </section>
-    <!-----all -Notes section ------------------------------------------------------------->
+    <!-- Technologies & Platforms Section -->
+<section class="ai-section py-5">
+<div class="container-fluid">
 
+<h2>Programming and Full-Stack Developemnt Notes</h2>
 
+<div class="ai-slider">
+<div class="ai-track" style="background-color: rgb(38, 63, 90);" >
+
+<!-- GitHub -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+<p>GitHub</p>
+</div>
+
+<!-- PHP -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/php.svg" alt="PHP">
+<p>PHP</p>
+</div>
+
+<!-- Laravel -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/laravel.svg" alt="Laravel">
+<p>Laravel</p>
+</div>
+
+<!-- React -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg" alt="React">
+<p>React</p>
+</div>
+
+<!-- JavaScript -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/javascript.svg" alt="JavaScript">
+<p>JavaScript</p>
+</div>
+
+<!-- HTML -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML">
+<p>HTML5</p>
+</div>
+
+<!-- CSS -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS">
+<p>CSS3</p>
+</div>
+
+<!-- duplicate for smooth infinite slider -->
+
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg">
+<p>React</p>
+</div>
+<!-- GitHub -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+<p>GitHub</p>
+</div>
+
+<!-- PHP -->
+<div class="ai-card">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/php.svg" alt="PHP">
+<p>PHP</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!-----all -Notes section ------------------------------------------------------------->
 <section class="block notes-section" data-aos="fade-up" data-aos-duration="1000">
   <h2><i class="fa-solid fa-book-open-reader"></i> Tech Notes That Actually Make Sense</h2>
   <p>

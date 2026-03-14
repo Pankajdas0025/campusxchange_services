@@ -616,34 +616,6 @@ else {
   </div>
 </div>
 </section>
-
-<!-- Clients Real Projects -->
-<section id="client_projects">
-  <div class="client_card">
-    <iframe src="https://your-coaching-website.netlify.app/"></iframe>
-    <div class="project_buttons">
-      <a href="https://your-coaching-website.netlify.app/" title="Explore This Site" target="_blank" class="btn view">View</a>
-      <a href="https://www.instagram.com/p/DPs6LFJjFax/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" class="btn buy">Buy Now</a>
-    </div>
-  </div>
-
-  <div class="client_card">
-    <iframe src="https://pankajkumardas.netlify.app/"></iframe>
-    <div class="project_buttons">
-      <a href="https://pankajkumardas.wuaze.com/" title="Explore This Site" target="_blank" class="btn view">View</a>
-      <a href="#" class="btn buy">Buy Now</a>
-    </div>
-  </div>
-
-  <div class="client_card">
-    <iframe src="https://pankajdas0025.github.io/Tmu-Notes/"></iframe>
-    <div class="project_buttons">
-      <a href="https://pankajdas0025.github.io/Tmu-Notes/" title="Explore This Site" target="_blank" class="btn view">View</a>
-      <a href="#" class="btn buy">Buy Now</a>
-    </div>
-  </div>
-</section>
-
 <!-- web development  service webdevlopmentfaqS Section ---------------------------------->
   <section class="webdevlopmentfaq-section">
   <h2>Frequently Asked Questions</h2>
