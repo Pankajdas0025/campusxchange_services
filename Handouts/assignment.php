@@ -25,6 +25,10 @@ include_once __DIR__ . '/../src/conn.php'
   <meta name="twitter:title" content="Assignment Help & Tech Project Services - CampusXchange">
   <meta name="twitter:description" content="Programming and academic project help from CampusXchange — trusted, fast, and plagiarism-free.">
   <meta name="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-assignment.jpg">
+  <!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
   <!-- styles -->
   <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
   <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/assignment.css" type="text/css">
@@ -83,30 +87,6 @@ include_once __DIR__ . '/../src/conn.php'
    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20work%20on%20my%20Assignment" title="Get Assignments Through Whatsapp.." target="_blank">Request for custom Assignments👋</a>
 
 </section>
-
-  <!-- Assignment section end  ------------------------------------------------------------------------------------------------>
-      <br>
-  <!--Basic project demo section  ------------------------------------------------------------------------------------------------>
-      <!-- <section class="block"  id="basic-project">
-      <h2>Some Basic Web Projects</h2>
-      <br>
-      <div class="demoview">
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/speech-synthesisis-project.jpg" alt="Text to Speech Convertor image"/></div><h3>Text to Speech Convertor</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/calulator-project.jpg" alt="Calculator image"/></div><h3>Calculator</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/qr-code-generator-project.jpg" title="QR Code Generator image"/></div><h3>QR Code Generator</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      </div>
-       <h2><button id="Viewbtn" onclick=" viewall()">View All</button></h2>
-      <div class="viewall">
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/stopwatch-project.jpg" alt="Timing Stopwatch image"/></div><h3>Timing Stopwatch</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/key-code-finder-project.jpg" alt="Keybord Key Value finder image"/></div><h3>Keybord Key Value finder</h3><span>HTML</span><span>CSS</span><span>JavaScript</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      <div class="block basic-project-box"><div class="project-photo"><img src="../assets/Images/basicdemoproject/login-signup-form-project.jpg" alt="Login & Signup Form image"/></div><h3>Login & Signup Form</h3><span>HTML</span><span>T.CSS</span><span>JavaScript</span><span>PHP</span><a href="#"><span id="View"><i class="fa-solid fa-eye"></i></span></a><a href="#"><span id="Download"><i class="fa-solid fa-download"></i></span></a></div>
-      </div>
-      <h2><button id="Cbtn" onclick="closeall()">Close</button></h2>
-    </section> -->
-
-
-
-  <!--Basic project demo section end  ------------------------------------------------------------------------------------------------>
    <br>
     <!-- descreption cta For My core services ------------------------------------------------------------------------------>
   <section class="block project-card">

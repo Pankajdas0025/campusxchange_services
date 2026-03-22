@@ -1,13 +1,8 @@
 <?php
 require_once __DIR__ . '/../src/config.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<style>
 @import url('<?php echo ROOT_URL;?>assets/css/root.css');
 /* header */
 body{font-family: var(--font-main);}
@@ -17,40 +12,13 @@ body{font-family: var(--font-main);}
 .footer-div a{text-decoration: none;display: block;padding: 5px 20px; color:white; font-weight: 300;}
 .footer-div a:hover{  text-decoration: underline;  transform: translateX(1px);}
 /* Animated cursor for all pages ---------------------------------*/
-.cursor{ z-index: 999; background-color:transparent; backdrop-filter: blur(20px); width: 20px; height: 20px; border-radius: 50%; pointer-events: none;outline: 2px double white;border:1px double white;box-shadow: var(--shadow);position: absolute;transition:0.1s;}
+.cursor{ z-index: 999; background-color:#FFF; backdrop-filter: blur(20px); width: 20px; height: 20px; border-radius: 50%; pointer-events: none;outline: 2px double white;border:1px double white;box-shadow: var(--shadow);position: absolute;transition:0.1s;}
 /* Floating buttons */
 #whatsapp{position:fixed;left:18px;bottom:18px;width:56px;height:56px;border-radius:999px;background:#25D366;display:grid;place-items:center;box-shadow:var(--shadow);z-index:900}
 #topBtn{position:fixed;right:20px;bottom:18px;width:56px;height:56px;border-radius:999px;background:var(--primary-color);display:grid;place-items:center;box-shadow:var(--shadow);z-index:900;border:none;cursor:pointer}
 .whatsapp-float {position: fixed;width: 60px;height: 60px;bottom: 25px;right: 25px;background-color: #25d366;color: #fff;border-radius: 50%;text-align: center;font-size: 30px;box-shadow: 0 0 0 rgba(37, 211, 102, 0.4); transition: all 0.3s ease-in-out;z-index: 999;  animation: pulseShadow 2s infinite;}
 .whatsapp-float i {line-height: 60px;}
 .whatsapp-float:hover {background-color: #20ba5a;transform: scale(1.2);box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);}
-/* Keyframe for Pulsing Shadow Animation */
-@keyframes pulseShadow {
-0% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);}
-70%{box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);}
-100% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);}}
-/* Full screen loader background */
-#loading-screen {position: fixed; width: 100%;height: 100%;background: #ffffff;top: 0; left: 0;display: flex;justify-content: center; align-items: center;z-index: 9999;transition: opacity 0.5s ease, visibility 0.5s ease;flex-direction: column;}
-/* Hide smoothly */
-#loading-screen.hidden { opacity: 0; visibility: hidden; }
-/* Loader wrapper */
-.loader {  width: 120px;height: 120px;  position: relative;}
-/* Pulse rings */
-.loader::before,
-.loader::after {content: "";position: absolute;top: 50%;left: 50%; width: 120px;height: 120px;border-radius: 50%;transform: translate(-50%, -50%);border: 4px solid transparent;border-top-color:var(--primary-color);border-bottom-color: var(--secondary-color); animation: pulse 1.5s ease-in-out infinite;}
-.loader::after {border-top-color: #e0e719ff;border-bottom-color: #1e90ff;animation-delay: 0.75s;
-  }
-  /* Logo in center */
-  .loader img { width: 60px; height: 60px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: logoScale 1.5s ease-in-out infinite;}
-  /* Animations */
-  @keyframes pulse {
-    0%, 100% {transform: translate(-50%, -50%) scale(0.8);opacity: 0.7;}
-    50% {transform: translate(-50%, -50%) scale(1.2);opacity: 0.3;}}
-
-  @keyframes logoScale {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); }
-    50% { transform: translate(-50%, -50%) scale(1.1); }
-  }
 
   @media(max-width:600px)
 {
@@ -62,13 +30,11 @@ body{font-family: var(--font-main);}
 .footer-div p{  color: white;}}
 
 </style>
-</head>
-<body>
-
 <!-- animated cursor ------------------->
- <div class="cursor"></div>
+<div class="cursor"></div>
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/+919155726625?text=Hello%20CampusXchange%20Services%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." id="whatsapp" class="whatsapp-float" target="_blank" title="Chat on WhatsApp" style="text-decoration: none;"> <i class="fab fa-whatsapp"></i></a>
+
 <button id="topBtn" class="whatsapp-float" aria-label="Scroll to top" title="Back to top"> <i class="fa fa-arrow-up"></i></button>
 
 <footer class="footer" id="include-footer">
@@ -149,8 +115,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
-
-
  </script>
-</body>
-</html>

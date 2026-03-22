@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
   <style>
     :root { --secondary: #263F5A; }
-
     .chatbot-widget { position: fixed; bottom: 120px; left: 20px; z-index: 1000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     .chatbot-toggle { width: 56px; height: 56px; border-radius: 50%; background:#F8627B; border: 1px solid white; color: white; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; animation: pulseShadow 2s infinite; }
-
     @keyframes pulseShadow { 0% {box-shadow: 0 0 0 0 rgba(244, 63, 94, 1);} 70%{box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);} 100% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);} }
-
     .chatbot-toggle:hover { transform: rotate(360deg); box-shadow: 0 6px 16px rgba(0,0,0,0.2); }
     .chatbot-toggle:active { transform: scale(0.95); }
-
     .chatbot-popup { position: fixed; bottom: 10px; right: 15px; width: 350px; height: 500px; background: white; border-radius: 12px; box-shadow: 0 5px 40px rgba(0,0,0,0.16); display: flex; flex-direction: column; animation: slideUp 0.3s ease; z-index: 1001; }
     @keyframes slideUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
 
@@ -463,6 +454,3 @@
     bot.init();
   });
 </script>
-
-</body>
-</html>

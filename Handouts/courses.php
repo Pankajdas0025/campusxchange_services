@@ -26,7 +26,10 @@ include_once __DIR__ . '/../src/conn.php';
 <meta property="twitter:title" content=" Learn Free YouTube Tutorials from Campusxchange">
 <meta property="twitter:description" content="Explore CampusXchange's YouTube courses — from web development to programming. Watch uploaded lessons or get notified about upcoming ones. Learn, grow, and build your skills with us!">
 <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-courses.jpg">
-
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
 <!-- styles -->
 <link rel="stylesheet" href="<?php echo ROOT_URL; ?>assets/css/style.css" type="text/css">
 

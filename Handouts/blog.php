@@ -1,5 +1,4 @@
 <?php
-session_start(); // Start session to track likes
 include_once __DIR__ . '/../src/config.php';
 include_once __DIR__ . '/..//src/conn.php';
 // Handle AJAX like requests
@@ -67,7 +66,10 @@ function getLikes($conn, $blog_id){
 <link rel="stylesheet" href="<?php echo ROOT_URL?>assets/css/style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -99,10 +101,9 @@ function getLikes($conn, $blog_id){
   --radius: 10px;
   --shadow: 0 8px 30px rgba(2,6,23,0.08);
 }
-body { font-family: 'Poppins', sans-serif; background: var(--bg-light); margin:0; padding:0; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg-light); margin:0; }
 .container { display:flex; gap:2rem; max-width:1200px; margin:auto; padding:2rem; }
-main { flex:3; }
-aside { flex:1; }
+main { flex:3;  height:auto;}
 h2 { margin-bottom:1rem; color:var(--primary-color); }
 .blog-item { margin-bottom:1.5rem; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); padding:1rem; }
 .blogmainImg { height:200px; overflow:hidden; border-radius:var(--radius); }
@@ -112,8 +113,9 @@ h2 { margin-bottom:1rem; color:var(--primary-color); }
 .like-btn { background: var(--primary-color); color:#fff; border:none; padding:0.5rem 1rem; border-radius:var(--radius); cursor:pointer; margin-top:0.5rem; }
 .like-btn:disabled { background: grey; cursor: not-allowed; }
 .like-btn:hover:enabled { background: var(--secondary-color); }
-aside { background-color: red; display: block;}
-aside h3 { margin-bottom:1rem; color:#004080; }
+aside {flex:1;  background-color: #cdc0c0; display: block; height: 50vh;padding:15px;}
+aside h3 { margin-bottom:1rem; color:#004080;text-decoration: underline; }
+aside ul {list-style-position: inside;}
 aside .sidebar-item { margin-bottom:1rem; padding:0.5rem; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); }
 aside .sidebar-item a { text-decoration:none; color:#004080; }
 @media screen and (max-width:900px){.container{flex-direction:column;}}
@@ -126,44 +128,33 @@ aside .sidebar-item a { text-decoration:none; color:#004080; }
 <section class="container">
 <main>
     <h2>New Blogs</h2>
-<!-- ----------1. Add new blog--------------2. add in to blogs folder----------------------------3. add image--------------------------------------------------------------- -->
 <div class="blog-item">
     <div class="blogmainImg">
         <img src="../assets/Images/blog-images/seo-content-strategy-2025.jpg" alt="SEO and Content Strategy 2025" title="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
     </div>
     <h3>SEO & Content Strategy in October 2025: Why Human-Centred Content Wins</h3>
     <p>Explore how human-focused SEO and authentic storytelling are reshaping content strategies in 2025 — where real connection beats automation...</p>
-    <a href="blogs/blog-seo-content-strategy-october-2025.php" class="read-more">Read More</a>
-    <div class="like-section">
-        <button class="like-btn" data-blog="blog-seo-content-strategy-october-2025"
-        <?php echo (isset($_SESSION['liked_blogs']) && in_array('blog-seo-content-strategy-october-2025', $_SESSION['liked_blogs'])) ? 'disabled' : ''; ?>>
-        👍 Like (<span class="like-count" id="like-blog-seo-content-strategy-october-2025"><?php echo getLikes($conn, "blog-seo-content-strategy-october-2025"); ?></span>)
-        </button>
+    <a href="https://blogscriptapp.free.nf/?i=1" class="read-more">Read More</a>
+</div>
+<div class="blog-item">
+    <div class="blogmainImg">
+        <img src="../assets/Images/blog-images/ai-tools-2025..jpeg" alt="SEO and Content Strategy 2025" title="SEO & Content Strategy in October 2025: Why Human-Centred Content Wins">
     </div>
+    <h3>Most Powerful AI Tools in 2026 </h3>
+    <p>Explore these ai tools which helps you to improve your productivity ...</p>
+    <a href="https://blogscriptapp.free.nf/?i=1" class="read-more">Read More</a>
 </div>
 </main>
 
 <aside>
     <h3>Previous Blogs</h3>
-    <?php include "../components/previous_blog.php" ?>
+    <ul>
+        <li>Best Internship</li>
+        <li>Hackathons </li>
+        <li>Certification course</li>
+    </ul>
 </aside>
 </section>
-
-<script>
-$(document).ready(function(){
-    $('.like-btn').click(function(){
-        var btn = $(this);
-        var blogId = btn.data('blog');
-        var span = $('#like-' + blogId);
-
-        btn.prop('disabled', true); // Disable after click
-        $.post('', {like_blog_id: blogId}, function(data){
-            span.text(data);
-        });
-    });
-});
-</script>
-
 <?php include_once __DIR__ . "/../components/footer.php"?>
 </body>
 </html>

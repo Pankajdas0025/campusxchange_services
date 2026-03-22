@@ -22,7 +22,10 @@ include_once __DIR__ . '/../src/conn.php';
   <meta property="og:title" content="Professional Web Development Services - CampusXchange">
   <meta property="og:description" content="CampusXchange delivers custom web development, landing pages, portfolios, and SEO-friendly websites to grow your business.">
   <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.png">
-
+  <!--favicon ------------------------------------------------------------------------------>
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://campusxchange.wuaze.com/services/web-development">
@@ -261,37 +264,30 @@ include_once __DIR__ . '/../src/conn.php';
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" alt="Stripe">
 <p>Stripe</p>
 </div>
-
 <!-- Razorpay -->
 <div class="ai-card">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/razorpay.svg" alt="Razorpay">
 <p>Razorpay</p>
 </div>
-
 <!-- duplicate for smooth infinite slider -->
-
 <div class="ai-card">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hostinger.svg">
 <p>Hostinger</p>
 </div>
-
 <div class="ai-card">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cloudflare.svg">
 <p>Cloudflare</p>
 </div>
-
 <div class="ai-card">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/react.svg">
 <p>React</p>
 </div>
-
 </div>
 </div>
 <!-- Tech stack we work with section  -->
  <section class="tech-stack-box" aria-label="Tech Stack We Work With">
     <h2>Our Tech Stack</h2>
     <p>CampusXchange builds with the latest technologies to deliver fast, secure, and scalable solutions.</p>
-
     <div class="tech-category" data-aos="zoom-in">
       <h3>Front-End</h3>
       <div class="icons">
@@ -301,7 +297,6 @@ include_once __DIR__ . '/../src/conn.php';
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Logo" />
       </div>
     </div>
-
     <div class="tech-category" data-aos="zoom-in">
       <h3>Back-End</h3>
       <div class="icons">
@@ -472,7 +467,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Web Development | Campusxchange";
     $message = "<body style='margin: 0; padding: 2px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.5; color: #333;'>
                 <div style='max-width: 800px; margin: auto; padding: 15px;  box-shadow: 0 2px 10px rgba(0,0,0,0.1); background-color: #fff;'>
-
                 <img src='https://campusxchange.wuaze.com/assets/Images/campusxchange-email-header.jpg' alt='CampusXchange email banner' style='width: 100%; display: block;' />
                 <ol style='list-style: none; padding: 0 .5px; margin: 0;'>
                 <li>$name</li>
@@ -493,7 +487,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p>Be Happy with <strong>CampusXchange</strong>!</p>
                 </div>
 
-
                 <div style='margin-top: 30px; font-size: 0.95em; color: #555; border-top: 1px solid #ddd; padding-top: 20px;'>
                 <p style='font-weight: bold; margin-bottom: 10px;'>Explore our Social Handles:</p>
                 <ul style='padding-left: 15px; list-style: none; line-height: 1.8;'>
@@ -504,7 +497,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br>
                 </ul>
                 </div>
-
 
                 <footer style='margin-top: 25px; text-align: center; font-size: 0.85rem; color: #777; background-color: #fafafa; padding: 15px; '>
                 <p style='margin: 8px 0;'>You're receiving this email because you showed interest in <strong>CampusXchange</strong> web services.</p>

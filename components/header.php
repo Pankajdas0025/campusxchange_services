@@ -1,32 +1,22 @@
 <?php
-include_once __DIR__ . '/../src/config.php';
-include_once __DIR__ . '/../src/conn.php'
-?>
+include '../src/config.php';
+include '../src/conn.php';
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<!--favicon ------------------------------------------------------------------------------>
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM2VC40BCE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-TM2VC40BCE');
 </script>
-
- <style>
+<style>
 @import url('<?php echo ROOT_URL; ?>assets/css/root.css');
 body{font-family: var(--font-main);}
 
@@ -63,17 +53,13 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
 .topnav.responsive .dropdown .dropbtn {display: block;width: 100%;text-align: left;}
 
 }
- </style>
-</head>
-<body>
-
-   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
+</style>
 
 <header>
      <div id="scroll-progress"></div>
-     <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div>
+     <div class="Logo"><img src='<?php echo ROOT_URL; ?>assets/Images/campusxchange-logo-transparent.png' alt="campusXchange Logo"></div>
+     <!-- <div class="Logo"><img src="https://campusxchange.wuaze.com/assets/Images/campusxchange-logo-transparent.png" alt="campusXchange Logo"></div> -->
 </header>
-
 <div class="topnav" id="myTopnav">
   <a href="<?php echo ROOT_URL;?>home" class="active" style="background-color: #555;">  <i class="fa-solid fa-home"></i>Home</a>
    <div class="dropdown">
@@ -93,6 +79,7 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
       <a href="<?php echo ROOT_URL;?>handouts/notes" title="Technical Notes">Notes</a>
       <a href="<?php echo ROOT_URL;?>handouts/assignment" title="Programming Lab Assignment">Programming Assignment</a>
       <a href="<?php echo ROOT_URL;?>handouts/courses" title="Youtube Courses">Courses</a>
+      <a href="<?php echo ROOT_URL;?>handouts/blog" title="Blogs">Blogs</a>
     </div>
   </div>
  <div class="dropdown">
@@ -104,39 +91,53 @@ header{position: sticky; top: 0;  z-index: 9999; /* try higher */ background-col
     </div>
   </div>
       <a href="<?php echo ROOT_URL;?>about"><i class="fa-solid fa-bullseye"></i>About</a>
-          <a href="<?php echo ROOT_URL;?>lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
-    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
+      <a href="<?php echo ROOT_URL;?>lettalk"><i class="fa-solid fa-phone"></i>Let's Talk</a>
+      <!-- For Admin Dashboard Links -->
+      <?php if (!empty($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true): ?>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-book-open"></i>Dashboard
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="<?php echo ROOT_URL; ?>dashboard/admin">Admin</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/clients">Clients</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/notes">Notes</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/subscribers">Email</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/applied-intern">Applied Interns</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/verified-intern">Verified Interns</a>
+            <a href="<?php echo ROOT_URL; ?>dashboard/logout.php">Logout</a>
+          </div>
+        </div>
+      <?php endif; ?>
+
+<!--// mobile Togglebar ----------------------------------------------------------------------------------------->
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"> &#9776;</a>
 </div>
-<script>
-AOS.init({ duration: 1000, once: true });
-function myFunction()
-{
-  var x = document.getElementById("myTopnav");
-  // var y = document.getElementsByClassName("icon").InnerText="&times";
-  if (x.className === "topnav") {
-    x.className += " responsive";
+
+  <script>
+  AOS.init({ duration: 1000, once: true });
+  function myFunction()
+  {
+    var x = document.getElementById("myTopnav");
+    // var y = document.getElementsByClassName("icon").InnerText="&times";
+    if (x.className === "topnav") {
+      x.className += " responsive";
 
 
-  } else {
-    x.className = "topnav";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
 
+  window.onscroll = function() {scrollIndicator()};
+  function scrollIndicator() {
+    // Scroll distance calculation
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
 
-window.onscroll = function() {scrollIndicator()};
-
-function scrollIndicator() {
-  // Scroll distance calculation
-  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrolled = (winScroll / height) * 100;
-
-  // Set the width of progress bar
-  document.getElementById("scroll-progress").style.width = scrolled + "%";
-}
-
-</script>
-<script src="<?php echo ROOT_URL;?>assets/js/script.js"> </script>
-</body>
-</html>
+    // Set the width of progress bar
+    document.getElementById("scroll-progress").style.width = scrolled + "%";
+  }
+  </script>
+<script src="<?php echo ROOT_URL;?>assets/js/script.js"></script>

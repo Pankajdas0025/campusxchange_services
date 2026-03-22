@@ -30,6 +30,10 @@ include_once __DIR__ . '/src/conn.php';
 <meta property="twitter:title" content="Affordable Web Design, SEO Services & Internship Programs in Bihar | CampusXchange">
 <meta property="twitter:description" content="Discover affordable web design, reliable SEO services, and technical internship programs for college students in Bihar. CampusXchange helps startups and students grow with expert web development solutions and valuable learning resources.">
 <meta property="og:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og.about.jpg">
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
 <!-- internal and external Styles -->
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
@@ -109,7 +113,7 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"/>
 <!-- Home Intro Section -->
 <section class="homeIntro" >
 <div class="introContent" data-aos="fade-up">
-    <h1 style="color: white;">Affordable Web Development, SEO, and Internship Opportunities</h1>
+    <h1 style="color: white;">Affordable Web Development, SEO, and Mentorship Program</h1>
     <p>Empowering learners, creators, and businesses through tech, mentorship, and original content. Dive into a world where innovation meets accessibility.</p>
     <a href="https://campusxchange.wuaze.com/services/web-development" title="Explore our services" class="ctaBtn">Explore Now</a>
     <a href="https://campusxchange.wuaze.com/lettalk" title="Explore our services" class="ctaBtn">Contact Now</a>
@@ -250,7 +254,6 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"/>
   </section>
   <!-- section to display my core services in a single frame  -->
 <section class="All-services" >
-
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/development-services.jpg" alt="campusxchange-development-services-image"> </div><div class="service-type-content"><h2>Web services</h2><ul><li>Custom Website Development</li><li>Ecommerce Website</li><li>Landing page</li><li>Business website</li></ul><a href="services/web-development">Explore Web Development Services</a></div></div>
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/seo-core-services.jpg" alt="campusxchange-seo-service-image"> </div><div class="service-type-content"><h2>SEO Services</h2><ul><li>Website Audit</li><li>Goggle Map SEO</li><li>On-page/Off-oage SEO</li><li>Technical SEO</li></ul><a href="services/seo">Discover Our SEO Services</a></div></div>
 <div class="service-type"  data-aos="zoom-in"><div class="service-type-img"><img src="assets/Images/mentorship-services.jpg" alt="campusxchange-mentorship-image"> </div><div class="service-type-content"><h2>Mentorship Program</h2><ul><li>Internship program</li><li>Projects Ideas</li><li>Live Courses</li><li>Some Others</li></ul><a href="internship-program">Join Our Mentorship Program</a></div></div>
@@ -287,10 +290,10 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"/>
       <h2>Professional SEO Services for Small Businesses in Bihar</h2>
       <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
       <br>
-      <div class="typeSeo" style="background-color:#F8627B; color:#000000;" data-aos="fade-up">On Page SEO</div>
-      <div class="typeSeo" style="background-color:#263F5A; color:#ffffff;" data-aos="fade-up">OFF Page SEO</div>
-      <div class="typeSeo" style="background-color:#F8627B; color:#000000;" data-aos="fade-up">Technical SEO</div>
-      <div class="typeSeo" style="background-color:#263F5A; color:#ffffff;" data-aos="fade-up">Local SEO</div>
+      <div class="typeSeo glow" style="background-color:#F8627B; color:#000000;" data-aos="fade-up">On Page SEO</div>
+      <div class="typeSeo glow" style="background-color:#263F5A; color:#ffffff;" data-aos="fade-up">OFF Page SEO</div>
+      <div class="typeSeo glow" style="background-color:#F8627B; color:#000000;" data-aos="fade-up">Technical SEO</div>
+      <div class="typeSeo glow" style="background-color:#263F5A; color:#ffffff;" data-aos="fade-up">Local SEO</div>
       <br>
       <a href="services/seo" title="Rank your website on Search Engine"><button id="Explorbtn2">Let's Discuss SEO</button></a>
       <br>
@@ -303,11 +306,8 @@ src="https://www.facebook.com/tr?id=25184438234509573&ev=PageView&noscript=1"/>
             <div class="about-content">
                 <h2>Our Achievements Speak for Themselves</h2>
                 <p>We are not just about services — we're about results.
-
-With happy clients, skilled interns, and multiple web projects completed, we've helped businesses grow online and empowered learners to kickstart their tech careers.
-
-Our journey is built on passion, dedication, and a strong commitment to delivering real value — whether it's a client project or a student mentorship.</p>
-
+                  With happy clients, skilled interns, and multiple web projects completed, we've helped businesses grow online and empowered learners to kickstart their tech careers.
+                  Our journey is built on passion, dedication, and a strong commitment to delivering real value — whether it's a client project or a student mentorship.</p>
                 <a href="about" style="background-color:white; color:#000000;" title="Explore seo , web development , note , blogs and mentorship program">Know More About CampusXchange</a>
             </div>
             <div class="Performance-box" onmouseover="changCount()">
@@ -331,31 +331,32 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
 <!-- Assignment section  ------------------------------------------------------------------------------------------------>
 
      <section  id="Assignment" data-aos="fade-up">
-      <h2>Comprehensive Technical notes and Programming Assignments</h2>
-      <p>
-        Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
-        Our team of experienced developers and mentors is ready to help you with all types of programming assignments — from beginner-level exercises to advanced projects across various languages and technologies.
-      </P>
-     <br>
-     <br>
-<div class="assignment-buttons"><a href="handouts/assignment" title="Programming Assignment">Assignments</a></div>
+        <h2>Comprehensive Technical notes and Programming Assignments</h2>
+        <p>
+          Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
+          Our team of experienced developers and mentors is ready to help you with all types of programming assignments — from beginner-level exercises to advanced projects across various languages and technologies.
+        </P>
+        <br>
+        <br>
+        <div class="assignment-buttons">
+          <a href="handouts/assignment" title="Programming Assignment">Assignments</a>
+        </div>
     </section>
-<!-- Assignment section end  here ------------------------------------------------------------------------------------------------>
-<br>
-<!-- in which we show our internship CTA section  ---------------------------------------------------------------------------------------->
-<section   id="Internship" data-aos="fade-up">
-  <div class="IHero">
-  <!--------------------- internship banner  -->
-  <img src="assets/Images/Home Page Banner.png" alt="campusxchange-internship-banner" title="Enroll in our internship">
-  <h3>Technical Internship Programs and Projects for College Students in Bihar</h3>
-  <p>Tired of just collecting certificates with no real skills? At CampusXchange, we're not just about learning — we're about doing.</p>
-  <br>
-  <br>
-  <p>Whether you're passionate about crafting pixel-perfect frontends or building powerful backend logic, you'll work on real-world projects under expert mentorship. Here, you'll gain full-stack experience, contribute to meaningful development, and grow into the developer the industry wants.</P>
-  <br>
-  <a href="internship-program"><button>Explore Our Internship Program</button></a>
-  </div>
-</section>
+
+  <!-- in which we show our internship CTA section  ---------------------------------------------------------------------------------------->
+  <section   id="Internship" data-aos="fade-up">
+      <div class="IHero">
+      <!--------------------- internship banner  -->
+      <h3>Technical Internship Programs and Projects for College Students</h3>
+      <p>Tired of just collecting certificates with no real skills? At CampusXchange, we're not just about learning — we're about doing.</p>
+      <br>
+      <br>
+      <p>Whether you're passionate about crafting pixel-perfect frontends or building powerful backend logic, you'll work on real-world projects under expert mentorship. Here, you'll gain full-stack experience, contribute to meaningful development, and grow into the developer the industry wants.</P>
+      <br>
+      <a href="internship-program"><button>Explore Our Internship Program</button></a>
+      </div>
+  </section>
+
     <br>
     <!-- FAQ section ---------------------------------------------------------------------------------->
     <section class="faq-section"  data-aos="fade-up">

@@ -1,6 +1,6 @@
 <?php
-include_once __DIR__ . '/src/config.php';
-include_once __DIR__ . '/src/conn.php';
+include 'src/config.php';
+include 'src/conn.php';
 
 $newsletter_message = '';
 $newsletter_message_type = '';
@@ -69,7 +69,10 @@ if (isset($_POST['subscribe_newsletter'])) {
   <meta property='twitter:title' content='Let us Talk - CampusXchange | Contact & Collaboration'>
   <meta property='twitter:description' content='Connect with CampusXchange for questions, support, mentorship, and web or SEO services.'>
   <meta property='twitter:image' content='https://campusxchange.wuaze.com/assets/Images/og-images/og.png'>
-
+  <!--favicon ------------------------------------------------------------------------------>
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
   <link rel='stylesheet' href='<?php echo ROOT_URL; ?>assets/css/style.css' type='text/css'>
 
   <script type='application/ld+json'>
@@ -384,11 +387,8 @@ if (isset($_POST['subscribe_newsletter'])) {
   </style>
 </head>
 <body>
-
 <?php include_once __DIR__ . '/components/header.php'; ?>
-
 <br>
-
 <main>
   <section class='contact-main'>
     <div class='contact-info' data-aos="fade-up">
@@ -397,19 +397,16 @@ if (isset($_POST['subscribe_newsletter'])) {
         Have questions, ideas, or want to work with CampusXchange? We would love to hear from you.
         Reach out for support, collaboration, mentorship, web development, or SEO services.
       </p>
-
       <ul>
         <li><i class='fa-solid fa-envelope'></i> <strong>Email:</strong> <a href='mailto:campusxchangeservices@gmail.com'>campusxchangeservices@gmail.com</a></li>
         <li><i class='fa-solid fa-phone'></i> <strong>Mobile:</strong> <a href='tel:+919155726625'>+91 9155726625</a></li>
         <li><i class='fa-solid fa-globe'></i> <strong>Website:</strong> <a href='https://campusxchange.wuaze.com' target='_blank'>www.campusxchange.wuaze.com</a></li>
       </ul>
-
       <div class='branch'>
         <h4>Business Hours</h4>
         <p>Monday - Saturday: 9:00 AM to 7:00 PM<br>Sunday: Closed</p>
       </div>
     </div>
-
     <div class='contact-map'data-aos="fade-left">
       <iframe
         src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7162.078172298884!2d87.7707852!3d26.1628565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56f6429ec6027%3A0x9846e4b1c8b20348!2sCampusXchange%20Services!5e0!3m2!1sen!2sin!4v1760951798277!5m2!1sen!2sin'
@@ -437,7 +434,7 @@ if (isset($_POST['subscribe_newsletter'])) {
       </div>
 
       <div class='newsletter-form-wrap'>
-        <form method='POST' class='newsletter-form' action=''>
+        <form method='POST' class='newsletter-form'>
           <input
             type='email'
             name='newsletter_email'

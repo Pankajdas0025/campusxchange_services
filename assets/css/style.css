@@ -111,8 +111,13 @@ transform:translateX(-50%);
 /*SEO service CTA section  ------------------------------------------------------------------------------------------------ */
 .seoSection h2{text-align:left}
 .seoSection{color:#000;padding:3rem 2rem;border-radius:var(--radius);margin-bottom:20px;text-align:center;height:650px}
-.typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;border-right:4px solid black;  box-shadow: var(--shadow);}
+.typeSeo{height:100px;width:100px;margin:120px 10px;display:inline-block;align-items:center;align-content:center;border-radius:50%;border:var(--border);text-align:left;padding-left:20px;transition:2s;border-right:4px solid black;  box-shadow: var(--shadow); animation: glow 2s infinite;}
 
+/* //animation // */
+@keyframes glow {
+0% {box-shadow: 0 0 0 0 var(--primary-color);}
+70%{box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);}
+100% {box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); border: 1px solid black;}}
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
 .Home-page-about{padding:3rem 2rem;background:linear-gradient(180deg, rgba(243, 63, 94, 0.6), var(--primary-color)), url('../Images/webdevelopment-services-hero.jpg') top/cover no-repeat;}
 .Home-page-about h2{color:white}

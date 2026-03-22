@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <style>
     @import url("<?php echo ROOT_URL ?>assets/css/root.css");
@@ -80,9 +75,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
-</head>
 
-<body>
   <div id="feedbackBox">
     <p style="text-align: center;">How was your experience with us?</p>
 
@@ -111,5 +104,4 @@
       }, 2000);
     }
   </script>
-</body>
-</html>
+

@@ -29,7 +29,10 @@
   <meta property="twitter:title" content="CampusXchange - Find Internships, Projects & Opportunities">
   <meta property="twitter:description" content="CampusXchange helps students connect with internships, live projects, and career opportunities. 100% online and easy to apply!">
   <meta property="twitter:image" content="https://campusxchange.wuaze.com/assets/Images/og-images/og-internship.jpg">
-
+<!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo ROOT_URL;?>assets/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo ROOT_URL;?>assets/favicon_io/favicon-16x16.png">
   <!-- styles -->
   <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css" type="text/css">
  <style>
@@ -38,7 +41,8 @@
 
 .apply-form-section {
 width: 100%;
-height: 800px;
+min-height:650px;
+height: auto;
 margin: 2rem auto;
 display: flex;
 
@@ -47,7 +51,7 @@ display: flex;
   height:80%;
   width: 40%;
   margin:0 5%;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   overflow: hidden;
   border: 1px solid black;
   box-shadow:  0 8px 30px rgba(2,6,23,0.08);
@@ -132,18 +136,17 @@ height: auto;
 <body>
 <br>
 <!-- Upcoming Batch section  ----------------------->
-<section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90; margin: auto 5%;">
+<section style="color:#fff;padding:1.5rem 1rem;text-align:center;box-shadow:0 2px 8px #6366f133;margin-bottom:1.5rem; width: 90%; margin: auto 5%;">
   <h2 style="margin:0;font-size:2rem;letter-spacing:1px;"><i class="fa-solid fa-calendar-days"></i> Upcoming Batch</h2>
   <p style="font-size:1.0rem;margin:0.7rem 0 0 0; color:black;">Next internship batch starts <b>Coming soo...</b>.<br>Apply now to reserve your spot and kickstart your tech journey with CampusXchange!</p>
 </section>
 <!-- Upcoming Batch section  end here ----------------------->
 <section class="apply-form-section">
-  <div class="box" style="border: none;">
-
+<div class="box" style="border: none;">
     <img src="../assets/Images/internship-apply.png"></img>
-  </div>
+</div>
 
-  <div class="box">
+<div class="box">
 <h2 style="background-color: #f43f5e; color: #ffffff;"><i class="fa-solid fa-file-signature">  </i>Apply for Internship</h2>
 <form class="apply-form" id="internshipApplyForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
 <input type="text" name="intern_name" id="intern_name" placeholder="Full Name" onchange=" Check_Intername() " required>
@@ -177,11 +180,9 @@ height: auto;
 <span class="form-error" id="Error_sms"></span>
 <input type="submit" value="Apply" disabled>
 </form>
-  </div>
-
+</div>
 
 <!-- Apply intern form data into database ----------------------------------------->
-
 <?php
 // Include PHPMailer library files
 use PHPMailer\PHPMailer\PHPMailer;
@@ -226,7 +227,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare database insertion
-    $stmt = $conn->prepare("INSERT INTO applied_intern (Name, Email, Whatsapp_No, Domain, Duration, College, Address) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO applied_intern (Name, Email, Whatsapp_No, Domain, Duration, College, Address, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
     $stmt->bind_param("sssssss", $Name, $Email, $Whatsapp, $Domain, $Duration, $College, $Address);
 
     if ($stmt->execute()) {
@@ -253,7 +254,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href='https://campusxchange.wuaze.com/' target='_blank'>CampusXchange</a></p>
             </div>
         </body>";
-
         // Send email via PHPMailer
         $mail = new PHPMailer(true);
         try {
@@ -276,22 +276,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 alert('✅ Thank you! Your internship details have been submitted successfully.');
                 window.location.href='apply';
             </script>";
-
         } catch (Exception $e) {
             echo "<script>
                 alert('❌ Email could not be sent. Error: " . addslashes($mail->ErrorInfo) . "');
                 window.location.href='apply';
             </script>";
         }
-
         $stmt->close();
-
     } else {
         echo "<div id='Error_sms' style='color:red;'>❌ Something went wrong while saving your data.</div>";
     }
 }
 ?>
-
 
 </section>
 <!-- footer section start from here  ------------------------------------------------->
